@@ -1,0 +1,423 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\pagenumbering{arabic}
+\usepackage{multicol}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Decision making by contextual action embedding}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{PhD proposal: Heterogeneous open agent MRS decision making by contextual action embedding}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	
+	\begin{abstract}
+	This extended abstract outlines a methodology by which each agent in a Multi-agent system(MAS) learns to communicate in Natural Language(NL) with other agents such that it can persuade them to decide for decisions that favor it's goals. It suggests taking Wittgenstein's view that refers to NL as a (chess) game in which agents should gain experience to use its pieces (words and sentences, etc) to advance in approaching a goal \citep{kenny-1973-wittgenstein}. As such I propose presenting the mind of Intelligent Agents (IA) in a MAS in the form of vector semantics based on the instructions they receive from human agents and train them to present their intentions in the form NL over a communication channel so that in a Game Theoretic approach they can learn how to induce other agents to decide for actions which benefits their goals.  
+	\end{abstract}
+	\begin{multicols}{2}
+	[
+	\section{Introduction}
+	]
+		An intelligent agent is an autonomous entity capable of performing actions on its environment and perceiving its environment, aiming to accomplish a goal \citep{stuart-2009-artificial-intelligence-a-modern-approach}. Multi-agent systems (MAS) are composed of multiple autonomous, interacting agents that have common or conflicting goals and sensory information \citep{shoham-2009-multiagent-systems-algorithmic-game-theoretic-and-logical-foundations}. Communication is a means of interaction and appears to be a rational behavior in MAS \citep{yan-2013-a-survey-and-analysis-of-multi-robot-coordination}. Communication could be implemented in different forms among which NL is by far the easiest and most powerful communication device we possess, so it is reasonable to require an intelligent machine to be able to communicate through NL \citep{mikolov-2016-a-roadmap-towards-machine-intelligence}. 
+		In this abstract I suggest a communication approach by which each IA uses NL to communicate \textit{semantics} through Natural Language Generation (NLG) techniques to persuade the embedded vector semantic in other interacting agents in a shared environment to prioritize its decision over theirs' and due to the same struggle performed by all other IAs an equilibrium is achieved. 
+		
+		\paragraph{Objective} Imagine an environment of heterogeneous IAs (for example an environment in which autonomous doors, vacuum cleaners and air conditioners) are operating, then the main objective of this proposal is to develop a model which trains each IA in a MAS to publish NL messages in a public communication channel so that it can induce other IAs toward taking decisions in favor of its goal \ref{fig:mas-interaction-through-language}. So the main idea of this abstract is the representation of IAs' mind in the form of vector semantics to see how NL utterances can impact each other to ultimately arrive to an equilibrium. 
+		 
+		\begin{figure*}
+			\centering
+			\includegraphics[width=1\textwidth]{/media/donkarlo/Elements/projs/research/assets/decision-making-mas-nlp.jpg}
+			\caption{A drone persuades an AV to clear its landing site}
+			\label{fig:mas-interaction-through-language}
+		\end{figure*}
+	
+	\section{Terminology, problem definition and the objective} \label{sec:problem-definition}
+		An open society of $n$ heterogeneous, Intelligent Agents (AI) such as 
+		\begin{equation}
+			I = \{i_1,..., i_n\}
+			\label{eq:agents-list}
+		\end{equation}
+		function in an environment such that each $i_k \in I$ can perform the following $|A_k|$ actions
+		\begin{equation}
+			A_k = \{a_{k1},...,a_{k|A_k|}\}
+			\label{eq:agents-actions-list}
+		\end{equation}
+		
+		\paragraph{IA actions' utilities and costs} Performing each action such as $a_{pq}$ for $t$ amount of time results in a utility and a cost referred as $U_{pq}(t) \in \mathbb{R}$ and $C_{pq}(t)  \in \mathbb{R}$ for all $i_p \in I$ and $a_{pq} \in A_p$. 
+		
+		\paragraph{Agent and environment statuses} Each $i_k \in I$ can adopt $|S_k|$ statuses:  
+			\begin{equation}
+				S_k = \{s_{k1},...,s_{k|S_k|}\}
+				\label{eq:agents-status-list}
+			\end{equation}
+			As such, the available statuses in the environment will be Cartesian product of the agents in the system. 
+			\begin{equation}
+				S = \prod\limits_{p=1}^{n} S_p
+				\label{eq:environment-statuses}
+			\end{equation}
+		
+		\subsection{Overall mission}\label{sec:problem}
+			The overall mission is to choose a \textbf{sequence of actions} from $\bigcup\limits_{p=1}^{n}A_p$ such that the efficiency as formulated in Equation \ref{eq:efficiency} maximizes in $t$ amount of time under the constraints described in Section \ref{sec:constraints}.
+		\subsection{Constraints}\label{sec:constraints}
+			\begin{itemize}
+				\item At any time a new IA can be added to the system 
+				\item Not only utility and cost functions for each BDI can be either negatively or positively correlated, but also, also such types of correlations may also established inter-agents. 
+				\item No agent, can have access to implementation of $U$ and $C$ for any actions of another agent. 
+				\item No agent knows about the actions that any other agents can perform.
+				\item No agent knows about the statuses that any other agent can adopt. 
+				\item No agent know in which status is any other agent.
+				\item The only limited and discrete means of communication is a public communication channel in which each agent can \textbf{arbitrarily} publish messages about past,present and future actions, statuses using sequences of limited symbols described in Equation \ref{eq:communiocation-words}
+				\item Each IA can have a limited storage space to store the data which builds its belief about other agents.
+			\end{itemize}
+			\begin{equation}
+				W = \{w_1,...,w_h\}
+				\label{eq:communiocation-words}
+			\end{equation} 
+			\begin{equation}
+				e(t) = \sum\limits_{q \in I}\sum\limits_{p \in A_p} {U_{i_{qp}}(t)+C_{i_{qp}}(t)}
+				\label{eq:efficiency}
+			\end{equation} 
+		
+		\subsection{Example}
+			For example, in an imaginary building composed of two venues, a room and a yard,  with an automatic door (AD), an air conditioner (AC) and a vacuum cleaner (VC), each IA can acquire a set of statuses which are mentioned in the following paragraphs. 
+			\paragraph{Statuses} For example if the AC can be either on or off, that is:
+				\begin{equation}
+					S_{AC}=\{"on","off"\}
+					\label{eq:ac-statuses}
+				\end{equation}
+				, the vacuum cleaner can be either in room or the yard which means:
+				\begin{equation}
+					S_{VC}=\{"room","yard"\} 
+					\label{eq:vc-statuses}
+				\end{equation}
+				can the automatic door can be either open or close, in other words:
+				\begin{equation}
+					S_{AD}=\{"open","close"\}
+					\label{eq:ad-statuses}
+				\end{equation}
+				then the set of possible statuses in the environment is formed of 3-tuples defined as follows:
+				\begin{multline}
+					S = S_{AC} \times S_{VC} \times S_{AD} 
+					\\
+					= \{(x,y,z)| x \in S_{AC}, y \in S_{VC}, 
+					\\
+					z \in S_{AD} \} 
+					\label{eq:example-environment-statuses}
+				\end{multline}	
+				As such $("off","room","open") \in S$ which denotes the AC is off, the VC is in the room and the AD is open. 
+				
+			
+			\subsection{Actions and their resulting utilities and costs}
+				The actions each of the three IAs can perform are as follows:			
+				\paragraph{AC actions, utilities and costs:}
+					The AC can automatically turn itself on("ton") and off("tof")
+					\begin{equation}
+						A_{AC}=\{"ton","tof"\}
+						\label{eq:ac-actions}
+					\end{equation}
+					the utility of "ton" action could be formalized as:
+					\begin{equation}
+						U_{{AC}_{ton}}= \frac{t}{|\bar{x}-n|}
+						\label{eq:ac-action-utility-ton}
+					\end{equation}
+					where  
+					\begin{itemize}
+						\item $t$ is the amount of time that $\bar{x}$(the average temperature derived from AC's sensor) is measured.
+						\item $\bar{x}$ is the recorded temperatures' average during $t$
+						\item $n$ is the predefined preferred temperature the environment should have
+					\end{itemize}
+					as such the less the average temperature deviates from the preferred temperature the higher the utility will be and vise-versa. 
+			 
+					\begin{equation}
+						C_{{AC}_{ton}} = - xt
+						\label{eq:ac-action-cost-ton}
+					\end{equation}
+					where 
+					\begin{itemize}
+						\item $t$ is the amount of time the AC was on
+						\item $x$ is the amount of energy AC consumes per time unit
+					\end{itemize}
+					the minus before the right side of Equation \ref{eq:ac-action-cost-ton} represents the negative nature of turning the AC on from energy consumption perspective. Similarly
+					\begin{equation}
+						U_{{AC}_{tof}} = - C_{{AC}_{ton}}
+						\label{eq:ac-action-utility-tof}
+					\end{equation}
+					\begin{equation}
+						C_{{AC}_{tof}} = - U_{{AC}_{ton}}
+						\label{eq:ac-action-cost-tof}
+					\end{equation}
+				
+				\paragraph{AD actions, utilities and costs:} AD actions' list includes opening (opn) and closing (cls) the door which could be shown as:
+					\begin{equation}
+						A_{AD}=\{"opn","cls"\}
+						\label{eq:ad-actions}
+					\end{equation}
+					Explicitly, the AD's actions are just costly without any utility (implicitly it can help other agents to increase their utility or decrease their cost). As such, 
+					\begin{equation}
+						C_{{AD}_{opn/cls}} = - xrt
+						\label{eq:ad-action-cost-tof}
+					\end{equation}
+					where   
+					\begin{itemize}
+						\item $x$ number of times the door opens or closes in $t$ amount of time
+						\item $r$ is energy rate which is consumed in each opening or closing
+						\item $t$ is amount of time in which the system is being studied
+					\end{itemize}
+				
+				\paragraph{VC actions, utilities and costs:}	
+					The VC can change the venue ("chv") from yard to the room or vice-versa. In other words:
+					\begin{equation}
+						A_{VC}=\{"chv"\}
+						\label{eq:vc-actions}
+					\end{equation}
+					\begin{equation}
+						U_{{VC}_{chv}} = \frac{x}{t}
+						\label{eq:vc-action-utility-chv}
+					\end{equation}
+					in which $x$ stands for cleanses rate achieved by VC at time unit  (For example, it can be measured by a ceiling camera) in $t$ amount of time. "chv" cost can be presented as: 
+					\begin{equation}
+						C_{{VC}_{chv}} = - U_{{VC}_{chv}}
+						\label{eq:vc-action-cost-chv}
+					\end{equation}
+					
+					\paragraph{Overall mission}
+						The overall mission is to choose a sequence of actions from the aforementioned IA actions to maximize $e$ in Equation \ref{eq:efficiency-example} in $t$ amount of time. 
+						\begin{multline}
+							e(t) = U_{{AC}_{tof}} + C_{{AC}_{ton}} + U_{{AC}_{tof}}
+							\\
+							C_{{AC}_{tof}} + C_{{AD}_{opn}} + C_{{AD}_{cls}}
+							\\
+							U_{{VC}_{chv}} + C_{{VC}_{chv}}
+							\label{eq:efficiency-example}
+						\end{multline}
+						while restrictions in Section \ref{sec:constraints} are being observed. 
+						In other words, considering the fact that only three contributing indexes in described utilities and costs are "energy consumption", "keeping the temperature the closest possible to $n$" and "cleanness", then the overall mission is to keep the overall energy consumption at lowest possible degree while the temperature is kept at most possible balance and cleanness is kept at highest rate during $t$ amount of time.       
+					
+		\subsection{Other parts}
+			\subsection{Environment's suitability}\label{sec:environment-suitability}
+				\paragraph{Suitability indexes} The environment indexes that IAs try to maximize according to the decisions they make 
+				\begin{equation}
+					E = \{(e_1,...,e_l) | e_i \in \mathbb{R} , \forall i \in \{1,...,l\} \} 
+					\label{eq:environment-suitability-indexes}
+				\end{equation}
+				
+				\paragraph{Suitability function} is a function such as Equation \ref{eq:suitability-function}
+				\begin{equation}
+					f: E \rightarrow \mathbb{R}
+					\label{eq:suitability-function}
+				\end{equation}
+				The reason to introduce $f$ is the fact that each two goal might be negatively correlated. For instance, In Figure \ref{fig:decision-making-mas-nlp-door-cleaner-ac} the cleanness rate is negatively correlated in with the degree by which the inner space temperature is kept close to 27 Celsius degrees. 
+			
+			\subsection{Different forms of Competition}\label{sec:competion-types}
+				The depending nature of $E$ in Equation \ref{eq:environment-suitability-indexes}, inherently introduces two types of competition among IAs in the environment. 
+				\begin{itemize}
+					\item \textbf{3-sided conflict} $I_p$ and $I_r$ are in a 3-side competition if two IAs such as $I_p$ and $I_r$ try to influence a third agent such as $I_q$ to perform two actions from $A_q$ when execution of either of those actions increases the reward of one IA and decreases the reward of the other one. Such as "open" or "close" in Figure \ref{fig:decision-making-mas-nlp-door-cleaner-ac}
+					
+					\item \textbf{2-sided conflict} that an IA such as $I_p$ tries to persuade $I_r$ to take an action from it's action list $A_r$ while such execution decreases the resources of the $I_r$ (Figure \ref{fig:mas-interaction-through-language})
+				\end{itemize}	
+				
+				in an environment with $m$ statuses
+				\begin{equation}
+					S = \{s_1,...,s_m\}
+					\label{eq:environment-statusess}
+				\end{equation}
+				Each status, by itself, is composed of different modes in the environment.
+		
+		\subsection{Objective}\label{sec:objective}
+			The objective is to keep $f$ consistently, maximized for the longest amount of time possible.
+			
+	\section{Methodology}\label{sec:methodology}
+		\begin{enumerate}
+			\item Provision of a universal vector semantics to handle the different application of words and linguistic terms with regard to semantics. 
+			
+			\item Assignment of relevant words/terms to the following IAs' characteristics: (Such as characteristics presented in Section \ref{sec:problem-definition})
+				\begin{itemize}
+					\item Goals
+					\item Actions
+					\item Statuses
+					\item Perceivable entities in the environment
+				\end{itemize}
+			Natural language is the matter of a social convention on the signs \cite{saussure-2011-course-in-general-linguistics-translated-by-wade-baskin-edited-by-perry-meisel-and-haun-saussy} as such, if the a human agent decides to assign names to aforementioned entities according to their role, he is not all the way wrong because of the relevance of referential theories \citep{dickie-2015-fixing-reference})
+			
+			\item \textbf{Providing a Public Communication Channel (PCC)}: Making a public communication channel available to IAs in which each agent, by taking advantage of a Natural Language Generation(NLG) Model  which is trained to  generate messages using the following information:
+				\begin{itemize}
+					\item Their current status
+					\item The next sequence of actions they may perform
+					\item Their goals
+					\item etc
+				\end{itemize}  
+			such that it can induce other agents to make decisions in favor of it's goals (See Figure \ref{fig:decision-making-mas-nlp-information-ciculation}). 
+			\begin{figure*}
+				\centering
+				\includegraphics[width=1\textwidth]{/media/donkarlo/Elements/projs/research/assets/decision-making-mas-nlp-information-circulation.jpg}
+				\caption{Information circulation}
+				\label{fig:decision-making-mas-nlp-information-ciculation}
+			\end{figure*}	 
+			
+			\item \textbf{vector semantic represented mind for IAs}: For each IA, a vector semantic space (such as word2vec\citep{mikolov-2013-distributed-representations-of-words-and-phrases-and-their-compositionality}, BERT \citep{devlin-2019-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding} or GLOVE \citep{pennington-2014-glove-global-vectors-for-word-representation}) will be built upon the NL instructions given to it by human agents (Constructing factories). Following a distributionalist linguistic view, words related to execution of an action, goal etc will be approximately gathered in the same neighborhood \citep{firth-1957-studies-in-linguistic-analysis}. As human agents observe IAs in action, they may provide more detailed instructions which results in gradual preciseness of such semantic vectors.
+			
+			\item Whenever an IA feels it needs supplementary information to make a decision, it can refer to public channel and select a set of most recent messages in the public channel and use them to see which neighborhoods of its semantic vector space (in previous stage) is being stimulated. By using these restricted neighborhoods, the domain of the decisions it can make will be restricted. From here a model learn to map these neighborhoods to a list of decisions (See Figure \ref{fig:decision-making-mas-nlp-messages-to-action}). 
+			\begin{figure*}
+				\centering
+				\includegraphics[width=1\textwidth]{/media/donkarlo/Elements/projs/research/assets/decision-making-mas-nlp-messages-to-action.jpg}
+				\caption{Messages to action model}
+				\label{fig:decision-making-mas-nlp-messages-to-action}
+			\end{figure*}
+		\end{enumerate}
+		As such, in the last two items of the list above, a competition between IAs is formed in which each IA try to persuade other IAs to take decisions in their favor. Hence, an equilibrium should be achieved, if the whole process is modeled in a game theoretic approach in which IAs try to publish messages with semantics values closer to the representation of their favored actions in other IAs' mind in PCC. 
+		
+		\subsection{Example \#1}: Figure \ref{fig:mas-interaction-through-language} shows an example of such a communication in which an Autonomous Vehicle (AV) has already received the instructions in NL from a human agent which has advised it to avoid approaching chasms to prevent falling. An indoor drone is about to approach the ledge of the table to land. The drone broadcast its intended action on the communication channel and as such it increases the probability by which the AV decides its "return" action from its action set. The misunderstanding caused by using different terms such as "chasm" and "ledge" is resolved by a universal word embeddings such as the one offered by Word2vec or BERT etc. The message broadcasted by the drone helps it to clear its landing site from obstacles and helps the AV to take a decision to avoid direct danger of falling or collision. This message first resolved to the words around "chasm" in the semantic vector space built upon personalized knowledge of the AV by taking advantage of Natural Language Understanding (NLU) techniques and the universal word embedding available to all agents. What if the AV had broadcasted a message in which it informs its approach toward the ledge and the drone, taking advantage of its human given word embedding had decided to fly back? Here, NL is being used as a game that agents should learn how to use to persuade others to prioritize their decisions over theirs. It testifies Wittgenstein's view of language as a chess game and its part's(words) as chess pieces in which the agents should gain experience. 
+		
+		\subsection{Example \#2} In Figure \ref{fig:decision-making-mas-nlp-door-cleaner-ac}, an automatic door which connects a courtyard to inner part of the house is advised by a human agent to "Open the door whenever someone wants to go to the living room or the court yard, otherwise close it if necessary." and this message has been turned to a semantic vector space. The automatic door has two actions which are "open" and "close". The NLG model in the door is able to generate messages such as "The door is opening" and "The door is closing" on PCC. Now the preliminary question is that how should the vacuum cleaner in the courtyard trigger "open" action of the door to be able to clean the living room? Certainly if it can generate as many NL messages as necessary on PCC to learn how to provoke the vector semantic areas of the door related to "open" action then it can pass through. It  can start by generating random messages on the public channel. Gradually it learns some messages which are semantically closer to open action instructions of the door, opens it and some which are not, would not. As such, it can simulate the semantic vector implemented mind of the door. On the other hand, the air conditioner (AC) also, always, likes to keep the door closed so that it can save energy. As such, the AC must also learn to broadcast messages on PCC such that the door doesn't open or closes if it is open. In this case the agent which generates a message with a semantic value \textbf{closer} to vector semantics neighborhood of any of door's actions can persuade it to make a that decision in his favor.  As such a  conflict of interest is formed between the vacuum cleaner and the air conditioner. The situation turns to be even more complicated when the door itself is not also interested in many opening and closings as this will present it as a inefficient energy consumer. Such a conflict of interest could be modeled using a Game Theoretic approach. It will be even more complicated when the AC, according to the season wants to also, open the door sometimes according to the internal temperature of the building (Let's say its human instructor has instructed to always keep the temperature around 27 degrees).
+		% include how the learned model by agents help then in Spring at which time the door prefers the door to be open as long as possible	 
+		
+		\begin{figure*}
+			\centering
+			\includegraphics[width=0.6\textwidth]{/media/donkarlo/Elements/projs/research/assets/decision-making-mas-nlp-door-cleaner-ac.jpg}
+			\caption{Three agents with conflicting goals. Here there is a competition between the air conditioner(AC) and the vacuum cleaner(VC). The AC tries to generate semantics closer to human instructions for closing the automatic door and the VC tries to create the same semantic close to the neighborhood sensitive to door's close action.}
+			\label{fig:decision-making-mas-nlp-door-cleaner-ac}
+		\end{figure*}
+		
+		\subsection{Solutions to study}
+			Before starting the probable approaches it would be nice to take into account the following notes to prevent ambiguities:
+			\paragraph{Notes}
+				In the proposed solutions I try to observe the following roles.  
+				\begin{itemize}
+					\item In this section, MAS's environment is presented as all the messages in PCC. Although both the examples are describing a physical environment, but this proposal takes a mere NL approach. The underlying reason is the heterogeneous nature of the problem it is trying to solve. I believe diversity of embedded sensors is an obstacle in reaching the communication equilibrium after which we are looking but vector semantics can solve this problem to a great extent.    
+					
+					\item No IA knows about the internal affairs of other agents. The only reaction(strategy) they can follow is the messages which are published by different agents in the PCC.
+					
+					\item Each IA is free to publish the messages the way it likes or it even can refuse to publish any messages. 
+					
+					\item Inference over a new published message to weather a message is in response to the message of another agent is independently on behalf of other agents. In other words direct communication among IAs are illegal.
+				\end{itemize}
+			
+			\paragraph{Bayesian games} 
+				Bayesian games seems to be an appropriate choice as a solution to this proposal since:
+				\begin{itemize}
+					\item according to the rules proposed in previous section the payoffs and rewards of each IA upon publishing a message is not evident to other agents.
+					\item each IA has(learned it while observing the messages broadcasted by other IAs in reaction to his messages in PCC) a belief system about other agents' vector semantic space
+				\end{itemize}
+				One form of mathematically formulating a Bayesian game is 
+				\begin{equation}
+						G=\langle N, \Omega ,p,\langle A,u_{i},T_{i},\tau _{i}\rangle _{i\in N}\rangle
+						\label{eq:bayesian-game}
+					\end{equation}
+					in which the participating  elements could be adapted as follows to comply with the use-case introduced in this section:
+					\textbf{Golden role:} In a Bayesian game at least one IA is not aware of the another IA's type and as a result doesnt know about it's cost function. so it is going to build a belief of it for itself.  
+					\begin{itemize}
+						\item $N$ (Players) is the set of IAs that can publish messages in $C$
+						\item $\Omega$ (Environment statuses) is possible distributions of $\Psi$	
+						\item $A$ (Set of actions) is the set of messages that could be composed out of $W$
+						\item $T_{k}$ (Set of types(roles) an Agent such as $i_k \in I$ can take). $\tau _{k}: \Omega \rightarrow T_{k}$. (if it is a door, how much it is possible that it take action $a_{opn}$)
+						\item $u_{i}\colon T_{i}\times A\rightarrow \mathbb {R}$
+						
+						\item $p$
+					\end{itemize} 
+				We are looking to find an equilibrium for games with payoff schema such as the diagram presented in Figure \ref{fig:decision-making-mas-nlp-bayesian-game-table}. 
+				
+				\paragraph{Seeking for a strategy from the type of the player to a sequence of words} A pure strategy for ${IA}_i$ is a function $s_{i}\colon T_{i}\rightarrow A$. So this function actually produce a message for an agent  according to its knowledge of vector semantic of all other IAs which were presented in form of the messages already in the PCC. 
+				
+				
+				\paragraph{Nash equilibrium in Bayesian games} 
+				In this case a Nash equilibrium is an equilibrium in which the messages to perform an action are already close enough such that everyone get a fair share that it would not be in their interest to approach the vector semantic neighborhood of that action any closer. For example the best option for a vacuum cleaner is to clean both the court yard and living 100\%. For the air conditioner it is also the best to keep the temperature 100\% at 27 degrees. But they finally arrive to broadcasting of fixed messages such that the temperature is 90\% of the times optimal and the cleanness is about 85\%. The most recent solutions to Nash equilibrium are as follows: The Nash equilibrium in Bayesian games, includes RL or other learning rules, linear programming \cite{paruchuri-2008-playing-games-for-security-an-efficient-exact-algorithm-for-solving-bayesian-stackelberg-games}
+				and Monte Carlo methods \cite{kiekintveld-2011-approximation-methods-for-infinite-bayesian-stackelberg-games-modeling-distributional-payoff-uncertainty}
+				
+				\begin{figure*}
+					\centering
+					\includegraphics[width=1\textwidth]{/media/donkarlo/Elements/projs/research/assets/decision-making-mas-nlp-bayesian-game-table.jpg}
+					\caption{Schema of a payoff matrix for two agents competing to approximate the vector semantic representation  of several (maybe contradictory such as open vs close in Example \#2) actions of a third part IA}
+					\label{fig:decision-making-mas-nlp-bayesian-game-table}
+				\end{figure*}
+			\subsection{Road map}
+				A rough sketch of how this proposal should advance is presented as follows:
+				\begin{enumerate}
+					\item IA-IA vector semantic learning in which each IA tries only to approach one action of the other IA.
+					\item Building a model in which each agent builds a simulation of other agents' embedded semantic vector (Belief building). 
+					\item Simulating IA-IA competition to approach the semantic vector representation of a third party agent to induce an action to it. 
+					\item Equilibrium building between all IAs.
+				\end{enumerate}
+	\section{Advantages of applying NL as main communication language}
+		\begin{itemize}
+			\item Wide Application of NL because of it flexibility
+			
+			\item NL can be shared between human and machine 
+			
+			\item NL has a discrete nature so it reduces extremely reduces computational complexity 
+			
+			\item The compositional nature of NL helps with building different semantics by minimum changes in the linguistic constituents 
+			
+			\item PCC helps all agents to prepare themselves for the next action they want to take, but in direct communication only one agent is affected so finally everyone takes advantage of solving the resulting Nash equilibrium.
+		\end{itemize}
+	
+	\section{Challenges}
+		\begin{itemize}
+			\item Related to philosophy of semantics which contributes to many theories which are sometimes contradictory.
+			
+			\item Insufficiency of the instructions upon which word embeddings are supposed to be made. 
+			
+			\item If the Model which maps word embedding neighborhoods to actions is a supervised machine learning model, then from where the training should be provided.  
+			
+			\item The indefinite nature of messages that can be made by syntagmatic and paradigmatic rules \citep{saussure-2011-course-in-general-linguistics-translated-by-wade-baskin-edited-by-perry-meisel-and-haun-saussy} which may increase computational complexity in the model presented in Figure \ref{fig:decision-making-mas-nlp-messages-to-action} 
+			
+			\item Ambiguity is an intrinsic part of language. How would the system deal with it? 
+		\end{itemize}		
+	
+	\section{Related work}\label{sec:related-work}
+		In this section some previous works related to methodology that is presented in Section \ref{sec:methodology} is introduced.  
+		
+		\paragraph{Language grounding in MRS:}
+		\cite{gauthier-2016-a-paradigm-for-situated-and-goal-driven-language-learning} propose a multi-agent learning environment and learning methods that bring about emergence of a basic compositional language. 
+		\cite{steels-2016-agent-based-models-for-the-emergence-and-evolution-of-grammar} sets a test in which a population of 10 IAs starts an object identification game without a vocabulary or any knowledge of the characteristics of each individual object. Speakers invent words for unexpressed meanings, listeners adopt the words they have not heard, and both align their lexicons based on success and failure in the game. After 800 games, the agents accomplish to identify 95\% of the objects. Such experiments show how successfully words can replace patter recognition methods which are a lot less flexible than NL while tremendously computationally complex. The same author in \cite{steels-2000-the-emergence-of-grammar-in-communicating-autonomous-robotic-agents}  have opted for complex adaptive systems approach to the emergence of grammar. In this work, robotic agents come equipped with a basic cognitive apparatus but the specific meanings and language conventions arise by a negotiated process grounded and situated in interactions about the world. His first exploratory simulations have shown the viability of this approach. \cite{spranger-2012-open-ended-procedural-semantics} presents a solution in which robots scan the shared environment with the cameras and construct world models from these data streams such that the robot that takes the role of the speaker can draw the attention of the other robots to a red object by means of the utterance “the red block” (referential game). \cite{lazaridou-2016-towards-multi-agent-communication-based-language-learning} trained learners engage in cooperative referential games develop their own language from the need to communicate in order to succeed at the game.
+		\cite{lazaridou-2017-multi-agent-cooperation-and-the-emergence-of-natural-language} proposes a framework for language learning that relies on multi-agent communication and studies this learning in the context of referential games. This is similar to the game that I try to form in Section \ref{sec:methodology}. 
+		
+		\paragraph{Works based on learning of communication protocols for MAS/MRS:}
+		%important paper
+		\cite{jaques-2019-social-influence-as-intrinsic-motivation-for-multi-agent-deep-reinforcement-learning} proposes a unified mechanism for achieving coordination and communication in Multi-Agent Reinforcement Learning (MARL), through rewarding agents for having causal influence over other agents’ actions which leads in developing better communication protocols. 
+		\cite{foerster-2016-learning-to-communicate-to-solve-riddles-with-deep-distributed-recurrent-q-networks} uses  Q-networks (DDRQN) which enable teams of agents to learn to solve communication-based coordination tasks. Then they extended their work to
+		\cite{foerster-2016-learning-to-communicate-with-deep-multi-agent-reinforcement-learning} which proposes a set of multi-agent benchmark tasks that require communication; then, they formulate several learning algorithms for these tasks; finally, they analyze how these algorithms learn, or fail to learn, communication protocols for the agents. The tasks that they consider are fully cooperative, partially observable, sequential multi-agent decision making problems. \cite{sukhbaatar-2016-learning-multiagent-communication-with-backpropagation}  explores a neural model, CommNet, that uses continuous communication for fully cooperative tasks. The model consists of multiple agents and the communication between them is learned alongside their policy.
+		
+		\paragraph{Distributional Linguistics:} Distributional linguists like \citep{firth-1957-studies-in-linguistic-analysis} tried to define a word according to its environment or distribution in language use. A word’s distribution is the set of contexts in which it occurs, the neighboring words or grammatical environments. This is the view upon which I based the decision making mechanism I proposed in Section\ref{sec:methodology}.
+		
+		\paragraph{Advent of word embeddings from large corpora:} Distributional linguists efforts resulted in word embedding such as Word2vec \citep{mikolov-2013-distributed-representations-of-words-and-phrases-and-their-compositionality}, BERT \citep{devlin-2019-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding} and GLOVE \cite{pennington-2014-glove-global-vectors-for-word-representation}. The idea behind this embeddings is mapping words to a vector spaces in which words with similar meanings gather around each other.
+		
+		\paragraph{Works based on action/skill embeddings for MAS/MRS:}
+		In \citet{narasimhan-2015-language-understanding-for-text-based-games-using-deep-reinforcement-learning}, they employ a deep reinforcement learning framework to jointly learn state representations and action policies using game rewards as feedback. This framework enables them to map text descriptions into vector representations that capture the semantics of the game states. \citet{gulati-2017-playing-with-embeddings-evaluating-embeddings-for-robot-language-learning-through-mud-games} uses text-based games as a proxy to evaluating word embedding on real robots. Based in a risk-reward setting, it reviews the effectiveness of the embeddings in navigating tasks in fantasy games, as an approximation to their performance on more complex scenarios, like language assisted robot navigation. 
+		\cite{tennenholtz-2019-the-natural-language-of-actions,chandak-2019-learning-action-representations-for-reinforcement-learning} uses embedding methods to cluster similar actions to help an agent adopt better decisions to accomplishing its goal. \cite{hausman-2018-learning-an-embedding-space-for-transferable-robot-skills} also proposes an embedding strategy at skills level. 
+		
+		\paragraph{Works based on linguistically naming actions and states in an MAS:}
+		Such approaches make sense due to the dependence of the method proposed in Section \ref{sec:methodology} in which linguistically naming action and states is entailed to follow the rest of the solution.  
+		\cite{he-2015-deep-reinforcement-learning-with-an-unbounded-action-space} Proposes a novel architecture for reinforcement learning with deep neural networks designed to handle state and action spaces characterized by natural language. 
+		
+		\paragraph{Data2text NLG:}
+		\cite{rosenthal-2016-verbalization-narration-of-autonomous-robot-experience,hastie-2017-talking-autonomous-vehicles-automatic-auv-mission-analysis-in-natural-language,puduppully-2018-data-to-text-generation-with-content-selection-and-planning} are three samples which use deep learning, particularly sequence to sequence(SEQ2SEQ) and LSTM deep architectures \citep{sutskever-2014-sequence-to-sequence-learning-with-neural-networks,hochreiter-1997-long-short-term-memory},  to generate reports in NL from data.
+		
+		
+		
+		\paragraph{Existing protocols:}
+		\cite{doerschuk-2006-communication-language-for-autonomous-multi-robot-systems} presents a model by integrating concepts from Speech Act Theory, Agent Communication Language, and network protocols  to construct basic communication between robots.
+		
+		
+		
+		\paragraph{Existing IA-IA communication via NL:} \citet{trott-2015-natural-language-understanding-and-communication-for-multi-agent-systems}  has implemented system that supports deep semantic NLU for controlling systems with multiple simulated robot agents and  supports communication for both human-agent and agent-agent interaction. 
+		
+		\paragraph{Game theory approach in Linguistic} For the first time \citet{lewis-1969-convention} where he showed that the game theoretic notion of a Nash equilibrium is apt to explain how a linguistic convention can be self-sustaining in a community. \citet{jager-2012-game-theory-in-semantics-and-pragmatics} shows the potential of Game theoretic approach by showing how the neo-Gricean program of pragmatics can be spelled out in this framework. \citet{golland-2010-a-game-theoretic-approach-to-generating-spatial-descriptions} models \textit{language use} as a cooperative game between two players: a speaker, who generates an utterance, and a listener, who responds with an action. Specifically, we consider the task of generating spatial references to objects, wherein the listener must accurately identify an object described by the speaker. They show that a speaker model that acts optimally with respect to an explicit, embedded listener model substantially outperforms one that is trained to directly generate spatial descriptions.
+		
+	
+	
+	\bibliography{/media/donkarlo/Elements/projs/research/refs}
+	\end{multicols}
+\end{document}

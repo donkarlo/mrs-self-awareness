@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: self-awareness.aux
+The style file: plainnat.bst
+Database file #1: /media/donkarlo/Elements/projs/research/refs.bib
+I was expecting a `,' or a `}'---line 91 of file /media/donkarlo/Elements/projs/research/refs.bib
+ :  
+ :  pages = {},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 106 of file /media/donkarlo/Elements/projs/research/refs.bib
+ :  
+ :  title = {Multi-sensorial generative and descriptive self-awareness models for autonomous systems },
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1633 of file /media/donkarlo/Elements/projs/research/refs.bib
+ :  
+ :  pages = "747--756",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Unbalanced braces---line 1938 of file /media/donkarlo/Elements/projs/research/refs.bib
+ : 
+ : }
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in chatila-2018-toward-self-aware-robots
+Warning--empty title in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+Warning--empty booktitle in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+You've used 3 entries,
+            2773 wiz_defined-function locations,
+            607 strings with 5755 characters,
+and the built_in function-call counts, 2048 in all, are:
+= -- 158
+> -- 187
+< -- 2
++ -- 63
+- -- 60
+* -- 181
+:= -- 325
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 28
+chr.to.int$ -- 3
+cite$ -- 9
+duplicate$ -- 75
+empty$ -- 124
+format.name$ -- 63
+if$ -- 414
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 3
+newline$ -- 22
+num.names$ -- 12
+pop$ -- 69
+preamble$ -- 1
+purify$ -- 26
+quote$ -- 0
+skip$ -- 68
+stack$ -- 0
+substring$ -- 38
+swap$ -- 13
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 33
+warning$ -- 3
+while$ -- 12
+width$ -- 0
+write$ -- 41
+(There were 4 error messages)

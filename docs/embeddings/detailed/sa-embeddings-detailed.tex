@@ -1,0 +1,406 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\pagenumbering{arabic}
+\usepackage{multicol}
+\usepackage{siunitx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Decision making by contextual action embedding}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{PhD proposal: Heterogeneous open agent MRS decision making by contextual action embedding - ONLY Problem Definition}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	\begin{multicols}{2}
+	
+	
+	\section{Terminology, problem definition and the objective} \label{sec:problem-definition}
+		An open society of $n$ heterogeneous, Intelligent Agents (AI) such as 
+		\begin{equation}
+			I = \{i_1,..., i_n\}
+			\label{eq:agents-list}
+		\end{equation}
+		function in an environment such that each $i_k \in I$ can perform the following $|A_k|$ actions
+		\begin{equation}
+			A_k = \{a_{k1},...,a_{k|A_k|}\}
+			\label{eq:agents-actions-list}
+		\end{equation}
+		
+		\paragraph{IA actions' utilities and costs} Performing each action such as $a_{pq}$ for $t$ amount of time results in a utility and a cost referred as $U_{pq}(t) \in \mathbb{R}$ and $C_{pq}(t)  \in \mathbb{R}$ for all $i_p \in I$ and $a_{pq} \in A_p$. 
+		
+		\paragraph{Agent and environment statuses} Each $i_k \in I$ can adopt $|S_k|$ statuses:  
+			\begin{equation}
+				S_k = \{s_{k1},...,s_{k|S_k|}\}
+				\label{eq:agents-status-list}
+			\end{equation}
+			As such, the available statuses in the environment will be Cartesian product of the agents in the system. 
+			\begin{equation}
+				S = \prod\limits_{p=1}^{n} S_p
+				\label{eq:environment-statuses}
+			\end{equation}
+		
+		\subsection{Overall mission}\label{sec:problem}
+			The overall mission is to choose a \textbf{sequence of actions} from $\bigcup\limits_{p=1}^{n}A_p$ such that the efficiency as formulated in Equation \ref{eq:efficiency} maximizes in $t$ amount of time under the constraints described in Section \ref{sec:constraints}.
+		\subsection{Constraints}\label{sec:constraints}
+			\begin{enumerate}
+				\item At any time a new IA can be added to the system 
+				\item Not only utility and cost functions for each BDI can be either negatively or positively correlated, but also, also such types of correlations may also established inter-agents. 
+				\item No agent, can have access to implementation of $U$ and $C$ for any actions of another agent. 
+				\item No agent knows about the actions that any other agents can perform.
+				\item No agent knows about the statuses that any other agent can adopt. 
+				\item No agent know in which status is any other agent.
+				\item The means of communication is by composing a set of limited symbols such as Equation \ref{eq:words-set}
+				\begin{equation}
+					W = \{w_1,...,w_{|w|}\}
+					\label{eq:words-set}
+				\end{equation} 
+				to use them to compose messages as presented in Equation \ref{eq:message-structure} 
+				\begin{equation}
+					m_p=(w_p)_{p \subset \{1,\dotsb,|W|\}}
+					\label{eq:message-structure}
+				\end{equation}
+				and publish them in a communication channel described in Equation \ref{eq:channel-structure}
+				\begin{multline}
+					C = ((m_p)_q)_{q=1}^{|C|}
+					\label{eq:channel-structure}
+				\end{multline}
+				\item Each IA can have a limited storage space to store the data which builds its belief about other agents.
+			\end{enumerate}
+			
+			
+			
+			\begin{equation}
+				e = \sum\limits_{q \in I}\sum\limits_{p \in A_p} {U_{i_{qp}}(t)+C_{i_{qp}}(t)}
+				\label{eq:efficiency}
+			\end{equation} 
+		
+		\subsection{Example}
+			For example, in an imaginary building composed of two venues, a room and a yard,  with an automatic door (AD), an air conditioner (AC) and a vacuum cleaner (VC), each IA can acquire a set of statuses which are mentioned in the following paragraphs. 
+			\paragraph{Statuses} For example if the AC can be either on or off, that is:
+				\begin{equation}
+					S_{AC}=\{"on","off"\}
+					\label{eq:ac-statuses}
+				\end{equation}
+				, the VC can be either in the room or the yard which means:
+				\begin{equation}
+					S_{VC}=\{"room","yard"\} 
+					\label{eq:vc-statuses}
+				\end{equation}
+				and the AD can be either open or close, in other words:
+				\begin{equation}
+					S_{AD}=\{"open","close"\}
+					\label{eq:ad-statuses}
+				\end{equation}
+				
+				As such, the set of possible statuses in the environment is formed of 3-tuples defined as follows:
+				\begin{multline}
+					S = S_{AC} \times S_{VC} \times S_{AD} 
+					\\
+					= \{(x,y,z)| x \in S_{AC}, y \in S_{VC}, 
+					\\
+					z \in S_{AD} \} 
+					\label{eq:example-environment-statuses}
+				\end{multline}	
+				For example, $("off","room","open") \in S$ which denotes the AC is off, the VC is in the room and the AD is open. 
+				
+			
+			\subsection{Actions and their resulting utilities and costs}
+				The actions each of the three IAs can perform are as follows:			
+				\paragraph{AC actions, utilities and costs:}
+					The AC can automatically turn itself on("ton") and off("tof")
+					\begin{equation}
+						A_{AC}=\{"ton","tof"\}
+						\label{eq:ac-actions}
+					\end{equation}
+					the utility of "ton" action could be formalized as:
+					\begin{equation}
+						U_{{AC}_{ton}}= \frac{t}{|\bar{x}-n|}
+						\label{eq:ac-action-utility-ton}
+					\end{equation}
+					where  
+					\begin{itemize}
+						\item $t$ is the amount of time that $\bar{x}$(the average temperature derived from AC's sensor) is measured.
+						\item $\bar{x}$ is the recorded temperatures' average during $t$
+						\item $n$ is the predefined preferred temperature the environment should have
+					\end{itemize}
+					as such the less the average temperature deviates from the preferred temperature the higher the utility will be and vise-versa. 
+			 
+					\begin{equation}
+						C_{{AC}_{ton}} = - xt
+						\label{eq:ac-action-cost-ton}
+					\end{equation}
+					where 
+					\begin{itemize}
+						\item $t$ is the amount of time the AC was on
+						\item $x$ is the amount of energy AC consumes per time unit
+					\end{itemize}
+					the minus before the right side of Equation \ref{eq:ac-action-cost-ton} represents the negative nature of turning the AC on from energy consumption perspective. Similarly
+					\begin{equation}
+						U_{{AC}_{tof}} = - C_{{AC}_{ton}}
+						\label{eq:ac-action-utility-tof}
+					\end{equation}
+					\begin{equation}
+						C_{{AC}_{tof}} = - U_{{AC}_{ton}}
+						\label{eq:ac-action-cost-tof}
+					\end{equation}
+				
+				\paragraph{AD actions, utilities and costs:} AD actions' list includes opening (opn) and closing (cls) the door which could be shown as:
+					\begin{equation}
+						A_{AD}=\{"opn","cls"\}
+						\label{eq:ad-actions}
+					\end{equation}
+					Explicitly, the AD's actions are just costly without any utility (implicitly it can help other agents to increase their utility or decrease their cost). As such, 
+					\begin{equation}
+						C_{{AD}_{opn/cls}} = - xrt
+						\label{eq:ad-action-cost-tof}
+					\end{equation}
+					where   
+					\begin{itemize}
+						\item $x$ number of times the door opens or closes in $t$ amount of time
+						\item $r$ is energy rate which is consumed in each opening or closing
+						\item $t$ is amount of time in which the system is being studied
+					\end{itemize}
+				
+				\paragraph{VC actions, utilities and costs:}	
+					The VC can change the venue ("chv") from yard to the room and vice-versa. In other words:
+					\begin{equation}
+						A_{VC}=\{"chv"\}
+						\label{eq:vc-actions}
+					\end{equation}
+					\begin{equation}
+						U_{{VC}_{chv}} = \frac{x}{t}
+						\label{eq:vc-action-utility-chv}
+					\end{equation}
+					in which $x$ stands for cleanses rate achieved by VC at time unit  (For example, it can be measured by a ceiling camera) in $t$ amount of time. "chv" cost can be presented as: 
+					\begin{equation}
+						C_{{VC}_{chv}} = - xt
+						\label{eq:vc-action-cost-chv}
+					\end{equation}
+					in which $x$ is the average electricity consumption and $t$ is the amount of time the consumption rate  was measured. 
+					
+					\paragraph{Overall mission}
+						The overall mission is to choose a sequence of actions from the aforementioned IA actions to maximize $e$ in Equation \ref{eq:efficiency-example} in $t$ amount of time. 
+						\begin{multline}
+							e(t) = U_{{AC}_{tof}} + C_{{AC}_{ton}} + U_{{AC}_{tof}}
+							\\
+							C_{{AC}_{tof}} + C_{{AD}_{opn}} + C_{{AD}_{cls}}
+							\\
+							U_{{VC}_{chv}} + C_{{VC}_{chv}}
+							\label{eq:efficiency-example}
+						\end{multline}
+						while restrictions in Section \ref{sec:constraints} are being observed. That is, no IA knows about implementation detail of other IAs cost and utility functions etc and the only way to gain information is referring to the messages published in public channel in $t$ amount of time.
+						
+						\paragraph{Implicit contributing factor} Additionally, considering the fact that the only three contributing indexes in described utilities and costs are \textbf{energy consumption}, \textbf{keeping the temperature the closest possible to $n$} and \textbf{cleanness}, then the overall mission is to \textbf{keep the ultimate energy consumption at lowest possible rate} while the \textbf{temperature is kept at most possible balance} as \textbf{ cleanness is kept at highest rate} during $t$ amount of time.  
+	
+	\section{Sample solution}\label{sec:sample-solution}
+		\paragraph{Building the training set}: To build the training set each member such as ${m_p}^{'} \in C^{'}$ will be composed of $m_p \in C$ such that a contributing symbols of ${m_p}$ is replaced by another. Then members in $C$ will be corresponded with $1$ and members in $C^{'}$ will be corresponded with $0$ to build a training set for classes \textbf{1/true/meaningful} and \textbf{0/false/unmeaningful} to feed the neural network that its architecture is described in the next section.
+		\subsection{Architecture of a very simple, exemplary neural network} 
+			A shallow neural network with an input, a hidden and an output layer will be used. The output layer will represent the two classes, $1$ and $0$, representing meaningful and unmeaningful messages. The input layer will have $|W|$ nodes and will be fed once with hot-encoded (Equation \ref{eq:hot-encoding-function}) members of $C$ as training samples of class $1$ and another time with hot-encoded members of $C^{'}$ as training samples of class $0$. That is, if $w_k$ has been used in a message (either from $C$ or $C^{'}$) for $n_{m_p}(w_k)$ times, at $k$th component of the input vector $n_{m_p}(w_k)$ will be placed there and if it is not used in that message then $0$ will be placed (Figure \ref{fig:decision-making-mas-nlp-vector-semantic-hot-encoded-neural-networks}). As such model $v$ in Equation \ref{eq:semantic-vector-function} is trained such that it maps every message to a 2-D plane.
+			\begin{equation}
+				h(m_p) = (n_{m_p}(w_1),\dotsb,n_{m_p}(w_{|W|}))
+				\label{eq:hot-encoding-function}
+			\end{equation}
+			\begin{multline}
+				v: \mathbb{R}^{|w|} \rightarrow \mathbb{R}^2
+				\\
+				v(h(m_p))=(x,y)
+				\label{eq:semantic-vector-function}
+			\end{multline}
+			\begin{figure*}
+				\centering
+				\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/decision-making-mas-nlp-vector-semantic-hot-encoded-neural-networks.jpg}
+				\caption{The architecture of a shallow neural network to map messages in $C$ and $C^{'}$ to a 2-D plane}
+				\label{fig:decision-making-mas-nlp-vector-semantic-hot-encoded-neural-networks}
+			\end{figure*}
+			
+			\paragraph{Generating vectors for symbols} To generate semantic vectors from symbols, for each $w_i \in W$ the network will be fed with another hot-encoded vector in which the $i$th position is filled with $1$ and the rest are filled by $0$. $v$ in Equation \ref{eq:semantic-vector-function} transforms the resulting vector to a point in $\mathbb{R}^2$. As such a set of points in $\mathbb{R}^2$ will be generated as follows:
+			\begin{equation}
+				\Psi = \{\vec{w}_1,\dotsb,\vec{w}_{|w|}\}
+				\label{eq:semantic-word-vectors}
+			\end{equation}
+			
+			\subsection{Triggering a decision}\label{sec:sample-solution-triggering-a-decision} 
+			
+			\paragraph{Random message} If an agent publishes a (random) message such as $m_p$(such as \textbf{"big car"})  in $C$ then $v(h(m_p))$ will map it to a vector such as $\vec{m}_p=(x_{m_p},y_{m_p})$. 
+			
+			\paragraph{Initial condition} From here, if $\vec{m}_p$ doesn't decrease the \textbf{distance correlation} of the union of $\{\vec{m}_p\}$ with $\Psi$ (Equation \ref{eq:distance-correlation}) then the IA must modify or change $\vec{m}_p$ as long as the condition in Equation \ref{eq:distance-correlation} establishes. 
+			\begin{equation}
+				dCorr(\{\vec{m}_p\} \cup \Psi) \leq dCorr(\Psi)
+				\label{eq:distance-correlation}
+			\end{equation}
+			Lets say $\vec{w}_i \in \Psi$ has the minimum distance of $r^{\circ}$ with $\vec{m}_p$ (Equation \ref{eq:minimum-distance}). The minimum is chosen to study the solution under the worst condition such that, the intersection of neighborhoods of elements in $\Psi \cup \vec{m}_p$ of a radius a bit greater than the half of $r^{\circ}$  also includes $\vec{w}_i$ in the resulting set(Equation \ref{eq:general-neigborhood-radius}). 
+			\begin{equation}
+				r^{\circ} = \argmin_{r_x\in\mathbb{R}} \{|\vec{m}_p-\vec{w}_i|<r_x|\vec{w}_i\in\Psi\}
+				\label{eq:minimum-distance}
+			\end{equation}
+			
+			\begin{equation}
+				r = \frac{r^{\circ}}{2} + \epsilon^{\circ}
+				\label{eq:general-neigborhood-radius}
+			\end{equation}
+		
+			\subsection{Making a decision} 
+				\paragraph{Extraction of greatest continuous surface}: If we extract the greatest continues set of aforementioned neighborhoods, then we have an approximate set of symbols that could be either directly or indirectly translated into a set of actions and their particularities in each agent (See Section \ref{sec:desire}).
+			\paragraph{New Cost/Utility functions} 
+				If an IA publishes a message such as $m_p$ in $C$ which triggers $n(m_p)$ symbols in $\Psi$ then the reward would be as of Equation \ref{eq:message-publishing-utiity}
+				\begin{equation}
+					U_{\vec{m}_p} = \frac{n(m_p)}{|W|}
+					\label{eq:message-publishing-utiity}
+				\end{equation}
+				and the cost is as presented in Equation \ref{eq:message-publishing-cost}
+				\begin{equation}
+					C_{\vec{m}_p} = \frac{1}{|W|}
+					\label{eq:message-publishing-cost}
+				\end{equation}
+				From here, the goal of each agent is to maximize Equation \ref{eq:efficiency-of-c} as follows:
+				\begin{equation}
+					e_{C} = \sum\limits_{m_p \in C} U_{\vec{m}_p} + C_{\vec{m}_p}
+					\label{eq:efficiency-of-c}
+				\end{equation}
+				Implicitly, this implies that if $m_p$ and $m_q$ are two distinct messages, the one that includes more symbols of $\Psi$ in Equation \ref{eq:semantic-word-vectors} by taking an approach in Section \ref{sec:sample-solution-triggering-a-decision}, is a better message, since it leads the whole system to a better equilibrium. As such these kind of messages should be rewarded more (As presented in Equation \ref{eq:message-publishing-utiity}).
+		
+		\subsection{Example}\label{sec:sample-solution-example} 
+			If we form a vector semantic (Figure \ref{fig:decision-making-mas-nlp-vector-semantic-of-symbols}) around the messages formed in $t$ amount of time using the solution discussed in Section \ref{sec:sample-solution}, then by taking advantage of the following set of messages which have been published in $C$ according to their sensory data we can form a semantic vector similar to $\Psi$ in Equation \ref{eq:semantic-word-vectors}. Of course sensory data are slow. It takes some time that the temperature sensor understands that the temperature has variated a lot from preferred tolerance so it turns the AC on. But we look for a better or at least supplementary solution. Additionally these set of messages have been kept repeating in a logical order for a certain amount of time. Logical means the decisions were made by sensory data even though they were slow. But they were reliable decision. We want to speed up decision making.    
+			\paragraph{VC published messages in $C$}
+				\begin{itemize}
+					\item VC wants to clean the yard
+					\item VC wants to clean the room
+					\item VC is turning itself on
+					\item VC is turning itself off
+					\item VC wants to change location
+				\end{itemize}
+				Instructions
+				\begin{itemize}
+					\item VC should keep the venues clean such that the cleaness rate doesn't fall below 70\% 
+				\end{itemize}
+			\paragraph{AD published messages in $C$}
+				Messages:
+				\begin{itemize}
+					\item AD opens the door between the room and the yard
+					\item AD closes the door between the room and the yard
+					\item AD turns itself on for closing the door
+					\item AD turns itself on for opening the door
+				\end{itemize}
+				Instructions
+				\begin{itemize}
+					\item Whenever someone wants to change venue, open the door.
+				\end{itemize}
+			\paragraph{AC published messages in $C$}
+				\begin{itemize}
+					\item AC turns itself on to decrease the temperature of the room
+					\item AC turns itself off to decrease the temperature of the room
+					\item AC turns itself off to increase the temperature of the room
+					\item AC turns itself off to decrease energy consumption of the room
+				\end{itemize}
+				Instructions
+				\begin{itemize}
+					\item AC should turn itself on whenever the temperature surpasses \ang{27}
+					\item AC should turn itself off whenever the temperature decreases from \ang{27}
+				\end{itemize}
+				\begin{figure*}
+					\centering
+					\includegraphics[width=0.8\textwidth]{/media/donkarlo/Elements/projs/research/assets/decision-making-mas-nlp-vector-semantic-of-symbols.jpg}
+					\caption{Vector Semantic of Symbols built around messages published in $C$ or to build the desire or belief}
+					\label{fig:decision-making-mas-nlp-vector-semantic-of-symbols}
+				\end{figure*}
+			\paragraph{Two different messages for comparison:} As in Figure \ref{fig:decision-making-mas-nlp-vector-semantic-of-symbols-zoomed} if VC publishes a message such as $m_q=$"VC wants to clean the yard" and another message such as $m_p=$"VC wants to change venue to clean the yard", then $m_p$ is a better message since it can join more symbols (5 symbols "AC", "on", "chv", "opn" , "AD" ). These set of symbols may result in inducing the decisions in AC to turn itself on (by observing triggered symbols "AC" and "on") ahead of the implication of its temperature sensor data and turns the AD on and open it.
+			\paragraph{Why triggering more messages cause more equilibrium}
+			\begin{itemize}
+				\item if only AC and on were triggered, then the AC may turn itself on and consume energy, but the door never opens and temperature falls without reason. 
+				\item if the AD opens but the AC's on action is not triggered, then the temperature drops but AD haven't had understood until the sensor observes it
+				\item and even worse, as in this example if just "cln" and "yrd" are triggered, then the VC starts cleaning without getting access to the room
+			\end{itemize} 
+			As such a message that triggers more $\vec{w}_i$ seems to be better. But this is a sub question of this proposal itself. 
+			\begin{figure*}
+				\centering
+				\includegraphics[width=0.9\textwidth]{/media/donkarlo/Elements/projs/research/assets/decision-making-mas-nlp-vector-semantic-of-symbols-zoomed.jpg}
+				\caption{$m_p$ is a better message than $m_q$ as it introduces a longer inter-connected path using the method described in Section \ref{sec:sample-solution}. As such, \textbf{opn} action from AD and and \textbf{on} action from AC are triggered.}
+				\label{fig:decision-making-mas-nlp-vector-semantic-of-symbols-zoomed}
+			\end{figure*}
+			
+	\section{Desire}\label{sec:desire}
+		Building a semantic vector space by the symbols in Equation \ref{eq:words-set} using the instructions given to each IA such as $i_j \in I$ which is shown by $\Psi_{D_j}$ in this document, helps with training a mapping model from triggered subsets of $\Psi$ to actual sequence of actions(decisions). As such, if a message such as $m_p$ is published in $C$ (See Equation \ref{eq:decision-making-from-subset-of-c-to-sequence-of-actions}).   
+		\begin{equation}
+			d:\mathbb{P}(\Psi) \rightarrow \mathbb{P}(\Psi_{D_j}) \rightarrow (a_k \in A^{'}_j)_{A^{'}_j \subset A_j}
+			\label{eq:decision-making-from-subset-of-c-to-sequence-of-actions}
+		\end{equation}
+		where $\mathbb{P}$ denotes power set. 
+	\section{Belief}\label{sec:belief}
+		Agent $i_k\in I$'s belief is formed upon the two models which should be trained or estimated which do the following mappings:
+		\begin{itemize}
+			\item What type of IAs contribute to $C$ given $\Psi$ (See $T$ in Equation \ref{eq:bayesian-game})
+			\item How would IAs of type $t$ reacts if $i_k$ publishes a message such as $m_p$ 
+		\end{itemize}
+		As described in Section \ref{sec:bayesian-modeling}, Bayesian model, is a suitable model to estimate the aforementioned two models. 
+		
+		
+	\section{Clustering agents into different types}\label{sec:clustering-agents-into-types}
+		We can cluster/partition $\Psi$ using methods such as \textbf{kmeans}. Such clustering may result in interesting sets of IA classes/types according to the nature of responsibilities they perform (Equation \ref{eq:agents-types}).
+		\begin{equation}
+			T = \{t_1,\dotsb,t_{|T|}\}
+			\label{eq:agents-types}
+		\end{equation}	
+				
+	\section{Modeling an equilibrium of induced decision by IAs, using Bayesian games}: \label{sec:bayesian-modeling}	    
+		Bayesian game models are useful to reach an equilibrium when there are two types \textbf{incomplete} information in a system 
+		\begin{itemize}
+			\item Types of IAs/Players are not \textbf{completely} known to each IA.
+			\item Given a type, then the probability by which they react (the decision) to decision/strategy of another IA is not \textbf{completely} known. 
+		\end{itemize}
+		This is situation that we are exactly facing. That is a new IA in the system does not \textbf{completely} know what other types of IAs function in $C$/environment and they don't know completely how they react (what kind of message they publish in $C$ or what sequence of actions they perform in real environment). As such Bayesian game seems to be a perfect choice to model the problem in order to find a consistent equilibrium in it over the course of time. 
+		Now using the types described in Equation \ref{eq:agents-types} we can introduce a model for which a Nash equilibrium could be sought as follows:
+		\begin{equation}
+			G=\langle I, \Omega ,p,\langle A,u_{k},T,\tau_k\rangle_{k\in I}\rangle
+			\label{eq:bayesian-game}
+		\end{equation}
+		
+		\begin{itemize}
+			\item $I$ is the set of IAs that can publish messages in $C$
+			\item $\Omega$ is possible distributions of $\Psi$ over the course of time.
+			\item $A$ is the set of messages that could be composed out of $W$
+			\item $T$ is the set of the types of IAs. In the example presented in \ref{sec:sample-solution-example}, if there have been more than one AD, VC or AC, then AD, VC and AC could have been considered as types and IAs could have been refereed with unique IDs. A function such as $\tau_k$ in Equation \ref{eq:ia-identifier-from-distribution} gives the types of IAs functioning in the system, given a distribution such as $\Psi^{\circ}$. This is the belief that each agent such as $I_k$ should build as described in Section \ref{sec:belief}.
+			\begin{equation}
+				\tau_{k}: \Omega \rightarrow T^{|T|}
+				\label{eq:ia-identifier-from-distribution}
+			\end{equation}
+			\item $u_k\colon T\times A\rightarrow \mathbb {R}$ which denotes if agent $i_k$ of type $t_i$ performs an action such as publishing a message, how much would it be the summation of its utility and cost. 
+			\item $p$ prior probability distribution over $\Omega$ (How much it is probable that upon arrival of an agent into an environment $\Psi$ is the distribution of $\Omega$)
+		\end{itemize} 
+		\paragraph{Objective }As such Bayesian game trains us a model to estimate $u_k$ condition on knowing the $T$ for agent $i_k$ such that $i_k$ 
+		for all $k /in {1\dotsb|I|}$ Equation \ref{eq:efficiency-of-c} maximizes. Bayesian game model uses Nash equilibrium to determine the messages each agent can publish such that the best general equilibrium is achieved for the whole system. 
+		\paragraph{Nash equilibrium} Now that we have introduced the model, we should look for a Nash equilibrium as all agents are competing to publish messages in $C$ such that they induce a longer set of actions (decision) to other IAs. Solving a Nash equilibrium can be done by the following methods.  
+		\begin{itemize}
+			\item Dynamic Programming(DP)
+			\item RL
+			\item Linear programming
+		\end{itemize}	
+		\section {Question} If instead maximizing Equation \ref{eq:efficiency}, we try to maximize Equation \ref{eq:efficiency-of-c} then how much would the system be successful instead? That is, if we take the condition in which all agents know existence of each other and know about the cost and utility functions of each other as the best scenario case, then if instead we use messages in $C$ and a Nash equilibrium for decision making, then to what portion of the best scenario can we reach? This serves also as an evaluation method.
+		\section{Notes}
+			\paragraph{A great advantage}: An action(a single symbol) and a decision (a sequence of actions / sequence of symbols) are reducible to a dimension of the same size.
+			\paragraph{Ease of Human in Loop} We talked about advantage of $m_p$ over $m_q$ because as the symbols, we used English words. 
+			\paragraph{Universal word embedding} If a manufacturer uses "space" instead of "venue" in $m_p$, then that universal vector semantic can fill the gap.
+			\paragraph{Refining $\Psi$} By keeping vector messages in $\Psi$ then IAs should generate more refined messages and greater continuous surfaces will be formed which literally means better equilibrium in the final result of the system.
+			\paragraph{Why it is efficient?} Why is this method efficient? because it implies that regardless of the length of $m_p$ and variety of symbols used in it, $\vec{m}_p$ has only one point in vector semantic space. 
+	\end{multicols}
+	
+	\section{Further research}
+		\paragraph{How does an IA thinks about the other?} So far this document was focusing on anonymous message publication in $C$. But if there IA's could be identified when publishing messages then new sources of decision making are available. To present IA $i_j \in I$ belief's about $i_k \in I$, a new semantic vector space, $\Psi_{B_jk}$, can be formed by taking advantage of the union of messages published by $i_j$ and $i_k$ as presented in Equation
+				\begin{equation}
+					\Psi_{B_{jk}} = \bigcup_{m_j,m_k \in C} (\vec{m_j} \cup \vec{m_k}) 
+				\end{equation}
+\end{document}
