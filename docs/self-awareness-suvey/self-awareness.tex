@@ -27,32 +27,42 @@
 	\author{Mohammad Rahmani}
 	\date{}
 	\maketitle
-	\section{Related terms}
+	
+	\section{Topics}
+		\subsection{Self-modeling}
+			\citet{bellman-2017-self-modeling-and-self-awareness}
+		\subsection{Knowledge representation and modeling structures and Trade-offs}
+		\cite{minku-2016-knowledge-representation-and-modelling-structures-and-trade-offs}
+		\subsection{Self-awareness and inner speech}
+		\cite{chella-2020-developing-self-awareness-in-robots-via-inner-speech}
+	\section{Related terms and notices}
 		\begin{itemize}
 			\item self-modeling robot \citep{kwiatkowski-2019-task-agnostic-self-modeling-machines}
 			\item Artificial consciousness: Self-awareness is a subtopic of artificial consciousness \url{https://en.wikipedia.org/wiki/Artificial_consciousness}. Consciousness alone means: Consciousness at its simplest is "awareness or sentience of internal or external existence" \url{https://en.wikipedia.org/wiki/Consciousness}.
 			\item Self-expression \citep{lewis-2011-a-survey-of-self-awareness-and-its-application-in-computing-systems}
+			\item Natural science computing
+			\item evolutionary robotics
 		\end{itemize}
-	\section{Surveys}
 	
+	\section{Assessment}
+		\citet{herbst-2017-metrics-and-benchmarks-for-self-aware-computing-systems}
+		\citet{esterle-2017-assessing-self-awareness}
 	\section{Definitions}
 		\paragraph{Self-awareness}
 		\textbf{Literal definition} implies that Self-awareness must first rely on perception of self as different from the environment and from other agents \cite{chatila-2018-toward-self-aware-robots}.
 		
-		\paragraph{Def 1} The capacity to become the object of one’s own attention, which arises when an agent focuses not only on the external environment but also on the internal milieu. The agent becomes a reflective observer, processing self-information. It becomes aware that
-		it is awake and actually experiencing specific mental events, emitting behaviors, and possessing unique characteristics \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[1].
-		\\
+		\paragraph{General definition} The capacity to become the object of one’s \textbf{own attention}, which arises when an agent focuses \textbf{not only} on the \textbf{external environment} but also on the \textbf{internal milieu}. The agent becomes a \textbf{reflective observer}, \textbf{processing self-information.} It becomes \textbf{aware} that it is \textbf{awake} and actually experiencing \textbf{specific mental events}, \textbf{emitting behaviors}, and \textbf{possessing unique characteristics} \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[1].
+		
 		\paragraph{Private/Public self-awareness - Subjective/Objective}  \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[2]
 			\begin{itemize}
-				\item \textbf{Private} Private self-aspects relate to externally \textbf{unobservable} events and characteristics such as
-				emotions, physiological sensations, perceptions, values, goals, and motives
+				\item \textbf{Private} Private self-aspects relate to externally \textbf{unobservable} events and characteristics such as emotions, physiological sensations, perceptions, values, goals, and motives
 				\item \textbf{Public} self-aspects are visible attributes such as behavior and physical appearance
 			\end{itemize}
 			Also check more detailed in \cite{lewis-2011-a-survey-of-self-awareness-and-its-application-in-computing-systems} II-A
 		\section{Levels of self-awareness}
 			As stated in
 			\cite{lewis-2011-a-survey-of-self-awareness-and-its-application-in-computing-systems} II-B
-			As \citet{neisser-1997-the-roots-of-self-knowledge-perceiving-self-it-and-thou} these leves of self awareness could be introduced:
+			As \citet{neisser-1997-the-roots-of-self-knowledge-perceiving-self-it-and-thou} these leves of self awareness could be introduced: (See a more modern list in \cite{lewis-2017-towards-a-framework-for-the-levels-and-aspects-of-self-aware-computing-systems})
 			\begin{itemize}
 				\item \textbf{Ecological self} The ecological self is the most minimal form of
 				self-awareness. It provides only for basic stimulus	response interaction, as the organism has a basic
@@ -75,33 +85,66 @@
 				the organism is capable of constructing and reasoning
 				about an abstract symbolic representation of itself
 			\end{itemize}
+			There is a newer list in \cite{lewis-2017-towards-a-framework-for-the-levels-and-aspects-of-self-aware-computing-systems}
+		\section{Reflective and Meta-reflective Self-awareness}
+			All taken from \cite{lewis-2017-towards-a-framework-for-the-levels-and-aspects-of-self-aware-computing-systems}
+			\subsection{Aspects of Reflective and Meta-reflective Self-awareness}
+				\subsubsection{Identity Awareness}
+				\subsubsection{State Awareness}
+				\subsubsection{Time Awareness}
+				\subsubsection{Interaction Awareness}In interaction awareness, run-time models are used to take into account patterns of interactions between entities. There are various sub-aspects here, which build on each
+				other. Most obviously, the system must be able to recognize that some actions form part of interactions, such that they are in some way causally connected. An example of this includes message passing, such as is used in a communications protocol, where one message may be a response to another, rather than an isolated action.
+				There may be, in simple interaction awareness, simply a model of the flow of actions over time (e.g., action b typically occurs after action a), or there may be additional semantics associated with the actions or the combination of them (e.g., actions b is a response and action a is a query).
+					\paragraph{} As a prerequisite to the above form of interaction awareness, there must be some
+					form of identity awareness, at least insofar that the system can identify messages,
+					as apart from the general noise in the environment. It may also be important to be
+					able to identify individuals as those engaged in an interaction, if not in terms of their
+					unique identity, then perhaps in terms of role.
+					\paragraph{} Interaction awareness can also build upon state awareness, since models may
+					encapsulate knowledge of causality such as “when action a is taken in state s, this
+					leads to state t.” Markovian approaches may be effective choices for modeling state-
+					based interaction awareness.
+					\paragraph{} Finally, the interactions need not be external. Causality of internal processes may
+					also be modeled in meta-reflective processes. For example, a system might model
+					the behavior of one of its own decision-making processes, when other parts of the
+					system are either operational or not. In the former case, the system may learn a model
+					of how decision-making degrades (due to more stringent resource constraints), when
+					load elsewhere is high. Such models of internal causality may then be used to provide
+					adaptive internal re-architecting, or perhaps more effective scheduling of tasks.
+					
+				\subsubsection{Behavior Awareness}
+				\subsubsection{Goal Awareness}
+				\subsubsection{Belief Awareness}
+				\subsubsection{Expectation Awareness}
+		\section{Domain of self-awareness} \cite{lewis-2017-towards-a-framework-for-the-levels-and-aspects-of-self-aware-computing-systems}
+		
 		\section{Meta-Cognition}
-			The higher levels of self-awareness, such as meta-self-
-			awareness introduced in section \citet{lewis-2011-a-survey-of-self-awareness-and-its-application-in-computing-systems}II-B, can also be viewed as
+			The higher levels of self-awareness, such as meta-self-awareness introduced in section \citet{lewis-2011-a-survey-of-self-awareness-and-its-application-in-computing-systems}II-B, can also be viewed as
 			meta-cognition, defined \citet{overschelde-2008-metacognition-knowing-about-knowing} as knowing about knowing.
+		
 		\section{Uncat}
-		\paragraph{Approaches to tackle SA} Common aspects of the proposed approaches lie on the conception of SA as 
-		\begin{itemize}
-			\item a cognitive embodied process composed of representational and inferential operations of an agent situated in an environment,
-			\item an agent’s property which emerges in various forms, including the extent of the SA capabilities (“levels”) \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[1], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[6] and the scope of the processed information (“private and public”) \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[2], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[7]
-		\end{itemize}
-		\textbf{Application of SA} More recently, SA concepts have been transferred to artificial systems aiming at either 
-		\begin{itemize}
-			\item designing intelligent agents
-			\item analyzing their behavior
-		\end{itemize}
-		\\
-		\textbf{Why SA in AI?} The driving motivation for the transfer of biological SA concepts
-		to artificial systems is to improve \textbf{autonomy}, \textbf{robustness}, and scalability and has been investigated in different fields, including software engineering, machine learning, and robotics \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[8],
-		\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[9], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[10], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[11], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[12], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[13], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[14], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[15]. 
-		\\
-		\textbf{Challenge:} A fundamental challenge in most of these approaches is how to systematically integrate SA capabilities into artificial agents.
+			\paragraph{Approaches to tackle SA} Common aspects of the proposed approaches lie on the conception of SA as 
+			\begin{itemize}
+				\item A cognitive embodied process composed of representational and inferential operations of an agent situated in an environment,
+				\item An agent’s property which emerges in various forms, including the extent of the SA capabilities (“levels”) \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[1], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[6] and the scope of the processed information (“private and public”) \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[2], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[7]
+			\end{itemize}
 		
+		\section{Application of SA} More recently, SA concepts have been transferred to artificial systems aiming at either 
+			\begin{itemize}
+				\item Designing intelligent agents
+				\item Analyzing their behavior
+			\end{itemize}
+			\paragraph{Why SA in AI?} The driving motivation for the transfer of biological SA concepts
+			to artificial systems is to improve:
+			\begin{itemize}
+				\item autonomy
+				\item robustness
+				\item scalability
+			\end{itemize}
+			and have been investigated in different fields, including software engineering, machine learning, and robotics \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[8],
+			\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[9], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[10], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[11], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[12], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[13], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[14], \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[15]. 
+			\paragraph{Challenge}: A fundamental challenge in most of these approaches is how to systematically integrate SA capabilities into artificial agents.
 		
-		\paragraph{SA in computational context} In a computational context, self-awareness (SA) is a capability of an autonomous system to describe the acquired experience about itself and its surrounding environment with appropriate models and correlate them incrementally with the currently perceived situation to expand its knowledge continuously.
-		
-		\paragraph{Definition from  sensor data and signal processing perspective}: An artificial agent is considered self-aware if it can dynamically observe itself and its surrounding environment through different \textbf{proprioceptive} and \textbf{exteroceptive} sensors and \textbf{learn} and \textbf{maintain a contextual representation} by processing the observed multi-sensorial data. 
-
 		\paragraph{Prospective vs exteroceptive}: Proprioceptive sensors measure the internal agent's parameters, whereas exteroceptive sensors observe the agent's environment (cp. \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Fig 1).
 		
 		\begin{figure*}
@@ -113,8 +156,7 @@
 		
 		\paragraph{SA introspection}  The SA representation obtained by jointly and dynamically analyzing the sensory data endows the agent with introspection at different hierarchical levels.
 		
-		\paragraph{Introspection} associates with the agent’s capability of estimating and
-		representing \emph{dynamical causal relationships} from the observed sensory data. Such representation allows the agent to model interactions between itself, as observed through proprioceptive
+		\paragraph{Introspection} associates with the agent’s capability of estimating and representing \emph{dynamical causal relationships} from the observed sensory data. Such representation allows the agent to model interactions between itself, as observed through proprioceptive
 		sensors; and the environment, as observed through exteroceptive sensors.
 		
 		\paragraph{importance of embodying SA capabilities}The extent of the embodied SA capabilities influences the agent's performance when solving tasks and are assumed as reasons for the significant capability differences of the various biological species. 
@@ -134,6 +176,8 @@
 			\caption{Table I}
 			\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.jpg}
 		\end{figure*}
+	\section{Computing architectures}
+		\cite{sanz-2009-systems-models-and-self-awareness-towards-architectural-models-of-consciousness}
 	\section{bio-inspired self-awareness theories}
 		\subsection{Damasio’s model}
 			\paragraph{autobiographical memories (AMs)} Neuroscientists such as Damasio \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[28] have provided evidence that neural patterns in the oldest parts of the human brain are organized to process and combine proprioceptive and exteroceptive sensorial information according to hierarchical neural layouts culminating into so-called \emph{autobiographical memories (AMs)}. 
@@ -646,7 +690,10 @@
 		i.e., that learning process should be capable of representing a
 		function of generalized error over the generalized state space
 		as a book page model.
-		
+	
+	\section{SA in computational context} In a computational context, self-awareness (SA) is a capability of an autonomous system to describe the acquired experience about itself and its surrounding environment with appropriate models and correlate them incrementally with the currently perceived situation to expand its knowledge continuously.
+	
+	\section{Definition from  sensor data and signal processing perspective}: An artificial agent is considered self-aware if it can \textbf{dynamically observe itself} and \textbf{its surrounding environment} through different \textbf{proprioceptive} and \textbf{exteroceptive} sensors and \textbf{learn} and \textbf{maintain a contextual representation} by processing the observed multi-sensorial data. 
 		
 	
 	

@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -14,6 +14,18 @@ Raja Chatila, Erwan Renaudo, Mihai Andries, Ricardo Chavez-Garcia, Pierre
 \newblock Toward self-aware robots.
 \newblock 08 2018.
 
+\bibitem[Chella et~al.(2020)Chella, Pipitone, Morin, and
+  Racy]{chella-2020-developing-self-awareness-in-robots-via-inner-speech}
+Antonio Chella, Arianna Pipitone, Alain Morin, and Famira Racy.
+\newblock Developing self-awareness in robots via inner speech.
+\newblock In \emph{Frontiers in Robotics and AI}, 2020.
+
+\bibitem[Kwiatkowski and
+  Lipson(2019)]{kwiatkowski-2019-task-agnostic-self-modeling-machines}
+Robert Kwiatkowski and Hod Lipson.
+\newblock Task-agnostic self-modeling machines.
+\newblock 4\penalty0 (26), 2019.
+
 \bibitem[Lewis et~al.(2011)Lewis, Chandra, Parsons, Robinson, Glette, Bahsoon,
   T{\o}rresen, and
   Yao]{lewis-2011-a-survey-of-self-awareness-and-its-application-in-computing-systems}
@@ -24,8 +36,34 @@ Peter~R. Lewis, Arjun Chandra, Shaun Parsons, Edward Robinson, Kyrre Glette,
   Systems, {SASOW} 2011, Ann Arbor, MI, USA, October 3-7, 2011, Workshops
   Proceedings}, pages 102--107. {IEEE} Computer Society, 2011.
 
+\bibitem[Minku et~al.(2016)Minku, Esterle, Nebehay, and
+  Chen]{minku-2016-knowledge-representation-and-modelling-structures-and-trade-offs}
+Leandro~L. Minku, Lukas Esterle, Georg Nebehay, and Renzhi Chen.
+\newblock Knowledge representation and modelling: Structures and trade-offs.
+\newblock In \emph{Self-aware Computing Systems}, 2016.
+
+\bibitem[Neisser(1997)]{neisser-1997-the-roots-of-self-knowledge-perceiving-self-it-and-thou}
+Ulric Neisser.
+\newblock The roots of self-knowledge: perceiving self, it, and thou.
+\newblock \emph{Annals of the New York Academy of Sciences}, 818:\penalty0
+  18--33, 1997.
+
 \bibitem[Regazzoni(2020)]{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}
 Carlo Regazzoni.
 \newblock 2020.
+
+\bibitem[Sanz et~al.(2009)Sanz, Hernández~Corbato, GÓMEZ, Bermejo, Rodriguez,
+  HERNANDO, and
+  Sánchez-Escribano]{sanz-2009-systems-models-and-self-awareness-towards-architectural-models-of-consciousness}
+Ricardo Sanz, Carlos Hernández~Corbato, JAIME GÓMEZ, J.~Bermejo, Manuel
+  Rodriguez, ADOLFO HERNANDO, and Mª~Guadalupe Sánchez-Escribano.
+\newblock Systems, models and self-awareness: Towards architectural models of
+  consciousness.
+\newblock \emph{International Journal of Machine Consciousness}, 01, 12 2009.
+
+\bibitem[Van~Overschelde(2008)]{overschelde-2008-metacognition-knowing-about-knowing}
+Jim Van~Overschelde.
+\newblock \emph{Metacognition: Knowing about Knowing}, pages 47--72.
+\newblock 01 2008.
 
 \end{thebibliography}
