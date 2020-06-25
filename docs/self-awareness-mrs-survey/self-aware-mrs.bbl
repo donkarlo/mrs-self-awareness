@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -13,6 +13,18 @@ Andreas Agne, Markus Happe, Achim Löosch, Christian Plessl, and Marco
 \newblock 07 2016.
 \newblock ISBN 978-3-319-39674-3.
 \newblock \doi{10.1007/978-3-319-39675-0_8}.
+
+\bibitem[{Baydoun} et~al.(2019){Baydoun}, {Campo}, {Kanapram}, {Marcenaro}, and
+  {Regazzoni}]{baydoun-2020-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}
+M.~{Baydoun}, D.~{Campo}, D.~{Kanapram}, L.~{Marcenaro}, and C.~S. {Regazzoni}.
+\newblock Prediction of multi-target dynamics using discrete descriptors: an
+  interactive approach.
+\newblock In \emph{ICASSP 2019 - 2019 IEEE International Conference on
+  Acoustics, Speech and Signal Processing (ICASSP)}, pages 3342--3346, 2019.
+
+\bibitem[Carlo~Regazzoni(2020)]{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}
+Bernhard~Rinner Carlo~Regazzoni.
+\newblock 2020.
 
 \bibitem[Celentano and
   R{\"{o}}ning(2016)]{celentano-2016-multi-robot-systems-machine-machine-and-human-machine-interaction-and-their-modelling}
@@ -35,6 +47,33 @@ Ada Diaconescu, Kirstie Bellman, Lukas Esterle, Holger Giese, Sebastian Götz,
 \newblock ISBN 978-3-319-47472-4.
 \newblock \doi{10.1007/978-3-319-47474-8_7}.
 
+\bibitem[Gerasimou et~al.(2019)Gerasimou, Matragkas, and
+  Calinescu]{gerasimou-2019-towards-systematic-engineering-of-collaborative-heterogeneous-robotic-systems}
+Simos Gerasimou, Nicholas Matragkas, and Radu Calinescu.
+\newblock Towards systematic engineering of collaborative heterogeneous robotic
+  systems.
+\newblock In \emph{Proceedings of the 2nd International Workshop on Robotics
+  Software Engineering, RoSE@ICSE 2019, Montreal, QC, Canada, May 27, 2019},
+  pages 25--28. {IEEE} / {ACM}, 2019.
+
+\bibitem[Kaiser et~al.(2020)Kaiser, Lesch, Rothe, Strohmeier, Spie{\ss},
+  Krupitzer, Montenegro, and
+  Kounev]{kaiser-2020-towards-self-aware-multirotor-formations}
+Dennis Kaiser, Veronika Lesch, Julian Rothe, Michael Strohmeier, Florian
+  Spie{\ss}, Christian Krupitzer, Sergio Montenegro, and Samuel Kounev.
+\newblock Towards self-aware multirotor formations.
+\newblock \emph{Comput.}, 9\penalty0 (1):\penalty0 7, 2020.
+
+\bibitem[Kanapram et~al.(2020)Kanapram, Patrone, Mar{\'{\i}}n{-}Plaza,
+  Marchese, Bodanese, Marcenaro, G{\'{o}}mez, and
+  Regazzoni]{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}
+Divya Kanapram, Fabio Patrone, Pablo Mar{\'{\i}}n{-}Plaza, Mario Marchese,
+  Eliane~L. Bodanese, Lucio Marcenaro, David~Mart{\'{\i}}n G{\'{o}}mez, and
+  Carlo~S. Regazzoni.
+\newblock Collective awareness for abnormality detection in connected
+  autonomous vehicles.
+\newblock \emph{{IEEE} Internet Things J.}, 2020.
+
 \bibitem[Kephart et~al.(2017)Kephart, Diaconescu, Giese, Robertsson,
   Abdelzaher, Lewis, Filieri, Esterle, and
   Frey]{kephart-2017-self-adaptation-in-collective-self-aware-computing-systems}
@@ -49,6 +88,14 @@ Jeffrey Kephart, Ada Diaconescu, Holger Giese, Anders Robertsson, Tarek
 Serge Kernbach.
 \newblock Awareness and self-awareness for multi-robot organisms.
 \newblock 11 2011.
+
+\bibitem[Kosak et~al.(2019)Kosak, Wanninger, Hoffmann, Ponsar, and
+  Reif]{kosak-2019-multipotent-systems-combining-planning-self-organization-and-reconfiguration-in-modular-robot-ensembles}
+Oliver Kosak, Constantin Wanninger, Alwin Hoffmann, Hella Ponsar, and Wolfgang
+  Reif.
+\newblock Multipotent systems: Combining planning, self-organization, and
+  reconfiguration in modular robot ensembles.
+\newblock \emph{Sensors}, 19\penalty0 (1):\penalty0 17, 2019.
 
 \bibitem[Landauer and
   Bellman(2015)]{landauer-2015-designing-cooperating-self-improving-systems}
@@ -66,6 +113,12 @@ Peter~R. Lewis, Arjun Chandra, Shaun Parsons, Edward Robinson, Kyrre Glette,
 \newblock In \emph{Fifth {IEEE} Conference on Self-Adaptive and Self-Organizing
   Systems, {SASOW} 2011, Ann Arbor, MI, USA, October 3-7, 2011, Workshops
   Proceedings}, pages 102--107. {IEEE} Computer Society, 2011.
+
+\bibitem[LUKAS~ESTERLE(2020)]{esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems}
+JOHN N. A.~BROWN LUKAS~ESTERLE.
+\newblock I think therefore you are: Models for interaction in collectives of
+  self-aware cyber-physical systems.
+\newblock \emph{{IEEE} Internet Things J.}, 2020.
 
 \bibitem[Mitchell(2005)]{mitchell-2005-self-awareness-and-control-in-decentralized-systems}
 Melanie Mitchell.
@@ -96,5 +149,17 @@ Mario Selvaggio, Stanislao Grazioso, Gennaro Notomista, and Fei Chen.
   robots.
 \newblock In \emph{2017 {IEEE} World Haptics Conference, {WHC} 2017, Munich,
   Germany, June 6-9, 2017}, pages 460--465. {IEEE}, 2017.
+
+\bibitem[Williams(2019{\natexlab{a}})]{williams-2019-a-model-for-human-artificial-collective-consciousness-part-1}
+Andy~E. Williams.
+\newblock A model for human, artificial \& collective consciousness (part i).
+\newblock \emph{Journal of Consciousness Exploration \& Research}, 10,
+  2019{\natexlab{a}}.
+
+\bibitem[Williams(2019{\natexlab{b}})]{williams-2019-a-model-for-human-artificial-collective-consciousness-part-2}
+Andy~E. Williams.
+\newblock A model for human, artificial \& collective consciousness (part i).
+\newblock \emph{Journal of Consciousness Exploration \& Research}, 10,
+  2019{\natexlab{b}}.
 
 \end{thebibliography}
