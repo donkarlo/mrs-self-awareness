@@ -1,9 +1,20 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bellman et~al.(2017)Bellman, Landauer, Nelson, Bencomo, G{\"o}tz,
+  Lewis, and Esterle]{bellman-2017-self-modeling-and-self-awareness}
+Kirstie~L. Bellman, Christopher Landauer, Phyllis Nelson, Nelly Bencomo,
+  Sebastian G{\"o}tz, Peter Lewis, and Lukas Esterle.
+\newblock \emph{Self-modeling and Self-awareness}, pages 279--304.
+\newblock Springer International Publishing, Cham, 2017.
+
+\bibitem[Carlo~Regazzoni(2020)]{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}
+Bernhard~Rinner Carlo~Regazzoni.
+\newblock 2020.
 
 \bibitem[Chatila et~al.(2018)Chatila, Renaudo, Andries, Chavez-Garcia,
   Luce-Vayrac, Gottstein, Alami, Clodic, Sandra, Girard, and
@@ -20,11 +31,48 @@ Antonio Chella, Arianna Pipitone, Alain Morin, and Famira Racy.
 \newblock Developing self-awareness in robots via inner speech.
 \newblock In \emph{Frontiers in Robotics and AI}, 2020.
 
+\bibitem[Damasio(1999)]{damasio-1999-the-feeling-of-what-happens-body-and-emotion-in-the-making-of-consciousness}
+Antonio Damasio.
+\newblock \emph{The feeling of what happens : body and emotion in the making of
+  consciousness}.
+\newblock Harcourt Brace, New York, 1999.
+\newblock ISBN 0156010755.
+
+\bibitem[Esterle et~al.(2017)Esterle, Bellman, Becker, Koziolek, Landauer, and
+  Lewis]{esterle-2017-assessing-self-awareness}
+Lukas Esterle, {Kirstie L.} Bellman, Steffen Becker, Anne Koziolek, Christopher
+  Landauer, and Peter Lewis.
+\newblock \emph{Assessing self-awareness}, pages 465--481.
+\newblock 2017.
+
+\bibitem[Herbst et~al.(2017)Herbst, Becker, Kounev, Koziolek, Maggio,
+  Milenkoski, and
+  Smirni]{herbst-2017-metrics-and-benchmarks-for-self-aware-computing-systems}
+Nikolas Herbst, Steffen Becker, Samuel Kounev, Heiko Koziolek, Martina Maggio,
+  Aleksandar Milenkoski, and Evgenia Smirni.
+\newblock \emph{Metrics and Benchmarks for Self-aware Computing Systems}.
+\newblock 2017.
+
 \bibitem[Kwiatkowski and
-  Lipson(2019)]{kwiatkowski-2019-task-agnostic-self-modeling-machines}
+  Lipson(2019{\natexlab{a}})]{kwiatkowski-2019-task-agnostic-self-modeling-machines}
 Robert Kwiatkowski and Hod Lipson.
 \newblock Task-agnostic self-modeling machines.
-\newblock 4\penalty0 (26), 2019.
+\newblock 4\penalty0 (26), 2019{\natexlab{a}}.
+
+\bibitem[Kwiatkowski and
+  Lipson(2019{\natexlab{b}})]{kwiatkowski-2019-zero-shot-learning-on-simulated-robots}
+Robert Kwiatkowski and Hod Lipson.
+\newblock Zero shot learning on simulated robots.
+\newblock \emph{ArXiv}, abs/1910.01994, 2019{\natexlab{b}}.
+
+\bibitem[Lewis et~al.(2017)Lewis, Bellman, Landauer, Esterle, Glette,
+  Diaconescu, and
+  Giese]{lewis-2017-towards-a-framework-for-the-levels-and-aspects-of-self-aware-computing-systems}
+Peter Lewis, Kirstie Bellman, Christopher Landauer, Lukas Esterle, Kyrre
+  Glette, Ada Diaconescu, and Holger Giese.
+\newblock \emph{Towards a Framework for the Levels and Aspects of Self-aware
+  Computing Systems}, pages 51--85.
+\newblock 01 2017.
 
 \bibitem[Lewis et~al.(2011)Lewis, Chandra, Parsons, Robinson, Glette, Bahsoon,
   T{\o}rresen, and
@@ -48,9 +96,13 @@ Ulric Neisser.
 \newblock \emph{Annals of the New York Academy of Sciences}, 818:\penalty0
   18--33, 1997.
 
-\bibitem[Regazzoni(2020)]{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}
-Carlo Regazzoni.
-\newblock 2020.
+\bibitem[Ravanbakhsh et~al.(2018)Ravanbakhsh, Baydoun, Campo, Marin,
+  Mart{\'{\i}}n, Marcenaro, and
+  Regazzoni]{ravanbakhsh-2018-hierarchy-of-gans-for-learning-embodied-self-awareness-model}
+Mahdyar Ravanbakhsh, Mohamad Baydoun, Damian Campo, Pablo Marin, David
+  Mart{\'{\i}}n, Lucio Marcenaro, and Carlo~S. Regazzoni.
+\newblock Hierarchy of gans for learning embodied self-awareness model.
+\newblock 2018.
 
 \bibitem[Sanz et~al.(2009)Sanz, Hernández~Corbato, GÓMEZ, Bermejo, Rodriguez,
   HERNANDO, and

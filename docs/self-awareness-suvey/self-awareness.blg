@@ -3,70 +3,76 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: self-awareness.aux
 The style file: plainnat.bst
 Database file #1: /media/donkarlo/Elements/projs/research/refs.bib
-I was expecting a `,' or a `}'---line 189 of file /media/donkarlo/Elements/projs/research/refs.bib
+I was expecting a `,' or a `}'---line 306 of file /media/donkarlo/Elements/projs/research/refs.bib
  :  
  :  pages = {},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 204 of file /media/donkarlo/Elements/projs/research/refs.bib
+I was expecting a `,' or a `}'---line 321 of file /media/donkarlo/Elements/projs/research/refs.bib
  :  
  :  title = {Multi-sensorial generative and descriptive self-awareness models for autonomous systems },
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1731 of file /media/donkarlo/Elements/projs/research/refs.bib
+I was expecting a `,' or a `}'---line 1848 of file /media/donkarlo/Elements/projs/research/refs.bib
  :  
  :  pages = "747--756",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Unbalanced braces---line 2036 of file /media/donkarlo/Elements/projs/research/refs.bib
+Unbalanced braces---line 2153 of file /media/donkarlo/Elements/projs/research/refs.bib
  : 
  : }
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--empty journal in chatila-2018-toward-self-aware-robots
-Warning--empty journal in kwiatkowski-2019-task-agnostic-self-modeling-machines
 Warning--empty title in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
 Warning--empty booktitle in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+Warning--empty journal in chatila-2018-toward-self-aware-robots
+Warning--empty publisher in esterle-2017-assessing-self-awareness
+Warning--can't use both author and editor fields in herbst-2017-metrics-and-benchmarks-for-self-aware-computing-systems
+Warning--empty chapter and pages in herbst-2017-metrics-and-benchmarks-for-self-aware-computing-systems
+Warning--empty publisher in herbst-2017-metrics-and-benchmarks-for-self-aware-computing-systems
+Warning--empty journal in kwiatkowski-2019-task-agnostic-self-modeling-machines
+Warning--empty publisher in lewis-2017-towards-a-framework-for-the-levels-and-aspects-of-self-aware-computing-systems
+Warning--empty journal in ravanbakhsh-2018-hierarchy-of-gans-for-learning-embodied-self-awareness-model
 Warning--empty publisher in overschelde-2008-metacognition-knowing-about-knowing
-You've used 9 entries,
+You've used 16 entries,
             2773 wiz_defined-function locations,
-            640 strings with 7030 characters,
-and the built_in function-call counts, 4817 in all, are:
-= -- 381
-> -- 372
-< -- 6
-+ -- 126
-- -- 117
-* -- 401
-:= -- 755
-add.period$ -- 27
-call.type$ -- 9
-change.case$ -- 64
-chr.to.int$ -- 9
-cite$ -- 23
-duplicate$ -- 210
-empty$ -- 350
-format.name$ -- 128
-if$ -- 995
-int.to.chr$ -- 1
+            675 strings with 8820 characters,
+and the built_in function-call counts, 9031 in all, are:
+= -- 712
+> -- 724
+< -- 11
++ -- 245
+- -- 228
+* -- 775
+:= -- 1413
+add.period$ -- 49
+call.type$ -- 16
+change.case$ -- 117
+chr.to.int$ -- 15
+cite$ -- 43
+duplicate$ -- 382
+empty$ -- 623
+format.name$ -- 248
+if$ -- 1864
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 52
-num.names$ -- 36
-pop$ -- 156
+missing$ -- 22
+newline$ -- 88
+num.names$ -- 64
+pop$ -- 300
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 108
 quote$ -- 0
-skip$ -- 167
+skip$ -- 306
 stack$ -- 0
-substring$ -- 85
-swap$ -- 29
-text.length$ -- 2
+substring$ -- 183
+swap$ -- 64
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 94
-warning$ -- 5
-while$ -- 33
+type$ -- 146
+warning$ -- 11
+while$ -- 62
 width$ -- 0
-write$ -- 115
+write$ -- 203
 (There were 4 error messages)

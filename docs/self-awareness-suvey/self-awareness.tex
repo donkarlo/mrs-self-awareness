@@ -27,10 +27,13 @@
 	\author{Mohammad Rahmani}
 	\date{}
 	\maketitle
-	
+	Upcoming IEEE proceedings
+	\url{https://proceedingsoftheieee.ieee.org/view-recent-issues/july-2020/}
 	\section{Topics}
 		\subsection{Self-modeling}
 			\citet{bellman-2017-self-modeling-and-self-awareness}
+			\citet{kwiatkowski-2019-zero-shot-learning-on-simulated-robots}	
+			\citet{kwiatkowski-2019-task-agnostic-self-modeling-machines}
 		\subsection{Knowledge representation and modeling structures and Trade-offs}
 		\cite{minku-2016-knowledge-representation-and-modelling-structures-and-trade-offs}
 		\subsection{Self-awareness and inner speech}
@@ -49,7 +52,12 @@
 		\citet{esterle-2017-assessing-self-awareness}
 	\section{Definitions}
 		\paragraph{Self-awareness}
-		\textbf{Literal definition} implies that Self-awareness must first rely on perception of self as different from the environment and from other agents \cite{chatila-2018-toward-self-aware-robots}.
+		\textbf{Literal definitions}
+		 \begin{itemize}
+		 	\item implies that Self-awareness must first rely on perception of self as different from the environment and from other agents \cite{chatila-2018-toward-self-aware-robots}.
+		 	\item Self-awareness models make it possible for an agent to evaluate whether faced situations at a given time correspond to
+		 	previous experiences \cite{ravanbakhsh-2018-hierarchy-of-gans-for-learning-embodied-self-awareness-model}.
+		 \end{itemize}
 		
 		\paragraph{General definition} The capacity to become the object of one’s \textbf{own attention}, which arises when an agent focuses \textbf{not only} on the \textbf{external environment} but also on the \textbf{internal milieu}. The agent becomes a \textbf{reflective observer}, \textbf{processing self-information.} It becomes \textbf{aware} that it is \textbf{awake} and actually experiencing \textbf{specific mental events}, \textbf{emitting behaviors}, and \textbf{possessing unique characteristics} \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[1].
 		
@@ -104,10 +112,7 @@
 					encapsulate knowledge of causality such as “when action a is taken in state s, this
 					leads to state t.” Markovian approaches may be effective choices for modeling state-
 					based interaction awareness.
-					\paragraph{} Finally, the interactions need not be external. Causality of internal processes may
-					also be modeled in meta-reflective processes. For example, a system might model
-					the behavior of one of its own decision-making processes, when other parts of the
-					system are either operational or not. In the former case, the system may learn a model
+					\paragraph{} Finally, the interactions need not be external. Causality of internal processes may also be modeled in meta-reflective processes. For example, a system might model the behavior of one of its own decision-making processes, when other parts of the system are either operational or not. In the former case, the system may learn a model
 					of how decision-making degrades (due to more stringent resource constraints), when
 					load elsewhere is high. Such models of internal causality may then be used to provide
 					adaptive internal re-architecting, or perhaps more effective scheduling of tasks.
@@ -179,7 +184,7 @@
 	\section{Computing architectures}
 		\cite{sanz-2009-systems-models-and-self-awareness-towards-architectural-models-of-consciousness}
 	\section{bio-inspired self-awareness theories}
-		\subsection{Damasio’s model}
+		\subsection{Damasio’s Model} \url{https://en.wikipedia.org/wiki/Damasio\%27s_theory_of_consciousness} and \citet{damasio-1999-the-feeling-of-what-happens-body-and-emotion-in-the-making-of-consciousness}
 			\paragraph{autobiographical memories (AMs)} Neuroscientists such as Damasio \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[28] have provided evidence that neural patterns in the oldest parts of the human brain are organized to process and combine proprioceptive and exteroceptive sensorial information according to hierarchical neural layouts culminating into so-called \emph{autobiographical memories (AMs)}. 
 			\\
 			AMs can constitute a sort of database for memorizing models of \textbf{episodes} that the agent has learned from previous experiences \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[5]. 
@@ -241,25 +246,14 @@
 			\end{figure*}
 			
 			\paragraph{Autobiographical self} Neuroscience observations show that the parts of the human
-			brain storing AMs are linked and can exchange neural signals
-			with other parts of the brain known to be activated within conscious inference processes [33]. The role of such neural maps
-			is to analyze—at different hierarchical levels—proprioceptive
-			and exteroceptive sensorial data originating from the current
-			agent’s experiences. The process of \emph{recalling} and \emph{comparing
-			multi-level AMs}\emph{ with respect to current experiences} is an
-		\emph{integral capability} of self-awareness related to inference and
-			anomaly detection, which is defined by Damasio as \textbf{autobiographical self} (AS).
+			brain storing AMs are linked and can exchange neural signals with other parts of the brain known to be activated within conscious inference processes [33]. The role of such neural maps is to analyze—at different hierarchical levels—proprioceptive and exteroceptive sensorial data originating from the current agent’s experiences. The process of \emph{recalling} and \emph{comparing multi-level AMs}\emph{ with respect to current experiences} is an \emph{integral capability} of self-awareness related to inference and anomaly detection, which is defined by Damasio as \textbf{autobiographical self} (AS). 
 			\paragraph{Application of AS}The AS allows an agent to evaluate whether the current experience matches any episode stored in the AM.  Moreover, the AS must provide inference processes to interface with other
 			parts of the agent’s brain (e.g., blocks dedicated to agent’s
 			resource planning and control of actuators) to maintain a
 			dynamic stability condition, i.e., homeostasis \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[34]. 
 			
-			In a SA model, the \underline{inference capability} implies that activated AMs’ dispositional units and currently experienced data elaborated by early neural maps can be managed by the AS inference
-			process to perform, for example, predictions on the agent’s
-			future states. Based on the temporal-causal organization of
-			the available episodes stored in the AM, the AS is able to
-			predict future states at multiple abstraction levels by using
-			generative models that represent possible alternative realizations of episodes already experienced adapted to currently observed data. As multiple episodes are stored in the AM, the AS inference processes need to identify models that better match the current experience, which requires the dispositional units’ representation in a SA model to inherently provide a discriminative property to assess current data characteristics.
+			In a SA model, the \underline{inference capability} implies that activated AMs’ dispositional units and currently experienced data elaborated by early neural maps can be managed by the AS inference process to perform, for example, predictions on the agent’s future states. Based on the temporal-causal organization of the available episodes stored in the AM, the AS is able to
+			predict future states at multiple abstraction levels by using generative models that represent possible alternative realizations of episodes already experienced adapted to currently observed data. As multiple episodes are stored in the AM, the AS inference processes need to identify models that better match the current experience, which requires the dispositional units’ representation in a SA model to inherently provide a discriminative property to assess current data characteristics.
 			
 			
 			\paragraph{in AI} An artificial AS is also required to determine the difference
@@ -269,76 +263,31 @@
 			\begin{figure*}
 				\centering
 				\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-4.png}
-				\caption{Fig. 4: Autobiographical memory (AM) and autobiographical
-					self (AS) as core components of a self-aware agent founded
-					on Damasio’s model. The core-self and the proto-self process
-					exteroceptive and proprioceptive information and store them
-					as dispositional units in the AM. The AS is able to perform
-					inference and anomaly detection based on the stored episodes.
+				\caption{Fig. 4: Autobiographical memory (AM) and autobiographical self (AS) as core components of a self-aware agent founded on Damasio’s model. The core-self and the proto-self process exteroceptive and proprioceptive information and store them as dispositional units in the AM. The AS is able to perform inference and anomaly detection based on the stored episodes.
 				}
 				\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-4.png}
 			\end{figure*}
 			
-			In order to assess the matching degree between
-			predictions derived from the dispositional units of the set of
-			potentially applicable episodes and the current observations,
-			the SA agent must apply a computable metric invariant to the
-			sensor modality. In this case, the agent should be aware that an
-			abnormality, i.e., a non-stationary condition never experienced
-			before, is currently present. Damasio does not address which
-			specific computational neural characteristic included in the
-			neural implementation is able to realize such computational
-			behavior. He only suggests that such matching and prediction
-			inference capabilities can be performed by the AS at different
-			abstraction and temporal levels and so enabling an efficient
-			selection of the hierarchical and dispositional representation
-			of AMs episodes).
-			\paragraph{Rise of emotions} It is worth mentioning that for natural agents, Damasio
-			suggests that the integrated SA system composed by AM and
-			AS can also be used as a possible explanation of higher-level
-			human regulatory psychological phenomena such as emotions
-			and feelings [35]. Emotions and feelings can be considered
-			as emergent results of evaluating current experiences based
-			on multi-level hierarchical AMs by means of the AS [25].
-			For example, fear can emerge from the capability of detecting
-			abnormalities, recognizing that the current experience does not
-			match with past AMs, or it matches with AMs that describe
-			dangerous episodes. Damasio’s model implicitly implies that
-			AS outcomes enable an agent to incrementally update in-
-			ternal AM models by coding abnormal experiences into new
-			models as well as to define a SA system that derives inferences
-			invariant to the involved sensor modalities.
+			In order to assess the matching degree between predictions derived from the dispositional units of the set of potentially applicable episodes and the current observations, the SA agent must apply a computable metric invariant to the sensor modality. In this case, the agent should be aware that an
+			abnormality, i.e., a non-stationary condition never experienced before, is currently present. Damasio does not address which specific computational neural characteristic included in the
+			neural implementation is able to realize such computational behavior. He only suggests that such matching and prediction inference capabilities can be performed by the AS at different
+			abstraction and temporal levels and so enabling an efficient selection of the hierarchical and dispositional representation of AMs episodes).
+			\paragraph{Rise of emotions} It is worth mentioning that for natural agents, Damasio suggests that the integrated SA system composed by AM and AS can also be used as a possible explanation of higher-level human regulatory psychological phenomena such as emotions
+			and feelings [35]. Emotions and feelings can be considered as emergent results of evaluating current experiences based on multi-level hierarchical AMs by means of the AS [25].
+			For example, fear can emerge from the capability of detecting abnormalities, recognizing that the current experience does not match with past AMs, or it matches with AMs that describe
+			dangerous episodes. Damasio’s model implicitly implies that AS outcomes enable an agent to incrementally update internal AM models by coding abnormal experiences into new models as well as to define a SA system that derives inferences invariant to the involved sensor modalities.
 			
 			
 		\subsection{Haykin’s model}
-		
-		In comparison with Damasio’s work, Haykin proposes a
-		computational framework of neuroscience observations from
-		an engineering perspective referred to as \textbf{Cognitive Dynamic
-		Systems (CDS)} [36]. The proposed CDS model is based on the
-		interactions that a \emph{Cognitive Controller} (CC) part of a CDS has
-		to maintain at multiple levels of abstractions with a \emph{Cognitive Perceptor(CP)}. 
-		
-		The CP processes exteroceptive information
-		coming from the environment at different hierarchical levels
-		and can be seen as a hierarchical probabilistic filter, generating environment descriptions at different abstraction levels.
+		In comparison with Damasio’s work, Haykin proposes a computational framework of neuroscience observations from an engineering perspective referred to as \textbf{Cognitive Dynamic
+		Systems (CDS)} [36]. The proposed CDS model is based on the interactions that a \emph{Cognitive Controller} (CC) part of a CDS has to maintain at multiple levels of abstractions with a \emph{Cognitive Perceptor(CP)}.  The CP processes exteroceptive information coming from the environment at different hierarchical levels and can be seen as a hierarchical probabilistic filter, generating environment descriptions at different abstraction levels.
 		\\
-		Beyond providing information to higher levels, such a filter
-		generates hierarchical feedback information to the CC, which
-		in turn computes commands to actuators that are characterized
-		by uncertainty. The CC block of Haykin’s model is described
-		as a top-down structure generating outputs towards lower
-		levels. \emph{At the bottom layer}, it directly generates outputs for
+		Beyond providing information to higher levels, such a filter generates hierarchical feedback information to the CC, which in turn computes commands to actuators that are characterized
+		by uncertainty. The CC block of Haykin’s model is described as a top-down structure generating outputs towards lower levels. \emph{At the bottom layer}, it directly generates outputs for
 		the \emph{actuators}.
 		\\
-		The \emph{Probabilistic Reasoning Machine} (PRM), introduced
-		in a joint paper with J. Fuster [37], organizes probabilistic
-		information coming from the CP, i.e., percepts and errors
-		(prediction and update processes), together with information
-		coming from the CC, i.e., planned actions with its related
-		uncertainty. Such an organization is performed over time.
-		As can be seen in Fig. 5, Haykin’s model does \emph{not directly
-		employ proprioceptive} sensory data but uses internal strategies
+		The \emph{Probabilistic Reasoning Machine} (PRM), introduced in a joint paper with J. Fuster [37], organizes probabilistic information coming from the CP, i.e., percepts and errors (prediction and update processes), together with information coming from the CC, i.e., planned actions with its related
+		uncertainty. Such an organization is performed over time. As can be seen in Fig. 5, Haykin’s model does \emph{not directly employ proprioceptive} sensory data but uses internal strategies
 		to generate commands towards actuators.
 		\begin{figure*}
 			\centering
@@ -349,36 +298,15 @@
 		\end{figure*}
 		The \textbf{main goal} of the PRM is to maintain a meta-level representation of the \emph{perception-action} cycle based on switching and adapting the behavior of CP and CC.
 		
-		\paragraph{The relation between Haykin and Damasio}As the control strategies embedded in the CP are hypothesized to maintain homeostasis, i.e., a dynamic equilibrium between the agent’s state and the changes in the environment, the PRM is contributing
-		to the continuous regulation of agents’ processes by providing
-		switching suggestions to CP and CC. Those suggestions are
-		implicitly based on the knowledge that an agent must have
-		been learned from experiences, and it is represented within
-		the PRM. \textbf{In this sense, the PRM block is strictly related to
-		Damasio’s SA model}, as it has to process representations of
-		actions and percepts organized in a \textbf{temporal-causal} order, and
-		the \emph{PRM block can be related to AM and AS as SA} model
-		capabilities.
-		\paragraph{} The PRM elementary representation requires organizing
-		perception and actions into data structures capturing causal
-		and temporal interactions between the agent’s actions and
-		percepts originated from the environment. Dispositional information units, as described by Damasio, also represent such
-		interactions but are different because the state of the agent
-		is directly observed by itself. This can be considered either
-		as feedback for the SA agent to evaluate the outcome of
-		commands it has sent to actuators and lower-level blocks or
-		as a multi-sensor source of proprioceptive signals representing
-		the agent state to itself. This concept is exploited in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} SA
-		model (depicted in Fig. 10). If this second view is taken,
-		a modified PRM can be considered as a structure where
-		appropriately modified dispositional units are processed based
-		on hierarchical filters that work on proprioceptive feedback
-		and in a bottom-up way also in the CC.
-		\paragraph{} In Haykin’s approach, the \emph{focus is on control} instead of SA.
-		Therefore, the PRM is designed to make a CDS capable of
-		using interactive behavioral rules to switch among different
-		perceptions and action modalities adaptively. Such inferences
-		can drive actions that the agent’s sensors and actuators should
+		\paragraph{The relation between Haykin and Damasio}As the control strategies embedded in the CP are hypothesized to maintain homeostasis, i.e., a dynamic equilibrium between the agent’s state and the changes in the environment, the PRM is contributing to the continuous regulation of agents’ processes by providing switching suggestions to CP and CC. Those suggestions are implicitly based on the knowledge that an agent must have been learned from experiences, and it is represented within
+		the PRM. \textbf{In this sense, the PRM block is strictly related to Damasio’s SA model}, as it has to process representations of actions and percepts organized in a \textbf{temporal-causal} order, and
+		the \emph{PRM block can be related to AM and AS as SA} model capabilities.
+		\paragraph{} The PRM elementary representation requires organizing perception and actions into data structures capturing causal and temporal interactions between the agent’s actions and
+		percepts originated from the environment. Dispositional information units, as described by Damasio, also represent such interactions but are different because the state of the agent
+		is directly observed by itself. This can be considered either as feedback for the SA agent to evaluate the outcome of commands it has sent to actuators and lower-level blocks or as a multi-sensor source of proprioceptive signals representing the agent state to itself. This concept is exploited in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} SA model (depicted in Fig. 10). If this second view is taken, a modified PRM can be considered as a structure where appropriately modified dispositional units are processed based
+		on hierarchical filters that work on proprioceptive feedback and in a bottom-up way also in the CC.
+		\paragraph{} In Haykin’s approach, the \emph{focus is on control} instead of SA. Therefore, the PRM is designed to make a CDS capable of using interactive behavioral rules to switch among different
+		perceptions and action modalities adaptively. Such inferences can drive actions that the agent’s sensors and actuators should
 		accomplish anticipatorily by activating available models in
 		the PRM memory when it performs a given experience. This
 		allows the CDS of an attention capability towards preferred
@@ -690,6 +618,8 @@
 		i.e., that learning process should be capable of representing a
 		function of generalized error over the generalized state space
 		as a book page model.
+		
+		\section{}
 	
 	\section{SA in computational context} In a computational context, self-awareness (SA) is a capability of an autonomous system to describe the acquired experience about itself and its surrounding environment with appropriate models and correlate them incrementally with the currently perceived situation to expand its knowledge continuously.
 	
