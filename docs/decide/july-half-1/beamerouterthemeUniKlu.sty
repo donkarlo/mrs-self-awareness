@@ -1,0 +1,35 @@
+\mode<presentation>
+
+
+% Frame title
+\defbeamertemplate*{frametitle}{UniKlu}[1][]
+{
+\vskip1em%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
+  \begin{tikzpicture}
+%  \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);
+%  \fill[aaublue] (0,0) rectangle(2.95,1.2);
+%  \fill[aaudarkblue] (3.05,0) rectangle(\the\paperwidth,1.2);
+%   \ifx\insertframesubtitle\@empty%
+      {\node[anchor=west, black,font=\huge] at (3.2,0.61){\textbf{\insertframetitle}};}
+%      \else%
+%      {\node[anchor= west, black,font=\huge] at (3.2,0.81){\insertframetitle};%
+%       \node[anchor= west, black,font=\small] at (3.2,0.41){\insertframesubtitle};}%
+%      \fi
+  \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+
+\defbeamertemplate*{footline}{UniKlu}[1][]
+{
+	\begin{beamercolorbox}[wd=\paperwidth,ht=1em]{footline} 
+		\begin{tikzpicture}
+		\fill[aaublue] (0,0) rectangle(\the\paperwidth,0.4em);
+      	\node[anchor=west, white,font=\scriptsize] at (\the\paperwidth-2em,0){\insertframenumber};
+		\end{tikzpicture}
+	\end{beamercolorbox}
+}
+
+
+\mode<all>

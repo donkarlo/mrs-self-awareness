@@ -1,0 +1,504 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: /media/donkarlo/Elements/projs/research/refs.bib
+I was expecting a `,' or a `}'---line 457 of file /media/donkarlo/Elements/projs/research/refs.bib
+ :  
+ :  pages = {},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2002 of file /media/donkarlo/Elements/projs/research/refs.bib
+ :  
+ :  pages = "747--756",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Unbalanced braces---line 2307 of file /media/donkarlo/Elements/projs/research/refs.bib
+ : 
+ : }
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2633 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2637 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2637 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2637 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2643 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2643 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2643 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2643 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2643 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2647 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2647 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2647 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2647 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2647 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2647 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2647 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2651 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2651 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2651 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2651 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2657 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2657 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2657 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2657 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2657 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2661 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2661 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2661 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2661 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2661 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2661 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2661 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2661 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2701 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2701 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2701 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2701 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2701 of file biblatex.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Divya Kanapram, Pablo Marin-Plaza , Lucio Marcenaro , David Martin, Arturo de la Escalera , Carlo Regazzoni" for entry kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+while executing---line 2749 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 1 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+Name 2 in "G. Rizzolatti, L. Fadiga, V. Gallese, and L. Fogassi," has a comma at the end for entry rizzolatti-1996-premotor-cortex-and-the-recognition-of-motor-actions
+while executing---line 2749 of file biblatex.bst
+You've used 12 entries,
+            6268 wiz_defined-function locations,
+            1240 strings with 11142 characters,
+and the built_in function-call counts, 67162 in all, are:
+= -- 4807
+> -- 1115
+< -- 301
++ -- 1518
+- -- 389
+* -- 5096
+:= -- 7012
+add.period$ -- 0
+call.type$ -- 12
+change.case$ -- 127
+chr.to.int$ -- 42
+cite$ -- 22
+duplicate$ -- 6760
+empty$ -- 6455
+format.name$ -- 717
+if$ -- 13791
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 0
+newline$ -- 363
+num.names$ -- 479
+pop$ -- 3843
+preamble$ -- 1
+purify$ -- 184
+quote$ -- 0
+skip$ -- 1838
+stack$ -- 0
+substring$ -- 8780
+swap$ -- 1595
+text.length$ -- 305
+text.prefix$ -- 11
+top$ -- 1
+type$ -- 396
+warning$ -- 0
+while$ -- 826
+width$ -- 0
+write$ -- 352
+(There were 215 error messages)
