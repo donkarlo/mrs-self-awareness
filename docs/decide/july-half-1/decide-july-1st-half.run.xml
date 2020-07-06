@@ -44,33 +44,33 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>decide-july-1st-half.aux</file>
-      <file>decide-july-1st-half-blx.bib</file>
+      <file>decide-july-1st-half.bcf</file>
     </provides>
     <requires type="dynamic">
       <file>decide-july-1st-half.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
+      <file>apa.dbx</file>
       <file>blx-compat.def</file>
-      <file>blx-bibtex.def</file>
       <file>biblatex.def</file>
-      <file>numeric.bbx</file>
+      <file>apa.bbx</file>
       <file>standard.bbx</file>
-      <file>numeric.cbx</file>
+      <file>apa.cbx</file>
       <file>biblatex.cfg</file>
+      <file>english-apa.lbx</file>
       <file>english.lbx</file>
+      <file>american.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">
-    <generic>bibtex</generic>
+    <generic>biber</generic>
     <cmdline>
-      <binary>bibtex</binary>
-      <option>-min-crossrefs 2</option>
+      <binary>biber</binary>
       <infile>decide-july-1st-half</infile>
     </cmdline>
     <input>
-      <file>decide-july-1st-half.aux</file>
+      <file>decide-july-1st-half.bcf</file>
     </input>
     <output>
       <file>decide-july-1st-half.bbl</file>
@@ -79,14 +79,10 @@
       <file>decide-july-1st-half.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>decide-july-1st-half.aux</file>
-      <file>decide-july-1st-half-blx.bib</file>
+      <file>decide-july-1st-half.bcf</file>
     </requires>
     <requires type="editable">
-      <file>/media/donkarlo/Elements/projs/research/refs.bib</file>
-    </requires>
-    <requires type="static">
-      <file>biblatex.bst</file>
+      <file>refs.bib</file>
     </requires>
   </external>
 </requests>

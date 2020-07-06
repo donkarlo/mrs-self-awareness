@@ -3,72 +3,67 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: self-aware-mrs.aux
 The style file: plainnat.bst
 Database file #1: /media/donkarlo/Elements/projs/research/refs.bib
-I was expecting a `,' or a `}'---line 382 of file /media/donkarlo/Elements/projs/research/refs.bib
+I was expecting a `,' or a `}'---line 457 of file /media/donkarlo/Elements/projs/research/refs.bib
  :  
  :  pages = {},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 397 of file /media/donkarlo/Elements/projs/research/refs.bib
- :  
- :  title = {Multi-sensorial generative and descriptive self-awareness models for autonomous systems },
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1924 of file /media/donkarlo/Elements/projs/research/refs.bib
+I was expecting a `,' or a `}'---line 2002 of file /media/donkarlo/Elements/projs/research/refs.bib
  :  
  :  pages = "747--756",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Unbalanced braces---line 2229 of file /media/donkarlo/Elements/projs/research/refs.bib
+Unbalanced braces---line 2307 of file /media/donkarlo/Elements/projs/research/refs.bib
  : 
  : }
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--empty publisher in agne-2016-self-aware-compute-nodes
-Warning--empty title in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
-Warning--empty booktitle in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
 Warning--empty publisher in diaconescu-2017-architectures-for-collective-self-aware-computing-systems
 Warning--empty publisher in kephart-2017-self-adaptation-in-collective-self-aware-computing-systems
 Warning--empty journal in kernbach-2011-awareness-and-self-awareness-for-multi-robot-organisms
 Warning--empty booktitle in mitchell-2005-self-awareness-and-control-in-decentralized-systems
+Warning--empty booktitle in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+Warning--can't use both volume and number fields in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
 You've used 20 entries,
             2773 wiz_defined-function locations,
-            698 strings with 10518 characters,
-and the built_in function-call counts, 11997 in all, are:
-= -- 1019
-> -- 857
-< -- 20
-+ -- 290
-- -- 269
-* -- 973
-:= -- 1815
-add.period$ -- 68
+            702 strings with 10672 characters,
+and the built_in function-call counts, 12361 in all, are:
+= -- 1055
+> -- 886
+< -- 21
++ -- 299
+- -- 278
+* -- 1012
+:= -- 1861
+add.period$ -- 69
 call.type$ -- 20
-change.case$ -- 145
+change.case$ -- 149
 chr.to.int$ -- 19
 cite$ -- 47
-duplicate$ -- 527
-empty$ -- 855
-format.name$ -- 295
-if$ -- 2562
+duplicate$ -- 537
+empty$ -- 870
+format.name$ -- 304
+if$ -- 2646
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 23
-newline$ -- 112
+newline$ -- 113
 num.names$ -- 82
-pop$ -- 338
+pop$ -- 339
 preamble$ -- 1
-purify$ -- 129
+purify$ -- 132
 quote$ -- 0
-skip$ -- 454
+skip$ -- 471
 stack$ -- 0
-substring$ -- 365
-swap$ -- 129
-text.length$ -- 11
+substring$ -- 396
+swap$ -- 140
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 205
 warning$ -- 7
-while$ -- 89
+while$ -- 91
 width$ -- 0
-write$ -- 268
-(There were 4 error messages)
+write$ -- 272
+(There were 3 error messages)

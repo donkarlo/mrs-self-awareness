@@ -22,10 +22,6 @@ M.~{Baydoun}, D.~{Campo}, D.~{Kanapram}, L.~{Marcenaro}, and C.~S. {Regazzoni}.
 \newblock In \emph{ICASSP 2019 - 2019 IEEE International Conference on
   Acoustics, Speech and Signal Processing (ICASSP)}, pages 3342--3346, 2019.
 
-\bibitem[Carlo~Regazzoni(2020)]{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}
-Bernhard~Rinner Carlo~Regazzoni.
-\newblock 2020.
-
 \bibitem[Celentano and
   R{\"{o}}ning(2016)]{celentano-2016-multi-robot-systems-machine-machine-and-human-machine-interaction-and-their-modelling}
 Ulrico Celentano and Juha R{\"{o}}ning.
@@ -130,6 +126,13 @@ Melanie Mitchell.
 Jorge~Pe{\~n}a Queralta and Tomi Westerlund.
 \newblock Blockchain-powered collaboration in heterogeneous swarms of robots.
 \newblock \emph{arXiv: Cryptography and Security}, 2019.
+
+\bibitem[{Regazzoni} et~al.(2020){Regazzoni}, {Marcenaro}, {Campo}, and
+  {Rinner}]{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}
+C.~S. {Regazzoni}, L.~{Marcenaro}, D.~{Campo}, and B.~{Rinner}.
+\newblock Multisensorial generative and descriptive self-awareness models for
+  autonomous systems.
+\newblock volume 108, pages 987--1010, 2020.
 
 \bibitem[{Schmickl} et~al.(2011){Schmickl}, {Thenius}, {Moslinger}, {Timmis},
   {Tyrrell}, {Read}, {Hilder}, {Halloy}, {Campo}, {Stefanini}, {Manfredi},

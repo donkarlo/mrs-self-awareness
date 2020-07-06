@@ -1,0 +1,4 @@
+-          Headline “First plans for the PhD”
+-          Study the concept of self-awareness, in particular collective SA
+-          Investigate interaction among IAs (what and when to communicate and how to integrate received data in model creation)
+-          Deploy and evaluate concepts in multi-robot system
