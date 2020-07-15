@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.17)  25 JUN 2020 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.17)  13 JUL 2020 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1056,9 +1056,30 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count290
 
+
+Package natbib Warning: Citation `bellman-2017-self-modeling-and-self-awareness
+' on page 1 undefined on input line 34.
+
+
+Package natbib Warning: Citation `kwiatkowski-2019-zero-shot-learning-on-simula
+ted-robots' on page 1 undefined on input line 35.
+
+
+Package natbib Warning: Citation `kwiatkowski-2019-task-agnostic-self-modeling-
+machines' on page 1 undefined on input line 36.
+
+
 Overfull \hbox (6.03058pt too wide) in paragraph at lines 37--37
 []\OT1/cmr/bx/n/12 Knowledge rep-re-sen-ta-tion and mod-el-ing struc-tures and
  []
+
+
+Package natbib Warning: Citation `minku-2016-knowledge-representation-and-model
+ling-structures-and-trade-offs' on page 1 undefined on input line 38.
+
+
+Package natbib Warning: Citation `chella-2020-developing-self-awareness-in-robo
+ts-via-inner-speech' on page 1 undefined on input line 40.
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1067,250 +1088,646 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
 
+
+Package natbib Warning: Citation `kwiatkowski-2019-task-agnostic-self-modeling-
+machines' on page 1 undefined on input line 43.
+
+
 Overfull \hbox (11.57169pt too wide) in paragraph at lines 44--45
 \OT1/cmr/m/n/10 ness $\OT1/cmtt/m/n/10 https : / / en . wikipedia . org / wiki 
 / Artificial _ consciousness$\OT1/cmr/m/n/10 . Con-
  []
 
+
+Package natbib Warning: Citation `lewis-2011-a-survey-of-self-awareness-and-its
+-application-in-computing-systems' on page 1 undefined on input line 45.
+
+
+Package natbib Warning: Citation `herbst-2017-metrics-and-benchmarks-for-self-a
+ware-computing-systems' on page 1 undefined on input line 51.
+
+
+Package natbib Warning: Citation `esterle-2017-assessing-self-awareness' on pag
+e 1 undefined on input line 52.
+
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (9.77917pt too wide) in paragraph at lines 99--99
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `chatila-2018-toward-self-aware-robots' on pag
+e 2 undefined on input line 57.
+
+
+Package natbib Warning: Citation `ravanbakhsh-2018-hierarchy-of-gans-for-learni
+ng-embodied-self-awareness-model' on page 2 undefined on input line 58.
+
+
+Package natbib Warning: Citation `morin-2006-levels-of-consciousness-and-self-a
+wareness-a-comparison-and-integration-of-various-neurocognitive-views' on page 
+2 undefined on input line 61.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 2 undefined 
+on input line 63.
+
+
+Package natbib Warning: Citation `lewis-2011-a-survey-of-self-awareness-and-its
+-application-in-computing-systems' on page 2 undefined on input line 68.
+
+
+Package natbib Warning: Citation `lewis-2011-a-survey-of-self-awareness-and-its
+-application-in-computing-systems' on page 2 undefined on input line 71.
+
+
+Package natbib Warning: Citation `neisser-1997-the-roots-of-self-knowledge-perc
+eiving-self-it-and-thou' on page 2 undefined on input line 72.
+
+
+Package natbib Warning: Citation `lewis-2017-towards-a-framework-for-the-levels
+-and-aspects-of-self-aware-computing-systems' on page 2 undefined on input line
+ 72.
+
+[2]
+
+Package natbib Warning: Citation `lewis-2017-towards-a-framework-for-the-levels
+-and-aspects-of-self-aware-computing-systems' on page 3 undefined on input line
+ 95.
+
+
+Package natbib Warning: Citation `lewis-2017-towards-a-framework-for-the-levels
+-and-aspects-of-self-aware-computing-systems' on page 3 undefined on input line
+ 97.
+
+
+Overfull \hbox (9.77917pt too wide) in paragraph at lines 98--98
 []\OT1/cmr/bx/n/12 Aspects of Re-flec-tive and Meta-reflective Self-awareness 
  []
 
-[3] [4]
-Overfull \hbox (21.16739pt too wide) in paragraph at lines 149--151
-\OT1/cmr/m/n/10 zoni (2020)[12], Carlo Regaz-zoni (2020)[13], Carlo Regaz-zoni 
-(2020)[14], Carlo Regaz-
+[3]
+
+Package natbib Warning: Citation `lewis-2017-towards-a-framework-for-the-levels
+-and-aspects-of-self-aware-computing-systems' on page 4 undefined on input line
+ 124.
+
+
+Package natbib Warning: Citation `lewis-2011-a-survey-of-self-awareness-and-its
+-application-in-computing-systems' on page 4 undefined on input line 127.
+
+
+Package natbib Warning: Citation `overschelde-2008-metacognition-knowing-about-
+knowing' on page 4 undefined on input line 128.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 4 undefined 
+on input line 134.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 4 undefined 
+on input line 134.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 4 undefined 
+on input line 134.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 4 undefined 
+on input line 134.
+
+[4]
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 149.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 150.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 150.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 150.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 150.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 150.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 150.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 150.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 153.
+
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-1.png
+, id=22, 431.36156pt x 363.60844pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
+1.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-1
+.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-fig-1.png  used on input line 157.
+(pdftex.def)             Requested size: 241.49895pt x 203.56384pt.
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 5 undefined 
+on input line 158.
+
+[5 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial
+-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-1.
+png (PNG copy)>]
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 6 undefined 
+on input line 170.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 6 undefined 
+on input line 172.
+
+
+Package natbib Warning: Citation `kanapram-2019-dynamic-bayesian-approach-for-d
+ecision-making-in-ego-things' on page 6 undefined on input line 172.
+
+
+Package natbib Warning: Citation `kanapram-2019-self-awareness-in-intelligent-v
+ehicles-experience-based-abnormality-detection' on page 6 undefined on input li
+ne 172.
+
+
+Package natbib Warning: Citation `kanapram-2020-collective-awareness-for-abnorm
+ality-detection-in-connected-autonomous-vehicles' on page 6 undefined on input 
+line 172.
+
+
+Package natbib Warning: Citation `baydoun-2018-learning-switching-models-for-ab
+normality-detection-for-autonomous-driving' on page 6 undefined on input line 1
+72.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 6 undefined 
+on input line 173.
+
+
+Package natbib Warning: Citation `kanapram-2019-dynamic-bayesian-approach-for-d
+ecision-making-in-ego-things' on page 6 undefined on input line 173.
+
+[6]
+
+Package natbib Warning: Citation `simon-2010-kalman-filtering-with-state-constr
+aints-a-survey-of-linear-and-nonlinear-algorithms' on page 7 undefined on input
+ line 185.
+
+
+Package natbib Warning: Citation `gustafsson-2010-particle-filter-theory-and-pr
+actice-with-positioning-applications' on page 7 undefined on input line 186.
+
+
+Package natbib Warning: Citation `baydoun-2018-learning-switching-models-for-ab
+normality-detection-for-autonomous-driving' on page 7 undefined on input line 1
+89.
+
+
+Package natbib Warning: Citation `lourenzutti-2014-the-hellinger-distance-in-mu
+lticriteria-decision-making-an-illustration-to-the-topsis-and-todim-methods' on
+ page 7 undefined on input line 193.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 7 undefined 
+on input line 193.
+
+
+Package natbib Warning: Citation `kanapram-2019-self-awareness-in-intelligent-v
+ehicles-experience-based-abnormality-detection' on page 7 undefined on input li
+ne 193.
+
+
+Package natbib Warning: Citation `kanapram-2020-collective-awareness-for-abnorm
+ality-detection-in-connected-autonomous-vehicles' on page 7 undefined on input 
+line 193.
+
+
+Package natbib Warning: Citation `baydoun-2018-learning-switching-models-for-ab
+normality-detection-for-autonomous-driving' on page 7 undefined on input line 1
+94.
+
+
+Package natbib Warning: Citation `baydoun-2018-learning-switching-models-for-ab
+normality-detection-for-autonomous-driving' on page 7 undefined on input line 1
+98.
+
+
+Overfull \hbox (36.15363pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/10 po-si-tion in the rect-an-gu-lar court-yard of Genoa uni-ver-si
+ty and (x'=dx/dt,y'=dy/dt)
  []
 
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-1.p
-ng, id=22, 431.36156pt x 363.60844pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-1.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--1.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-1.png  used on input line 157.
-(pdftex.def)             Requested size: 241.49895pt x 203.56384pt.
-[5 </media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensori
-al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
-1.png (PNG copy)>]
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i
-.png, id=26, 874.89212pt x 626.05989pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-ta
-ble-i.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-tab
-le-i.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-table-i.png  used on input line 180.
+
+Overfull \hbox (5.05614pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 tion ac-cu-racy (this is what forms the dif-fer-ence be-tween Z
+(observation/what
+ []
+
+[7]
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.p
+ng, id=34, 874.89212pt x 626.05989pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-tabl
+e-i.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table
+-i.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-table-i.png  used on input line 212.
 (pdftex.def)             Requested size: 241.49895pt x 172.81181pt.
- [6 </media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-tab
-le-i.png>]
-Overfull \hbox (1.49698pt too wide) in paragraph at lines 187--188
+
+
+Package natbib Warning: Citation `sanz-2009-systems-models-and-self-awareness-t
+owards-architectural-models-of-consciousness' on page 8 undefined on input line
+ 217.
+
+
+Package natbib Warning: Citation `damasio-1999-the-feeling-of-what-happens-body
+-and-emotion-in-the-making-of-consciousness' on page 8 undefined on input line 
+219.
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 219--220
 $\OT1/cmtt/m/n/10 https : / / en . wikipedia . org / wiki / Damasio \ %27s _ th
 eory _ of _ consciousness$
  []
 
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-2.p
-ng, id=31, 421.575pt x 419.31656pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-2.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--2.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-2.png  used on input line 199.
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 8 undefined 
+on input line 220.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 8 undefined 
+on input line 222.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 8 undefined 
+on input line 225.
+
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-2.png
+, id=35, 421.575pt x 419.31656pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
+2.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-2
+.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-fig-2.png  used on input line 231.
 (pdftex.def)             Requested size: 241.49895pt x 240.20938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 []\OT1/cmr/m/n/10 Figure 3: regazzoni-2020-multi-sensorial-generative-and-descr
 iptive-self-
  []
 
+[8 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial
+-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-
+i.png>]
 
-Overfull \hbox (30.82848pt too wide) in paragraph at lines 188--203
- \OT1/cmr/bx/n/10 au-to-bi-o-graph-i-cal mem-o-ries (AMs)[] \OT1/cmr/m/n/10 Neu
--ro-sci-en-tists such as Dama-sio Carlo Regaz-
- []
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 9 undefined 
+on input line 240.
 
-[7] [8 </media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sen
-sorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-
-fig-2.png (PNG copy)>]
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-3.p
-ng, id=39, 417.81094pt x 441.14813pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-3.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--3.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-3.png  used on input line 243.
+[9 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial
+-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-2.
+png (PNG copy)>]
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-3.png
+, id=42, 417.81094pt x 441.14813pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
+3.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-3
+.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-fig-3.png  used on input line 266.
 (pdftex.def)             Requested size: 241.49895pt x 254.99101pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []\OT1/cmr/m/n/10 Figure 4: regazzoni-2020-multi-sensorial-generative-and-descr
 iptive-self-
  []
 
-[9] [10 </media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-se
-nsorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
--fig-3.png (PNG copy)>]
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-4.p
-ng, id=46, 268.00125pt x 395.22656pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-4.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--4.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-4.png  used on input line 265.
+[10] [11 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sen
+sorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-
+fig-3.png (PNG copy)>]
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 12 undefined
+ on input line 276.
+
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-4.png
+, id=49, 268.00125pt x 395.22656pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
+4.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-4
+.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-fig-4.png  used on input line 288.
 (pdftex.def)             Requested size: 241.49895pt x 356.14084pt.
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-5.p
-ng, id=47, 338.76563pt x 353.82187pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-5.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--5.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-5.png  used on input line 294.
+[12] [13 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sen
+sorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-
+fig-4.png (PNG copy)>]
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-5.png
+, id=57, 338.76563pt x 353.82187pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
+5.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-5
+.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-fig-5.png  used on input line 317.
 (pdftex.def)             Requested size: 241.49895pt x 252.24106pt.
- [11] [12 </media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-
-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-syste
-ms-fig-4.png (PNG copy)>] [13] [14 </media/donkarlo/Elements/projs/research/ass
-ets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-mo
-dels-for-autonomous-systems-fig-5.png (PNG copy)>]
-[15] [16]
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-6.p
-ng, id=67, 411.03563pt x 302.63063pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-6.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--6.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-6.png  used on input line 450.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 14 undefined
+ on input line 329.
+
+[14] [15 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sen
+sorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-
+fig-5.png (PNG copy)>]
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 16 undefined
+ on input line 342.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 16 undefined
+ on input line 366.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 16 undefined
+ on input line 370.
+
+[16] [17]
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 18 undefined
+ on input line 453.
+
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-6.png
+, id=70, 411.03563pt x 302.63063pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
+6.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-6
+.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-fig-6.png  used on input line 464.
 (pdftex.def)             Requested size: 241.49895pt x 177.80705pt.
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-7.p
-ng, id=68, 344.03531pt x 386.19281pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-7.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--7.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-7.png  used on input line 476.
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 18 undefined
+ on input line 465.
+
+[18]
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-7.png
+, id=74, 344.03531pt x 386.19281pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
+7.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-7
+.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-fig-7.png  used on input line 490.
 (pdftex.def)             Requested size: 241.49895pt x 271.09328pt.
- [17]
-Overfull \hbox (13.56116pt too wide) in paragraph at lines 481--481
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 19 undefined
+ on input line 491.
+
+
+Overfull \hbox (13.56116pt too wide) in paragraph at lines 495--495
 [] \OT1/cmr/bx/n/14.4 SIG-NAL REP-RE-SEN-TA-TION AND MODEL
  []
 
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i
-i.png, id=72, 685.8122pt x 386.94562pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-ta
-ble-ii.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-tab
-le-ii.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-table-ii.png  used on input line 497.
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 19 undefined
+ on input line 508.
+
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-table-ii.
+png, id=75, 685.8122pt x 386.94562pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-tabl
+e-ii.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table
+-ii.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-table-ii.png  used on input line 511.
 (pdftex.def)             Requested size: 241.49895pt x 136.2596pt.
-[18 </media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--6.png (PNG copy)>] [19 </media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-7.png (PNG copy)>]
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-8.p
-ng, id=80, 334.24875pt x 173.14688pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-8.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--8.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-8.png  used on input line 509.
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 19 undefined
+ on input line 512.
+
+[19 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-6
+.png (PNG copy)>] [20 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2
+020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autono
+mous-systems-fig-7.png (PNG copy)>]
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 21 undefined
+ on input line 516.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 21 undefined
+ on input line 516.
+
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-8.png
+, id=83, 334.24875pt x 173.14688pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
+8.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-8
+.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-fig-8.png  used on input line 523.
 (pdftex.def)             Requested size: 241.49895pt x 125.10422pt.
- [20 </media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-ta
-ble-ii.png (PNG copy)> </media/donkarlo/Elements/projs/research/assets/regazzon
-i-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-aut
-onomous-systems-fig-8.png (PNG copy)>]
-[21]
-</media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-
-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-9.p
-ng, id=88, 283.0575pt x 205.5178pt>
-File: /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-9.png Graphic file (type png)
-<use /media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensor
-ial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig
--9.png>
-Package pdftex.def Info: /media/donkarlo/Elements/projs/research/assets/regazzo
-ni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-au
-tonomous-systems-fig-9.png  used on input line 592.
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 21 undefined
+ on input line 529.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 21 undefined
+ on input line 529.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 21 undefined
+ on input line 532.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 21 undefined
+ on input line 536.
+
+[21 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table
+-ii.png (PNG copy)> </home/donkarlo/Dropbox/projs/research/assets/regazzoni-202
+0-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomo
+us-systems-fig-8.png (PNG copy)>]
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 22 undefined
+ on input line 567.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 22 undefined
+ on input line 570.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 22 undefined
+ on input line 586.
+
+[22]
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 23 undefined
+ on input line 594.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 23 undefined
+ on input line 599.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 23 undefined
+ on input line 600.
+
+</home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
+nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-9.png
+, id=91, 283.0575pt x 205.5178pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensori
+al-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-
+9.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-9
+.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
+-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
+nomous-systems-fig-9.png  used on input line 606.
 (pdftex.def)             Requested size: 241.49895pt x 175.3495pt.
- [22 </media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-senso
-rial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fi
-g-9.png (PNG copy)>] (./self-awareness.bbl [23]) [24] (./self-awareness.aux) ) 
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 23 undefined
+ on input line 615.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 23 undefined
+ on input line 615.
+
+
+Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
+-descriptive-self-awareness-models-for-autonomous-systems' on page 23 undefined
+ on input line 619.
+
+[23 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
+l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-9
+.png (PNG copy)>] (./self-awareness.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[24] (./self-awareness.aux) ) 
 Here is how much of TeX's memory you used:
- 14820 strings out of 492982
- 303546 string characters out of 6134896
- 326910 words of memory out of 5000000
- 18234 multiletter control sequences out of 15000+600000
+ 14785 strings out of 492982
+ 301611 string characters out of 6134896
+ 324712 words of memory out of 5000000
+ 18199 multiletter control sequences out of 15000+600000
  541974 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,43p,10382b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
-<
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb>
-Output written on self-awareness.pdf (24 pages, 1049122 bytes).
+ 41i,10n,43p,10382b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on self-awareness.pdf (24 pages, 1037819 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 128 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

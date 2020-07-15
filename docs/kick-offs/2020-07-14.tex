@@ -1,0 +1,154 @@
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{NES Kickoff meeting}
+\author{Mohammad Rahmani}
+\institute{DECIDE Graduate School}
+
+\begin{document}
+\begin{frame}
+	\maketitle
+\end{frame}
+
+
+\begin{frame}{General Research Studies}
+	General papers were reviewed in the following research areas:
+	\begin{itemize}
+		\item Main area: Semantic interaction and collective semantic-awareness in self-aware MRS
+			\begin{itemize}
+				\item \textbf{Self-awareness (SA)}: Temporal-causal inference from contextually couple internal and external sensory data of a robot
+				\item \textbf{Collective SA (CA)}: Temporal-causal inference while the internal sensory data of one robot is used as the external sensory data of another robot
+				\item \textbf{Semantic interaction in CA}: The aforementioned coupled data is clustered such that each class can be considered as a letter and the inference and model creation of future states must be done from composition of such letters.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{General SA Tasks}
+	\begin{itemize}
+		\item \textbf{Initialization}
+		\item \textbf{Memorization}
+		\item \textbf{Abnormality detection}
+		\item \textbf{Model creation}
+		\item \textbf{Decision making}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{General SA Tasks - Initialization}
+	Two possible types of initialization:
+	\begin{itemize}
+		\item Training DBNs/ Switching DBNs (in Collective SA) using human training data. Exemplary reviewed paper \fullcite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}
+	\end{itemize}
+	\textbf{Future plans}
+	\begin{itemize}
+		\item Checking for application of random walks for initialization and self-modeling.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{General SA Tasks - Anomaly detection - 1}
+	Based on the distance between observation and predicted state
+	\begin{itemize}
+		\item Predicting models (Reviewed papers)
+			\begin{itemize}
+				\item \textbf{Kalman Filtering (KF)} \fullcite{simon-2010-kalman-filtering-with-state-constraints-a-survey-of-linear-and-nonlinear-algorithms}
+				\item \textbf{Particle Filtering (PF)} \fullcite{gustafsson-2010-particle-filter-theory-and-practice-with-positioning-applications}
+				\item \textbf{Markov Jump Linear System (MJLS)} \fullcite{doucet-2001-particle-filters-for-state-estimation-of-jump-markov-linear-systems}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{General SA Tasks - Anomaly detection - 2}
+	\begin{itemize}
+		\item Predicting models (Read papers)
+		\begin{itemize}
+			\item \textbf{Markov Jump Particle Filter (MJPF)} First time appeared in: \fullcite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving} and was used in 
+			\begin{itemize}
+				\item Further exemplary papers \fullcite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+	Future Plans:
+	\begin{itemize}
+		\item Finding and studying more discrete-time dynamic models
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{General SA Tasks - Anomaly detection - 3}
+	Metric system to measure the distance between predictions and observations. Determines whether a new class/letter should be created. 
+	\begin{itemize}
+		\item \textbf{Hellinger} \fullcite{lourenzutti-2014-the-hellinger-distance-in-multicriteria-decision-making-an-illustration-to-the-topsis-and-todim-methods}
+	\end{itemize}
+	Future plans, other metrics
+	\begin{itemize}
+		\item Bhattacharya distance
+		\item JensenShannon divergence 
+		\item KullbackLeibler (KL) divergence 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Future plans: Memorization, Model creation and Inference}
+	\begin{itemize}
+		\item \textbf{Memorization}: Searching for more studies about different approaches in saving and retrieving predicting models.
+		\item \textbf{Model generation}: Searching more studies about existing biological and computational approaches of creating new models from large abnormalities (Model creation, one is introduced in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}). 
+		\item \textbf{Decision making}: Searching for more studies about different approaches of evolving an observation to a decision in a SA agent.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Collective SA(CA) applications}
+	Reviewed Papers:
+	\begin{itemize}
+		\item Agent collision avoidance  \fullcite{selvaggio-2017-towards-a-self-collision-aware-teleoperation-framework-for-compound-robots}
+		\item Traffic jam avoidance \fullcite{qing-2107-real-time-road-traffic-awareness-model-based-on-optimal-multi-channel-self-organized-time-division-multiple-access-algorithm}
+		\item Collective incident locating \fullcite{kosak-2019-multipotent-systems-combining-planning-self-organization-and-reconfiguration-in-modular-robot-ensembles}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Semantic CA - Discreeting the continuous state space}
+	For semantic segmentation of states (Building the letters), an unsupervised clustering method is needed (Reviewed papers)
+	\begin{itemize}
+		\item Growing Neural Gas (GNG) online unsupervised clustering  \fullcite{fiser-2013-growing-neural-gas-efficiently}
+		\item Self-organizing maps (SOM) \fullcite{kohonen-2001-self-organizing-maps}
+	\end{itemize}
+	Future plans
+	\begin{itemize}
+		\item Searching for new improvements in GNGs for online clustering 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{CA - Prediction and anomaly detection}
+	Discrete state prediction and anomaly detection
+	\begin{itemize}
+		\item \fullcite{baydoun-2020-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}
+		
+		\item \fullcite{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection}
+		
+		\item \fullcite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{CA - Future Plans}
+	
+	\begin{itemize}
+		\item More papers from different research groups are planned to be read in future. Example:  \fullcite{dutt-2016-self-awareness-in-cyber-physical-systems}
+		\fullcite{esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems}
+		\fullcite{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Future plan}
+	Reading about semantic implementation of semantic awareness in the following fields
+	\begin{itemize}
+		\item Reading previous studies which extend CA to heterogeneous robots 
+		\item Reading previous studies in modeling other agents' state transition matrix by dispatching semantic discreet composition of E/P states
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+	\printbibliography
+\end{frame}
+\end{document}

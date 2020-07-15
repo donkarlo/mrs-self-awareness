@@ -1,0 +1,890 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{baydoun-2020-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=3eaa8a8b4e169383f6d678229aef2a65}{%
+           family={{Baydoun}},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2421e0d11a15b8c2221cc115c796383}{%
+           family={{Campo}},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d1c9b5fdf38bc8242666bf1b186d6aec}{%
+           family={{Kanapram}},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=024fd81cb45ff53ccdc2a1e59503f481}{%
+           family={{Marcenaro}},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=356c92b305b559f34539cdae2a2b67c1}{%
+           family={{Regazzoni}},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e040f713c45d63a466456fd8d06747d}
+      \strng{fullhash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \strng{bibnamehash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \strng{authorbibnamehash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \strng{authornamehash}{0e040f713c45d63a466456fd8d06747d}
+      \strng{authorfullhash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Prediction of Multi-target Dynamics Using Discrete Descriptors: an Interactive Approach}
+      \field{year}{2019}
+    \endentry
+    \entry{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=3eaa8a8b4e169383f6d678229aef2a65}{%
+           family={{Baydoun}},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2421e0d11a15b8c2221cc115c796383}{%
+           family={{Campo}},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4f389eb0ea88db8eca968cec225ee49e}{%
+           family={{Sanguineti}},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=024fd81cb45ff53ccdc2a1e59503f481}{%
+           family={{Marcenaro}},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2b4e29d949e4b06b1604f23f600ea226}{%
+           family={{Cavallaro}},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9fefd44abbf607659b194d7d062eba23}{%
+           family={{Regazzoni}},
+           familyi={R\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e040f713c45d63a466456fd8d06747d}
+      \strng{fullhash}{6477ff0221819350beb1874715e0111d}
+      \strng{bibnamehash}{6477ff0221819350beb1874715e0111d}
+      \strng{authorbibnamehash}{6477ff0221819350beb1874715e0111d}
+      \strng{authornamehash}{0e040f713c45d63a466456fd8d06747d}
+      \strng{authorfullhash}{6477ff0221819350beb1874715e0111d}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Learning Switching Models for Abnormality Detection for Autonomous Driving}
+      \field{year}{2018}
+    \endentry
+    \entry{damasio-1999-the-feeling-of-what-happens-body-and-emotion-in-the-making-of-consciousness}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ca344f1d334b745a9c521b7e3bb9d78d}{%
+           family={Damasio},
+           familyi={D\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Harcourt Brace}%
+      }
+      \strng{namehash}{ca344f1d334b745a9c521b7e3bb9d78d}
+      \strng{fullhash}{ca344f1d334b745a9c521b7e3bb9d78d}
+      \strng{bibnamehash}{ca344f1d334b745a9c521b7e3bb9d78d}
+      \strng{authorbibnamehash}{ca344f1d334b745a9c521b7e3bb9d78d}
+      \strng{authornamehash}{ca344f1d334b745a9c521b7e3bb9d78d}
+      \strng{authorfullhash}{ca344f1d334b745a9c521b7e3bb9d78d}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0156010755}
+      \field{title}{The feeling of what happens : body and emotion in the making of consciousness}
+      \field{year}{1999}
+    \endentry
+    \entry{doucet-2001-particle-filters-for-state-estimation-of-jump-markov-linear-systems}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=0888a84d2c43aacdf453783c322b2db9}{%
+           family={Doucet},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9dfddfc6607a541f987c360790a36557}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={N.J.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=32a5afc1d54826a360e1ee1901077f95}{%
+           family={Krishnamurthy},
+           familyi={K\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6396edba2e5bbef185e62da70757e35}
+      \strng{fullhash}{94fac66157bfd18378ef4b9c1ef20ac2}
+      \strng{bibnamehash}{94fac66157bfd18378ef4b9c1ef20ac2}
+      \strng{authorbibnamehash}{94fac66157bfd18378ef4b9c1ef20ac2}
+      \strng{authornamehash}{d6396edba2e5bbef185e62da70757e35}
+      \strng{authorfullhash}{94fac66157bfd18378ef4b9c1ef20ac2}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Particle Filters for State Estimation of Jump Markov Linear Systems}
+      \field{year}{2001}
+    \endentry
+    \entry{dutt-2016-self-awareness-in-cyber-physical-systems}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=1195f3b8fe2d811569976e2ffd582f78}{%
+           family={{Dutt}},
+           familyi={D\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0ad848786104d6b573ac28cafcd04a43}{%
+           family={{TaheriNejad}},
+           familyi={T\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7536dea6fb8a86452960ebb53d702a42}
+      \strng{fullhash}{7536dea6fb8a86452960ebb53d702a42}
+      \strng{bibnamehash}{7536dea6fb8a86452960ebb53d702a42}
+      \strng{authorbibnamehash}{7536dea6fb8a86452960ebb53d702a42}
+      \strng{authornamehash}{7536dea6fb8a86452960ebb53d702a42}
+      \strng{authorfullhash}{7536dea6fb8a86452960ebb53d702a42}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Self-Awareness in Cyber-Physical Systems}
+      \field{year}{2016}
+      \field{pages}{5\bibrangedash 6}
+      \range{pages}{2}
+    \endentry
+    \entry{fiser-2013-growing-neural-gas-efficiently}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=3a2494e2069ad7251b61ebc5403501c0}{%
+           family={Fiser},
+           familyi={F\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0ff3f8a6d04f6311d23fbdeb8bb9de0e}{%
+           family={Faigl},
+           familyi={F\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=38e1ec98622fe250802768bb6e03eeff}{%
+           family={Kulich},
+           familyi={K\bibinitperiod},
+           given={Miroslav},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a7d5f01260c329914770423ab6eb4b67}
+      \strng{fullhash}{72908012e2219cad604b2510b288e3bb}
+      \strng{bibnamehash}{72908012e2219cad604b2510b288e3bb}
+      \strng{authorbibnamehash}{72908012e2219cad604b2510b288e3bb}
+      \strng{authornamehash}{a7d5f01260c329914770423ab6eb4b67}
+      \strng{authorfullhash}{72908012e2219cad604b2510b288e3bb}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neurocomputing}
+      \field{title}{Growing neural gas efficiently}
+      \field{volume}{104}
+      \field{year}{2013}
+      \field{pages}{72\bibrangedash 82}
+      \range{pages}{11}
+    \endentry
+    \entry{friston-2010-the-free-energy-principle-a-unified-brain-theory}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a18cd289b1848c573c9841738bf65a9c}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{fullhash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{bibnamehash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{authorbibnamehash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{authornamehash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{authorfullhash}{a18cd289b1848c573c9841738bf65a9c}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Reviews Neuroscience}
+      \field{title}{The free-energy principle: a unified brain theory?}
+      \field{volume}{11}
+      \field{year}{2010}
+      \field{pages}{127\bibrangedash 138}
+      \range{pages}{12}
+    \endentry
+    \entry{gustafsson-2010-particle-filter-theory-and-practice-with-positioning-applications}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=101c3d51c6cef0773d3cb2ae66c9b71d}{%
+           family={{Gustafsson}},
+           familyi={G\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{101c3d51c6cef0773d3cb2ae66c9b71d}
+      \strng{fullhash}{101c3d51c6cef0773d3cb2ae66c9b71d}
+      \strng{bibnamehash}{101c3d51c6cef0773d3cb2ae66c9b71d}
+      \strng{authorbibnamehash}{101c3d51c6cef0773d3cb2ae66c9b71d}
+      \strng{authornamehash}{101c3d51c6cef0773d3cb2ae66c9b71d}
+      \strng{authorfullhash}{101c3d51c6cef0773d3cb2ae66c9b71d}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Aerospace and Electronic Systems Magazine}
+      \field{number}{7}
+      \field{title}{Particle filter theory and practice with positioning applications}
+      \field{volume}{25}
+      \field{year}{2010}
+      \field{pages}{53\bibrangedash 82}
+      \range{pages}{30}
+    \endentry
+    \entry{haykin-2012-cognitive-dynamic-systems-perception-action-cycle-radar-and-radio}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=91e57481898b943d6a72a1deba06a6a9}{%
+           family={Haykin},
+           familyi={H\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{91e57481898b943d6a72a1deba06a6a9}
+      \strng{fullhash}{91e57481898b943d6a72a1deba06a6a9}
+      \strng{bibnamehash}{91e57481898b943d6a72a1deba06a6a9}
+      \strng{authorbibnamehash}{91e57481898b943d6a72a1deba06a6a9}
+      \strng{authornamehash}{91e57481898b943d6a72a1deba06a6a9}
+      \strng{authorfullhash}{91e57481898b943d6a72a1deba06a6a9}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cognitive Dynamic Systems: Perception-action Cycle, Radar and Radio}
+      \field{year}{2012}
+    \endentry
+    \entry{qing-2107-real-time-road-traffic-awareness-model-based-on-optimal-multi-channel-self-organized-time-division-multiple-access-algorithm}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=9118945494444c586574a57ce19ab7bf}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Qing},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f4ea7b5c59a74c457e3af0df1d4ad3b4}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Linlin},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1987af4d56223081aa247b1536d314c8}
+      \strng{fullhash}{1987af4d56223081aa247b1536d314c8}
+      \strng{bibnamehash}{1987af4d56223081aa247b1536d314c8}
+      \strng{authorbibnamehash}{1987af4d56223081aa247b1536d314c8}
+      \strng{authornamehash}{1987af4d56223081aa247b1536d314c8}
+      \strng{authorfullhash}{1987af4d56223081aa247b1536d314c8}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Real-Time Road Traffic Awareness Model Based on Optimal Multi-Channel Self-Organized Time Division Multiple Access Algorithm}
+      \field{year}{2017}
+    \endentry
+    \entry{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}{article}{}
+      \name{author}{7}{}{%
+        {{uniquename=2,uniquepart=given,hash=d1c9b5fdf38bc8242666bf1b186d6aec}{%
+           family={Kanapram},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=0,uniquepart=base,hash=c47ae4c53decc32d0b38521bb4275db6}{%
+           family={Campo},
+           familyi={C\bibinitperiod},
+           given={Damian\bibnamedelima Andres},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1e12dffb9d210ef60149b846ce8f7dda}{%
+           family={Baydoun},
+           familyi={B\bibinitperiod},
+           given={Mohamad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=11626ce5af63559f7c8e4099deebdcd4}{%
+           family={Marcenaro},
+           familyi={M\bibinitperiod},
+           given={Lucio},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2c21c82c325f555d0c8ecaf9f1f0323c}{%
+           family={Bodanese},
+           familyi={B\bibinitperiod},
+           given={Eliane\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=82a0eb77cc3bc58d86b4b2f9e2d13550}{%
+           family={Regazzoni},
+           familyi={R\bibinitperiod},
+           given={Carlo\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=98239962a736d76db76080ef98efb705}{%
+           family={Marchese},
+           familyi={M\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0b6cb072d067051218babb6cca3ad5fd}
+      \strng{fullhash}{21508fbcb4bcfd3bb78a76769657a3fe}
+      \strng{bibnamehash}{21508fbcb4bcfd3bb78a76769657a3fe}
+      \strng{authorbibnamehash}{21508fbcb4bcfd3bb78a76769657a3fe}
+      \strng{authornamehash}{0b6cb072d067051218babb6cca3ad5fd}
+      \strng{authorfullhash}{21508fbcb4bcfd3bb78a76769657a3fe}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2019 IEEE 5th World Forum on Internet of Things (WF-IoT)}
+      \field{title}{Dynamic Bayesian Approach for decision-making in Ego-Things}
+      \field{year}{2019}
+      \field{pages}{909\bibrangedash 914}
+      \range{pages}{6}
+    \endentry
+    \entry{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{uniquename=2,uniquepart=given,hash=f1f9818c0afd87e53eb72dabf212e028}{%
+           family={Kanapram},
+           familyi={K\bibinitperiod},
+           given={Divya},
+           giveni={D\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=0,uniquepart=base,hash=6e7314a5b6665206ad90c0e00cf1268d}{%
+           family={Marin-Plaza},
+           familyi={M\bibinithyphendelim P\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=11626ce5af63559f7c8e4099deebdcd4}{%
+           family={Marcenaro},
+           familyi={M\bibinitperiod},
+           given={Lucio},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b81fe113b5141d9d5704473a1ba541d3}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5753ce76187d82044865cdf2fbcbbca6}{%
+           family={Arturo\bibnamedelimb de\bibnamedelimb la\bibnamedelima Escalera},
+           familyi={A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim l\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Carlo\bibnamedelima Regazzoni},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c04f7d62b1f698f0cee38dc0c2cd90c3}
+      \strng{fullhash}{efe6622a358da301a8ad7c2c0b760f50}
+      \strng{bibnamehash}{efe6622a358da301a8ad7c2c0b760f50}
+      \strng{authorbibnamehash}{efe6622a358da301a8ad7c2c0b760f50}
+      \strng{authornamehash}{c04f7d62b1f698f0cee38dc0c2cd90c3}
+      \strng{authorfullhash}{efe6622a358da301a8ad7c2c0b760f50}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cognitive Dynamic Systems: Perception-action Cycle, Radar and Radio}
+      \field{year}{2019}
+    \endentry
+    \entry{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}{article}{}
+      \name{author}{8}{}{%
+        {{uniquename=2,uniquepart=given,hash=f1f9818c0afd87e53eb72dabf212e028}{%
+           family={Kanapram},
+           familyi={K\bibinitperiod},
+           given={Divya},
+           giveni={D\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=0,uniquepart=base,hash=ee461af6e4874807dd2cee2a03b3f4a0}{%
+           family={Patrone},
+           familyi={P\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8c5614e0c57ae8b323f64fc571ca77db}{%
+           family={Mar{\'{\i{}}}n{-}Plaza},
+           familyi={M\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=98239962a736d76db76080ef98efb705}{%
+           family={Marchese},
+           familyi={M\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2c21c82c325f555d0c8ecaf9f1f0323c}{%
+           family={Bodanese},
+           familyi={B\bibinitperiod},
+           given={Eliane\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=11626ce5af63559f7c8e4099deebdcd4}{%
+           family={Marcenaro},
+           familyi={M\bibinitperiod},
+           given={Lucio},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8656f79b71c04890e001f18178d4953a}{%
+           family={G{\'{o}}mez},
+           familyi={G\bibinitperiod},
+           given={David\bibnamedelima Mart{\'{\i{}}}n},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=82a0eb77cc3bc58d86b4b2f9e2d13550}{%
+           family={Regazzoni},
+           familyi={R\bibinitperiod},
+           given={Carlo\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c04f7d62b1f698f0cee38dc0c2cd90c3}
+      \strng{fullhash}{7a44566ea84d6119eccad157c60bbc3c}
+      \strng{bibnamehash}{3d82addb7617849bdaab2cd6286f7290}
+      \strng{authorbibnamehash}{3d82addb7617849bdaab2cd6286f7290}
+      \strng{authornamehash}{c04f7d62b1f698f0cee38dc0c2cd90c3}
+      \strng{authorfullhash}{7a44566ea84d6119eccad157c60bbc3c}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Collective Awareness for Abnormality Detection in Connected Autonomous Vehicles}
+      \field{year}{2020}
+    \endentry
+    \entry{kohonen-2001-self-organizing-maps}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b066a50d7acc58e371d64c020f44b757}{%
+           family={Kohonen},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b066a50d7acc58e371d64c020f44b757}
+      \strng{fullhash}{b066a50d7acc58e371d64c020f44b757}
+      \strng{bibnamehash}{b066a50d7acc58e371d64c020f44b757}
+      \strng{authorbibnamehash}{b066a50d7acc58e371d64c020f44b757}
+      \strng{authornamehash}{b066a50d7acc58e371d64c020f44b757}
+      \strng{authorfullhash}{b066a50d7acc58e371d64c020f44b757}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Springer Berlin Heidelberg}
+      \field{title}{Self-Organizing Maps}
+      \field{year}{2001}
+    \endentry
+    \entry{kosak-2019-multipotent-systems-combining-planning-self-organization-and-reconfiguration-in-modular-robot-ensembles}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=b1e67ba6aaa7d0a0aef80b36ba0de4b4}{%
+           family={Kosak},
+           familyi={K\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7212a3fcdfa49db5621e039a5c293c8a}{%
+           family={Wanninger},
+           familyi={W\bibinitperiod},
+           given={Constantin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=70f4cf16fac7cae21a753e40bbbb614e}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Alwin},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e3d774478f2d7fea3d4c24bcd620e318}{%
+           family={Ponsar},
+           familyi={P\bibinitperiod},
+           given={Hella},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a5db4673a90960ddd0a7ae122ff8315a}{%
+           family={Reif},
+           familyi={R\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f79846c0ddb5d3c947227233bdb36408}
+      \strng{fullhash}{83bee1b9a150080ad99111c2c7ade00e}
+      \strng{bibnamehash}{83bee1b9a150080ad99111c2c7ade00e}
+      \strng{authorbibnamehash}{83bee1b9a150080ad99111c2c7ade00e}
+      \strng{authornamehash}{f79846c0ddb5d3c947227233bdb36408}
+      \strng{authorfullhash}{83bee1b9a150080ad99111c2c7ade00e}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{1}
+      \field{title}{Multipotent Systems: Combining Planning, Self-Organization, and Reconfiguration in Modular Robot Ensembles}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{pages}{17}
+      \range{pages}{1}
+    \endentry
+    \entry{lewis-2017-towards-a-framework-for-the-levels-and-aspects-of-self-aware-computing-systems}{inbook}{}
+      \name{author}{7}{}{%
+        {{uniquename=0,uniquepart=base,hash=1d4bae22a862cac9be59379e25fb1fd9}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b98646f802dbdc678b315c901981925a}{%
+           family={Bellman},
+           familyi={B\bibinitperiod},
+           given={Kirstie},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4833d1b89c7d7d0be2fe415f72109925}{%
+           family={Landauer},
+           familyi={L\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fd416c6f84be8086abc9e52098cebb3a}{%
+           family={Esterle},
+           familyi={E\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ad079370dfb5e57853c7a90db267d630}{%
+           family={Glette},
+           familyi={G\bibinitperiod},
+           given={Kyrre},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1a20ad4d471ed999d7841ce62067f3d2}{%
+           family={Diaconescu},
+           familyi={D\bibinitperiod},
+           given={Ada},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8c22a0cb7f7e83886fd1dec2f5dc381a}{%
+           family={Giese},
+           familyi={G\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{07499c01c3f2a7a1a72532391bac491f}
+      \strng{fullhash}{5489e4d9944ba7aa1642347f32de78a7}
+      \strng{bibnamehash}{5489e4d9944ba7aa1642347f32de78a7}
+      \strng{authorbibnamehash}{5489e4d9944ba7aa1642347f32de78a7}
+      \strng{authornamehash}{07499c01c3f2a7a1a72532391bac491f}
+      \strng{authorfullhash}{5489e4d9944ba7aa1642347f32de78a7}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Self-Aware Computing Systems}
+      \field{month}{01}
+      \field{title}{Towards a Framework for the Levels and Aspects of Self-aware Computing Systems}
+      \field{year}{2017}
+      \field{pages}{51\bibrangedash 85}
+      \range{pages}{35}
+    \endentry
+    \entry{lourenzutti-2014-the-hellinger-distance-in-multicriteria-decision-making-an-illustration-to-the-topsis-and-todim-methods}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=9cabca9b0d413ed9626e1a1350dc510d}{%
+           family={Lourenzutti},
+           familyi={L\bibinitperiod},
+           given={Rodolfo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=103a3e0d834b064e1678fd404f47ddf1}{%
+           family={Krohling},
+           familyi={K\bibinitperiod},
+           given={Renato\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{63658fb15149aec5a154538b6de3d1f6}
+      \strng{fullhash}{63658fb15149aec5a154538b6de3d1f6}
+      \strng{bibnamehash}{63658fb15149aec5a154538b6de3d1f6}
+      \strng{authorbibnamehash}{63658fb15149aec5a154538b6de3d1f6}
+      \strng{authornamehash}{63658fb15149aec5a154538b6de3d1f6}
+      \strng{authorfullhash}{63658fb15149aec5a154538b6de3d1f6}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Hellinger Distance in Multicriteria Decision Making: An Illustration to the TOPSIS and TODIM Methods}
+      \field{year}{2014}
+    \endentry
+    \entry{esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=3efd45a8b99d2c01df1f02b76ad9b6e2}{%
+           family={Lukas\bibnamedelima Esterle},
+           familyi={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={N.\bibnamedelimi A.\bibnamedelimi Brown},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3efd45a8b99d2c01df1f02b76ad9b6e2}
+      \strng{fullhash}{3efd45a8b99d2c01df1f02b76ad9b6e2}
+      \strng{bibnamehash}{3efd45a8b99d2c01df1f02b76ad9b6e2}
+      \strng{authorbibnamehash}{3efd45a8b99d2c01df1f02b76ad9b6e2}
+      \strng{authornamehash}{3efd45a8b99d2c01df1f02b76ad9b6e2}
+      \strng{authorfullhash}{3efd45a8b99d2c01df1f02b76ad9b6e2}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{I Think Therefore You Are: Models for Interaction in Collectives of Self-aware Cyber-physical Systems}
+      \field{year}{2020}
+    \endentry
+    \entry{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=356c92b305b559f34539cdae2a2b67c1}{%
+           family={{Regazzoni}},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=024fd81cb45ff53ccdc2a1e59503f481}{%
+           family={{Marcenaro}},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2421e0d11a15b8c2221cc115c796383}{%
+           family={{Campo}},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=af63c84cc5f0b14bb15d072fab62828a}{%
+           family={{Rinner}},
+           familyi={R\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{23a3296cf0fec360544fe14c0cb360c2}
+      \strng{fullhash}{13d1197f821f7dd009d0c2b3248c8110}
+      \strng{bibnamehash}{13d1197f821f7dd009d0c2b3248c8110}
+      \strng{authorbibnamehash}{13d1197f821f7dd009d0c2b3248c8110}
+      \strng{authornamehash}{23a3296cf0fec360544fe14c0cb360c2}
+      \strng{authorfullhash}{13d1197f821f7dd009d0c2b3248c8110}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{7}
+      \field{title}{Multisensorial Generative and Descriptive Self-Awareness Models for Autonomous Systems}
+      \field{volume}{108}
+      \field{year}{2020}
+      \field{pages}{987\bibrangedash 1010}
+      \range{pages}{24}
+    \endentry
+    \entry{selvaggio-2017-towards-a-self-collision-aware-teleoperation-framework-for-compound-robots}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=2c0c8ed25dd6c1a9c5a07dde52d13def}{%
+           family={Selvaggio},
+           familyi={S\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3cbc59fc9617d5918125f17f17cc70cf}{%
+           family={Grazioso},
+           familyi={G\bibinitperiod},
+           given={Stanislao},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=15f17e2c9550df1e7210523ec15dbb75}{%
+           family={Notomista},
+           familyi={N\bibinitperiod},
+           given={Gennaro},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fa91db7fe68f65a4947983b89f69fd65}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a1c6d89267201d1a6b76c41f51c00b13}
+      \strng{fullhash}{b36fcfcc2ce4de2ee8eb62b4391b92f0}
+      \strng{bibnamehash}{b36fcfcc2ce4de2ee8eb62b4391b92f0}
+      \strng{authorbibnamehash}{b36fcfcc2ce4de2ee8eb62b4391b92f0}
+      \strng{authornamehash}{a1c6d89267201d1a6b76c41f51c00b13}
+      \strng{authorfullhash}{b36fcfcc2ce4de2ee8eb62b4391b92f0}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 {IEEE} World Haptics Conference, {WHC} 2017, Munich, Germany, June 6-9, 2017}
+      \field{title}{Towards a self-collision aware teleoperation framework for compound robots}
+      \field{year}{2017}
+      \field{pages}{460\bibrangedash 465}
+      \range{pages}{6}
+    \endentry
+    \entry{simon-2010-kalman-filtering-with-state-constraints-a-survey-of-linear-and-nonlinear-algorithms}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=02b63ea03e2cf3e21434664e65936b63}{%
+           family={{Simon}},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{02b63ea03e2cf3e21434664e65936b63}
+      \strng{fullhash}{02b63ea03e2cf3e21434664e65936b63}
+      \strng{bibnamehash}{02b63ea03e2cf3e21434664e65936b63}
+      \strng{authorbibnamehash}{02b63ea03e2cf3e21434664e65936b63}
+      \strng{authornamehash}{02b63ea03e2cf3e21434664e65936b63}
+      \strng{authorfullhash}{02b63ea03e2cf3e21434664e65936b63}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IET Control Theory Applications}
+      \field{number}{8}
+      \field{title}{Kalman filtering with state constraints: a survey of linear and nonlinear algorithms}
+      \field{volume}{4}
+      \field{year}{2010}
+      \field{pages}{1303\bibrangedash 1318}
+      \range{pages}{16}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

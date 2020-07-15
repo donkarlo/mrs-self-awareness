@@ -59,7 +59,9 @@
 		 \end{itemize}
 		
 		\paragraph{General definition} The capacity to become the object of one’s \textbf{own attention}, which arises when an agent focuses \textbf{not only} on the \textbf{external environment} but also on the \textbf{internal milieu}. The agent becomes a \textbf{reflective observer}, \textbf{processing self-information.} It becomes \textbf{aware} that it is \textbf{awake} and actually experiencing \textbf{specific mental events}, \textbf{emitting behaviors}, and \textbf{possessing unique characteristics} \citet{morin-2006-levels-of-consciousness-and-self-awareness-a-comparison-and-integration-of-various-neurocognitive-views}.
-		
+		\paragraph{Ego-thing} go-Things are defined as intelligent
+		systems that perceive their internal parameters and adapt them-
+		selves when facing non-stationary situations. \citet{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}[5]
 		\paragraph{Private/Public self-awareness - Subjective/Objective}  \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[2]
 			\begin{itemize}
 				\item \textbf{Private} Private self-aspects relate to externally \textbf{unobservable} events and characteristics such as emotions, physiological sensations, perceptions, values, goals, and motives
@@ -154,7 +156,7 @@
 		
 		\begin{figure*}
 			\centering
-			\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-1.png}
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-1.png}
 			\caption{\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}}
 			\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-1.jpg}
 		\end{figure*}
@@ -166,18 +168,64 @@
 		
 		\paragraph{importance of embodying SA capabilities}The extent of the embodied SA capabilities influences the agent's performance when solving tasks and are assumed as reasons for the significant capability differences of the various biological species. 
 		
-		\paragraph{Minimum requirements to consider an agent self-aware}The following capabilities as the minimum requirements in to consider an agent self-aware: 
-		\begin{itemize}
-			\item initialization
-			\item inference
-			\item anomaly detection
-			\item model creation
-			\item interface with control
-		\end{itemize}
-		\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Table I describes the proposed SA capabilities and provides a relationship between each of them and biological agents, demonstrating how humans address these capabilities.
+		\section{Requirements to consider an agent self-aware}The following capabilities as the minimum requirements in to consider an agent self-aware:
+			\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Table I describes the proposed SA capabilities and provides a relationship between each of them and biological agents, demonstrating how humans address these capabilities.
+			\subsection{Initialization}
+				\subsection{Reference task} \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems,kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things,kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection,kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles,baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving} have used this method. That is, they had a vehicle and they had a rectangular path along which an automatic vehicle was driven by a human driver. This builds the normal task. 
+				\subsubsection{Random Walk} \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} claimed it was used in \citep{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}
+				\subsubsection{Human/IA helped initialization} Such as human-agent driving of an Autonomous Car in an (AV)
+			\subsection{Memorization}
+			\subsection{Inference}
+				\paragraph{DBN} 
+				Dynamic systems are systems whose states evolve over the course of time. In other words their future state can be described by first order differential equation of their current state on time. 
+			\subsection{Anomaly detection}
+				Abnormality is defined by the difference between prediction and observation. So for anomaly detection these two factors usually are needed:
+				\begin{itemize}
+					\item Predicting model
+						Filtering is the matter of estimating an unknown Probability Mass Function (PMF). A popular use case of filtering methods is in robotics where a robot tries to estimate its location after a set of actions it has performed.
+						\begin{itemize}
+							\item \textbf{Kalman Filtering (KF)} \cite{simon-2010-kalman-filtering-with-state-constraints-a-survey-of-linear-and-nonlinear-algorithms}
+							An example for Bayesian filter using a dynamic model is the Kalman Filter (KF), an optimal state estimator for linear
+							dynamic systems with Gaussian noise iteratively predicting and estimating states from incremental observations. The
+							posterior probability density function (PDF) of the continuous state in the KF is Gaussian.
+							\item \textbf{Particle Filtering (PF)} \cite{gustafsson-2010-particle-filter-theory-and-practice-with-positioning-applications}
+							A Particle Filter (PF) allows one
+							to manage a numerical approximation of the posterior in a
+							nonlinear, non-Gaussian Bayesian filtering problem. PF
+							approximates PDFs with a set of weighted samples (particles),
+							which are propagated with an iterative random process. Particles are re-weighted based on dynamics and a likelihood score
+							that depends on new observations.
+							\item \textbf{Markov Jump Linear System (MJLS)} \cite{doucet-2001-particle-filters-for-state-estimation-of-jump-markov-linear-systems}
+							\item \textbf{Markov Jump Particle Filter (MJPF)} is formed of KP+PF and follows the same direction as MJLS
+								\cite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}
+								a method to jointly learn coupled
+								KF and PF models from a training sequence of state-dependent
+								actions. Such filters are jointly used to perform Bayesian
+								inference on a learned plan model. They are used to predict
+								and estimate the states of a moving agent.
+						\end{itemize}
+					\item A metric to measure 
+						\begin{itemize}
+							\item \textbf{Hellinger distance} Introduced in \cite{lourenzutti-2014-the-hellinger-distance-in-multicriteria-decision-making-an-illustration-to-the-topsis-and-todim-methods} and used in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems,kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection,kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}
+							\item \textbf{Bhattacharya distance} used in \cite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}
+						\end{itemize}
+				\end{itemize}
+				\paragraph{\cite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}}
+					\begin{itemize}
+						\item The example is is their customary example. The iCab 
+						\item The continuous space of status is formed of X= [x,y,x',y'] where [x,y] is the position in the rectangular courtyard of Genoa university and (x'=dx/dt,y'=dy/dt)  is the velocity vector.
+						\item It uses Self organising maps (SOM) to to make the above space discrete (shown by S/the vocabulary) (In their forthcoming papers they used Growing Neural Gas)
+						\item For the first time it introduced Markov Jump Particle Filter (MJPF) in this paper and they used it in their recent papers including yours. That's why it clarify gradually everything back. MJPF predicts (filters) states in two levels. Kolman F. is responsible for predicting from previous X to next X and Particle filter is responsible for Predicting from previous S to nex S (previous=time stamp k-1, nex= time stamp k) 
+						\item Now that there is method to predict, it introduces three metrics for abnormality prediction db1 (eq 18), db2 (eq 19, just assumes that Z happens close to X), y (eq 21 based on weighted distance described in Eq5)
+						\item They tested like this: a human rode the vehicle along the rectangular courtyard.  Please notice that they say that location data had 10 cm position accuracy (this is what forms the difference between Z(observation/what is measured by sensors) and X(true status))
+						\item In the next phase they performed three different maneuvers when the normal rectangular path (reference task in your paper) is interrupted. 1. turning around the pedestrian (called avoidance abnormality Fig 7) 2. U-turn (returning back Fig 4c , abnormality Fig 8) 3. And stopping until the pedestrian goes away from the cam view. (abnormality Fig 9)
+						\item Why this paper is important? Abnormality indexes use the generated discrete states in their calculation but the results in Fig 7,8,9 show how well extracted abnormalities from reference task matches the times in the three cases that the pedestrian interrupted the path in all three maneuvers.  So their abnormality indexes are maneuver independent, can work on discreet data etc. This discreet state space can form a vocabulary.
+					\end{itemize}
+			\subsection{Model creation}
+			\subsection{Inference with control (Decision making)}
 		\begin{figure*}
 			\centering
-			\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.png}
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.png}
 			\caption{Table I}
 			\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.jpg}
 		\end{figure*}
@@ -196,27 +244,18 @@
 			in the form of temporal-causal AM patterns.
 			\begin{figure*}
 				\centering
-				\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-2.png}
+				\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-2.png}
 				\caption{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-2.png}
 				\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-2.png}
 			\end{figure*}
 			\paragraph{} According to Damasio, AM patterns are based on \emph{first-person situational descriptors} that enable human agents to represent experienced episodes on the basis of a \textbf{neural vocabulary} (i.e., information units). These descriptors always represent exteroceptive data as contextualized to information coming from the agent's body, and vice versa. Thus, patters encoding episodic experiences are represented by coupling the agent and its dynamic interaction with the surrounding environment.
 			\\
-			Elementary information units used in AMs define a temporal
-			representation where an agent and the environment reciprocally take on the role of a \emph{context}. Temporal changes of
-			the internal representation of the state of one of them (that
-			Damasio calls “dispositions”) are observed as occurring in the
-			context of the other one assuming a given state (see Fig. 2). Sequences of such patterns are stored in the AM representing
-			episodes. Therefore, at least in humans and biological agents,
-			SA is based on a \textbf{contextual} representation, which is essential
+			Elementary information units used in AMs define a temporal representation where an agent and the environment reciprocally take on the role of a \emph{context}. Temporal changes of the internal representation of the state of one of them (that Damasio calls “dispositions”) are observed as occurring in the context of the other one assuming a given state (see Fig. 2). Sequences of such patterns are stored in the AM representing
+			episodes. Therefore, at least in humans and biological agents, SA is based on a \textbf{contextual} representation, which is essential
 			for the emergence of the expected SA capabilities as listed in
 			\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Table I.
 			
-			\paragraph{Key element in SA knowledge}A dynamic description of agent and environment changes
-			based on their reciprocal states is a key element for the
-			representation of SA knowledge. This is different from many
-			traditional AI systems, where exteroceptive sensory data se-
-			quences are often represented at a primary level \emph{without explicit contextual} information. 
+			\paragraph{Key element in SA knowledge}A dynamic description of agent and environment changes based on their reciprocal states is a key element for the representation of SA knowledge. This is different from many traditional AI systems, where exteroceptive sensory data sequences are often represented at a primary level \emph{without explicit contextual} information. 
 		
 			\textbf{Traditional AI systems do not consider contextual data}: This is different from many
 			traditional AI systems, where exteroceptive sensory data sequences are often represented at a primary level \emph{without explicit contextual information}. As a \textbf{consequence}, high-level
@@ -240,7 +279,7 @@
 			units’ representations should be defined such that they can be organized in multi-level hierarchies (see Fig. 3).
 			\begin{figure*}
 				\centering
-				\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-3}
+				\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-3}
 				\caption{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-3}
 				\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-3.png}
 			\end{figure*}
@@ -262,7 +301,7 @@
 			(see Fig. 4). 
 			\begin{figure*}
 				\centering
-				\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-4.png}
+				\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-4.png}
 				\caption{Fig. 4: Autobiographical memory (AM) and autobiographical self (AS) as core components of a self-aware agent founded on Damasio’s model. The core-self and the proto-self process exteroceptive and proprioceptive information and store them as dispositional units in the AM. The AS is able to perform inference and anomaly detection based on the stored episodes.
 				}
 				\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-4.png}
@@ -291,7 +330,7 @@
 		to generate commands towards actuators.
 		\begin{figure*}
 			\centering
-			\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-5.png}
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-5.png}
 			\caption{Fig. 5: Hierarchically structured probabilistic reasoning machine (PRM) adopted from [37]. The cognitive perceptor (CP) processes exteroceptive information (“percepts”) at different hierarchical levels, and the cognitive controller (CC) generates outputs towards the actuators in a top-down structure. The PRM organizes probabilistic information from perception and control by data structures capturing causal-temporal interactions that are similar to “dispositional units”.
 			}
 			\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-5.png}
@@ -305,21 +344,12 @@
 		percepts originated from the environment. Dispositional information units, as described by Damasio, also represent such interactions but are different because the state of the agent
 		is directly observed by itself. This can be considered either as feedback for the SA agent to evaluate the outcome of commands it has sent to actuators and lower-level blocks or as a multi-sensor source of proprioceptive signals representing the agent state to itself. This concept is exploited in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} SA model (depicted in Fig. 10). If this second view is taken, a modified PRM can be considered as a structure where appropriately modified dispositional units are processed based
 		on hierarchical filters that work on proprioceptive feedback and in a bottom-up way also in the CC.
-		\paragraph{} In Haykin’s approach, the \emph{focus is on control} instead of SA. Therefore, the PRM is designed to make a CDS capable of using interactive behavioral rules to switch among different
-		perceptions and action modalities adaptively. Such inferences can drive actions that the agent’s sensors and actuators should
-		accomplish anticipatorily by activating available models in
-		the PRM memory when it performs a given experience. This
-		allows the CDS of an attention capability towards preferred
-		control or sensing actions in a given homeostatic cycle. In the
-		case of the SA model discussed here, the agent has no direct
-		knowledge of the control strategy actions that are generated
-		by its own decision-making subsystem, but it can observe and
-		fuse their outcomes through parallel proprioceptive feedback
-		from sensors coupled with exteroceptive environmental observations. Haykin’s model, however, suggests how a SA model
-		can provide useful data to adapt decision making processes
-		behaviors at homogeneous hierarchical levels to the PRM.
-		For example, SA can share with decision-making estimates
-		of present and predicted contextualized states as well as
+		\paragraph{} In Haykin’s approach, the \emph{focus is on control} instead of SA. Therefore, the PRM is designed to make a CDS capable of using interactive behavioral rules to switch among different perceptions and action modalities adaptively. Such inferences can drive actions that the agent’s sensors and actuators should accomplish anticipatorily by activating available models in the PRM memory when it performs a given experience. This
+		allows the CDS of an attention capability towards preferred control or sensing actions in a given homeostatic cycle. In the
+		case of the SA model discussed here, the agent has no direct knowledge of the control strategy actions that are generated
+		by its own decision-making subsystem, but it can observe and fuse their outcomes through parallel proprioceptive feedback
+		from sensors coupled with exteroceptive environmental observations. Haykin’s model, however, suggests how a SA model can provide useful data to adapt decision making processes behaviors at homogeneous hierarchical levels to the PRM.
+		For example, SA can share with decision-making estimates of present and predicted contextualized states as well as
 		errors and deviations of models describing previous agent
 		experiences.
 		\paragraph{}Furthermore, Haykin’s model facilitates identifying temporal variations of uncertainty associated with actions and
@@ -447,7 +477,7 @@
 		the dynamic contextualized behavior where it is acting.
 		\begin{figure*}
 			\centering
-			\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-6.png}
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-6.png}
 			\caption{\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Fig. 6}
 			\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-6.png}
 		\end{figure*}
@@ -473,7 +503,7 @@
 		Fig. 7).
 		\begin{figure*}
 			\centering
-			\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-7.png}
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-7.png}
 			\caption{\cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}Fig. 7}
 			\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-7.png}
 		\end{figure*}
@@ -494,7 +524,7 @@
 		enlisted in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}Table II.
 		\begin{figure*}
 			\centering
-			\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-ii.png}
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-ii.png}
 			\caption{\cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Table II}
 			\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-ii.png}
 		\end{figure*}
@@ -506,7 +536,7 @@
 		should be both generative and discriminative. 
 		\begin{figure*}
 			\centering
-			\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-8.png}
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-8.png}
 			\caption{\cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Fig 8 Models in the agent’s memory produce error mea-
 				surements as observations arrive. The fittest model is iden-
 				tified/discriminated and abnormalities (high errors w.r.t a
@@ -589,7 +619,7 @@
 		controls by the agent itself.
 		\begin{figure*}
 			\centering
-			\includegraphics[width=0.7\textwidth]{/media/donkarlo/Elements/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-9.png}
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-9.png}
 			\caption{\cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Fig 9 Relationships between exteroceptive states (bottom)
 				and generalized states (top). Two consecutive states are ab-
 				stracted into a generalized state that has information about i)
@@ -630,5 +660,5 @@
 	
 	
 	
-	\bibliography{/media/donkarlo/Elements/projs/research/refs}
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs}
 \end{document}

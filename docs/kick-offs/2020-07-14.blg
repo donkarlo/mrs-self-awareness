@@ -1,0 +1,24 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is '2020-07-14.blg'
+[33] biber:313> INFO - === Di Jul 14, 2020, 10:24:23
+[56] Biber.pm:371> INFO - Reading '2020-07-14.bcf'
+[121] Biber.pm:857> INFO - Found 21 citekeys in bib section 0
+[140] Biber.pm:3981> INFO - Processing section 0
+[151] Biber.pm:4154> INFO - Looking for bibtex format file '/home/donkarlo/Dropbox/projs/research/refs.bib' for section 0
+[164] bibtex.pm:1468> INFO - LaTeX decoding ...
+[457] bibtex.pm:1294> INFO - Found BibTeX data source '/home/donkarlo/Dropbox/projs/research/refs.bib'
+[460] Utils.pm:169> WARN - Duplicate entry key: 'esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[465] Utils.pm:169> WARN - Duplicate entry key: 'saeed-2016-semantics' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[479] Utils.pm:169> WARN - Duplicate entry key: 'hochreiter-1997-long-short-term-memory' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[490] Utils.pm:169> WARN - Duplicate entry key: 'narratology-bal-2009' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[490] Utils.pm:169> WARN - Duplicate entry key: 'problematizing-formalism-a-double-cross-of-genre-boundaries-cain-1999' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[491] Utils.pm:169> WARN - Duplicate entry key: 'fan-2018-hierarchical-neural-story-generation' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[646] Utils.pm:169> WARN - BibTeX subsystem: /tmp/VAKy4xZqWE/refs.bib_5741.utf8, line 2278, warning: 450 characters of junk seen at toplevel
+[693] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[693] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[693] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[693] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[723] bbl.pm:617> INFO - Writing '2020-07-14.bbl' with encoding 'ascii'
+[723] bbl.pm:618> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[765] bbl.pm:720> INFO - Output to 2020-07-14.bbl
+[765] Biber.pm:110> INFO - WARNINGS: 7
