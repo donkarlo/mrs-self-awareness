@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.17)  13 JUL 2020 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.17)  16 JUL 2020 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1045,20 +1045,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count290
 
-
-Package natbib Warning: Citation `kanapram-2020-collective-awareness-for-abnorm
-ality-detection-in-connected-autonomous-vehicles' on page 1 undefined on input 
-line 29.
-
-
-Package natbib Warning: Citation `kephart-2017-self-adaptation-in-collective-se
-lf-aware-computing-systems' on page 1 undefined on input line 31.
-
-
-Package natbib Warning: Citation `landauer-2015-designing-cooperating-self-impr
-oving-systems' on page 1 undefined on input line 34.
-
-
 Overfull \hbox (8.44208pt too wide) in paragraph at lines 33--35
 []$\OT1/cmtt/m/n/10 https : / / en . wikipedia . org / wiki / Collective _ cons
 ciousness$ \OT1/cmr/m/n/10 Bio-inspired
@@ -1069,143 +1055,44 @@ Overfull \hbox (6.22626pt too wide) in paragraph at lines 36--36
 []\OT1/cmr/bx/n/14.4 Self-aware/Consciousness Com-pu-ta-tional Gen-
  []
 
-
-Package natbib Warning: Citation `regazzoni-2020-multi-sensorial-generative-and
--descriptive-self-awareness-models-for-autonomous-systems' on page 1 undefined 
-on input line 37.
-
-
-Package natbib Warning: Citation `williams-2019-a-model-for-human-artificial-co
-llective-consciousness-part-1' on page 1 undefined on input line 39.
-
-
-Package natbib Warning: Citation `williams-2019-a-model-for-human-artificial-co
-llective-consciousness-part-2' on page 1 undefined on input line 39.
-
-
-Package natbib Warning: Citation `esterle-2020-i-think-therefore-you-are-models
--for-interaction-in-collectives-of-self-aware-cyber-physical-systems' on page 1
- undefined on input line 41.
-
-
-Package natbib Warning: Citation `celentano-2016-multi-robot-systems-machine-ma
-chine-and-human-machine-interaction-and-their-modelling' on page 1 undefined on
- input line 43.
-
-
-Package natbib Warning: Citation `diaconescu-2017-architectures-for-collective-
-self-aware-computing-systems' on page 1 undefined on input line 46.
-
-
-Package natbib Warning: Citation `gerasimou-2019-towards-systematic-engineering
--of-collaborative-heterogeneous-robotic-systems' on page 1 undefined on input l
-ine 47.
-
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `kosak-2019-multipotent-systems-combining-plan
-ning-self-organization-and-reconfiguration-in-modular-robot-ensembles' on page 
-2 undefined on input line 49.
-
-
-Package natbib Warning: Citation `baydoun-2020-prediction-of-multi-target-dynam
-ics-using-discrete-descriptors-an-interactive-approach' on page 2 undefined on 
-input line 54.
-
-
-Package natbib Warning: Citation `pena-2019-blockchain-powered-collaboration-in
--heterogeneous-swarms-of-robots' on page 2 undefined on input line 57.
-
-
-Package natbib Warning: Citation `agne-2016-self-aware-compute-nodes' on page 2
- undefined on input line 63.
-
-
-Package natbib Warning: Citation `mitchell-2005-self-awareness-and-control-in-d
-ecentralized-systems' on page 2 undefined on input line 66.
-
-
-Package natbib Warning: Citation `schmickl-2011-cocoro-the-self-aware-underwate
-r-swarm' on page 2 undefined on input line 66.
-
-
-Package natbib Warning: Citation `mitchell-2005-self-awareness-and-control-in-d
-ecentralized-systems' on page 2 undefined on input line 69.
-
-[2]
-
-Package natbib Warning: Citation `mitchell-2005-self-awareness-and-control-in-d
-ecentralized-systems' on page 3 undefined on input line 76.
-
-
-Package natbib Warning: Citation `mitchell-2005-self-awareness-and-control-in-d
-ecentralized-systems' on page 3 undefined on input line 79.
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 83.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
-
-
-Package natbib Warning: Citation `selvaggio-2017-towards-a-self-collision-aware
--teleoperation-framework-for-compound-robots' on page 3 undefined on input line
- 99.
-
-
-Package natbib Warning: Citation `kaiser-2020-towards-self-aware-multirotor-for
-mations' on page 3 undefined on input line 100.
-
-[3]
-
-Package natbib Warning: Citation `mitchell-2005-self-awareness-and-control-in-d
-ecentralized-systems' on page 4 undefined on input line 105.
-
-
-Package natbib Warning: Citation `kernbach-2011-awareness-and-self-awareness-fo
-r-multi-robot-organisms' on page 4 undefined on input line 108.
-
-
-Package natbib Warning: Citation `schmickl-2011-cocoro-the-self-aware-underwate
-r-swarm' on page 4 undefined on input line 110.
-
-
-Package natbib Warning: Citation `lewis-2011-a-survey-of-self-awareness-and-its
--application-in-computing-systems' on page 4 undefined on input line 112.
-
+ [3]
 (./self-aware-mrs.bbl
 Overfull \hbox (19.24684pt too wide) in paragraph at lines 115--1
 $\OT1/cmtt/m/n/10 https : / / proceedingsoftheieee . ieee . org / connecting-[]
 the-[]past-[]and-[]future /
  []
 
-)
-
-Package natbib Warning: There were undefined citations.
-
-[4] (./self-aware-mrs.aux) ) 
+[4] [5]) [6] (./self-aware-mrs.aux) ) 
 Here is how much of TeX's memory you used:
- 14541 strings out of 492982
- 289478 string characters out of 6134896
- 318113 words of memory out of 5000000
- 17975 multiletter control sequences out of 15000+600000
- 540649 words of font info for 64 fonts, out of 8000000 for 9000
+ 14591 strings out of 492982
+ 293177 string characters out of 6134896
+ 320628 words of memory out of 5000000
+ 18024 multiletter control sequences out of 15000+600000
+ 540995 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,43p,10365b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on self-aware-mrs.pdf (4 pages, 97571 bytes).
+ 41i,10n,43p,10365b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on self-aware-mrs.pdf (6 pages, 130032 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
