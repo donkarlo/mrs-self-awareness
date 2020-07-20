@@ -101,22 +101,12 @@
 				\subsubsection{Identity Awareness}
 				\subsubsection{State Awareness}
 				\subsubsection{Time Awareness}
-				\subsubsection{Interaction Awareness}In interaction awareness, run-time models are used to take into account patterns of interactions between entities. There are various sub-aspects here, which build on each
-				other. Most obviously, the system must be able to recognize that some actions form part of interactions, such that they are in some way causally connected. An example of this includes message passing, such as is used in a communications protocol, where one message may be a response to another, rather than an isolated action.
+				\subsubsection{Interaction Awareness}In interaction awareness, run-time models are used to take into account patterns of interactions between entities. There are various sub-aspects here, which build on each other. Most obviously, the system must be able to recognize that some actions form part of interactions, such that they are in some way causally connected. An example of this includes message passing, such as is used in a communications protocol, where one message may be a response to another, rather than an isolated action.
 				There may be, in simple interaction awareness, simply a model of the flow of actions over time (e.g., action b typically occurs after action a), or there may be additional semantics associated with the actions or the combination of them (e.g., actions b is a response and action a is a query).
-					\paragraph{} As a prerequisite to the above form of interaction awareness, there must be some
-					form of identity awareness, at least insofar that the system can identify messages,
-					as apart from the general noise in the environment. It may also be important to be
-					able to identify individuals as those engaged in an interaction, if not in terms of their
+					\paragraph{} As a prerequisite to the above form of interaction awareness, there must be some form of identity awareness, at least insofar that the system can identify messages, as apart from the general noise in the environment. It may also be important to be able to identify individuals as those engaged in an interaction, if not in terms of their
 					unique identity, then perhaps in terms of role.
-					\paragraph{} Interaction awareness can also build upon state awareness, since models may
-					encapsulate knowledge of causality such as “when action a is taken in state s, this
-					leads to state t.” Markovian approaches may be effective choices for modeling state-
-					based interaction awareness.
-					\paragraph{} Finally, the interactions need not be external. Causality of internal processes may also be modeled in meta-reflective processes. For example, a system might model the behavior of one of its own decision-making processes, when other parts of the system are either operational or not. In the former case, the system may learn a model
-					of how decision-making degrades (due to more stringent resource constraints), when
-					load elsewhere is high. Such models of internal causality may then be used to provide
-					adaptive internal re-architecting, or perhaps more effective scheduling of tasks.
+					\paragraph{} Interaction awareness can also build upon state awareness, since models may encapsulate knowledge of causality such as “when action a is taken in state s, this leads to state t.” Markovian approaches may be effective choices for modeling state based interaction awareness.
+					\paragraph{} Finally, the interactions need not be external. Causality of internal processes may also be modeled in meta-reflective processes. For example, a system might model the behavior of one of its own decision-making processes, when other parts of the system are either operational or not. In the former case, the system may learn a model of how decision-making degrades (due to more stringent resource constraints), when load elsewhere is high. Such models of internal causality may then be used to provide adaptive internal re-architecting, or perhaps more effective scheduling of tasks.
 					
 				\subsubsection{Behavior Awareness}
 				\subsubsection{Appearance Awareness}
@@ -174,6 +164,8 @@
 				\subsection{Reference task} \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems,kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things,kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection,kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles,baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving} have used this method. That is, they had a vehicle and they had a rectangular path along which an automatic vehicle was driven by a human driver. This builds the normal task. 
 				\subsubsection{Random Walk} \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} claimed it was used in \citep{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}
 				\subsubsection{Human/IA helped initialization} Such as human-agent driving of an Autonomous Car in an (AV)
+				\subsubsection{Self Modeling}
+				\citet{kwiatkowski-2019-task-agnostic-self-modeling-machines} \citet{kwiatkowski-2019-zero-shot-learning-on-simulated-robots}
 			\subsection{Memorization}
 			\subsection{Inference}
 				\paragraph{DBN} 
@@ -229,6 +221,7 @@
 				
 			\subsection{Model creation}
 			\subsection{Inference with control (Decision making)}
+		
 		\begin{figure*}
 			\centering
 			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.png}
@@ -317,8 +310,7 @@
 			abnormality, i.e., a non-stationary condition never experienced before, is currently present. Damasio does not address which specific computational neural characteristic included in the
 			neural implementation is able to realize such computational behavior. He only suggests that such matching and prediction inference capabilities can be performed by the AS at different
 			abstraction and temporal levels and so enabling an efficient selection of the hierarchical and dispositional representation of AMs episodes).
-			\paragraph{Rise of emotions} It is worth mentioning that for natural agents, Damasio suggests that the integrated SA system composed by AM and AS can also be used as a possible explanation of higher-level human regulatory psychological phenomena such as emotions
-			and feelings [35]. Emotions and feelings can be considered as emergent results of evaluating current experiences based on multi-level hierarchical AMs by means of the AS [25].
+			\paragraph{Rise of emotions} It is worth mentioning that for natural agents, Damasio suggests that the integrated SA system composed by AM and AS can also be used as a possible explanation of higher-level human regulatory psychological phenomena such as emotions and feelings \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[35]. Emotions and feelings can be considered as emergent results of evaluating current experiences based on multi-level hierarchical AMs by means of the AS \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[25].
 			For example, fear can emerge from the capability of detecting abnormalities, recognizing that the current experience does not match with past AMs, or it matches with AMs that describe
 			dangerous episodes. Damasio’s model implicitly implies that AS outcomes enable an agent to incrementally update internal AM models by coding abnormal experiences into new models as well as to define a SA system that derives inferences invariant to the involved sensor modalities.
 			
@@ -361,33 +353,13 @@
 		\paragraph{}Furthermore, Haykin’s model facilitates identifying temporal variations of uncertainty associated with actions and
 		percepts, which is a key aspect for addressing a proper
 		computational framework for the CDS design, i.e., a PRM
-		in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} SA model. Moreover, the organization of a PRM at
-		multiple abstraction levels is coherent with the hierarchical
-		characteristics of Damasio’s dispositional units. In this case,
-		actions and percepts as temporal aggregations (equivalent to
-		dispositional units) at different hierarchical levels can describe
-		the joint state of lower-level parts of the agent body down
-		to the directly observed proprioceptive and exteroreceptive
-		characteristics of the agent and the environment. Although
-		Haykin’s approach does not provide a specific probabilistic model for uncertainties and dependencies, it proposes a
-		Bayesian framework to model uncertainty and causality and
-		make inferences computationally, e.g., parametric conditional
-		probability models.
+		in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} SA model. Moreover, the organization of a PRM at multiple abstraction levels is coherent with the hierarchical characteristics of Damasio’s dispositional units. In this case, actions and percepts as temporal aggregations (equivalent to dispositional units) at different hierarchical levels can describe the joint state of lower-level parts of the agent body down to the directly observed proprioceptive and exteroreceptive characteristics of the agent and the environment. Although Haykin’s approach does not provide a specific probabilistic model for uncertainties and dependencies, it proposes a Bayesian framework to model uncertainty and causality and
+		make inferences computationally, e.g., parametric conditional probability models.
 		
-		\paragraph{}Although the goal of Haykin is not to specify a univocal
-		PRM model but to provide a generic framework for CDSs, his
-		model is essential for addressing the main techniques for SA in
-		artificial agents. His work then suggests that SA models origi-
-		nating from a computational domain should be associated with
-		an appropriate calculus of uncertainty propagation. In [38], a
-		CDS inspired by such a probabilistic approach uses a simple
-		PRM unit that allows a vision system on a mobile platform to
-		make inferences about future states. Moreover, Haykin’s work
-		does not directly provide a unitary view of the techniques
-		that could be used to store a coherent multi-level generative
-		and discriminative PRM’s knowledge. Nonetheless, \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} work
-		integrates Haykin’s viewpoint on uncertainty and makes a
-		relation between the perception-control blocks and Damasio’s
+		\paragraph{}Although the goal of Haykin is not to specify a univocal PRM model but to provide a generic framework for CDSs, his
+		model is essential for addressing the main techniques for SA in artificial agents. His work then suggests that SA models origi-
+		nating from a computational domain should be associated with an appropriate calculus of uncertainty propagation. In \citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[38], a CDS inspired by such a probabilistic approach uses a simple PRM unit that allows a vision system on a mobile platform to make inferences about future states. Moreover, Haykin’s work does not directly provide a unitary view of the techniques that could be used to store a coherent multi-level generative and discriminative PRM’s knowledge. Nonetheless, \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} work
+		integrates Haykin’s viewpoint on uncertainty and makes a relation between the perception-control blocks and Damasio’s
 		theory, which includes AM and AS and dispositional units.
 		\cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}Fig. 10 displays a revisited block scheme of Haykin’s model.
 		
@@ -395,7 +367,7 @@
 		Another relevant cognitive framework for SA that aims at
 		establishing links between neuroscientific observations and
 		computational models is the one proposed by Friston [39],
-		[27]. Here, Bayesian dynamical systems are the computational
+		\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}[27]. Here, Bayesian dynamical systems are the computational
 		tool that facilitates an uncertain and hierarchical self-
 		coherent representation to describe and generate simulations
 		of inferences performed by the human brain utilizing neuron
