@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: self-awareness.aux
+The style file: plainnat.bst
+Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
+Warning--empty booktitle in baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving
+Warning--empty journal in chatila-2018-toward-self-aware-robots
+Warning--empty journal in doucet-2001-particle-filters-for-state-estimation-of-jump-markov-linear-systems
+Warning--empty publisher in esterle-2017-assessing-self-awareness
+Warning--can't use both author and editor fields in herbst-2017-metrics-and-benchmarks-for-self-aware-computing-systems
+Warning--empty chapter and pages in herbst-2017-metrics-and-benchmarks-for-self-aware-computing-systems
+Warning--empty publisher in herbst-2017-metrics-and-benchmarks-for-self-aware-computing-systems
+Warning--empty booktitle in kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+Warning--empty journal in kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles
+Warning--empty journal in kwiatkowski-2019-task-agnostic-self-modeling-machines
+Warning--empty publisher in lewis-2017-towards-a-framework-for-the-levels-and-aspects-of-self-aware-computing-systems
+Warning--empty journal in lourenzutti-2014-the-hellinger-distance-in-multicriteria-decision-making-an-illustration-to-the-topsis-and-todim-methods
+Warning--empty journal in ravanbakhsh-2018-hierarchy-of-gans-for-learning-embodied-self-awareness-model
+Warning--empty booktitle in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+Warning--can't use both volume and number fields in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+Warning--empty publisher in overschelde-2008-metacognition-knowing-about-knowing
+You've used 26 entries,
+            2773 wiz_defined-function locations,
+            726 strings with 11794 characters,
+and the built_in function-call counts, 14577 in all, are:
+= -- 1162
+> -- 1155
+< -- 17
++ -- 392
+- -- 363
+* -- 1255
+:= -- 2274
+add.period$ -- 80
+call.type$ -- 26
+change.case$ -- 193
+chr.to.int$ -- 23
+cite$ -- 68
+duplicate$ -- 611
+empty$ -- 1014
+format.name$ -- 395
+if$ -- 3014
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 32
+newline$ -- 139
+num.names$ -- 104
+pop$ -- 462
+preamble$ -- 1
+purify$ -- 173
+quote$ -- 0
+skip$ -- 493
+stack$ -- 0
+substring$ -- 325
+swap$ -- 96
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 256
+warning$ -- 16
+while$ -- 99
+width$ -- 0
+write$ -- 326
+(There were 16 warnings)

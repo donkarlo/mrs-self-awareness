@@ -1,0 +1,10 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'progress-and-plan.blg'
+[19] biber:313> INFO - === Mi Jul 22, 2020, 00:10:11
+[35] Biber.pm:371> INFO - Reading 'progress-and-plan.bcf'
+[79] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[84] Utils.pm:169> WARN - The file 'progress-and-plan.bcf' does not contain any citations!
+[91] bbl.pm:617> INFO - Writing 'progress-and-plan.bbl' with encoding 'ascii'
+[91] bbl.pm:618> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[91] bbl.pm:720> INFO - Output to progress-and-plan.bbl
+[91] Biber.pm:110> INFO - WARNINGS: 1
