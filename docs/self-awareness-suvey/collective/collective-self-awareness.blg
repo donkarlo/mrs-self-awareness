@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: collective-self-awareness.aux
+The style file: plainnat.bst
+Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
+Repeated entry---line 289 of file /home/donkarlo/Dropbox/projs/research/refs.bib
+ : @article{esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems
+ :                                                                                                                           ,
+I'm skipping whatever remains of this entry
+Warning--empty publisher in agne-2016-self-aware-compute-nodes
+Warning--empty booktitle in baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach
+Warning--empty publisher in diaconescu-2017-architectures-for-collective-self-aware-computing-systems
+Warning--empty booktitle in kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+Warning--empty journal in kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles
+Warning--empty publisher in kephart-2017-self-adaptation-in-collective-self-aware-computing-systems
+Warning--empty journal in kernbach-2011-awareness-and-self-awareness-for-multi-robot-organisms
+Warning--empty booktitle in esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems
+Warning--empty booktitle in mitchell-2005-self-awareness-and-control-in-decentralized-systems
+Warning--empty booktitle in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+Warning--can't use both volume and number fields in regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
+You've used 21 entries,
+            2773 wiz_defined-function locations,
+            702 strings with 10828 characters,
+and the built_in function-call counts, 12702 in all, are:
+= -- 1065
+> -- 934
+< -- 20
++ -- 315
+- -- 293
+* -- 1045
+:= -- 1924
+add.period$ -- 72
+call.type$ -- 21
+change.case$ -- 157
+chr.to.int$ -- 20
+cite$ -- 53
+duplicate$ -- 551
+empty$ -- 899
+format.name$ -- 320
+if$ -- 2701
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 24
+newline$ -- 118
+num.names$ -- 86
+pop$ -- 369
+preamble$ -- 1
+purify$ -- 139
+quote$ -- 0
+skip$ -- 472
+stack$ -- 0
+substring$ -- 362
+swap$ -- 128
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 216
+warning$ -- 11
+while$ -- 92
+width$ -- 0
+write$ -- 279
+(There was 1 error message)

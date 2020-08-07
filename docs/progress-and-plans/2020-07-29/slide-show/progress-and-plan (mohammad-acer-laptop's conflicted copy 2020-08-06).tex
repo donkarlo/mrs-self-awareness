@@ -1,0 +1,127 @@
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{Collective Self-awareness in Progress and Plans -  Searching for applications}
+\author{Mohammad Rahmani}
+\institute{DECIDE Doctoral School}
+
+\begin{document}
+	\begin{frame}
+		\maketitle
+	\end{frame}
+	
+	\begin{frame}{Self-awareness (SA) in Intelligent Agents (IA)}
+		Self-awareness is an IA's ability to realize that it is experiencing something new for which it may need to build models, memorize them, compare them to new experiences and retrieve them in future for such comparison.  
+	\end{frame}
+
+	\begin{frame}{Difference between robots and other IAs}
+		\begin{itemize}
+			\item They have sensors (internal/external) sensors for observing the state in which they are and the state of environment
+			\begin{itemize}
+				\item The state in which it is may be different than the observation because their sensor measurement noise.
+			\end{itemize}
+			\item They have physical actuators to manipulate their internal/external state
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Initial knowledge}
+		New Experience realization always happens in comparison to previous experiences. 
+		\begin{itemize}
+			\item The very first experience is called the \textbf{initial knowledge}.  
+		\end{itemize}
+		New models will be trained, compared and memorized according to this model.
+	\end{frame}
+
+	\begin{frame}{Initialization methods}
+		\begin{itemize}
+			\item Manual training (e.g. Human training)
+			\item Reinforcement Learning (RL)
+			\item Evolutionary algorithms
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Generative and discriminative models}
+		A robot is a dynamic system that its state changes over the course of time.
+		\begin{itemize}
+			\item State is a parameter or a set of parameters that change over the course of time. Like the position or speed of a drone.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Generative and discriminative models}
+		The aforementioned models are of two kinds:
+		\begin{itemize}
+			\item \textbf{Generative}: To predict the future states according to current observation
+			\item \textbf{Descriminative}: To find out which model best matches the current experience
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Temporal-causal models}
+		\begin{itemize}
+			\item \textbf{Causal}: What external observation/state causes emergence of an internal observation/state and vise versa
+			\item \textbf{Temporal}: What is the most probable next observation/state (internal/external/contextual) after the current observation state
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{SA models in single robot systems}
+		The model should be trained for next robots state in \textbf{t} time units in future
+		\begin{itemize}
+			\item One drone should go \textbf{directly} from point \textbf{A} to point \textbf{B}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Learning from anomaly}
+		Imagine the two following scenarios:
+		\begin{itemize}
+			\item \textbf{Scenario A}: A drone is initially trained to autonomously fly from point A to point B (initial knowledge/experience).
+			\item \textbf{Scenario B}: The same drone on the same mission encounters aa new obstacle around which it should turn to continue it's previous path. 
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Learning from anomaly}
+		\begin{itemize}
+			\item In scenario A, only one predicting model is needed to predict the future, lets call it $M_1$
+			\item In scenario B, two models are needed to predict the future states.
+			\begin{itemize}
+				\item $M_1$ to predict the future state in strait paths
+				\item $M_2$ to predict the future state in the curve
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Why prediction is important?}
+		Because the distance between the predicted state and observed state enable the agent to detect anomality and triigers it to generate a new models such as $M_2$ for future cases.
+	\end{frame}
+	
+	\begin{frame}{Model kinds in MRS}
+		In MRS two different kind of self-awareness can be introduced
+		\begin{itemize}
+			\item Single robot state change in each robot
+			\item Inter-relation state change
+				\begin{itemize}
+					\item Two drones should directly go from Point A to Point B while keeping their interconnecting \textbf{distance} vector constant.
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Sources of abnormality in robotics}
+		\begin{itemize}
+			\item \textbf{In single robot system}
+				\begin{itemize}
+					\item Its proprioceptive/exteroceptive/contextulaized sensors
+				\end{itemize}
+			\item In MRS
+				\begin{itemize}
+					\item Its proprioceptive/exteroceptive/contextulaized sensors
+					\item Transmitted data from other Intelligent agents
+					\item In the course of relation they were supposed to follow
+				\end{itemize}
+		\end{itemize}
+		from which we suppose new models arise for better description of collective and individual behavior of the agents in an MRS. 
+	\end{frame}
+\end{document}

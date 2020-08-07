@@ -17,7 +17,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{Mohammad Rahmani}
-\lhead{CA in MRS}
+\lhead{MRS CA}
 
 \newcommand{\ignore}[1]{}
 \begin{document}
@@ -26,6 +26,22 @@
 	\author{Mohammad Rahmani}
 	\date{}
 	\maketitle
+	
+	\section{Definition}
+		“Information about the global state of the system, which feeds back to adaptively control the actions of the system’s low-level components. This information about the global state is distributed and statistical in nature, and thus is difficult for observers to tease out. However, the system’s components are able, collectively, to use this information in such a way that the entire system appears to have a coherent and useful sense of its own state \citep{mitchell-2005-self-awareness-and-control-in-decentralized-systems}. \cite{schmickl-2011-cocoro-the-self-aware-underwater-swarm} showed that a group of robots with simple behavioral rules and local interactions may achieve collective awareness of a global state, distributed across the individual units.
+		
+		\paragraph{} The emphasis here has been added, to highlight that a system which behaves in a self-aware manner is not necessarily required to possess a single component which has access to system global knowledge.Indeed, in many cases, e.g., ant colonies, immune systems and humans themselves, the entire system appears self-aware, despite the knowledge available at constituent parts being only local. The appearance of self-awareness is an emergent effect \citet{mitchell-2005-self-awareness-and-control-in-decentralized-systems}.
+		
+		\paragraph{} This is a key observation which can contribute to the design of self-aware systems: one need not require that such a system possesses a global omniscient controller. Indeed, many natural systems appear to have been favored by evolution which do not have such a central point of control, and rely upon relevant knowledge being available at required locations within the system. It is highly likely that this can improve the robustness and adaptability of such systems; these are desirable properties for natural and artificial systems alike \citet{mitchell-2005-self-awareness-and-control-in-decentralized-systems}.
+	
+	\section{Categorical application}
+		\subsection{IOT}
+			Ego-things
+		\subsection{Cyber-physical systems}
+			\citet{esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems} discusses the affect of interaction in CA of cyber physical systems.
+		\subsection{Industry 4.0}
+		\subsection{Swarm intelligence}
+		\subsection{Other applications}
 	\cite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles} has proposed a DBN based approach to make two automatic cars following each other, aware of abnormalities to avoid collision. 
 	
 	\cite{kephart-2017-self-adaptation-in-collective-self-aware-computing-systems}
@@ -38,8 +54,6 @@
 	
 	\citet{williams-2019-a-model-for-human-artificial-collective-consciousness-part-1} and \citet{williams-2019-a-model-for-human-artificial-collective-consciousness-part-2} borrowed the functional modeling approach common in systems and software engineering, an implementable model of the functions of human consciousness proposed to have the capacity for general problem solving ability transferable to any domain, or true self-aware intelligence, is presented. Its functional model is independent of implementation and proposed to also be applicable to artificial consciousness, and to platforms that organize individuals into what is defined here as a first order collective consciousness, or at higher orders into what is defined here as Nth order collective consciousness.
 	
-	\citet{esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems} extends the idea of the self-awareness of individual systems toward networked self-awareness. This gives systems the ability to reason about how they are being affected by the actions and interactions of others within their perceived environment, as well as in the extended environment that is beyond their direct perception. They propose that different levels of networked self-awareness can develop over time in systems as they do in humans. Furthermore, they propose that this could have the same benefits for networks of systems that it has had for communities of humans, increasing performance and adaptability.
-	
 	\cite{celentano-2016-multi-robot-systems-machine-machine-and-human-machine-interaction-and-their-modelling} suggests an interworking cognitive entities model which includes explicitly interworking capabilities and is applied to both machine-machine interaction and human-machine interaction.
 	
 	
@@ -50,52 +64,10 @@
 	
 	
 	
-	\section{Interaction}
-	\cite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach} proposes a probabilistic method to track and interpret the interactions of moving objects.
-		
-	\section{Self-reconfiguration}
-		\cite{pena-2019-blockchain-powered-collaboration-in-heterogeneous-swarms-of-robots} hs implemented a model on a swarm of drones to address the complexity of data generated by multi robots systems functioning in an environment. They  brought elastic computing techniques and dynamic resource management from the edge-cloud computing domain to the swarm robotics domain. This enables the dynamic provisioning of collective capabilities in the swarm for
-		different applications. Therefore, we transform a swarm into a distributed sensing and computing platform capable of complex data processing tasks, which can then be offered as a service.
-	
-	
-	
 	\section{Nodes and networks}
 		\cite{agne-2016-self-aware-compute-nodes}
 	
-	\section{Definition}
-		“Information about the global state of the system, which feeds back to adaptively control the actions of the system’s low-level components. This information about the global state is distributed and statistical in nature, and thus is difficult for observers to tease out. However, the system’s components are able, collectively, to use this information in such a way that the entire system appears to have a coherent and useful sense of its own state \citep{mitchell-2005-self-awareness-and-control-in-decentralized-systems}. \cite{schmickl-2011-cocoro-the-self-aware-underwater-swarm} showed that a group of robots with simple behavioral rules
-		and local interactions may achieve collective awareness of a global state, distributed across the individual units.
-		
-		\paragraph{} The emphasis here has been added, to highlight that a system which behaves in a self-aware manner is not necessarily required to possess a single component which has access to system global knowledge.Indeed, in many cases, e.g., ant colonies, immune systems and humans themselves, the entire system appears self-aware, despite the knowledge available at constituent parts being only local. The appearance of self-awareness is an emergent effect \citet{mitchell-2005-self-awareness-and-control-in-decentralized-systems}.
-		
-		\paragraph{} This is a key observation which can contribute to the design of self-aware systems: one need not require that such a system possesses a global omniscient controller. Indeed, many natural systems appear to have been favored
-		by evolution which do not have such a central point of control, and rely upon relevant knowledge being available
-		at required locations within the system. It is highly likely that this can improve the robustness and adaptability of
-		such systems; these are desirable properties for natural and artificial systems alike
-		
-		
-		\citet{mitchell-2005-self-awareness-and-control-in-decentralized-systems}.
-		
-		\paragraph{Working definition for self-aware computing systems}
-		This definition is based on the idea of a conceptual component called a self-aware node. A node in this context need not physically exist as a hardware or software component of a computing system, but provides a conceptualisation of locality within a global system, particularly in relation to what is considered self in the context of self-awareness. This distributed nature of conceptual components is particularly relevant to the idea of distributed self-awareness, as expounded by \citet{mitchell-2005-self-awareness-and-control-in-decentralized-systems}. The definition is as follows.
-		\\
-		To be self-aware a node must:
-		\begin{itemize}
-			\item Possess information about its internal state
-			(private self-awareness).
-			\item Possess sufficient knowledge of its environment to determine how it is perceived by other
-			parts of the system (public self-awareness).
-		\end{itemize}
-		Optionally, it might also:
-		\begin{itemize}
-			\item Possess knowledge of its role or importance
-			within the wider system.
-			\item Possess knowledge about the likely effect of
-			potential future actions / decisions.
-			\item Possess historical knowledge.
-			\item Select what is relevant knowledge and what is
-			not.
-		\end{itemize}
+	
 	\section{Self-collision avoid}
 	\cite{selvaggio-2017-towards-a-self-collision-aware-teleoperation-framework-for-compound-robots} lays the foundations of a self-collision aware teleoperation framework for compound robots. Their objective of the proposed system is to constrain the user to teleoperate a slave robot inside its safe workspace region through the application of force cues on the master side of the bilateral teleoperation system.
 	\cite{kaiser-2020-towards-self-aware-multirotor-formations} proposes a framework to combine self-aware computing with multirotor formations to address this problem. The self-awareness is envisioned to improve the
@@ -106,34 +78,45 @@
 	\citet{mitchell-2005-self-awareness-and-control-in-decentralized-systems} discusses how fish, bees, ants, immune systems form collective self-awareness in nature.
 	
 	\section{Minimum requirements to consider a collective of agents self-aware}
-		In collective self-awareness, the extroceptive sensory data (attractor) from one agent is used as proprioceptive data in another agent. 
-		\subsection{Initialization}
-		\subsection{Memorization}
-		\subsection{Inference/prediction}
-		\subsection{Anomaly detection}
-		\subsection{Model creation}
-		\subsection{Inference with control (Decision making)}
+		In collective self-awareness, the extroceptive sensory data (attractor) from one agent is used as proprioceptive data in another agent \citep{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}. As such interaction or better to say knowing how to interact is very important since it results in expansion of exteroceptive sensory data to the extended environment which is out of the reach of an individual agent. 
 		\subsection{Interaction}
-			Reference A \footnote{\url{https://en.wikipedia.org/wiki/Interacting_particle_system}}
-			\\
-			Reference B \footnote{\url{https://arxiv.org/pdf/2007.06120.pdf}}
-			\subsection{Others' modeling}
-			Sending (semantic) signals to others to model them according to their semantic reactions
-			\subsection{Discretionary of (time) (generalized) state space}
-			Reference A \footnote{\url{https://www.sciencedirect.com/science/article/pii/S0307904X12000455}}
-			\\
-			Reference B \footnote{\url{http://users.wpi.edu/~zli11/teaching/rbe595_2017/LectureSlide_PDF/discretization.pdf}}
-			\\
-			Reference C \footnote{\url{http://eceweb1.rutgers.edu/~gajic/solmanual/slides/chapter8_DIS.pdf}}
-			\subsection{Word strategies}
-				\textbf{Definition} Defining semantic segments understandable by two interacting agents
-				\paragraph{\cite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}} simulates semantic interaction at word level between two moving objects. They did so by training a DBN to follow the temporal interaction between two objects in the absence of any obstacle (repulsive force) which is theoretically described in Eq 14 and performed several times by changing the $\omega$ (in Eq 14) to provide the DBN with several training samples. The DBN itself uses MJPF to model state transitions at two level in each object (Fig 1) using the training data acquired from  the previous step. Once at continuous state level in regions where the motion(velocity) is constant (quasi-constant zones) using Kallman filters and then, using PF for making inferences between the discreet zones. The zones are acquired by Self-Organizing Maps (SOM) clustering method. Such zones form the alphabets (in this paper they are referred as the prototypes) of the words which describe the evolution of the interaction between the two objects. The interaction DBN is trained according to pairs (pair is used because this paper discusses interaction between two objects) of alphabets/zones/prototypes activated together (happened together frequently in the training data) as follows
-				\begin{equation}
-					D_k = [S_k^{1},S_k^{2}]
-				\end{equation}	
-				As such a dictionary of words according to different combination of alphabets can be formed as presented in Eq. 8. 
-				According to training data, an MJPF can learn the normal transition between words and later it can be used for predicting the next word of the sentence of the interaction between the two agents. Now in a second scenario, an obstacle is presented in the scene from which the follower should avoid. In this case, measuring the distance between the predictions of trained DBN and the observation using Hellinger distance in Eq 12 captures the abnormality. Fig 2 shows the such abnormality in the absence of the obstacle and Fig 3 shows it with the presence of obstacle. In fig 3, from $k=43$, the follower has passed the obstacle and so the interaction returns back to normal and eventually the abnormality rate falls. Subtly, this paper is trying to model the difference between a grammatically correct sentence and otherwise for interaction and encourages new formation of sentences from large abnormalities to describe new grammar needed for describing an interaction.  
-				\paragraph{\cite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}} An extension to \cite{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection} with some improvements such as using GNG for clustering the state space. Yet, both use MJPF for prediction and anomaly detection in the network of the agents. First they discreet the state space to capture traits (clusters) of different motions according to their time derivative. Then they form words  from composition of cetroids (means) of the elements in each cluster with different time derivative orders.  Now, DBNs in each agent will learn the transition between the words in learning normal task (Perimeter monitoring without a blocking obstacle).  Then these models will be shared among all the agents in the system and in an online testing, in a new version of the task, when a pedestrian interrupts the way, then other agents who are tracing the word transitions of all other agents in the system will understand about this  this event and they make precautionary decisions (emergency brake in this case).  Of course the reason to share word level transition model is to improve the communication and computation efficiency from continuous state space to discreet super state. Please check figure 2 to find out about the architecture by which two agents predict each other next word. 	
+		\citet{esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems} discusses the affect of interaction in CA of cyber-physical systems.
+		
+		Reference A \footnote{\url{https://en.wikipedia.org/wiki/Interacting_particle_system}}
+		\\
+		Reference B \footnote{\url{https://arxiv.org/pdf/2007.06120.pdf}}
+		To implement interaction as ,methods presented in \cite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach,kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles} (summarized later)
+		\subsubsection{Discretionary of (time) (generalized) state space}
+		This is the first step toward
+		Reference A \footnote{\url{https://www.sciencedirect.com/science/article/pii/S0307904X12000455}}
+		\\
+		Reference B \footnote{\url{http://users.wpi.edu/~zli11/teaching/rbe595_2017/LectureSlide_PDF/discretization.pdf}}
+		\\
+		Reference C \footnote{\url{http://eceweb1.rutgers.edu/~gajic/solmanual/slides/chapter8_DIS.pdf}}
+		\subsubsection{Alphabet strategies}
+		\subsubsection{Word strategies}
+		\textbf{Definition} Defining semantic segments understandable by two interacting agents
+			\paragraph{\cite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}} simulates semantic interaction at word level between two moving objects. They did so by training a DBN to follow the temporal interaction between two objects in the absence of any obstacle (repulsive force) which is theoretically described in Eq 14 and performed several times by changing the $\omega$ (in Eq 14) to provide the DBN with several training samples. The DBN itself uses MJPF to model state transitions at two level in each object (Fig 1) using the training data acquired from  the previous step. Once at continuous state level in regions where the motion(velocity) is constant (quasi-constant zones) using Kallman filters and then, using PF for making inferences between the discreet zones. The zones are acquired by Self-Organizing Maps (SOM) clustering method. Such zones form the alphabets (in this paper they are referred as the prototypes) of the words which describe the evolution of the interaction between the two objects. The interaction DBN is trained according to pairs (pair is used because this paper discusses interaction between two objects) of alphabets/zones/prototypes activated together (happened together frequently in the training data) as follows
+			\begin{equation}
+			D_k = [S_k^{1},S_k^{2}]
+			\end{equation}	
+			As such a dictionary of words according to different combination of alphabets can be formed as presented in Eq. 8. 
+			According to training data, an MJPF can learn the normal transition between words and later it can be used for predicting the next word of the sentence of the interaction between the two agents. Now in a second scenario, an obstacle is presented in the scene from which the follower should avoid. In this case, measuring the distance between the predictions of trained DBN and the observation using Hellinger distance in Eq 12 captures the abnormality. Fig 2 shows the such abnormality in the absence of the obstacle and Fig 3 shows it with the presence of obstacle. In fig 3, from $k=43$, the follower has passed the obstacle and so the interaction returns back to normal and eventually the abnormality rate falls. Subtly, this paper is trying to model the difference between a grammatically correct sentence and otherwise for interaction and encourages new formation of sentences from large abnormalities to describe new grammar needed for describing an interaction.  
+			\paragraph{\cite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}} An extension to \cite{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection} with some improvements such as using GNG for clustering the state space. Yet, both use MJPF for prediction and anomaly detection in the network of the agents. First they discreet the state space to capture traits (clusters) of different motions according to their time derivative. Then they form words  from composition of cetroids (means) of the elements in each cluster with different time derivative orders.  Now, DBNs in each agent will learn the transition between the words in learning normal task (Perimeter monitoring without a blocking obstacle).  Then these models will be shared among all the agents in the system and in an online testing, in a new version of the task, when a pedestrian interrupts the way, then other agents who are tracing the word transitions of all other agents in the system will understand about this  this event and they make precautionary decisions (emergency brake in this case).  Of course the reason to share word level transition model is to improve the communication and computation efficiency from continuous state space to discreet super state. Please check figure 2 to find out about the architecture by which two agents predict each other next word.
+		\subsubsection{Grammar strategy}
+	\subsection{Initialization}
+		\subsubsection{Others' modeling}
+			\paragraph{Modeling others through interactions}
+				\begin{enumerate}
+					\item Dispatching stimuli signals fro(exteroceptive or propioceptive) to to model the reaction of other agents
+					\item Sending (semantic) signals to others to model them according to their semantic reactions. If the agents have a common language for interaction.
+				\end{enumerate}
+	\subsection{Memorization}
+	\subsection{Inference/prediction}
+	\subsection{Anomaly detection}
+	\subsection{Model creation}
+	\subsection{Inference with control (Decision making)}
+		 	
 		
 	\section{The rest}
 	\cite{kernbach-2011-awareness-and-self-awareness-for-multi-robot-organisms}
@@ -141,6 +124,9 @@
 	CoCoRo - The Self-aware Underwater Swarm \cite{schmickl-2011-cocoro-the-self-aware-underwater-swarm}
 	\section{Surveys}
 	\cite{lewis-2011-a-survey-of-self-awareness-and-its-application-in-computing-systems} starting from section II-C.
+	
+	\section{Self-reconfiguration}
+	\cite{pena-2019-blockchain-powered-collaboration-in-heterogeneous-swarms-of-robots} hs implemented a model on a swarm of drones to address the complexity of data generated by multi robots systems functioning in an environment. They  brought elastic computing techniques and dynamic resource management from the edge-cloud computing domain to the swarm robotics domain. This enables the dynamic provisioning of collective capabilities in the swarm for different applications. Therefore, we transform a swarm into a distributed sensing and computing platform capable of complex data processing tasks, which can then be offered as a service.
 	
 	\bibliography{/home/donkarlo/Dropbox/projs/research/refs}
 \end{document}

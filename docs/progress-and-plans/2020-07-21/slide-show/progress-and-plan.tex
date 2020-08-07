@@ -1,0 +1,173 @@
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{Collective Self-awareness in Progress and Plans}
+\author{Mohammad Rahmani}
+\institute{DECIDE Doctoral School}
+
+\begin{document}
+	\begin{frame}
+		\maketitle
+	\end{frame}
+
+	\begin{frame}{Dynamic systems}
+		\begin{figure}
+			\includegraphics[scale=1]{/home/donkarlo/Dropbox/projs/research/assets/generalized-state-space.jpg}
+			\caption{Generalized space state}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Semantic SA - State space segmentation}
+		To either capture traits such as left turning of a moving object along time courses or constant motion zones 
+		\begin{itemize}
+			\item Self-organizing maps (SOM)
+			\item Growing Neural Gas (GNG)
+			\item Gaussian process division (GP)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Generative/predictive models}
+		Filtering (State estimation from observation):
+		\begin{itemize}
+			\item \textbf{Kallman Filter (KF):} Continuous state prediction for linear, dynamic systems from incremental observation.
+			\item \textbf{Particle Filter (PF) - Sequential Monte Carlo (SMC):} Discrete state prediction for non-linear, none Gaussian (error-wise) dynamic systems
+		\end{itemize}
+		Switching models (Next state estimation according to current observation):
+		\begin{itemize}
+			\item \textbf{Markov Jump Linear Systems (MJLS):} For linear dynamic systems with continuous state space
+			\item \textbf{Markov Jump Particle Filter (MJPF):} For dynamic, none linear system with any noise distribution which contains:
+			\begin{itemize}
+				\item Bank of KFs to map continuous observation to states
+				\item Banks of PFs to map discrete observations to states
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Generative/predictive models}
+		A very rough sketch of existing models:
+		\begin{figure}
+			\includegraphics[scale=0.3]{/home/donkarlo/Dropbox/projs/research/assets/transition-from-observation-to-words.png}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Semantic SA - Words as synchronously happened static motion zones}
+		Could be used in anomaly detection of a force field driven environment
+		\begin{itemize}
+			\item \textbf{Semantic segmentation}: SOM
+			\item \textbf{Alphabet level}: Zones/prototypes where the motion remains constant
+			\item \textbf{Word level}: Simultaneous occurrence of alphabets in a reference(training) task
+			\item \textbf{Sentence/Grammar level}: The sequence of words from the beginning of an interaction to the end
+		\end{itemize}
+		\begin{figure}
+			\includegraphics[scale=0.7]{/home/donkarlo/Dropbox/projs/research/assets/mutial-experienced-semantics.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Semantic SA - Words as classes of generalized state traits}
+		\begin{itemize}
+			\item \textbf{Semantic segmentation}: Self-organizing maps (SOM) / Growing Neural Gas (GNG)
+			\item \textbf{Alphabet level}: Centroids of time's i-th derivative of states derived from resulting clusters in state space segmentation phase
+		\end{itemize}
+		\begin{figure}
+			\includegraphics[scale=0.7]{/home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Semantic SA - Words as classes of generalized state traits - 2}
+		\begin{itemize}
+			\item \textbf{Word level}: A set of alphabets containing all time derivative orders 
+			\begin{equation}
+			w = \{\alpha^{(0)},...,\alpha^{(L)}\}
+			\end{equation}
+			where $\alpha^i$ is the centroid of i-th time derivative order of the states in a cluster.
+			\item \textbf{Sentence/Grammar level}: The sequence of words formed in a reference task
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Future plans for Words as classes of generalized state traits}
+		Building words/semantics on sensor heterogeneity level
+		\begin{itemize}
+			\item Different sensors (e.g one agent Temperature)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Future plan: Investigating applications in the following areas:}
+		\begin{itemize}
+			\item Internet of things (IoT)
+			\item Cyber physical systems (CPS)
+			\item Swarm intelligence
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Future plan for synchronously activated motion zones}
+		\begin{itemize}
+			\item Relating Reinforcement learning(RL) with Force-field(FF) analysis
+				\begin{itemize}
+					\item Rewards will be modeled by attractive forces
+					\item Costs will be modeled by repulsive forces
+				\end{itemize}
+		\end{itemize}
+		\textbf{Question?} Can semantic state description from robots help them to adapt gradually to new versions of the task they are trying to accomplish by better cooperation using RL and FF? 
+	\end{frame}
+
+	\begin{frame}{Future plan - words as traits - 1}
+		\begin{itemize}
+			\item Similar word in different sequences must induce new actions (Semantic context awareness)
+		\end{itemize}
+		Such as in driving
+		\begin{itemize}
+			\item Taking over
+				\begin{itemize}
+					\item Attractor vehicle  = Turning left + increase speed + Turning right
+					\item Follower vehicle = nothing + decrease speed a little + nothing
+				\end{itemize}
+		\end{itemize}
+		\begin{figure}
+			\includegraphics[scale=0.5]{/home/donkarlo/Dropbox/projs/research/assets/word-traits-cars-three.jpg}
+			\caption{Model creation from anomaly}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Future plans - words as traits - 2}
+		\begin{itemize}
+			\item Getting out of park:
+			\begin{itemize}
+				\item Attractor vehicle = Turn left + increase speed
+				\item Follower vehicle =  move forward a little
+			\end{itemize}
+		\end{itemize}
+		\begin{figure}
+			\includegraphics[scale=0.5]{/home/donkarlo/Dropbox/projs/research/assets/word-traits-cars-two.jpg}
+			\caption{}
+		\end{figure}
+		Turning left in both examples are the same but they must partially contribute to inducing different actions. 
+	\end{frame}
+
+
+	\begin{frame}{Other future plans to investigate - 1}
+		\begin{itemize}
+			\item Unifying "Words as traits" and "synchronously activated motion zones" into one idea to build more efficient CA system.
+			\item What other strategies can be taken to suggest words which improve semantic awareness?
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Other future plans to investigate - 2}
+		\begin{itemize}
+			\item How to relate hierarchical composition of semantics from one agent to actions in another agent?
+			\item How to prove semantic awareness of IAs improves the balance in goals of a system?
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Other future plans to investigate - 3}
+		\begin{itemize}
+			\item How does semantic-awareness help with improvements in minimum AI SA requirements such as initialization, memorization, predictive model temporal-causal model creation, anomaly detection and decision making?  
+		\end{itemize}
+	\end{frame}
+\end{document}

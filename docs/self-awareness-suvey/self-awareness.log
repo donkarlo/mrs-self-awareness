@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.24)  22 JUL 2020 17:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.23)  23 JUL 2020 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -48,9 +48,9 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language71) on input line 105.
+(babel)             (\language77) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language71) on input line 108.
+(babel)             (\language77) on input line 108.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
@@ -389,12 +389,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (6.03058pt too wide) in paragraph at lines 37--37
+Overfull \hbox (6.03058pt too wide) in paragraph at lines 40--40
 []\OT1/cmr/bx/n/12 Knowledge rep-re-sen-ta-tion and mod-el-ing struc-tures and
  []
 
 
-Overfull \hbox (11.57169pt too wide) in paragraph at lines 44--45
+Overfull \hbox (11.57169pt too wide) in paragraph at lines 46--47
 \OT1/cmr/m/n/10 ness $\OT1/cmtt/m/n/10 https : / / en . wikipedia . org / wiki 
 / Artificial _ consciousness$\OT1/cmr/m/n/10 . Con-
  []
@@ -402,7 +402,7 @@ Overfull \hbox (11.57169pt too wide) in paragraph at lines 44--45
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (9.77917pt too wide) in paragraph at lines 100--100
+Overfull \hbox (9.77917pt too wide) in paragraph at lines 92--92
 []\OT1/cmr/bx/n/12 Aspects of Re-flec-tive and Meta-reflective Self-awareness 
  []
 
@@ -418,24 +418,24 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-1
 .png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-fig-1.png  used on input line 149.
+nomous-systems-fig-1.png  used on input line 147.
 (pdftex.def)             Requested size: 241.49895pt x 203.56384pt.
  [5] [6 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sens
 orial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-f
 ig-1.png (PNG copy)>] [7]
-Overfull \hbox (36.15363pt too wide) in paragraph at lines 208--209
+Overfull \hbox (36.15363pt too wide) in paragraph at lines 206--207
 \OT1/cmr/m/n/10 po-si-tion in the rect-an-gu-lar court-yard of Genoa uni-ver-si
 ty and (x'=dx/dt,y'=dy/dt)
  []
 
 
-Overfull \hbox (5.05614pt too wide) in paragraph at lines 212--213
+Overfull \hbox (5.05614pt too wide) in paragraph at lines 210--211
 \OT1/cmr/m/n/10 tion ac-cu-racy (this is what forms the dif-fer-ence be-tween Z
 (observation/what
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 224--224
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
 [][]$\OT1/cmtt/m/n/8 https : / / en . wikipedia . org / wiki / Incremental _ le
 arning# : [] : text = In \ %20computer \
  []
@@ -451,10 +451,10 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table
 -i.png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-table-i.png  used on input line 230.
+nomous-systems-table-i.png  used on input line 228.
 (pdftex.def)             Requested size: 241.49895pt x 172.81181pt.
 
-Overfull \hbox (1.49698pt too wide) in paragraph at lines 237--238
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 235--236
 $\OT1/cmtt/m/n/10 https : / / en . wikipedia . org / wiki / Damasio \ %27s _ th
 eory _ of _ consciousness$
  []
@@ -473,16 +473,16 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-2
 .png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-fig-2.png  used on input line 249.
+nomous-systems-fig-2.png  used on input line 247.
 (pdftex.def)             Requested size: 241.49895pt x 240.20938pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--250
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
 []\OT1/cmr/m/n/10 Figure 3: regazzoni-2020-multi-sensorial-generative-and-descr
 iptive-self-
  []
 
 
-Overfull \hbox (4.68954pt too wide) in paragraph at lines 238--253
+Overfull \hbox (4.68954pt too wide) in paragraph at lines 236--251
  \OT1/cmr/bx/n/10 au-to-bi-o-graph-i-cal mem-o-ries (AMs)[] \OT1/cmr/m/n/10 Neu
 -ro-sci-en-tists such as Dama-sio Regaz-
  []
@@ -501,10 +501,10 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-3
 .png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-fig-3.png  used on input line 278.
+nomous-systems-fig-3.png  used on input line 276.
 (pdftex.def)             Requested size: 241.49895pt x 254.99101pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
 []\OT1/cmr/m/n/10 Figure 4: regazzoni-2020-multi-sensorial-generative-and-descr
 iptive-self-
  []
@@ -523,7 +523,7 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-4
 .png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-fig-4.png  used on input line 296.
+nomous-systems-fig-4.png  used on input line 294.
 (pdftex.def)             Requested size: 241.49895pt x 356.14084pt.
 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
 nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-5.png
@@ -536,7 +536,7 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-5
 .png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-fig-5.png  used on input line 317.
+nomous-systems-fig-5.png  used on input line 315.
 (pdftex.def)             Requested size: 241.49895pt x 252.24106pt.
  [15] [16 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-se
 nsorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems
@@ -555,7 +555,7 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-6
 .png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-fig-6.png  used on input line 431.
+nomous-systems-fig-6.png  used on input line 429.
 (pdftex.def)             Requested size: 241.49895pt x 177.80705pt.
 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
 nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-7.png
@@ -568,10 +568,10 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-7
 .png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-fig-7.png  used on input line 457.
+nomous-systems-fig-7.png  used on input line 455.
 (pdftex.def)             Requested size: 241.49895pt x 271.09328pt.
  [21]
-Overfull \hbox (13.56116pt too wide) in paragraph at lines 462--462
+Overfull \hbox (13.56116pt too wide) in paragraph at lines 460--460
 [] \OT1/cmr/bx/n/14.4 SIG-NAL REP-RE-SEN-TA-TION AND MODEL
  []
 
@@ -586,7 +586,7 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table
 -ii.png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-table-ii.png  used on input line 478.
+nomous-systems-table-ii.png  used on input line 476.
 (pdftex.def)             Requested size: 241.49895pt x 136.2596pt.
 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-ge
 nerative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-8.png
@@ -599,7 +599,7 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-8
 .png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-fig-8.png  used on input line 490.
+nomous-systems-fig-8.png  used on input line 488.
 (pdftex.def)             Requested size: 241.49895pt x 125.10422pt.
 [22 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
 l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-6
@@ -621,7 +621,7 @@ l-generative-and-descriptive-self-awareness-models-for-autonomous-systems-fig-9
 .png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/regazzoni
 -2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-auto
-nomous-systems-fig-9.png  used on input line 573.
+nomous-systems-fig-9.png  used on input line 571.
 (pdftex.def)             Requested size: 241.49895pt x 175.3495pt.
  [25]
 [26 </home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensoria
@@ -636,7 +636,7 @@ Underfull \hbox (badness 1137) in paragraph at lines 95--99
 Here is how much of TeX's memory you used:
  6735 strings out of 481239
  147071 string characters out of 5920377
- 373546 words of memory out of 5000000
+ 373548 words of memory out of 5000000
  21907 multiletter control sequences out of 15000+600000
  544375 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -654,7 +654,7 @@ type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.p
 fb>
-Output written on self-awareness.pdf (29 pages, 1079815 bytes).
+Output written on self-awareness.pdf (29 pages, 1079928 bytes).
 PDF statistics:
  158 PDF objects out of 1000 (max. 8388607)
  102 compressed objects within 2 object streams

@@ -1,0 +1,178 @@
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{Collective Self-awareness in Multi-Robot systems}
+\author{Mohammad Rahmani}
+\institute{DECIDE Doctoral School}
+
+\begin{document}
+	\begin{frame}
+		\date{}
+		\maketitle
+		\textcolor{white}{\textbf{29 July 2020}}
+	\end{frame}
+	
+	\begin{frame}{Collective-awareness (CA) in Multi-robot systems (MRS)}
+		Self-awareness is an intelligent agent's (IA) ability to realize that it is experiencing something new for which it may need to build models, memorize them, compare them to previous experiences and retrieve them in future for such comparison.  
+	\end{frame}
+
+	\begin{frame}{Difference between robots and other Intelligent Agents (IAs)}
+		 \begin{itemize}
+		 	\item A robot is a dynamic system acting in a dynamic environment
+		 		\begin{itemize}
+		 			\item Dynamism means states change over the course time in both the robot and the environment.
+		 		\end{itemize}
+	 		\item They have actuators with which they can manipulate their state space 
+		 \end{itemize}
+	\end{frame}
+
+	\begin{frame}{Difference between robots and other IAs - Sensors}
+		They have sensors with which they can observe/measure the state in which they are. 
+		\begin{itemize}
+			\item Sensor types
+			\begin{itemize}
+				\item Proprioceptive sensors: To observe/measure/assess their current state
+				\item Exteroceptive sensors: To observe/measure/assess the environment's current state
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Difference between robots and other IAs - Sensors - 2}
+		\begin{itemize}
+			\item The data generated from these sensors may be put together contextually \textbf{dispositional units (DUs)} \footnote{\fullcite{damasio-1999-the-feeling-of-what-happens-body-and-emotion-in-the-making-of-consciousness} for study} or even hierarchically in which each sequence of data contains another sequence of data or DUs at the leaves.
+			\item \textbf{Sensor noise} is the difference sensor observation/measurement and the real state in which the robot is. For example the difference between the GPS sensor observation about the position of a robot and its real position. 
+			\item \textbf{Experience}: A sequence of the data perceived by these sensors can be regarded as an experience.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{State space}
+		Can be 
+		\begin{itemize}
+			\item Discreet
+			\item Continuous
+		\end{itemize}
+	   A continuous space state can be discretized to
+		\begin{itemize}
+			\item reduce computational complexity in model creation
+			\item form a language to enhance interaction between robots for model sharing
+			\item to define the grammar of a relation between several robots
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Self-aware robot particularities - 1}
+		A self-aware robot needs 
+		\begin{itemize}
+			\item \textbf{Initialization} An initial knowledge/model that it can be developed according to its comparison with new models
+			\item \textbf{Anomaly detection / descriminative modeling} A comparing ability with which it can compare the new experience in comparison to existing experiences
+			\item \textbf{Memorization} A memorization system with which it can store and invoke the created models for comparison against a new experience
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Self-aware robot particularities - 2}
+		A self-aware robot needs 
+		\begin{itemize}
+			\item \textbf{ (Generative) Model creation} an ability with which it can create new models when the new experience is different enough (measured by discriminative / abnormality detection models) from existing generative models predictions so that it can better predict future.
+			\item \textbf{Decision making} An ability with which it can determine which actions to take according to the sequences of experienced and predicted states to minimize the abnormality size until the creation of a new generative model which describes the robot and the environment better.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Initial knowledge}
+		New Experience realization always happens in comparison to previous generative models. 
+		\begin{itemize}
+			\item The very first experience is called the \textbf{initial knowledge}.  
+		\end{itemize}
+		New models will be created, compared and memorized according to this model.
+	\end{frame}
+
+	\begin{frame}{Initialization methods}
+		\begin{itemize}
+			\item Manual training (e.g. Human training)
+			\item Reinforcement Learning (RL)
+			\item Evolutionary algorithms
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Generative, temporal-causal modeling}
+		Generative models are better to incorporate the following two specifications:
+		\begin{itemize}
+			\item \textbf{Temporality}: which should predict the most probable next observation after a certain amount of time.
+			\item \textbf{Causality}: which should predict what exteroceptive experience causes emergence of an proprioceptive experience and vise versa.
+		\end{itemize}
+		In both above cases, models may consider exteroceptive and proprioceptive experience individually or as DUs.  
+	\end{frame}
+
+	\begin{frame}{Anomaly detection / descriminative modeling}
+		\begin{itemize}
+			\item \textbf{Definition}: Anomaly is the difference between the current observation/experience and the predication of generative models.
+		\end{itemize}
+		Imagine the two following scenarios:
+		\begin{itemize}
+			\item \textbf{Scenario A}: A drone is initially trained to autonomously fly from point A to point B (initial knowledge/experience).
+			\item \textbf{Scenario B}: The same drone on the same mission encounters a new obstacle around which it should turn to continue it's previous path. 
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Learning from anomaly}
+		\begin{itemize}
+			\item In scenario A, only one predicting model is needed to predict the future, lets call it $M_1$
+			\item In scenario B, two models are needed to predict the future states together in a sequence such as ${M_1,M_2,M_1}$
+				\begin{itemize}
+					\item $M_1$ to predict the future state in strait paths
+					\item $M_2$ to predict the future state in the curve
+				\end{itemize}
+		\end{itemize} 
+	\end{frame}
+
+	\begin{frame}{New Generative model creation}
+		Without $M_2$, a human can take control of the drone to turn it around the building and then the drone by taking advantage of its descriminative model, detects abnormality and consequently encodes the new state transition over the course of time to $M_2$.The human is replaceable by to build $M_2$ and use it as a new model for future hybrid generative models.
+		\begin{itemize}
+			\item Reinforcement Learning
+			\item Evolutionary Algorithms
+			\item ...
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{Generative model types in MRS}
+		In MRS two different kind of self-awareness can be introduced
+		\begin{itemize}
+			\item Single robot state change in each robot (Discussed earlier)
+			\item Inter-relation state change
+				\begin{itemize}
+					\item Two drones should directly go from Point A to Point B while keeping their interconnecting \textbf{distance} vector constant.
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Sources where abnormality should be sought}
+		\begin{itemize}
+			\item \textbf{In single RS}: Difference between new experiment and generative models
+			\item In MRS external observation of a robot may be composed of:
+				\begin{itemize}
+					\item In the difference between the generative model prediction and current experience in each single robot
+					\item Comparison of transmitted new experience from other robots with regard to their previously shared generative models among others
+					\item In the difference between generative model prediction on the course of relation between the robots and the current experience. 
+				\end{itemize}
+		\end{itemize}
+		from which we suppose new models arise for better description of collective and individual behavior of the agents in an MRS. 
+	\end{frame}
+
+	\begin{frame}{Decision making}
+		Decision making is the matter of using actuators such that abnormality is kept minimum until new generative models are made.
+		These acting models may use
+		\begin{itemize}
+			\item Reinforcement learning
+			\item Evolutionary algorithms
+		\end{itemize} 
+		to act in such a way.
+	\end{frame}
+
+	\begin{frame}[allowframebreaks]{References}
+		\printbibliography
+	\end{frame}
+\end{document}

@@ -1,0 +1,25 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'progress-and-plan.blg'
+[91] biber:322> INFO - === Do Aug  6, 2020, 10:39:53
+[227] Biber.pm:415> INFO - Reading 'progress-and-plan.bcf'
+[312] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
+[328] Biber.pm:4256> INFO - Processing section 0
+[328] Utils.pm:75> INFO - Globbing data source '/home/donkarlo/Dropbox/projs/research/refs.bib'
+[328] Utils.pm:91> INFO - Globbed data source '/home/donkarlo/Dropbox/projs/research/refs.bib' to /home/donkarlo/Dropbox/projs/research/refs.bib
+[515] Biber.pm:4455> INFO - Looking for bibtex format file '/home/donkarlo/Dropbox/projs/research/refs.bib' for section 0
+[527] bibtex.pm:1653> INFO - LaTeX decoding ...
+[888] bibtex.pm:1471> INFO - Found BibTeX data source '/home/donkarlo/Dropbox/projs/research/refs.bib'
+[892] Utils.pm:293> WARN - Duplicate entry key: 'esterle-2020-i-think-therefore-you-are-models-for-interaction-in-collectives-of-self-aware-cyber-physical-systems' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[896] Utils.pm:293> WARN - Duplicate entry key: 'saeed-2016-semantics' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[906] Utils.pm:293> WARN - Duplicate entry key: 'hochreiter-1997-long-short-term-memory' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[915] Utils.pm:293> WARN - Duplicate entry key: 'narratology-bal-2009' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[916] Utils.pm:293> WARN - Duplicate entry key: 'problematizing-formalism-a-double-cross-of-genre-boundaries-cain-1999' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[917] Utils.pm:293> WARN - Duplicate entry key: 'fan-2018-hierarchical-neural-story-generation' in file '/home/donkarlo/Dropbox/projs/research/refs.bib', skipping ...
+[1158] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_cdCP/refs.bib_13208.utf8, line 2310, warning: 450 characters of junk seen at toplevel
+[1170] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1170] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1170] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1171] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1173] bbl.pm:652> INFO - Writing 'progress-and-plan.bbl' with encoding 'UTF-8'
+[1173] bbl.pm:755> INFO - Output to progress-and-plan.bbl
+[1173] Biber.pm:128> INFO - WARNINGS: 7
