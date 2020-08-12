@@ -1,8 +1,37 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Apatean et~al.(2007)Apatean, Rogozan, Rusu, and
+  Bensrhair]{apatean-2007-sensors-for-obstacle-detection-a-survey}
+Anca Apatean, Alexandrina Rogozan, Corneliu Rusu, and Abdelaziz Bensrhair.
+\newblock Sensors for obstacle detection - a survey.
+\newblock pages 100 -- 105, 06 2007.
+
+\bibitem[{Jackson} et~al.(2020){Jackson}, {Howell}, {Shah}, {Schwager}, and
+  {Manchester}]{jackson-2020-scalable-cooperative-transport-of-cable-suspended-loads-with-uavs-using-distributed-trajectory-optimization}
+B.~E. {Jackson}, T.~A. {Howell}, K.~{Shah}, M.~{Schwager}, and Z.~{Manchester}.
+\newblock Scalable cooperative transport of cable-suspended loads with uavs
+  using distributed trajectory optimization.
+\newblock \emph{IEEE Robotics and Automation Letters}, 5\penalty0 (2):\penalty0
+  3368--3374, 2020.
+
+\bibitem[Kanapram et~al.(2019)Kanapram, Campo, Baydoun, Marcenaro, Bodanese,
+  Regazzoni, and
+  Marchese]{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}
+D.~Kanapram, Damian~Andres Campo, Mohamad Baydoun, Lucio Marcenaro, Eliane~L.
+  Bodanese, Carlo~S. Regazzoni, and Mario Marchese.
+\newblock Dynamic bayesian approach for decision-making in ego-things.
+\newblock \emph{2019 IEEE 5th World Forum on Internet of Things (WF-IoT)},
+  pages 909--914, 2019.
+
+\bibitem[Soria et~al.(2020)Soria, Schiano, and
+  Floreano]{soria-2020-swarmlab-a-matlab-drone-swarm-simulator}
+Enrica Soria, Fabrizio Schiano, and Dario Floreano.
+\newblock Swarmlab: a matlab drone swarm simulator.
+\newblock \emph{arXiv preprint arXiv:2005.02769}, 2020.
 
 \end{thebibliography}
