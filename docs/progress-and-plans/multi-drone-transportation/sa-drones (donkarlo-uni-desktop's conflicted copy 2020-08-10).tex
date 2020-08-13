@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\pagenumbering{arabic}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{soul}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{SA drone swarm for transportation}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Self-aware drone swarm for transportation}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	\section{Introduction}
+	Collective load transportation
+	
+	\section{Related work}
+	
+	\section{Homeostatic}
+	Keep maximum stability which means 
+		\begin{itemize}
+			\item keeping the most equal distance and angels possible between the drones and the load
+				\begin{itemize}
+					\item 
+				\end{itemize}
+		\end{itemize}
+		
+	\section{Generative models}
+		\subsection{Initial model - constant movement between two points}
+		\subsection{Vertical frame maneuver}
+		\subsection{Horizontal frame maneuver}
+		\subsection{Small square inference challenge} can it solve the small square problem?
+		
+		\subsection{Individual models}
+	\section{Discriminative models / Abnormality detection }
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	
+	\section{Sensors}
+		\subsection{Exteroceptive}
+		\subsection{Proprioceptive}
+		\subsection{Heterogeneity}
+		\subsection{Multi-sensory approach / Fusion}
+		\subsection{Feature selection for generative and discriminative models}
+	
+	\section{Leader-follower}
+		\paragraph{Ranking}
+		The one which is closer to the destination will be ranked lower and the ranking starts from 1. The leader is rank 1
+	
+	\section{Interaction}
+		\section{Neighboring interaction}
+			\begin{itemize}
+				\item Only with the two neighbors on the sides
+				\item in 3/2 the neigbouring ranks can do that.
+			\end{itemize}
+		\section{Semantic interaction}
+		Understanding the meaning of an action by considering in the context of the actions it has happened and reacting according to that context. For example if a drone moves left, then should the neighbouring drones consider it as a local decision or as a decision to which they should react? 
+		
+
+	\section{Null hypothesis}
+		\begin{itemize}
+			\item Semantic interaction does not improve decision making
+		\end{itemize}
+	
+	\section{Decision making and control}
+		\begin{itemize}
+			\item A model to convert abnormality signals to decisions for actuators 
+		\end{itemize}
+	
+	\section{Roadmap}
+	
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs.bib}
+\end{document}

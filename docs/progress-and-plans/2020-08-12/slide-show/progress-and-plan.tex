@@ -1,0 +1,183 @@
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{Proposal experimental plan draft - Version 0.1}
+\author{Mohammad Rahmani}
+\institute{DECIDE Doctoral School}
+
+\begin{document}
+	\begin{frame}
+		\date{}
+		\maketitle
+		\textcolor{white}{\textbf{12 August 2020}}
+	\end{frame}
+
+	\begin{frame}{Proposal Goal}
+		\textbf{Scientific}
+		\begin{itemize}
+			\item To find out whether intelligent agents semantic-awareness help with emergence of better collective behavior (NULL hypothesis)
+		\end{itemize}
+		
+		\textbf{Technical}
+		\begin{itemize}
+			\item Scalable object transportation (and vertical landing in vertical mode)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Semantic-awareness meaning}
+		\begin{itemize}
+			\item A mutual understanding of the meaning of the language from which generative (Bayesian) models that agents use are derived
+			\item Considering the meaning of different parts of this language in the context in which they appear to provide
+				\begin{itemize}
+					\item Temporality semantics
+					\item Similarity semantics
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Goal - semantic perspective}
+		Each agent receives sequences of generative models that neighboring agents have, are or will experience(d) and they decide for individual actions which emerges in a collective behavior to solve a problem.
+	\end{frame}
+	
+	\begin{frame}{Related study area}
+		\begin{itemize}
+			\item Bayesian self-aware Artificial Intelligence 
+			\item Collective adaptive systems
+				\begin{itemize}
+					\item Collective object transportation
+				\end{itemize}
+			\item Swarm navigation and Self-organizing
+			\item Dynamic system modeling
+				\begin{itemize}
+					\item Dynamic Bayesian modeling
+				\end{itemize}
+			\item Discretization of continuous features
+			\item Semantics
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Methodology}
+		A Bayesian self-aware Artificial intelligence approach will be taken which must include
+		\begin{itemize}
+			\item Individual perception
+			\item Discretization (using clustering methods) of state space and derive the alphabet of two languages
+				\begin{itemize}
+					\item Alphabets of words describing interaction between neighboring agents
+					\item Alphabets of words describing individual dynamism 
+				\end{itemize}
+			\item Abnormality detection in individual motion
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Methodology - 2}
+		\begin{itemize}
+			\item Abnormality detection in interaction
+			\item Generative individual models
+			\item Generative interaction models
+			\item Descriminative models
+			\item Control decision making according abnormality detection
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Horizontal Frame Scenarios}
+		Reference transportation
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.45\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/swarm-drones-reference-task.png}
+			\label{fig:swarm-drones-reference-task}
+		\end{figure}
+		The importance of such obstacles is that every surface can be divided to small, similar surfaces such that they approach the shape of the surface. 
+	\end{frame}
+
+	\begin{frame}{Horizontal Frame Scenarios - Frame passage transportation}
+		New Generative DBN models can be learned out of the following scenarios. 
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/vertical-frame-scenarios.png}
+			\label{fig:collective-behaviour-learning}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Horizontal Frame Scenarios}
+		New Generative DBN models can be learned out of the following scenarios. 
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/vertical-frame-scenarios.png}
+			\label{fig:collective-behaviour-learning}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Horizontal Frame Scenarios}
+		\begin{itemize}
+			\item \textbf{Scenario 1}: Row formation to pass through a vertically narrow frame 
+			\item \textbf{Scenario 2}: Line formation to pass through a horizontally narrow frame
+			\item \textbf{Scenario 3}: Compact formation to pass through a small window
+		\end{itemize}
+		The goal is that through semantic transaction of generative models, such formations are achieved
+	\end{frame}
+
+	\begin{frame}{Scenario: Vertical column avoidance}
+		Unlike frames, a collective behavior is \textbf{not} necessary in this scenario
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/vertical-obstacle-avoidance.png}
+			\label{fig:vertical-obstacle-avoidance}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Scenario: Horizontal column avoidance}
+		Unlike frames, a collective behavior is \textbf{not} necessary in this scenario
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/horizental-column-avoidance.png}
+			\label{fig:vertical-obstacle-avoidance}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Scenario: Horizontal column avoidance}
+		More scenarios could be devised such that interaction orientation changes between consecutive ranks is not necessary
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/vertical-obstacle-avoidance-by-general-movement.png}
+			\label{fig:vertical-obstacle-avoidance}
+		\end{figure} 
+	\end{frame}
+
+	\begin{frame}{Scenario: Horizontal column avoidance}
+		The goal of the last three scenarios is to prove that semantic communication not only helps better individual actions but also it can signify whether a communication is needed at all or not.    
+	\end{frame}
+
+	\begin{frame}{Communication rules}
+		To keep communication decentralized, a ranking strategy according to closeness of agents to destination is needed and the following rules should be observed. 
+		\begin{itemize}
+			\item No agent can transmit the generative models from other agents to the neighboring agent.
+			\item Messages can be made of one generative model and the senders rank or more than one (for distributional semantics) 
+			\item Messages can only be transmitted to neighboring ranked nodes when the generative model an agent is practicing changes.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Communication rules - Ranking}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.6\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/agents-rankings-according-to-their-closeness-to-destination.png}
+			\label{fig:agents-rankings-according-to-their-closeness-to-destination.png}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Requirements}
+		\begin{itemize}
+			\item At least three drones so that neighboring communication is meaningful, although the results could be evaluated a lot better using more drones
+			\item Minimum two different sensors to establish a relationship between heterogeneous sensors. The best of such sensors for depth and obstacle selection in low speed are active sensors: 
+			\begin{itemize}
+				\item Lidar
+				\item Sonar
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+\end{document}
