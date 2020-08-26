@@ -154,82 +154,82 @@
 		
 	\paragraph{importance of embodying SA capabilities}The extent of the embodied SA capabilities influences the agent's performance when solving tasks and are assumed as reasons for the significant capability differences of the various biological species. 
 		
-		\section{Requirements to consider an agent self-aware}The following capabilities as the minimum requirements in to consider an agent self-aware:
-			\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Table I describes the proposed SA capabilities and provides a relationship between each of them and biological agents, demonstrating how humans address these capabilities.
-			\subsection{Initialization}
-				\subsection{Reference task} \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems,kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things,kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection,kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles,baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving} have used this method. That is, they had a vehicle and they had a rectangular path along which an automatic vehicle was driven by a human driver. This builds the normal task. 
-				\subsubsection{Random Walk} \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} claimed it was used in \citep{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}
-				\subsubsection{Human/IA helped initialization} Such as human-agent driving of an Autonomous Car in an (AV)
-				\subsubsection{Self Modeling}
-				\citet{bellman-2017-self-modeling-and-self-awareness}
-				\citet{kwiatkowski-2019-zero-shot-learning-on-simulated-robots}	
-				\citet{kwiatkowski-2019-task-agnostic-self-modeling-machines}
-				By inner speech \cite{chella-2020-developing-self-awareness-in-robots-via-inner-speech}
-			\subsection{Memorization}
-			\subsection{Inference/prediction}
-				\paragraph{DBN} 
-				Dynamic systems are systems whose states evolve over the course of time. In other words their future state can be described by first order differential equation of their current state on time. MJLS - MJPF \citep{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}
-			\subsection{Anomaly detection}
-				Abnormality is defined by the difference between prediction and observation. So for anomaly detection these two factors usually are needed:
-				\begin{itemize}
-					\item Predicting model
-						Filtering is the matter of estimating an unknown Probability Mass Function (PMF). A popular use case of filtering methods is in robotics where a robot tries to estimate its location after a set of actions it has performed.
-						\begin{itemize}
-							\item \textbf{Kalman Filtering (KF)} \cite{simon-2010-kalman-filtering-with-state-constraints-a-survey-of-linear-and-nonlinear-algorithms}
-							An example for Bayesian filter using a dynamic model is the Kalman Filter (KF), an optimal state estimator for linear
-							dynamic systems with Gaussian noise iteratively predicting and estimating states from incremental observations. The
-							posterior probability density function (PDF) of the continuous state in the KF is Gaussian.
-							\item \textbf{Particle Filtering (PF)} \cite{gustafsson-2010-particle-filter-theory-and-practice-with-positioning-applications}
-							A Particle Filter (PF) allows one
-							to manage a numerical approximation of the posterior in a
-							nonlinear, non-Gaussian Bayesian filtering problem. PF
-							approximates PDFs with a set of weighted samples (particles),
-							which are propagated with an iterative random process. Particles are re-weighted based on dynamics and a likelihood score
-							that depends on new observations.
-							\item \textbf{Markov Jump Linear System (MJLS)} \cite{doucet-2001-particle-filters-for-state-estimation-of-jump-markov-linear-systems}
-							\item \textbf{Markov Jump Particle Filter (MJPF)} is formed of KP+PF and follows the same direction as MJLS
-								\cite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}
-								a method to jointly learn coupled
-								KF and PF models from a training sequence of state-dependent
-								actions. Such filters are jointly used to perform Bayesian
-								inference on a learned plan model. They are used to predict
-								and estimate the states of a moving agent.
-						\end{itemize}
-					\item A metric to measure 
-						\begin{itemize}
-							\item \textbf{Hellinger distance} Introduced in \cite{lourenzutti-2014-the-hellinger-distance-in-multicriteria-decision-making-an-illustration-to-the-topsis-and-todim-methods} and used in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems,kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection,kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}
-							\item \textbf{Bhattacharya distance} used in \cite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}
-						\end{itemize}
-				\end{itemize}
-				\paragraph{\cite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}}
+	\section{Requirements to consider an agent self-aware} \label{sec:minimum-requirements-to-consider-an-agent-homostatis} The following capabilities as the minimum requirements in to consider an agent self-aware:
+		\citet{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} Table I describes the proposed SA capabilities and provides a relationship between each of them and biological agents, demonstrating how humans address these capabilities. In other words, the higher the level of these capabalities are the better the the agent(s) can keep their homeostasis status.
+		\subsection{Initialization}
+			\subsection{Reference task} \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems,kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things,kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection,kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles,baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving} have used this method. That is, they had a vehicle and they had a rectangular path along which an automatic vehicle was driven by a human driver. This builds the normal task. 
+			\subsubsection{Random Walk} \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} claimed it was used in \citep{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}
+			\subsubsection{Human/IA helped initialization} Such as human-agent driving of an Autonomous Car in an (AV)
+			\subsubsection{Self Modeling}
+			\citet{bellman-2017-self-modeling-and-self-awareness}
+			\citet{kwiatkowski-2019-zero-shot-learning-on-simulated-robots}	
+			\citet{kwiatkowski-2019-task-agnostic-self-modeling-machines}
+			By inner speech \cite{chella-2020-developing-self-awareness-in-robots-via-inner-speech}
+		\subsection{Memorization}
+		\subsection{Inference/prediction}
+			\paragraph{DBN} 
+			Dynamic systems are systems whose states evolve over the course of time. In other words their future state can be described by first order differential equation of their current state on time. MJLS - MJPF \citep{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}
+		\subsection{Anomaly detection}
+			Abnormality is defined by the difference between prediction and observation. So for anomaly detection these two factors usually are needed:
+			\begin{itemize}
+				\item Predicting model
+					Filtering is the matter of estimating an unknown Probability Mass Function (PMF). A popular use case of filtering methods is in robotics where a robot tries to estimate its location after a set of actions it has performed.
 					\begin{itemize}
-						\item The example is is their customary example. The iCab 
-						\item The continuous space of status is formed of X= [x,y,x',y'] where [x,y] is the position in the rectangular courtyard of Genoa university and (x'=dx/dt,y'=dy/dt)  is the velocity vector.
-						\item It uses Self organising maps (SOM) to to make the above space discrete (shown by S/the vocabulary) (In their forthcoming papers they used Growing Neural Gas)
-						\item For the first time it introduced Markov Jump Particle Filter (MJPF) in this paper and they used it in their recent papers including yours. That's why it clarify gradually everything back. MJPF predicts (filters) states in two levels. Kolman F. is responsible for predicting from previous X to next X and Particle filter is responsible for Predicting from previous S to nex S (previous=time stamp k-1, nex= time stamp k) 
-						\item Now that there is method to predict, it introduces three metrics for abnormality prediction db1 (eq 18), db2 (eq 19, just assumes that Z happens close to X), y (eq 21 based on weighted distance described in Eq5)
-						\item They tested like this: a human rode the vehicle along the rectangular courtyard.  Please notice that they say that location data had 10 cm position accuracy (this is what forms the difference between Z(observation/what is measured by sensors) and X(true status))
-						\item In the next phase they performed three different maneuvers when the normal rectangular path (reference task in your paper) is interrupted. 1. turning around the pedestrian (called avoidance abnormality Fig 7) 2. U-turn (returning back Fig 4c , abnormality Fig 8) 3. And stopping until the pedestrian goes away from the cam view. (abnormality Fig 9)
-						\item Why this paper is important? Abnormality indexes use the generated discrete states in their calculation but the results in Fig 7,8,9 show how well extracted abnormalities from reference task matches the times in the three cases that the pedestrian interrupted the path in all three maneuvers.  So their abnormality indexes are maneuver independent, can work on discreet data etc. This discreet state space can form a vocabulary.
+						\item \textbf{Kalman Filtering (KF)} \cite{simon-2010-kalman-filtering-with-state-constraints-a-survey-of-linear-and-nonlinear-algorithms}
+						An example for Bayesian filter using a dynamic model is the Kalman Filter (KF), an optimal state estimator for linear
+						dynamic systems with Gaussian noise iteratively predicting and estimating states from incremental observations. The
+						posterior probability density function (PDF) of the continuous state in the KF is Gaussian.
+						\item \textbf{Particle Filtering (PF)} \cite{gustafsson-2010-particle-filter-theory-and-practice-with-positioning-applications}
+						A Particle Filter (PF) allows one
+						to manage a numerical approximation of the posterior in a
+						nonlinear, non-Gaussian Bayesian filtering problem. PF
+						approximates PDFs with a set of weighted samples (particles),
+						which are propagated with an iterative random process. Particles are re-weighted based on dynamics and a likelihood score
+						that depends on new observations.
+						\item \textbf{Markov Jump Linear System (MJLS)} \cite{doucet-2001-particle-filters-for-state-estimation-of-jump-markov-linear-systems}
+						\item \textbf{Markov Jump Particle Filter (MJPF)} is formed of KP+PF and follows the same direction as MJLS
+							\cite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}
+							a method to jointly learn coupled
+							KF and PF models from a training sequence of state-dependent
+							actions. Such filters are jointly used to perform Bayesian
+							inference on a learned plan model. They are used to predict
+							and estimate the states of a moving agent.
 					\end{itemize}
-				\paragraph{\cite{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}}
-				This paper has used MJPF (Markov Jump Particle Filter) and Hellinger distance for feature selection. It wants to pick a feature which is more accurate in predicting and abnormality detection. 
-				Normal task is turning around the rectangular of university courtyard without any obstacle and abnormal is the time that the AV has to perform a U-turn when an obstacle interrupts the perimeter. While performing the normal task it gathers 3 sensory data Steering,Velocity and power. Then it uses GNG to make space state and generate the alphabet of state space and then it puts together the centroid of each cluster and it's time derivatives in one set as a word. (Although position is not measured here but you can consider the state space like [x,y,vx,vy] and then have one GNG for positions and another for speeds. then each word is made of the centroid of a position class and the centroid of a speed class). Now that we have words, we can use MJPF to observe continuous data and predict the next time-step discrete data (the next word). By this prediction and hellinger distance (eq 5) we can measure the abnormality arises from taught DBN for normal task against the U-turn. On page 5 it tested eq 5 (using the learned MJPF from the normal task) for several features and table 1 on page 7 shows the best feature which eq 5 can get its abnormality and provide better prediction is SP (S=steering, P=Power). (I personally expected SV is the best feature, but MJPF proves that it is better to consider power instead of velocity).  
-				
-				\paragraph{\cite{baydoun-2018-a-multi-perspective-approach-to-anomaly-detection-for-self-aware-embodied-agents}} In this paper, anomaly detection was tackled from two layers of self-awareness. The Shared-level (SL) and Private Level (PL). SL is what is visible by an external observer but PL is only available to the agent. SL is considered the position and velocity of an Autonomous Vehicle (AV) which is observable by an external observer and PL is the video frames captured by the AV. Anomaly detection is performed by training two different models on a reference experience (in this paper, it is called Environment Center (EC) Model, in SA models such as \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} these reference tasks form initial models) and comparing their predication with the observations from a new task/experience. The reference task is perimeter monitoring (PM) of the rectangular courtyard of Genoa university and the new experience is when this rectangular path is interrupted by a pedestrian twice (Fig 3, a and b). For SL abnormality detection, they have used Gaussian Process (GP) to divide the perimeter into quasi-constant velocity zones (speed is constant in these zones) and over these zones they have trained a bank of Kalman Filters (KFs) for regional position estimation. A sample of such perimeter partitioning can be seen in Fig 7. During the new experience, the distance between KFs bank prediction (trained during the reference task) and the observations come from online, new experience, forms the abnormality measurements which is presented in Equation (3) and graphed in Figure (5).  It has captured four times the presence of a pedestrian in two times circling around the perimeter and even 8 times (but lower than the abnormality threshold) the corners of the perimeter. To tackle PL abnormality detection, they have used a GAN with two discriminator and two generators. Each G-D pair is responsible to predict-score once from frame to optical flow and once from optical-flow to frame. GP zones (from the previous experience), will be used here to train a bank of discriminators (similar to banks of KFs) for scoring predicted data from generators. This whole process is performed for two sets in two GANs (GAN 1 and GAN 2). Set1 is for learning straight paths and Set2 for training curves. The abnormality resulted from Eq(4) is used to create Fig 6. The new abnormality which is the result of minimum of GAN 1 and GAN 2, resulted in a better description of the new experience because not only it can detect the presence of a pedestrian 4 times in two laps, but also it can predict abnormality (pedestrian presence) a few moments before and capture camera's noise on straight paths because of AV's higher speed.                                                
-				
-			\subsection{Model creation}
-				\subsection{Incremental learning}
-				Wikipedia Ref\footnote{\url{https://en.wikipedia.org/wiki/Incremental_learning#:~:text=In\%20computer\%20science\%2C\%20incremental\%20learning,to\%20further\%20train\%20the\%20model.}}
-				\subsection{}
-			\subsection{Inference with control (Decision making)}
-		
-		\begin{figure*}
-			\centering
-			\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.png}
-			\caption{Table I}
-			\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.jpg}
-		\end{figure*}
+				\item A metric to measure 
+					\begin{itemize}
+						\item \textbf{Hellinger distance} Introduced in \cite{lourenzutti-2014-the-hellinger-distance-in-multicriteria-decision-making-an-illustration-to-the-topsis-and-todim-methods} and used in \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems,kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection,kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}
+						\item \textbf{Bhattacharya distance} used in \cite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}
+					\end{itemize}
+			\end{itemize}
+			\paragraph{\cite{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}}
+				\begin{itemize}
+					\item The example is is their customary example. The iCab 
+					\item The continuous space of status is formed of X= [x,y,x',y'] where [x,y] is the position in the rectangular courtyard of Genoa university and (x'=dx/dt,y'=dy/dt)  is the velocity vector.
+					\item It uses Self organising maps (SOM) to to make the above space discrete (shown by S/the vocabulary) (In their forthcoming papers they used Growing Neural Gas)
+					\item For the first time it introduced Markov Jump Particle Filter (MJPF) in this paper and they used it in their recent papers including yours. That's why it clarify gradually everything back. MJPF predicts (filters) states in two levels. Kolman F. is responsible for predicting from previous X to next X and Particle filter is responsible for Predicting from previous S to nex S (previous=time stamp k-1, nex= time stamp k) 
+					\item Now that there is method to predict, it introduces three metrics for abnormality prediction db1 (eq 18), db2 (eq 19, just assumes that Z happens close to X), y (eq 21 based on weighted distance described in Eq5)
+					\item They tested like this: a human rode the vehicle along the rectangular courtyard.  Please notice that they say that location data had 10 cm position accuracy (this is what forms the difference between Z(observation/what is measured by sensors) and X(true status))
+					\item In the next phase they performed three different maneuvers when the normal rectangular path (reference task in your paper) is interrupted. 1. turning around the pedestrian (called avoidance abnormality Fig 7) 2. U-turn (returning back Fig 4c , abnormality Fig 8) 3. And stopping until the pedestrian goes away from the cam view. (abnormality Fig 9)
+					\item Why this paper is important? Abnormality indexes use the generated discrete states in their calculation but the results in Fig 7,8,9 show how well extracted abnormalities from reference task matches the times in the three cases that the pedestrian interrupted the path in all three maneuvers.  So their abnormality indexes are maneuver independent, can work on discreet data etc. This discreet state space can form a vocabulary.
+				\end{itemize}
+			\paragraph{\cite{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}}
+			This paper has used MJPF (Markov Jump Particle Filter) and Hellinger distance for feature selection. It wants to pick a feature which is more accurate in predicting and abnormality detection. 
+			Normal task is turning around the rectangular of university courtyard without any obstacle and abnormal is the time that the AV has to perform a U-turn when an obstacle interrupts the perimeter. While performing the normal task it gathers 3 sensory data Steering,Velocity and power. Then it uses GNG to make space state and generate the alphabet of state space and then it puts together the centroid of each cluster and it's time derivatives in one set as a word. (Although position is not measured here but you can consider the state space like [x,y,vx,vy] and then have one GNG for positions and another for speeds. then each word is made of the centroid of a position class and the centroid of a speed class). Now that we have words, we can use MJPF to observe continuous data and predict the next time-step discrete data (the next word). By this prediction and hellinger distance (eq 5) we can measure the abnormality arises from taught DBN for normal task against the U-turn. On page 5 it tested eq 5 (using the learned MJPF from the normal task) for several features and table 1 on page 7 shows the best feature which eq 5 can get its abnormality and provide better prediction is SP (S=steering, P=Power). (I personally expected SV is the best feature, but MJPF proves that it is better to consider power instead of velocity).  
+			
+			\paragraph{\cite{baydoun-2018-a-multi-perspective-approach-to-anomaly-detection-for-self-aware-embodied-agents}} In this paper, anomaly detection was tackled from two layers of self-awareness. The Shared-level (SL) and Private Level (PL). SL is what is visible by an external observer but PL is only available to the agent. SL is considered the position and velocity of an Autonomous Vehicle (AV) which is observable by an external observer and PL is the video frames captured by the AV. Anomaly detection is performed by training two different models on a reference experience (in this paper, it is called Environment Center (EC) Model, in SA models such as \cite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems} these reference tasks form initial models) and comparing their predication with the observations from a new task/experience. The reference task is perimeter monitoring (PM) of the rectangular courtyard of Genoa university and the new experience is when this rectangular path is interrupted by a pedestrian twice (Fig 3, a and b). For SL abnormality detection, they have used Gaussian Process (GP) to divide the perimeter into quasi-constant velocity zones (speed is constant in these zones) and over these zones they have trained a bank of Kalman Filters (KFs) for regional position estimation. A sample of such perimeter partitioning can be seen in Fig 7. During the new experience, the distance between KFs bank prediction (trained during the reference task) and the observations come from online, new experience, forms the abnormality measurements which is presented in Equation (3) and graphed in Figure (5).  It has captured four times the presence of a pedestrian in two times circling around the perimeter and even 8 times (but lower than the abnormality threshold) the corners of the perimeter. To tackle PL abnormality detection, they have used a GAN with two discriminator and two generators. Each G-D pair is responsible to predict-score once from frame to optical flow and once from optical-flow to frame. GP zones (from the previous experience), will be used here to train a bank of discriminators (similar to banks of KFs) for scoring predicted data from generators. This whole process is performed for two sets in two GANs (GAN 1 and GAN 2). Set1 is for learning straight paths and Set2 for training curves. The abnormality resulted from Eq(4) is used to create Fig 6. The new abnormality which is the result of minimum of GAN 1 and GAN 2, resulted in a better description of the new experience because not only it can detect the presence of a pedestrian 4 times in two laps, but also it can predict abnormality (pedestrian presence) a few moments before and capture camera's noise on straight paths because of AV's higher speed.                                                
+			
+		\subsection{Model creation}
+			\subsection{Incremental learning}
+			Wikipedia Ref\footnote{\url{https://en.wikipedia.org/wiki/Incremental_learning#:~:text=In\%20computer\%20science\%2C\%20incremental\%20learning,to\%20further\%20train\%20the\%20model.}}
+			\subsection{}
+		\subsection{Inference with control (Decision making)}
+	
+	\begin{figure*}
+		\centering
+		\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.png}
+		\caption{Table I}
+		\label{fig:regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems-table-i.jpg}
+	\end{figure*}
 	\section{Computing architectures}
 		\cite{sanz-2009-systems-models-and-self-awareness-towards-architectural-models-of-consciousness}
 	\section{bio-inspired self-awareness theories}
@@ -358,29 +358,18 @@
 		inference models are good candidates to form the \textbf{language} for expressing a SA model in an artificial agent as well. Such
 		models must be capable of including temporally ordered descriptions of contextual dependencies between proprioceptive
 		and exteroceptive variables.
-		\paragraph{} The variational computational representation and inference
-		techniques he proposes clarify how different models can
-		describe statistically different sensorial experiences that can
-		be seen as trajectories in generalized spaces. The models
-		can also provide explicit measurements to evaluate or to
-		discriminate best-fitting models of new observed sequences.
+		\paragraph{} The variational computational representation and inference techniques he proposes clarify how different models can
+		describe statistically different sensorial experiences that can be seen as trajectories in generalized spaces. The models
+		can also provide explicit measurements to evaluate or to discriminate best-fitting models of new observed sequences.
 		At the same time, the same models, that can include multiple conditionally connected random variables at different
-		hierarchical and temporal levels, are capable of predicting
-		multi-level, temporal data series characterized by the same
-		statistical properties of the training experiences from which
-		they can be learned (thanks to their generative nature). Such
-		a model, if used within the SA model of an artificial agent,
-		together with appropriate learning techniques, can facilitate
-		incremental model creation. An AS can so actively memorize
-		incrementally generative and discriminative new models in the
-		AM by processing sensorial experiences. Such models have to
-		capture different causality interactions between the agent and
-		the environment and serve as the basis for \emph{symbolic} descriptors
-		in an artificial SA agent.
-		\paragraph{} The SA capability of abnormality detection can also be
-		explained with Friston’s model, i.e., the free energy that
-		models generate when the AS compares them to a new
-		experience. A metric can be defined to evaluate the amount
+		hierarchical and temporal levels, are capable of predicting multi-level, temporal data series characterized by the same
+		statistical properties of the training experiences from which they can be learned (thanks to their generative nature). Such
+		a model, if used within the SA model of an artificial agent, together with appropriate learning techniques, can facilitate
+		incremental model creation. An AS can so actively memorize incrementally generative and discriminative new models in the
+		AM by processing sensorial experiences. Such models have to capture different causality interactions between the agent and
+		the environment and serve as the basis for \emph{symbolic} descriptors in an artificial SA agent.
+		\paragraph{} The SA capability of abnormality detection can also be explained with Friston’s model, i.e., the free energy that
+		models generate when the AS compares them to a new experience. A metric can be defined to evaluate the amount
 		of abnormality which is related to a particular component
 		of free energy, describing the orthogonal perturbations to the
 		dynamic equilibrium condition described by the model. Such

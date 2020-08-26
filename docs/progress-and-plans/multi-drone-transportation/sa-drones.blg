@@ -4,45 +4,50 @@ The top-level auxiliary file: sa-drones.aux
 The style file: plainnat.bst
 Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
 Warning--empty booktitle in apatean-2007-sensors-for-obstacle-detection-a-survey
-You've used 4 entries,
+Warning--empty booktitle in baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach
+Warning--empty booktitle in steiner-2020-lexicographic-optimal-homologous-chains-and-applications-to-point-cloud-triangulations
+Warning--empty booktitle in kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
+Warning--empty journal in kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles
+Warning--empty journal in vasarhelyi-2014-outdoor-flocking-and-formation-flight-with-autonomous-aerial-robots
+You've used 10 entries,
             2773 wiz_defined-function locations,
-            615 strings with 5944 characters,
-and the built_in function-call counts, 2541 in all, are:
-= -- 214
-> -- 183
+            640 strings with 7318 characters,
+and the built_in function-call counts, 5306 in all, are:
+= -- 418
+> -- 424
 < -- 2
-+ -- 61
-- -- 57
-* -- 219
-:= -- 384
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 31
-chr.to.int$ -- 4
-cite$ -- 9
-duplicate$ -- 105
-empty$ -- 176
-format.name$ -- 61
-if$ -- 537
++ -- 142
+- -- 132
+* -- 458
+:= -- 836
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 74
+chr.to.int$ -- 10
+cite$ -- 26
+duplicate$ -- 224
+empty$ -- 377
+format.name$ -- 142
+if$ -- 1085
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 28
-num.names$ -- 16
-pop$ -- 64
+missing$ -- 10
+newline$ -- 58
+num.names$ -- 40
+pop$ -- 168
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 64
 quote$ -- 0
-skip$ -- 95
+skip$ -- 179
 stack$ -- 0
-substring$ -- 99
-swap$ -- 25
-text.length$ -- 2
+substring$ -- 98
+swap$ -- 21
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
-warning$ -- 1
-while$ -- 17
+type$ -- 110
+warning$ -- 6
+while$ -- 34
 width$ -- 0
-write$ -- 57
-(There was 1 warning)
+write$ -- 124
+(There were 6 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,26 @@ Anca Apatean, Alexandrina Rogozan, Corneliu Rusu, and Abdelaziz Bensrhair.
 \newblock Sensors for obstacle detection - a survey.
 \newblock pages 100 -- 105, 06 2007.
 
+\bibitem[{Baydoun} et~al.(2019){Baydoun}, {Campo}, {Kanapram}, {Marcenaro}, and
+  {Regazzoni}]{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}
+M.~{Baydoun}, D.~{Campo}, D.~{Kanapram}, L.~{Marcenaro}, and C.~S. {Regazzoni}.
+\newblock Prediction of multi-target dynamics using discrete descriptors: an
+  interactive approach.
+\newblock 2019.
+
+\bibitem[Cohen{-}Steiner et~al.(2020)Cohen{-}Steiner, Lieutier, and
+  Vuillamy]{steiner-2020-lexicographic-optimal-homologous-chains-and-applications-to-point-cloud-triangulations}
+David Cohen{-}Steiner, Andr{\'{e}} Lieutier, and Julien Vuillamy.
+\newblock Lexicographic optimal homologous chains and applications to point
+  cloud triangulations.
+\newblock 2020.
+
+\bibitem[Fiser et~al.(2013)Fiser, Faigl, and
+  Kulich]{fiser-2013-growing-neural-gas-efficiently}
+Daniel Fiser, Jan Faigl, and Miroslav Kulich.
+\newblock Growing neural gas efficiently.
+\newblock \emph{Neurocomputing}, 104:\penalty0 72--82, 2013.
+
 \bibitem[{Jackson} et~al.(2020){Jackson}, {Howell}, {Shah}, {Schwager}, and
   {Manchester}]{jackson-2020-scalable-cooperative-transport-of-cable-suspended-loads-with-uavs-using-distributed-trajectory-optimization}
 B.~E. {Jackson}, T.~A. {Howell}, K.~{Shah}, M.~{Schwager}, and Z.~{Manchester}.
@@ -19,19 +39,41 @@ B.~E. {Jackson}, T.~A. {Howell}, K.~{Shah}, M.~{Schwager}, and Z.~{Manchester}.
 \newblock \emph{IEEE Robotics and Automation Letters}, 5\penalty0 (2):\penalty0
   3368--3374, 2020.
 
-\bibitem[Kanapram et~al.(2019)Kanapram, Campo, Baydoun, Marcenaro, Bodanese,
-  Regazzoni, and
-  Marchese]{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}
-D.~Kanapram, Damian~Andres Campo, Mohamad Baydoun, Lucio Marcenaro, Eliane~L.
-  Bodanese, Carlo~S. Regazzoni, and Mario Marchese.
-\newblock Dynamic bayesian approach for decision-making in ego-things.
-\newblock \emph{2019 IEEE 5th World Forum on Internet of Things (WF-IoT)},
-  pages 909--914, 2019.
+\bibitem[Kanapram et~al.(2019)Kanapram, Marin-Plaza, Marcenaro, Martin, and
+  Arturo de~la
+  Escalera]{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection}
+Divya Kanapram, Pablo Marin-Plaza, Lucio Marcenaro, David Martin, and
+  Carlo~Regazzoni Arturo de~la Escalera.
+\newblock Cognitive dynamic systems: Perception-action cycle, radar and radio.
+\newblock 2019.
+
+\bibitem[Kanapram et~al.(2020)Kanapram, Patrone, Mar{\'{\i}}n{-}Plaza,
+  Marchese, Bodanese, Marcenaro, G{\'{o}}mez, and
+  Regazzoni]{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}
+Divya Kanapram, Fabio Patrone, Pablo Mar{\'{\i}}n{-}Plaza, Mario Marchese,
+  Eliane~L. Bodanese, Lucio Marcenaro, David~Mart{\'{\i}}n G{\'{o}}mez, and
+  Carlo~S. Regazzoni.
+\newblock Collective awareness for abnormality detection in connected
+  autonomous vehicles.
+\newblock 2020.
+
+\bibitem[Kohonen(2001)]{kohonen-2001-self-organizing-maps}
+T.~Kohonen.
+\newblock Self-organizing maps.
+\newblock \emph{Springer Berlin Heidelberg}, 2001.
 
 \bibitem[Soria et~al.(2020)Soria, Schiano, and
   Floreano]{soria-2020-swarmlab-a-matlab-drone-swarm-simulator}
 Enrica Soria, Fabrizio Schiano, and Dario Floreano.
 \newblock Swarmlab: a matlab drone swarm simulator.
 \newblock \emph{arXiv preprint arXiv:2005.02769}, 2020.
+
+\bibitem[Vasarhelyi et~al.(2014)Vasarhelyi, Viragh, Somorjai, Tarcai, Szorenyi,
+  Nepusz, and
+  Vicsek]{vasarhelyi-2014-outdoor-flocking-and-formation-flight-with-autonomous-aerial-robots}
+Gabor Vasarhelyi, Csaba Viragh, Gergo Somorjai, Norbert Tarcai, Tamas Szorenyi,
+  Tamas Nepusz, and Tamas Vicsek.
+\newblock Outdoor flocking and formation flight with autonomous aerial robots.
+\newblock 02 2014.
 
 \end{thebibliography}

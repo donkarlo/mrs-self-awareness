@@ -18,42 +18,85 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{Mohammad Rahmani}
-\lhead{Semantic-aware swarms for object transportation}
+\lhead{SA, collective areal transporation}
 
 \newcommand{\ignore}[1]{}
 \begin{document}
 	\bibliographystyle{plainnat}
-	\title{Proposal: Semantic-aware swarms for object transportation}
+	\title{Primitive thoughts on Self-aware collective areal transportation - version 0.1}
 	\author{Mohammad Rahmani}
 	\date{}
 	\maketitle
 	\section{Abstract}
-	This proposal takes a collective self-aware approach to prove that semantic-awareness improved better decision making with regard to maintaining homeostatic state of swarms who should accomplish a task. Self-awareness which is considered here as the ability of an Intelligent Agent to recognize abnormality from its initial knowledge and build, memorize and retrieve new dynamic models out of high abnormalities for further use. Semantic-awareness in this proposal is equal to  Level 1: Understanding the dynamic models other agents are reviewing now and Level 2. Understanding the difference between same models appearing in different contact (i.e previous model and future model). This proposal plans to prove that the higher the level of semantic-awareness is, the better collective behavior is achieved in a local communication scheme in which agents are allowed only to communicate with neighboring agents. That is, better generative/descriminative and abnormality detection models will be generated which will result in emergence of improved collective behavior.   
+	(The abstract should be changed)
+	This proposal takes a collective self-aware approach to prove that semantic-awareness improves better decision making with regard to maintaining homeostatic state of swarms who should transport a load. Self-awareness which is considered here as the ability of an Intelligent Agent to recognize abnormality from its initial knowledge and build, memorize and retrieve new dynamic models out of high abnormalities for further use. Semantic-awareness in this proposal is equal to  Level 1: Understanding the dynamic models other agents are reviewing now and Level 2. Understanding the difference between same models appearing in different contact (i.e previous model and future model). This proposal plans to prove that the higher the level of semantic-awareness is, the better collective behavior is achieved in a local communication scheme in which agents are allowed only to communicate with neighboring agents. That is, better generative/descriminative and abnormality detection models will be generated which will result in emergence of improved collective behavior.   
 	\section{Introduction}
 	
 	
 	\section{Motivation}
 		Scientific
 		\begin{itemize}
+			\item The \textbf{null hypothesis} that this proposal is trying to reject is that "Dynamic Bayesian self-awareness does not improve decision making"
 			\item Set of problems which could only be solved by a collection of agents
 			\item Requires mostly proper interaction modeling rather than individual motion modeling to solve
 			\item A seamless framework from perception to action
-			\item The \textbf{null hypothesis} that this proposal is trying to reject is that "Semantic awareness does not improve decision making"
 		\end{itemize}
 		Technical
 		\begin{itemize}
 			\item Collective load transportation
 			\item Collective load landing
-			\item Micro UAVs because of their low inertial
+			\item Application of Micro UAVs because of their low inertial value which cause less damage during 
 		\end{itemize}
 	
-	\section{Related work}
+	\section{Objectives}
+		\paragraph{Short term}
+			Improving the state of the art by any means
+		\paragraph{Long term}
+			Developing a Bayesian based, self-aware framework such that it  can
+				\begin{itemize}
+					\item Make a distinction between the abnormalities raised from a new experience or those from minor disturbances (Disturbance rejection)
+					\item 
+				\end{itemize}
+	\section{Problems which should be solved}
+		\begin{itemize}
+			\item Formation control
+			\item Path planning
+			\item Trajectory tracking
+			\item Disturbance rejection
+			\item Collision avoidance
+			\item State estimation
+				\begin{itemize}
+					\item Sensors
+				\end{itemize}
+			\item Formation control approach
+		\end{itemize}
+	\section{Possible ways to improve the state of the art}
+		\begin{itemize}
+			\item Swarm intelligence
+				\begin{itemize}
+					\item Semantic, local communication
+					\item Training a model to map locally emergent individual behavior to collective behavior
+					\begin{itemize}
+						\item Individual behavior is modeled in papers such as \cite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles} to collective behaviors described in \cite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}
+					\end{itemize}
+				\end{itemize}
+	    	\item Taking a leader-less or leader variant approach
+	    		\begin{itemize}
+	    			\item Leader will be changed according some kind of privileged such as its closeness to the destination or being positioned such that better degree of data(information) access is provided
+	    		\end{itemize} 
+		\end{itemize}
+		From sensing to building words of individual quasi-constant motions such as \cite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles} to collective behavior describe with languages such as \cite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}
+	
+	\section{Related work and state of the art}
 		\paragraph{Collective adaptive systems}
 			\subparagraph{Collective object transportation}
 			\subparagraph{Existing object transportation with multi drone systems}
 			\cite{jackson-2020-scalable-cooperative-transport-of-cable-suspended-loads-with-uavs-using-distributed-trajectory-optimization}
 		\paragraph{Existing drone swarm navigation models in tight spaces}
 			\cite{soria-2020-swarmlab-a-matlab-drone-swarm-simulator}
+		\paragraph{Swarm flocking}
+			\cite{vasarhelyi-2014-outdoor-flocking-and-formation-flight-with-autonomous-aerial-robots}
+		\paragraph{Swarm collective behavior through local communication}
 		\paragraph{Self-organizing swarms}
 			\subparagraph{Self-organizing drones}
 		\paragraph{Dynamic systems modeling}
@@ -61,6 +104,7 @@
 			\subparagraph{Dynamic Bayesian Models}
 		
 		\paragraph{Semantics}
+			\subparagraph{Semantics in dynamic systems}	
 			\subparagraph{In action sequences}
 			\subparagraph{in natural language}
 		
@@ -78,27 +122,15 @@
 	
 		\paragraph{Overview} The experiment takes a collective self-aware approach in the sense that it will be first trained by an initial generative model for a reference task and then new generative and descriminative models will be generated from the data presenting the observed abnormality. The modeling starts from initial modeling of collective movements of a straight flight from one point to another and then introducing the initial flight path with obstacles such as tight flight corridors which may need a collective maneuver or column avoidance which needs a single maneuver to avoid the obstacle. From these new experiences, new models should be generated and through neighboring interactions other agents should learn to decide a reaction according to the communication. The goal of this proposal is to prove that if such model messages is transmitted locally but contextually, then some improvments will be observed in comparison to the base models.   
 		
-		\paragraph{Hierarchical Homeostatic state} 
+		\subsection{Hierarchical Homeostatic state}\label{sec:hierarchical-homeostatic-state} 
 			In thus proposal, homeostatic state is the generalized state in which the dynamic systems has the highest survival chance and comes at two levels in this proposal
 			\begin{enumerate}
-				\item  Trying to keep the abnormality signals minimum according to the currently practicing generative model 
-				\item  Returning back from the previously practiced model to the reference model as soon as which might be one of the following tasks
-					\begin{itemize}
-						\item in 2-D, middle empty/full formation of the swarms (the simplest case which will be studied most probably in this proposal)
-						\begin{itemize}
-							\item Keep a regular (convex) polygon 
-						\end{itemize} 
-						\item in 3-D, middle empty/full formation of the swarms
-						\begin{itemize}
-							\item Half-sphere Platonic solid
-						\end{itemize}
-					\end{itemize}
-				\item In high speeds is the formation which brings the best aero-dynamic shape.
+				\item Trying to keep individual abnormality signal possible
+				\item Avoid individual collision 
+				\item avoid load collision
+				\item Trying to keep the collective abnormality signals minimum according to the currently practicing generative model 
+				\item Returning back from the current interaction model to the reference  interaction model (a regular, 2d convex) as soon as possible which might be one of the following tasks
 			\end{enumerate}
-			
-			\begin{itemize}
-				\item Each currently, collective, practicing generative model should be considered as the homostatic state to which the swarm must return by using its actuators. For example, if the path of the drone is disturbed by the wind, it should try to return back to its former formation and trajectory. 
-			\end{itemize}
 	
 		\subsection{Generative models}\label{sec:generative-collective-models}
 			Two generative models should be considered. One which defines 
@@ -121,21 +153,72 @@
 		
 		\subsection{Generative/Descriminative  Model creation}
 			After abnormality detection, the sequence of data which represents the abnormality should be used for training a dynamic generative model. 
+
+		\subsection{Semantic awareness}
+		Semantic means the signification relationship between a sign and a signified. Accordingly,semantic-awareness is the ability to correspond signs to signified entities. This ability embodies in 
+			\begin{itemize}
+				\item Cause(sign)-effect awareness (Models mostly by Bayesian inference/reasoning)
+				\item A sign can refer to signified entities such as actions, entities etc 
+			\end{itemize}
+			such ability in an artificial intelligent agent must arise 
+			\begin{itemize}
+				\item reactions
+			\end{itemize}
+			which may ultimately result in reactions
+			\begin{itemize}
+				\item improvement in homeostatic situation of an agent 
+			\end{itemize} 
+			So this is the process
+			\begin{enumerate}
+				\item emergence of a sign
+				\item corresponding it to a signified
+				\item action
+			\end{enumerate}
+			
+			\paragraph{Construction of a language} Discreetizing generalized state space such that from (some) \textbf{new composition of different segments} new semantic(signified entities) arises. If the no dicreetized segments composition arises any meaning, then no language is built. these meanings may refer to
+			\begin{itemize}
+				\item Existing signified entities (maybe in the generalized state space)
+				\item A semantic piece of collection behavior \ref{sec:collective-semantic-awareness} 
+			\end{itemize}
 		
-		If individual words derived from clustering methods such as \cite{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things} which represent specific sequence of generated dynamic .
-		
-		\subsection{Communication}
-			\paragraph{Communication rules}
-				\subparagraph{Ranking}
-				The one which is closer to the destination will be ranked lower and the ranking starts from 1. The leader is rank 1. The leader is rank one.   
+			Is the matter of building a language which is understandable by all agents. Mostly, the alphabet of such language is based on discretizing the generalized state space (by clustering methods such as \cite{fiser-2013-growing-neural-gas-efficiently}, \cite{kohonen-2001-self-organizing-maps}) such that motion remains relatively constant. Generalized space can be used  
+			\paragraph{Language to describe dynamism of individual generalized state spaces (individual semantic awareness)}
+				\cite{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection} offers an exammplary method is to cluster the data for each time dervitave order of generalized state space and uses the centroids of each cluster as the representative of that cluster. These representatives form the alphabet with which words representing different generalized state spaces can be introduced by different composition of such alphabets i.e, in a moving object different positions, velocities and alterations are clustered into different classes and different composition of centroids of a position class, a velocity class and an alteration class builds a word. Such word could be transmitted to neighboring nodes to describe a reviewed, practicing or predictable experience.
+			\subsubsection{Language to describe dynamism of interaction (collective semantic)}\label{sec:collective-semantic-awareness}
+				\cite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach} suggests a language in which alphabets are formed of clustered regions in generalized state spaces of individual dynamic agents while coincidence of such regions by all agents in the network form the vocabulary.  
+			
+			\subsubsection{From individual behavior to collective behavior}
+			Deals with the problem of contribution of local individual behavior in emergence of collective semantics.
+			
+			
+			\subsubsection{Synchrony and diachrony}
+				Whether the vocabulary is describing individual or collective agents behavior, in each language previously experienced generalized state can represent the  past, currently experiencing generalized state can represent now and predicted generlized state can represent the future tense along the diachrony (horizontal) of the forming language. On the other hand, the distance between classes from which such words come from, can model the synchrony of the language.
+				
+			\subsubsection{The question} Now the question is how such semantic awareness improves
 				\begin{itemize}
-					\item Only with the two neighbors on the sides
-					\item in 3/2 the neighboring ranks can do that.
-					\item no agent can transmit the information (models/ abnormality signals) from other agents to the neighboring agent.
-					\item information transition is only allowed between one higher or one lower rank in the network.
-					\item The messages architecture can be just two individual generative models, the last reviewed one and the one being practiced now. These messages will be considered as exteroceptive data along with agents other exteroceptive sensor data and will be used contextually to build new collective generative and descriminative models and we believe that such architecture will improve the performance of models.
-					\item Messages can only be transmitted to neighboring nodes when the generative model an agent is practicing changes.
-					\item no agent can propagate other agents' messages
+					\item Abnormality detection
+					\item New generative model creation
+					\item Discriminate between generative models
+					\item Improving decision making and control 
+				\end{itemize}
+				For example if a drone receives a message with a different sematic vector, how should it react to it with its actuators?
+				\textbf{But the most important thing is that, does semantic awareness improves performance of the discriminative models by which the agent chooses the best matching generative model according its observation?}
+				In a semantic-aware multi agent system, 
+				observation is composed of 
+				\begin{itemize}
+					\item the data derived from its exteroceptive and proprioceptive sensors
+					\item the semantic messages it receives other (in this case neighboring) agents.
+					\item The rank of the sender agent
+				\end{itemize}
+			\textbf{One study possibility is that which sequence of individual motion (words) means (is the evidence) for which collective word (behavior)}
+		\subsection{Neighboring agents and Ranking}
+			The one which is closer to the destination will be ranked lower and the ranking starts from 1. The leader is rank 1. The leader is rank one.
+		\subsection{Communication}
+			\paragraph{Communication rules} The goal of the rules are to define a notion of neighborhoodness for the agents.  
+				\begin{itemize}
+					\item No agent can transmit the generative models from other agents to the neighboring agent.
+					\item Messages can be made of one generative model and the senders rank or more than one (for distributional semantics) 
+					\item Messages can only be transmitted to neighboring ranked nodes when the generative model an agent is practicing changes.
 				\end{itemize}
 			\begin{figure*}
 				\centering
@@ -143,22 +226,12 @@
 				\caption{Closer agents to the destination take the lead. If destination of two agents is measured to some degree of tolerance equal, then random ranks will be assigned. Semantic stated interaction is only allowed between consecutive neighboring ranks.}
 				\label{fig:agents-rankings-according-to-their-closeness-to-destination.png}
 			\end{figure*}
-		\paragraph{Building the communication words}
-			Each generative model is a word. 
-			\paragraph{The smallest sentence is formed of three words}
-			The interaction should include at least three temporally consecutive models. The reviewed model in the past, the one at the present and the one in which is predicted to be reviewed in future. The proposal plans to prove that such kind of awareness helps with making better collective and individual behavior and decisions.
-		\paragraph{Levels of semantic-awareness}
-			Having the ability to understand
-			\begin{enumerate}
-				\item the transmitted (according to the communication rules) generative models which are being practiced 
-				\item the context in which a transmitted generative model has appeared. 
-			\end{enumerate}
 		
 		
 		\subsection{Sensors}
 			\paragraph{Exteroceptive}
 				\begin{itemize}
-					\item Environmental
+					\item Environment
 					\item From neighboring agents 
 				\end{itemize}
 			
@@ -170,6 +243,7 @@
 			
 			\paragraph{Heterogeneity}
 				Heterogeneity of the sensors which plays the heterogeneity for the whole system  will be sought in deployement of different sensors installed independently on different agents.  
+				
 			\paragraph{Contextuality}
 				\begin{itemize}
 					\item Active self
@@ -192,74 +266,117 @@
 				\end{itemize}
 			\end{itemize}
 	\section{Experimental setup} \label{experimental-setup}
-		\paragraph{Minimum experimental requirements}
-			\begin{itemize}
-				\item At least three drones so that neighboring communication is meaningful, although the more the drones are the better the communication effect emerges
-				\item Minimum two sensors to establish a relationship between heterogeneous sensors. The best of such sensors for depth and obstacle selection in low speed are active sensors \citep{apatean-2007-sensors-for-obstacle-detection-a-survey}: 
-			  	\begin{itemize}
-					\item Lidar
-					\item Sonar
-					\item Radar
-			  	\end{itemize}
-		  	\end{itemize}
-		\subsection{Scenarios} \label{experimental-scenarios}
-			In this section several scenarios will be presented from which both generative individual and interaction models can be learned
-			some of these scenarios entail generalized state change from the agents while others don't. For each of these scenarios, a DBN model should be learned. Then we should prove that semantic messages composed of at least two individual generative models which represent the previous reviewed generative model and the current one improves the baseline model which only considers reception of current practicing DBN by the neighboring node. 
-			
-			\paragraph{Why frames are so important?}
-			Consecutive frames in depth  can represent any passage channel. Each frame also is formed of two triangles and triangles can reconstruct any surface. Each rectangular frame is formed of two triangles.
-			%Mathmatical proof from reiman surfaces% 
-			
-			\paragraph{Reference collective horizontal movement}
-				See Figure \ref{fig:swarm-drones-reference-task}
+		This section, contains scenarios for which DBN models should be trained. Having these models trained, then whatever solution is decided, then it should improve 
+		\begin{itemize}
+			\item Predictive model selection
+			\item Generating predictive models
+			\item Decision making to decrease abnormality rate (the difference between the state prediction of practicing models and state observation) which must result in better trajectory tracking models
+		\end{itemize}
+		Each scenario, is in fact, a predictive model.
+		\subsection{Rigidly attached}
+			The size of drones is continuously reducing which helps with better attaching them to the body of the load, similar to collective transportation in ants. This approach brings more flexibility to collective transportation.
+			\paragraph{Reference scenario}
+			 \begin{itemize}
+			 	\item $M_1$ Taking off
+			 	\item $M_2$ Tracking a straight trajectory from point A to Point B
+			 	\item $M_3$ Landing
+			 \end{itemize}
+			 
+			\paragraph{Scenario: Turning}
+			\begin{figure*}
+				\centering
+				\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-reference-and-turning-trajectory-tracking.png}
+				\caption{Reference task for which an initial model should be learned}
+				\label{fig:collective-reference-and-turning-trajectory-tracking}
+			\end{figure*}
+			\paragraph{Scenario: Horizontal obstacle avoidance}
 				\begin{figure*}
 					\centering
-					\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/swarm-drones-reference-task.png}
-					\caption{Reference task for which an initial model should be learned}
+					\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-horizontal-collision-avoidance.png}
+					\caption{Collective horizontal obstacle avoidance}
 					\label{fig:swarm-drones-reference-task}
 				\end{figure*}
-			\paragraph{Reference collective vertical landing}
-				See Figure \ref{fig:swarm-drones-reference-task-vertical-landing}
+			\paragraph{Scenario: Vertical obstacle avoidance}
 				\begin{figure*}
 					\centering
-					\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/swarm-drones-reference-task-vertical-landing.png}
-					\caption{Reference task for which an initial model should be learned for vertical landing}
-					\label{fig:swarm-drones-reference-task-vertical-landing}
+					\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-vertical-collision-avoidance.png}
+					\caption{Collective vertical obstacle avoidance}
+					\label{fig:swarm-drones-reference-task}
 				\end{figure*}
-			\paragraph{Collective horizontal frame passage}
-				See Figure \ref{fig:collective-behaviour-learning} for a few samples of similar scenarios for which collective interaction models must be built. 
-				\begin{figure*}
-					\centering
-					\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/vertical-frame-scenarios.png}
-					\caption{Exemplary scenarios from which }
-					\label{fig:collective-behaviour-learning}
-				\end{figure*}
-			\paragraph{Collective vertical frame passage}
-				Similar to "Collective horizontal frame passage" scenarios, but the frames are places vertical
-			\paragraph{Vertical column avoidance}
-				A scenario in which changes in generalized state of one agent does not entail changes in other agents. See Figure \ref{fig:vertical-obstacle-avoidance}
-				\begin{figure*}
-					\centering
-					\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/vertical-obstacle-avoidance.png}
-					\caption{Vertical obstacle avoidance}
-					\label{fig:vertical-obstacle-avoidance}
-				\end{figure*}
-			\paragraph{Horizontal column avoidance}
-				A scenario in which changes in generalized state of one agent does not entail changes in other agents. See Figure \ref{fig:horizental-column-avoidance}
-				\begin{figure*}
-					\centering
-					\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/horizental-column-avoidance.png}
-					\caption{A scenario similar to Figure \ref{fig:vertical-obstacle-avoidance} from which collective behavior could be learned}
-					\label{fig:horizental-column-avoidance}
-				\end{figure*}
-			
-			\paragraph{Horizontal collective shift}
-			In this scenario the whole system should shift
+		\subsection{Suspended pay-load}
+			\paragraph{Minimum experimental requirements}
+				\begin{itemize}
+					\item As many MAVs such that neighboring communication is meaningful
+					\item Minimum two sensors to establish a relationship between heterogeneous sensors. The best of such sensors for depth and obstacle selection in low speed are active sensors \citep{apatean-2007-sensors-for-obstacle-detection-a-survey}: 
+				  	\begin{itemize}
+						\item Lidar
+						\item Sonar
+						\item Radar
+						\item IMU
+				  	\end{itemize}
+			  	\end{itemize}
+			\subsection{Scenarios} \label{experimental-scenarios}
+				In this section several scenarios will be presented from which both generative individual and interaction models can be learned
+				some of these scenarios entail generalized state change from the agents while others don't. For each of these scenarios, a DBN model should be learned. Then we should prove that semantic messages composed of at least two individual generative models which represent the previous reviewed generative model and the current one improves the baseline model which only considers reception of current practicing DBN by the neighboring node.
+				
+				\paragraph{Reference collective horizontal movement}
+					See Figure \ref{fig:swarm-drones-reference-task-2}
+					\begin{figure*}
+						\centering
+						\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/swarm-drones-reference-task.png}
+						\caption{Reference task for which an initial model should be learned}
+						\label{fig:swarm-drones-reference-task-2}
+					\end{figure*}
+				\paragraph{Reference collective vertical landing}
+					See Figure \ref{fig:swarm-drones-reference-task-vertical-landing}
+					\begin{figure*}
+						\centering
+						\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/swarm-drones-reference-task-vertical-landing.png}
+						\caption{Reference task for which an initial model should be learned for vertical landing}
+						\label{fig:swarm-drones-reference-task-vertical-landing}
+					\end{figure*}
+				\paragraph{Collective horizontal frame passage}
+					(Important because it could approximate any complex surface by variational shape approximation techniques such as \cite{steiner-2020-lexicographic-optimal-homologous-chains-and-applications-to-point-cloud-triangulations})
+					See Figure \ref{fig:collective-behaviour-learning} for a few samples of similar scenarios for which collective interaction models must be built. 
+					\begin{figure*}
+						\centering
+						\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/vertical-frame-scenarios.png}
+						\caption{Exemplary scenarios from which }
+						\label{fig:collective-behaviour-learning}
+					\end{figure*}
+				\paragraph{Collective vertical frame passage}
+					Similar to "Collective horizontal frame passage" scenarios, but the frames are places vertical
+				\paragraph{Vertical column avoidance}
+					A scenario in which changes in generalized state of one agent does not entail changes in other agents. See Figure \ref{fig:vertical-obstacle-avoidance}
+					\begin{figure*}
+						\centering
+						\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/vertical-obstacle-avoidance.png}
+						\caption{Vertical obstacle avoidance}
+						\label{fig:vertical-obstacle-avoidance}
+					\end{figure*}
+				\paragraph{Horizontal column avoidance}
+					A scenario in which changes in generalized state of one agent does not entail changes in other agents. See Figure \ref{fig:horizental-column-avoidance}
+					\begin{figure*}
+						\centering
+						\includegraphics[width=0.7\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/horizental-column-avoidance.png}
+						\caption{A scenario similar to Figure \ref{fig:vertical-obstacle-avoidance} from which collective behavior could be learned}
+						\label{fig:horizental-column-avoidance}
+					\end{figure*}
+				
+				\paragraph{Scenario: Horizontal column avoidance with collective shift}
+					This scenario can represent a set of scenarios in orientation vector between neighboring agents does not change but a collective shift is required.
+					\begin{figure}
+						\centering
+						\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-horizental-movement-for-obstacle-avoidance.png}
+						\label{fig:scenario}
+						\caption{Collective movement in open space which requires collective movements}
+					\end{figure}   
 	
 	\section{Papers}
 		\paragraph{Conferences}
 		\paragraph{Journals}
-		
-		Three drones - If heterogeneity is sought, it could be considered as heterogeneity of the data derived from various sensors.
+			\begin{itemize}
+				\item Journal of advanced transportation \footnote{\url{https://www.hindawi.com/journals/jat/}} 
+			\end{itemize}
 	\bibliography{/home/donkarlo/Dropbox/projs/research/refs.bib}
 \end{document}

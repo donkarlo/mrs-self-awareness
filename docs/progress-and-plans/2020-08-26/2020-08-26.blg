@@ -1,0 +1,9 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is '2020-08-26.blg'
+[88] biber:322> INFO - === Di Aug 25, 2020, 12:29:49
+[104] Biber.pm:415> INFO - Reading '2020-08-26.bcf'
+[193] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[202] Utils.pm:293> WARN - The file '2020-08-26.bcf' does not contain any citations!
+[212] bbl.pm:652> INFO - Writing '2020-08-26.bbl' with encoding 'UTF-8'
+[212] bbl.pm:755> INFO - Output to 2020-08-26.bbl
+[212] Biber.pm:128> INFO - WARNINGS: 1

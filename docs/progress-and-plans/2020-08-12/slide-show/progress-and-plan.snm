@@ -1,7 +1,5 @@
 \defcounter {refsection}{0}\relax 
-\beamer@slide {fig:swarm-drones-reference-task}{8}
-\defcounter {refsection}{0}\relax 
-\beamer@slide {fig:collective-behaviour-learning}{9}
+\beamer@slide {fig:swarm-drones-reference-task}{9}
 \defcounter {refsection}{0}\relax 
 \beamer@slide {fig:collective-behaviour-learning}{10}
 \defcounter {refsection}{0}\relax 
@@ -11,4 +9,4 @@
 \defcounter {refsection}{0}\relax 
 \beamer@slide {fig:vertical-obstacle-avoidance}{14}
 \defcounter {refsection}{0}\relax 
-\beamer@slide {fig:agents-rankings-according-to-their-closeness-to-destination.png}{17}
+\beamer@slide {fig:agents-rankings-according-to-their-closeness-to-destination.png}{16}
