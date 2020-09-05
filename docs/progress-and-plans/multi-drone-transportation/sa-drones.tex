@@ -32,20 +32,15 @@
 	This proposal takes a collective self-aware approach to prove that semantic-awareness improves better decision making with regard to maintaining homeostatic state of swarms who should transport a load. Self-awareness which is considered here as the ability of an Intelligent Agent to recognize abnormality from its initial knowledge and build, memorize and retrieve new dynamic models out of high abnormalities for further use. Semantic-awareness in this proposal is equal to  Level 1: Understanding the dynamic models other agents are reviewing now and Level 2. Understanding the difference between same models appearing in different contact (i.e previous model and future model). This proposal plans to prove that the higher the level of semantic-awareness is, the better collective behavior is achieved in a local communication scheme in which agents are allowed only to communicate with neighboring agents. That is, better generative/descriminative and abnormality detection models will be generated which will result in emergence of improved collective behavior.   
 	\section{Introduction}
 	
+	\section{Related areas}
+		\paragraph{Discreeting Generalized state space}
+		\paragraph{Force Field theory}
+		\paragraph{}
 	
 	\section{Motivation}
 		Scientific
 		\begin{itemize}
-			\item The \textbf{null hypothesis} that this proposal is trying to reject is that "Dynamic Bayesian self-awareness does not improve decision making"
-			\item Set of problems which could only be solved by a collection of agents
-			\item Requires mostly proper interaction modeling rather than individual motion modeling to solve
-			\item A seamless framework from perception to action
-		\end{itemize}
-		Technical
-		\begin{itemize}
-			\item Collective load transportation
-			\item Collective load landing
-			\item Application of Micro UAVs because of their low inertial value which cause less damage during 
+			\item Does local semantic communications, improve existing collective behavior?
 		\end{itemize}
 	
 	\section{Objectives}
@@ -57,6 +52,7 @@
 					\item Make a distinction between the abnormalities raised from a new experience or those from minor disturbances (Disturbance rejection)
 					\item 
 				\end{itemize}
+			
 	\section{Problems which should be solved}
 		\begin{itemize}
 			\item Formation control
@@ -70,6 +66,7 @@
 				\end{itemize}
 			\item Formation control approach
 		\end{itemize}
+	
 	\section{Possible ways to improve the state of the art}
 		\begin{itemize}
 			\item Swarm intelligence
@@ -265,6 +262,8 @@
 					\item Continuously trying to return back to the reference generative model this reference model defines the homos static state to which the whole system tries to return 
 				\end{itemize}
 			\end{itemize}
+		
+		
 	\section{Experimental setup} \label{experimental-setup}
 		This section, contains scenarios for which DBN models should be trained. Having these models trained, then whatever solution is decided, then it should improve 
 		\begin{itemize}
@@ -276,19 +275,12 @@
 		\subsection{Rigidly attached}
 			The size of drones is continuously reducing which helps with better attaching them to the body of the load, similar to collective transportation in ants. This approach brings more flexibility to collective transportation.
 			\paragraph{Reference scenario}
-			 \begin{itemize}
-			 	\item $M_1$ Taking off
-			 	\item $M_2$ Tracking a straight trajectory from point A to Point B
-			 	\item $M_3$ Landing
-			 \end{itemize}
+				 \begin{itemize}
+				 	\item $M_1$ Taking off
+				 	\item $M_2$ Tracking a straight trajectory from point A to Point B
+				 	\item $M_3$ Landing
+				 \end{itemize}
 			 
-			\paragraph{Scenario: Turning}
-			\begin{figure*}
-				\centering
-				\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-reference-and-turning-trajectory-tracking.png}
-				\caption{Reference task for which an initial model should be learned}
-				\label{fig:collective-reference-and-turning-trajectory-tracking}
-			\end{figure*}
 			\paragraph{Scenario: Horizontal obstacle avoidance}
 				\begin{figure*}
 					\centering
@@ -301,8 +293,16 @@
 					\centering
 					\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-vertical-collision-avoidance.png}
 					\caption{Collective vertical obstacle avoidance}
-					\label{fig:swarm-drones-reference-task}
+					\label{fig:collective-vertical-collision-avoidance}
 				\end{figure*}
+			\paragraph{Scenario: Turning}
+				\begin{figure*}
+					\centering
+					\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-reference-and-turning-trajectory-tracking.png}
+					\caption{Reference task for which an initial model should be learned}
+					\label{fig:collective-reference-and-turning-trajectory-tracking}
+				\end{figure*}
+		
 		\subsection{Suspended pay-load}
 			\paragraph{Minimum experimental requirements}
 				\begin{itemize}
@@ -316,8 +316,7 @@
 				  	\end{itemize}
 			  	\end{itemize}
 			\subsection{Scenarios} \label{experimental-scenarios}
-				In this section several scenarios will be presented from which both generative individual and interaction models can be learned
-				some of these scenarios entail generalized state change from the agents while others don't. For each of these scenarios, a DBN model should be learned. Then we should prove that semantic messages composed of at least two individual generative models which represent the previous reviewed generative model and the current one improves the baseline model which only considers reception of current practicing DBN by the neighboring node.
+				In this section several scenarios will be presented from which both generative individual and interaction models can be learned some of these scenarios entail generalized state change from the agents while others don't. For each of these scenarios, a DBN model should be learned. Then we should prove that semantic messages composed of at least two individual generative models which represent the previous reviewed generative model and the current one improves the baseline model which only considers reception of current practicing DBN by the neighboring node.
 				
 				\paragraph{Reference collective horizontal movement}
 					See Figure \ref{fig:swarm-drones-reference-task-2}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.23)  25 AUG 2020 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.23)  27 AUG 2020 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,7 +1212,7 @@ Missing character: There is no ; in font nullfont!
 <aauthmfigs/bg1.png, id=23, 1445.4pt x 1083.04625pt>
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 25.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 33.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [2
@@ -1220,18 +1220,109 @@ Missing character: There is no ; in font nullfont!
  <./aauthmfigs/bg1.png>]
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 28.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 56.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [3
 
 ]
+</home/donkarlo/Dropbox/projs/research/assets/reference-collective-load-transpo
+rtation-task.png, id=34, 2860.6875pt x 1959.32pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/reference-collective-load-tr
+ansportation-task.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/reference-collective-load-tra
+nsportation-task.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/reference
+-collective-load-transportation-task.png  used on input line 66.
+(pdftex.def)             Requested size: 153.64493pt x 105.20676pt.
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 31.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 66.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [4
+
+ </home/donkarlo/Dropbox/projs/research/assets/reference-collective-load-transp
+ortation-task.png>]
+</home/donkarlo/Dropbox/projs/research/assets/collective-horizontal-collision-a
+voidance.png, id=42, 2294.5725pt x 3195.94pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/collective-horizontal-collis
+ion-avoidance.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/collective-horizontal-collisi
+on-avoidance.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/collectiv
+e-horizontal-collision-avoidance.png  used on input line 73.
+(pdftex.def)             Requested size: 107.55333pt x 149.76054pt.
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 73.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+ [5
+
+ </home/donkarlo/Dropbox/projs/research/assets/collective-horizontal-collision-
+avoidance.png>]
+</home/donkarlo/Dropbox/projs/research/assets/collective-vertical-collision-avo
+idance.png, id=49, 2118.91624pt x 3503.0875pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/collective-vertical-collisio
+n-avoidance.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/collective-vertical-collision
+-avoidance.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/collectiv
+e-vertical-collision-avoidance.png  used on input line 80.
+(pdftex.def)             Requested size: 107.55333pt x 177.78381pt.
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 80.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+ [6
+
+ </home/donkarlo/Dropbox/projs/research/assets/collective-vertical-collision-av
+oidance.png>]
+</home/donkarlo/Dropbox/projs/research/assets/collective-rigid-payload-transpor
+tation-in-turning-point.png, id=56, 4481.74374pt x 3772.0925pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/collective-rigid-payload-tra
+nsportation-in-turning-point.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/collective-rigid-payload-tran
+sportation-in-turning-point.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/collectiv
+e-rigid-payload-transportation-in-turning-point.png  used on input line 87.
+(pdftex.def)             Requested size: 184.3758pt x 155.1748pt.
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 87.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+ [7
+
+ </home/donkarlo/Dropbox/projs/research/assets/collective-rigid-payload-transpo
+rtation-in-turning-point.png>]
+</home/donkarlo/Dropbox/projs/research/assets/collective-rigid-load-transportat
+ion-in-tight-corridors.png, id=64, 4481.74374pt x 3772.0925pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/collective-rigid-load-transp
+ortation-in-tight-corridors.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/collective-rigid-load-transpo
+rtation-in-tight-corridors.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/collectiv
+e-rigid-load-transportation-in-tight-corridors.png  used on input line 95.
+(pdftex.def)             Requested size: 184.3758pt x 155.1748pt.
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 95.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+
+[8
+
+ </home/donkarlo/Dropbox/projs/research/assets/collective-rigid-load-transporta
+tion-in-tight-corridors.png>]
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 114.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+ [9
 
 ]
 \tf@nav=\write7
@@ -1243,12 +1334,11 @@ Missing character: There is no ; in font nullfont!
 \tf@snm=\write9
 \openout9 = `2020-08-26.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
-
-(./2020-08-26.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+ (./2020-08-26.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `2020-08-26.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to '2020-08-26.run.xml'.
@@ -1256,20 +1346,20 @@ Package logreq Info: Writing requests to '2020-08-26.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27808 strings out of 481239
- 548959 string characters out of 5920377
- 1255620 words of memory out of 5000000
- 42525 multiletter control sequences out of 15000+600000
- 535339 words of font info for 34 fonts, out of 8000000 for 9000
+ 27887 strings out of 481239
+ 552781 string characters out of 5920377
+ 1259636 words of memory out of 5000000
+ 42588 multiletter control sequences out of 15000+600000
+ 535644 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,19n,78p,794b,4720s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on 2020-08-26.pdf (4 pages, 449711 bytes).
+Output written on 2020-08-26.pdf (9 pages, 2527246 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 94 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

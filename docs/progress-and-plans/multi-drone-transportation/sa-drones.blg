@@ -6,48 +6,49 @@ Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
 Warning--empty booktitle in apatean-2007-sensors-for-obstacle-detection-a-survey
 Warning--empty booktitle in baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach
 Warning--empty booktitle in steiner-2020-lexicographic-optimal-homologous-chains-and-applications-to-point-cloud-triangulations
+Warning--empty journal in fiser-2013-growing-neural-gas-efficiently
 Warning--empty booktitle in kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
 Warning--empty journal in kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles
 Warning--empty journal in vasarhelyi-2014-outdoor-flocking-and-formation-flight-with-autonomous-aerial-robots
 You've used 10 entries,
             2773 wiz_defined-function locations,
-            640 strings with 7318 characters,
-and the built_in function-call counts, 5306 in all, are:
-= -- 418
+            637 strings with 7296 characters,
+and the built_in function-call counts, 5245 in all, are:
+= -- 410
 > -- 424
 < -- 2
 + -- 142
 - -- 132
-* -- 458
-:= -- 836
+* -- 450
+:= -- 828
 add.period$ -- 30
 call.type$ -- 10
 change.case$ -- 74
 chr.to.int$ -- 10
-cite$ -- 26
-duplicate$ -- 224
-empty$ -- 377
+cite$ -- 27
+duplicate$ -- 223
+empty$ -- 370
 format.name$ -- 142
-if$ -- 1085
+if$ -- 1069
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 10
 newline$ -- 58
 num.names$ -- 40
-pop$ -- 168
+pop$ -- 172
 preamble$ -- 1
 purify$ -- 64
 quote$ -- 0
 skip$ -- 179
 stack$ -- 0
-substring$ -- 98
-swap$ -- 21
+substring$ -- 83
+swap$ -- 20
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 110
-warning$ -- 6
-while$ -- 34
+warning$ -- 7
+while$ -- 33
 width$ -- 0
-write$ -- 124
-(There were 6 warnings)
+write$ -- 122
+(There were 7 warnings)

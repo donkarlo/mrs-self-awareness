@@ -7,7 +7,7 @@
 
 \usepackage{xcolor}
 
-\title{Proposal experimental plan draft - Version 0.1}
+\title{Proposal draft for experimental plan - Version 0.2}
 \author{Mohammad Rahmani}
 \institute{DECIDE Doctoral School}
 
@@ -18,20 +18,101 @@
 		\textcolor{white}{\textbf{26 August 2020}}
 	\end{frame}
 
-	\begin{frame}{Problems which should be solved}
+	\begin{frame}{}
+		\textbf{Scientific goal}
 		\begin{itemize}
-			\item Trajectory tracking
-			\item Disturbance rejection (dealing with minor abnormalities)
+			\item The null hypothesis will probably be testing a method derived from slide 9 (\textbf{Probable solutions}) to improve the (at least one of the) \textbf{self-awareness} challenges mentioned in Slide 3 (\textbf{Challenges}).  
 		\end{itemize}
-	\end{frame}
-
-	\begin{frame}{What should be read}
-	\end{frame}
-
-	\begin{frame}{Probable solutions solution spaces}
+		
+		
+		\textbf{Technical application}
 		\begin{itemize}
-			\item Swarm intelligence
-			\item Descriptive statistics (Clustering generalized state space to quasi constant regions)
+			\item Collective areal manipulation (load transportation) in tight corridors
+		\end{itemize}
+		
+	\end{frame}
+
+	\begin{frame}{Challenges}
+		Based on an autonomous \textbf{self-aware} paradigm
+		\begin{itemize}
+			\item Motion (Path) planning (Generative Model generation)
+			\item Trajectory tracking which involves
+				\begin{itemize}
+					\item State estimation techniques
+				\end{itemize}
+			\item Collision avoidance which involves
+				\begin{itemize}
+					\item \textbf{Major abnormal detection} (A new model is needed)
+					\item Descriminative Flight mode selection
+				\end{itemize}
+			\item Disturbance rejection (dealing with minor abnormalities)
+				\begin{itemize}
+					\item Minor abnormally detection (Current Trajectory needs to be modified)
+					\item Decision making and control 
+				\end{itemize}
+			\item ...
+		\end{itemize}
+		There are existing solutions for all aforementioned problems in individual drones and drone swarms but not necessarily in cooperative areal payload transportation. 
+	\end{frame}
+
+	\begin{frame}{}
+		content
+	\end{frame}
+
+	\begin{frame}{Scenarios - Reference}
+		Rigid load transportation from one location to another by tracking a straight line at a fixed height 
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/reference-collective-load-transportation-task.png}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Scenarios - Horizontal collision avoidance}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.35\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-horizontal-collision-avoidance.png}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Scenarios - Vertical collision avoidance}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.35\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-vertical-collision-avoidance.png}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Scenarios - Turning}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.6\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-rigid-payload-transportation-in-turning-point.png}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Scenarios - Altogether scenario}
+		Together, all the following three scenarios must make payload transportation possible in tight corridors
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.6\textwidth]{/home/donkarlo/Dropbox/projs/research/assets/collective-rigid-load-transportation-in-tight-corridors.png}
+		\end{figure}
+	\end{frame}
+	
+
+	\begin{frame}{Probable solutions to improve the state of the art}
+		\begin{itemize}
+			\item Swarm intelligence to model emergence of a collective behavior from local, agents behavior
+			\item Local Communication through sharing practicing generative models with neighbors using 
+				\begin{itemize}
+					\item An individual agent state description language with words made of alphabets of different derivatives of time
+					\item A collective state description language with words made of alphabets of possible co-occurrence of different generalized state space regions  
+				\end{itemize}
+			\item Formation control which involve studying architecture such as 
+			\begin{itemize}
+				\item Static Leader-follower architecture
+				\item Dynamic Leader Follower architecture
+				\item Leaderless architecture
+				\item ...
+			\end{itemize}
+			\item ...
 		\end{itemize}
 	\end{frame}
 \end{document}

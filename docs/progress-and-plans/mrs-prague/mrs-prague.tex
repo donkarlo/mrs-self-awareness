@@ -1,0 +1,134 @@
+% !TeX document-id = {412070ce-2b89-4575-900e-e9d3183d0ba4}
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{From individual perception to collective behavior in drones. A self-aware approach}
+\author{Mohammad Rahmani}
+\institute{Pervaisive Computing Group}
+
+\begin{document}
+	\begin{frame}
+		\date{}
+		\maketitle
+		\textcolor{white}{\textbf{31 August 2020}}
+	\end{frame}
+	\begin{frame}{Intelligent Agents, Sensors and Actuators}
+		Each intelligent agent, biological or artificial, incorporates:
+		\begin{itemize}
+			\item Sensors
+				\begin{itemize}
+					\item Proprioceptive (Cochlea, IMU)
+					\item Exteroceptive (Eyes, Camera)
+				\end{itemize}
+			\item Actuators (Feet, Engine)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Self-awareness (SA)}
+		Self-awareness incorporates	agent's ability to become the object of it own attention which translates to the following abilities (See next slide) \footnote{\fullcite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}}
+	\end{frame}
+
+	\begin{frame}{Self-awareness (SA) - Abilities list}
+		\begin{itemize}
+			\item \textbf{Initialization} Ability to follow a reference task over the course of time (Time-awareness)
+			\item \textbf{Major anomaly detection and Generative Model building}: Ability to detect new experiences from exteroceptive and proprioceptive sensory data
+			\item \textbf{Memorization and discrimination}: Ability to memorize and provoke the appropriate learned experience
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Self-awareness (SA) - Abilities list - 2}
+		\begin{itemize}
+			\item \textbf{Decision making}: Converting anomaly signals to appropriate actions
+			\begin{itemize}
+				\item \textbf{Disturbance rejection}: convert minor anomaly signals to actions such the distance between estimated states and current practicing model minimizes
+				\item \textbf{Changing practicing model}: changing from one model to another model in case of major anomaly detection
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Simple illustration of an SA drone}
+		\begin{figure}
+			\includegraphics[scale=0.06]{/home/donkarlo/Dropbox/projs/research/assets/drone-sa.png}
+			\caption{SA, sensors and actuators}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{SA in Single drone navigation and aerial manipulation}
+		The aforementioned abilities in a single drone translates to:
+		\begin{itemize}
+			\item Path/motion planning
+			\item State estimation
+			\item Trajectory tracking
+				\begin{itemize}
+					\item \textbf{Minor anomaly detection} Disturbance rejection
+				\end{itemize}
+			\item \textbf{Major anomaly detection}  Anomaly detection: Collision avoidance
+				\begin{itemize}
+					\item Corridor turning points
+					\item Vertical collision avoidance
+					\item Horizontal collision avoidance
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Collective Awareness {CA} abilities}
+		In addition to individual SA abilities in the collection, CA must incorporate anomaly detection ability for 
+		\begin{itemize}
+			\item the course of relationship/formation which should be kept along time
+		\end{itemize}
+		Our examples  will be based on collective load transportation which entails keeping drones close to each other in particular formation which are either
+		\begin{itemize}
+			\item attached to rigid loads
+			\item suspended from a cable
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{CA in multi drones navigation and aerial manipulation}
+		\begin{itemize}
+			\item Collective path/motion planning
+			\item Formation state estimation
+			\item Formation Anomaly detection while individuals perform collision avoidance maneuvers and taking the right decision toward a new appropriate formation to avoid load and system collision
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{CA scenarios}
+		CA formation models from which appropriate actions should be practiced
+		\begin{figure}
+			\includegraphics[scale=0.05]{/home/donkarlo/Dropbox/projs/research/assets/collective-collision-avoidance.png}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Individual semantic emergence}
+		Discretized\footnote{\fullcite{fiser-2013-growing-neural-gas-efficiently}} generalized state for different derivatives of time forms the alphabet of words by which each individual agent can describe the experiences it is practicing to other agents\footnote{\fullcite{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection}}
+		\begin{figure}
+			\includegraphics[scale=0.4]{/home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg}
+			\caption{}
+		\end{figure}
+		\begin{equation}
+			w = \{\alpha^{(0)},...,\alpha^{(L)}\}
+		\end{equation}
+	\end{frame}
+
+	\begin{frame}{Collective semantic emergence}
+		Mutually activated discretized generalized state space for the collective language\footnote{\fullcite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}}
+		\begin{figure}
+			\includegraphics[scale=0.7]{/home/donkarlo/Dropbox/projs/research/assets/mutial-experienced-semantics.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Question}
+		How should emergence and frequency of locally communicated phrases of individual agent experiences persuade an agent toward either 
+		\begin{itemize}
+			\item \textbf{Reacting to major collective anomaly} Taking actions to perform a part of a collective behavior to keep homeostasis situation
+			\item \textbf{Reacting to minor collective anomaly} To ignore them and devolve it to individual disturbance rejection module in each individual agent. 
+		\end{itemize}
+	\end{frame}
+\end{document}

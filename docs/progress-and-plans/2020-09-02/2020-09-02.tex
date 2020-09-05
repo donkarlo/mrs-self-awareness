@@ -1,0 +1,83 @@
+% !TeX document-id = {412070ce-2b89-4575-900e-e9d3183d0ba4}
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{From individual perception to collective behavior in drones. A self-aware approach}
+\author{Mohammad Rahmani}
+\institute{Pervaisive Computing Group}
+
+\begin{document}
+	\begin{frame}
+		\date{}
+		\maketitle
+		\textcolor{white}{\textbf{31 August 2020}}
+	\end{frame}
+	\begin{frame}{}
+		\begin{figure}
+			\includegraphics[scale=0.06]{/home/donkarlo/Dropbox/projs/research/assets/drone-sa.png}
+			\caption{SA, sensors and actuators}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Individual semantic emergence}
+		Discretized\footnote{\fullcite{fiser-2013-growing-neural-gas-efficiently}} generalized state for different derivatives of time forms the alphabet of words by which each individual agent can describe the experiences it is practicing to other agents\footnote{\fullcite{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection}}
+		\begin{figure}
+			\includegraphics[scale=0.4]{/home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg}
+			\caption{}
+		\end{figure}
+		\begin{equation}
+		w = \{\alpha^{(0)},...,\alpha^{(L)}\}
+		\end{equation}
+	\end{frame}
+	
+	\begin{frame}{Collective semantic emergence}
+		Mutually activated discretized generalized state space for the collective language\footnote{\fullcite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}}
+		\begin{figure}
+			\includegraphics[scale=0.7]{/home/donkarlo/Dropbox/projs/research/assets/mutial-experienced-semantics.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Previous: Experimental setup - Formations for Rigid payload}
+		\begin{figure}
+			\includegraphics[scale=0.05]{/home/donkarlo/Dropbox/projs/research/assets/collective-collision-avoidance.png}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Previous: Experimental setup - Formations for Suspended payload}
+		\begin{figure}
+			\includegraphics[scale=0.03]{/home/donkarlo/Dropbox/projs/research/assets/suspended-all.png}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Previous: Literature review of existing collaborative payload transportation}
+		Categorized by
+		\begin{itemize}
+			\item Payloadshap
+			\item Suspention
+			\item Formation
+			\item  Attachment type
+			\item  ...
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Future}
+		\begin{itemize}
+			\item A literature review of existing multi-rotor formations
+			\item Discrete estate estimation by particle filtering for discretized state space (DSS)
+			\item Motion and path planning for DSS according to MJPF (\textbf{T} The result should be describable by type A and B)
+			\item Trajectory tracking according to MJPF
+			\item Disturbance rejection according to (DSS)
+			\item Dynamic generalized model discrimination in face of the scenarios
+			\item \textbf{Ultimately} Training a model to map Type A (regional individual behavior) to Type B (collective behavior)
+		\end{itemize}
+	\end{frame}
+\end{document}
