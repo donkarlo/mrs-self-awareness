@@ -3,52 +3,52 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: sa-drones.aux
 The style file: plainnat.bst
 Database file #1: /home/donkarlo/Dropbox/projs/research/refs.bib
-Warning--empty booktitle in apatean-2007-sensors-for-obstacle-detection-a-survey
+Warning--entry type for "wikipedia-2019-01-02-force-field-analysis" isn't style-file defined
+--line 34 of file /home/donkarlo/Dropbox/projs/research/refs.bib
 Warning--empty booktitle in baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach
-Warning--empty booktitle in steiner-2020-lexicographic-optimal-homologous-chains-and-applications-to-point-cloud-triangulations
 Warning--empty journal in fiser-2013-growing-neural-gas-efficiently
 Warning--empty booktitle in kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection
 Warning--empty journal in kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles
 Warning--empty journal in vasarhelyi-2014-outdoor-flocking-and-formation-flight-with-autonomous-aerial-robots
 You've used 10 entries,
             2773 wiz_defined-function locations,
-            637 strings with 7296 characters,
-and the built_in function-call counts, 5245 in all, are:
-= -- 410
-> -- 424
+            638 strings with 7283 characters,
+and the built_in function-call counts, 4898 in all, are:
+= -- 382
+> -- 404
 < -- 2
-+ -- 142
-- -- 132
-* -- 450
-:= -- 828
-add.period$ -- 30
++ -- 136
+- -- 126
+* -- 424
+:= -- 794
+add.period$ -- 31
 call.type$ -- 10
-change.case$ -- 74
+change.case$ -- 72
 chr.to.int$ -- 10
-cite$ -- 27
-duplicate$ -- 223
-empty$ -- 370
-format.name$ -- 142
-if$ -- 1069
+cite$ -- 25
+duplicate$ -- 201
+empty$ -- 339
+format.name$ -- 136
+if$ -- 982
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 58
+missing$ -- 9
+newline$ -- 59
 num.names$ -- 40
-pop$ -- 172
+pop$ -- 160
 preamble$ -- 1
-purify$ -- 64
+purify$ -- 62
 quote$ -- 0
-skip$ -- 179
+skip$ -- 162
 stack$ -- 0
-substring$ -- 83
-swap$ -- 20
-text.length$ -- 1
+substring$ -- 47
+swap$ -- 10
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 110
-warning$ -- 7
-while$ -- 33
+warning$ -- 5
+while$ -- 31
 width$ -- 0
-write$ -- 122
-(There were 7 warnings)
+write$ -- 126
+(There were 6 warnings)

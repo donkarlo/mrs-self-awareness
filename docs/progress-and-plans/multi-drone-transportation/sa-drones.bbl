@@ -5,12 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Apatean et~al.(2007)Apatean, Rogozan, Rusu, and
-  Bensrhair]{apatean-2007-sensors-for-obstacle-detection-a-survey}
-Anca Apatean, Alexandrina Rogozan, Corneliu Rusu, and Abdelaziz Bensrhair.
-\newblock Sensors for obstacle detection - a survey.
-\newblock pages 100 -- 105, 06 2007.
-
 \bibitem[{Baydoun} et~al.(2019){Baydoun}, {Campo}, {Kanapram}, {Marcenaro}, and
   {Regazzoni}]{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}
 M.~{Baydoun}, D.~{Campo}, D.~{Kanapram}, L.~{Marcenaro}, and C.~S. {Regazzoni}.
@@ -18,12 +12,14 @@ M.~{Baydoun}, D.~{Campo}, D.~{Kanapram}, L.~{Marcenaro}, and C.~S. {Regazzoni}.
   interactive approach.
 \newblock 2019.
 
-\bibitem[Cohen{-}Steiner et~al.(2020)Cohen{-}Steiner, Lieutier, and
-  Vuillamy]{steiner-2020-lexicographic-optimal-homologous-chains-and-applications-to-point-cloud-triangulations}
-David Cohen{-}Steiner, Andr{\'{e}} Lieutier, and Julien Vuillamy.
-\newblock Lexicographic optimal homologous chains and applications to point
-  cloud triangulations.
-\newblock 2020.
+\bibitem[Campo et~al.(2017)Campo, Betancourt, Marcenaro, and
+  Regazzoni]{campo-2017-static-force-field-representation-of-environments-based-on-agents-nonlinear-motions}
+Damian Campo, Alejandro Betancourt, Lucio Marcenaro, and Carlo Regazzoni.
+\newblock Static force field representation of environments based on agents’
+  nonlinear motions.
+\newblock \emph{EURASIP Journal on Advances in Signal Processing}, 2017, 01
+  2017.
+\newblock \doi{10.1186/s13634-017-0444-5}.
 
 \bibitem[Fiser et~al.(2013)Fiser, Faigl, and
   Kulich]{fiser-2013-growing-neural-gas-efficiently}
@@ -75,5 +71,10 @@ Gabor Vasarhelyi, Csaba Viragh, Gergo Somorjai, Norbert Tarcai, Tamas Szorenyi,
   Tamas Nepusz, and Tamas Vicsek.
 \newblock Outdoor flocking and formation flight with autonomous aerial robots.
 \newblock 02 2014.
+
+\bibitem[Wikipedia(2020)]{wikipedia-2019-01-02-force-field-analysis}
+Wikipedia.
+\newblock Force-field analysis, 01 2020.
+\newblock URL \url{https://en.wikipedia.org/wiki/Force-field_analysis}.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.24)  2 SEP 2020 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.24)  11 SEP 2020 13:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1312,17 +1312,16 @@ Missing character: There is no ; in font nullfont!
  [9
 
 ]
-</home/donkarlo/Dropbox/projs/research/assets/collective-collision-avoidance.pn
-g, id=69, 4961.53625pt x 3406.7275pt>
-File: /home/donkarlo/Dropbox/projs/research/assets/collective-collision-avoidan
-ce.png Graphic file (type png)
-<use /home/donkarlo/Dropbox/projs/research/assets/collective-collision-avoidanc
-e.png>
-Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/collectiv
-e-collision-avoidance.png  used on input line 106.
-(pdftex.def)             Requested size: 248.09134pt x 170.34634pt.
+</home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png, id=6
+9, 4824.0225pt x 3504.09125pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png 
+Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/colletive
+-all-scenarios.png  used on input line 106.
+(pdftex.def)             Requested size: 241.21526pt x 175.21483pt.
 
-Overfull \vbox (25.48456pt too high) detected at line 106
+Overfull \vbox (30.35304pt too high) detected at line 106
  []
 
 File: aauthmfigs/bg1.png Graphic file (type png)
@@ -1332,12 +1331,11 @@ Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 106.
 Missing character: There is no ; in font nullfont!
 [10
 
- </home/donkarlo/Dropbox/projs/research/assets/collective-collision-avoidance.p
-ng
+ </home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png
 
 pdfTeX warning: /usr/bin/pdflatex (file /home/donkarlo/Dropbox/projs/research/a
-ssets/collective-collision-avoidance.png): large interlaced PNG might cause out
- of memory (use non-interlaced PNG to fix this)
+ssets/colletive-all-scenarios.png): large interlaced PNG might cause out of mem
+ory (use non-interlaced PNG to fix this)
 >]
 </home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg, id=76,
  122.82106pt x 155.2572pt>
@@ -1403,7 +1401,7 @@ Package logreq Info: Writing requests to 'mrs-prague.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  28252 strings out of 481239
- 559655 string characters out of 5920377
+ 559613 string characters out of 5920377
  1259469 words of memory out of 5000000
  42917 multiletter control sequences out of 15000+600000
  544169 words of font info for 66 fonts, out of 8000000 for 9000
@@ -1417,7 +1415,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb>
-Output written on mrs-prague.pdf (13 pages, 2373379 bytes).
+Output written on mrs-prague.pdf (13 pages, 2437218 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
