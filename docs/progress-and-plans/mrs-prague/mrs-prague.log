@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.24)  11 SEP 2020 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.24)  11 SEP 2020 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1403,20 +1403,15 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `mrs-prague.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'mrs-prague.run.xml'.
 \openout1 = `mrs-prague.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28254 strings out of 481239
- 559632 string characters out of 5920377
- 1259469 words of memory out of 5000000
- 42917 multiletter control sequences out of 15000+600000
+ 28256 strings out of 481239
+ 559648 string characters out of 5920377
+ 1259519 words of memory out of 5000000
+ 42919 multiletter control sequences out of 15000+600000
  544169 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,19n,78p,794b,4720s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1428,7 +1423,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb>
-Output written on mrs-prague.pdf (14 pages, 2438333 bytes).
+Output written on mrs-prague.pdf (14 pages, 2438793 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  98 compressed objects within 1 object stream
