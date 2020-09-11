@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.24)  11 SEP 2020 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.24)  11 SEP 2020 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,26 +1212,34 @@ Missing character: There is no ; in font nullfont!
 <aauthmfigs/bg1.png, id=23, 1445.4pt x 1083.04625pt>
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 31.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 29.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [2
 
  <./aauthmfigs/bg1.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 41.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+ [3
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 35.
+ut line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1239,19 +1247,11 @@ thkerncmss.
 )
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 35.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 45.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
 
-[3
-
-]
-File: aauthmfigs/bg1.png Graphic file (type png)
-<use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 43.
-(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
-Missing character: There is no ; in font nullfont!
- [4
+[4
 
 ]
 File: aauthmfigs/bg1.png Graphic file (type png)
@@ -1262,25 +1262,33 @@ Missing character: There is no ; in font nullfont!
  [5
 
 ]
-</home/donkarlo/Dropbox/projs/research/assets/drone-sa.png, id=45, 5300.80376pt
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 63.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+ [6
+
+]
+</home/donkarlo/Dropbox/projs/research/assets/drone-sa.png, id=50, 5300.80376pt
  x 2247.39626pt>
 File: /home/donkarlo/Dropbox/projs/research/assets/drone-sa.png Graphic file (t
 ype png)
 <use /home/donkarlo/Dropbox/projs/research/assets/drone-sa.png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/drone-sa.
-png  used on input line 60.
+png  used on input line 70.
 (pdftex.def)             Requested size: 318.0345pt x 134.83795pt.
 
-Overfull \hbox (10.74463pt too wide) in paragraph at lines 60--60
+Overfull \hbox (10.74463pt too wide) in paragraph at lines 70--70
  [] 
  []
 
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 60.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 70.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
-[6
+[7
 
  </home/donkarlo/Dropbox/projs/research/assets/drone-sa.png
 
@@ -1290,15 +1298,7 @@ terlaced PNG to fix this)
 >]
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 78.
-(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
-Missing character: There is no ; in font nullfont!
- [7
-
-]
-File: aauthmfigs/bg1.png Graphic file (type png)
-<use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 90.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 88.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [8
@@ -1306,30 +1306,38 @@ Missing character: There is no ; in font nullfont!
 ]
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 98.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 100.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [9
 
 ]
-</home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png, id=6
-9, 4824.0225pt x 3504.09125pt>
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 108.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+ [10
+
+]
+</home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png, id=7
+4, 4824.0225pt x 3504.09125pt>
 File: /home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png 
 Graphic file (type png)
 <use /home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/colletive
--all-scenarios.png  used on input line 106.
+-all-scenarios.png  used on input line 116.
 (pdftex.def)             Requested size: 241.21526pt x 175.21483pt.
 
-Overfull \vbox (30.35304pt too high) detected at line 106
+Overfull \vbox (30.35304pt too high) detected at line 116
  []
 
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 106.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 116.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
-[10
+[11
 
  </home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png
 
@@ -1337,46 +1345,46 @@ pdfTeX warning: /usr/bin/pdflatex (file /home/donkarlo/Dropbox/projs/research/a
 ssets/colletive-all-scenarios.png): large interlaced PNG might cause out of mem
 ory (use non-interlaced PNG to fix this)
 >]
-</home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg, id=76,
+</home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg, id=81,
  122.82106pt x 155.2572pt>
 File: /home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg Gr
 aphic file (type jpg)
 <use /home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/trait-bas
-ed-alphabets.jpg  used on input line 117.
+ed-alphabets.jpg  used on input line 127.
 (pdftex.def)             Requested size: 49.12753pt x 62.10176pt.
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 117.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 127.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
- [11
+ [12
 
  </home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg>]
 </home/donkarlo/Dropbox/projs/research/assets/mutial-experienced-semantics.jpg,
- id=86, 319.84935pt x 74.45139pt>
+ id=91, 319.84935pt x 74.45139pt>
 File: /home/donkarlo/Dropbox/projs/research/assets/mutial-experienced-semantics
 .jpg Graphic file (type jpg)
 <use /home/donkarlo/Dropbox/projs/research/assets/mutial-experienced-semantics.
 jpg>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/mutial-ex
-perienced-semantics.jpg  used on input line 125.
+perienced-semantics.jpg  used on input line 135.
 (pdftex.def)             Requested size: 223.893pt x 52.1156pt.
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 125.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 135.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
- [12
+ [13
 
  </home/donkarlo/Dropbox/projs/research/assets/mutial-experienced-semantics.jpg
 >]
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 133.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 143.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
- [13
+ [14
 
 ]
 \tf@nav=\write7
@@ -1388,20 +1396,25 @@ Missing character: There is no ; in font nullfont!
 \tf@snm=\write9
 \openout9 = `mrs-prague.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (./mrs-prague.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `mrs-prague.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'mrs-prague.run.xml'.
 \openout1 = `mrs-prague.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28252 strings out of 481239
- 559613 string characters out of 5920377
+ 28254 strings out of 481239
+ 559632 string characters out of 5920377
  1259469 words of memory out of 5000000
  42917 multiletter control sequences out of 15000+600000
  544169 words of font info for 66 fonts, out of 8000000 for 9000
@@ -1415,10 +1428,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb>
-Output written on mrs-prague.pdf (13 pages, 2437218 bytes).
+Output written on mrs-prague.pdf (14 pages, 2438333 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 29 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
