@@ -1,0 +1,142 @@
+% !TeX document-id = {412070ce-2b89-4575-900e-e9d3183d0ba4}
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{Collective awareness in MAVs}
+\author{Mohammad Rahmani}
+\institute{Pervasive Computing Group (Klagenfurt university)}
+
+\begin{document}
+	\begin{frame}
+		\date{}
+		\maketitle
+		\textcolor{white}{\textbf{22 September 2020}}
+	\end{frame}
+	
+	\begin{frame}{Self-awareness (SA)}
+		SA is an approach in Artificial Intelligence (AI) to enable Intelligent Agents (IAs) to make a distinction between their previous experiences and new experiences observed by their sensors. \footnote{\fullcite{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}} and
+		\begin{itemize}
+			\item build new predictive models of these new experiences 
+			\item store them and retrieve them to predict and plan future
+			\item make appropriate decisions according to the new situation
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Experience definition}
+		\begin{itemize}
+			\item Having experience means being equipped with a model that can predict future states (location, motion ...) of an IA by current observation through their sensors 
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Sensors}
+		Each IA, either biological or artificial, incorporates:
+		\begin{itemize}
+			\item Sensors
+			\begin{itemize}
+				\item Proprioceptive (Cochlea, IMU)
+				\item Exteroceptive (Eyes, Camera)
+			\end{itemize}
+			\item Actuators (Feet, Engine)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Simple Illustration of an SA drone}
+		\begin{figure}
+			\includegraphics[scale=0.06]{/home/donkarlo/Dropbox/projs/research/assets/drone-sa.png}
+			\caption{SA, sensors and actuators}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{The Ultimate Goal of a Self-aware IA}
+		\begin{itemize}
+			\item To maintain its homeostasis condition over the course of time by taking advantage of the modeled experiences to improve issues such as 
+			\begin{itemize}
+				\item Resource management
+				\item Security
+				\item Safety
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Collective Self-awareness (SA)}
+		\begin{itemize}
+			\item The ability to detect abnormality in the course of relation a couple of IAs were supposed to maintain and make appropriate decisions to improve collective homeostasis conditions
+				\begin{itemize}
+					\item \textbf{Example}: Taking an appropriate \textbf{formation} when the collection faces a factor detrimental to its collective homeostasis condition
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Tools and Theories to Implement SA/CA}
+		\begin{itemize}
+			\item Dynamic Bayesian Networks such as 
+			\begin{itemize}
+				\item Markov Jump Linear Systems (KF+DBN) \footnote{\url{doucet-2001-particle-filters-for-state-estimation-of-jump-markov-linear-systems}}
+				\item Markov Jump Particle (KF+PF+DBN) Systems\footnote{\url{baydoun-2018-learning-switching-models-for-abnormality-detection-for-autonomous-driving}}
+			\end{itemize}
+			\item Force Field Analysis (Autonomous navigation)
+			\item Variational Auto Encoders (To generate different versions of the same experience)
+			\item Continual/Lifelong learning (To include all experiences in one model)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{SA in Single UAV Navigation for Aerial Manipulation}
+		The aforementioned abilities in a single UAV navigation in tight spaces such as buildings translates to:
+		\begin{itemize}
+			\item Path/motion planning
+			\item State estimation
+			\item Trajectory tracking
+				\begin{itemize}
+					\item \textbf{Minor anomaly detection} Disturbance rejection
+				\end{itemize}
+			\item \textbf{Major anomaly detection}: Collision avoidance
+				\begin{itemize}
+					\item Corridor turning points
+					\item Vertical collision avoidance
+					\item Horizontal collision avoidance
+				\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{CA in Multi UAV Navigation for Aerial Manipulation}
+		Not only each individual IA must be SA, but also the whole collection should include these abilities:
+		\begin{itemize}
+			\item \textbf{Collective path/motion planning}
+			\item \textbf{Formation state estimation}
+			\item \textbf{Formation anomaly detection}: While individuals perform collision avoidance maneuvers and taking the right decision toward a new appropriate formation to avoid load and system collision
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{CA scenarios}
+		CA formation models from which appropriate actions should be practiced
+		\begin{figure}
+			\includegraphics[scale=0.05]{/home/donkarlo/Dropbox/projs/research/assets/colletive-all-scenarios.png}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{First Language: Individual Semantic Emergence}
+		Discretized\footnote{\fullcite{fiser-2013-growing-neural-gas-efficiently}} generalized state for different derivatives of time, forms the alphabet of words by which each individual agent can describe the experiences it is practicing to other agents \footnote{\fullcite{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection}}
+		\begin{figure}
+			\includegraphics[scale=0.4]{/home/donkarlo/Dropbox/projs/research/assets/trait-based-alphabets.jpg}
+			\caption{}
+		\end{figure}
+		\begin{equation}
+			w = \{\alpha^{(0)},...,\alpha^{(L)}\}
+		\end{equation}
+	\end{frame}
+
+	\begin{frame}{Second language: Collective Semantic Emergence}
+		Mutually activated discretized generalized state space form the collective language which can describe the relation(Formation) a collection of agents are supposed to maintain over the course of time \footnote{\fullcite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}}
+		\begin{figure}
+			\includegraphics[scale=0.7]{/home/donkarlo/Dropbox/projs/research/assets/mutial-experienced-semantics.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+\end{document}

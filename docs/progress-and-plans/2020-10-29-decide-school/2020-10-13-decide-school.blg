@@ -1,0 +1,10 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is '2020-10-13-decide-school.blg'
+[134] biber:313> INFO - === So Okt 18, 2020, 22:52:11
+[495] Biber.pm:371> INFO - Reading '2020-10-13-decide-school.bcf'
+[548] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[552] Utils.pm:169> WARN - The file '2020-10-13-decide-school.bcf' does not contain any citations!
+[558] bbl.pm:617> INFO - Writing '2020-10-13-decide-school.bbl' with encoding 'ascii'
+[558] bbl.pm:618> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[558] bbl.pm:720> INFO - Output to 2020-10-13-decide-school.bbl
+[558] Biber.pm:110> INFO - WARNINGS: 1

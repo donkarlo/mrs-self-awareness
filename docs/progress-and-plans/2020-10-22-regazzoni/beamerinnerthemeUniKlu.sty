@@ -1,0 +1,69 @@
+\mode<presentation>
+
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[color=aaudarkblue] (0,0) rectangle (\the\paperwidth,\the\paperheight);
+   \ifnum\thepage=1\relax%
+   \includegraphics[width=\the\paperwidth]{aauthmfigs/bg0};
+   \fi
+  \ifnum\thepage>1\relax%
+   %\fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+   \includegraphics[width=\the\paperwidth]{aauthmfigs/bg1};
+   \fi
+  \end{tikzpicture}
+}
+
+
+\defbeamertemplate*{title page}{UniKlu}[1][]
+{
+	\vbox{}
+	\vfill
+	\begingroup
+	\centering
+	\begin{beamercolorbox}[sep=8pt,center,#1]{title}
+		\usebeamerfont{title}\textbf{\inserttitle}\par%
+		\ifx\insertsubtitle\@empty%
+		\else%
+		\vskip0.25em%
+		{\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+		\fi%     
+	\end{beamercolorbox}%
+	\vskip1em\par
+	\begin{beamercolorbox}[sep=8pt,center,#1]{author}
+		\usebeamerfont{author}\insertauthor
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[sep=8pt,center,#1]{institute}
+		\usebeamerfont{institute}\insertinstitute
+	\end{beamercolorbox}
+	\begin{beamercolorbox}[sep=8pt,center,#1]{date}
+		\usebeamerfont{date}\insertdate
+	\end{beamercolorbox}\vskip0.5em
+	{\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+	\endgroup
+	\vfill
+}
+
+
+\setbeamertemplate{items}[square]
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{caption}{\insertcaption} 
+
+%\AtBeginSection[]{
+%	\begin{frame}
+%		\vfill
+%		\centering
+%		\begin{beamercolorbox}[sep=8pt,center,shadow=true]{sectiontitle}
+%			\usebeamerfont{title}\insertsectionhead\par%
+%		\end{beamercolorbox}
+%		\vfill
+%	\end{frame}
+%}
+
+
+
+
+
+\mode
+<all>

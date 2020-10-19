@@ -1,0 +1,115 @@
+% !TeX document-id = {412070ce-2b89-4575-900e-e9d3183d0ba4}
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{From Individual Perception to Collective Behavior in MAV. A self-aware approach}
+\author{Mohammad Rahmani}
+\institute{Pervasive Computing Group}
+
+\begin{document}
+	\begin{frame}
+		\date{}
+		\maketitle
+		\textcolor{white}{\textbf{6 October 2020}}
+	\end{frame}
+	
+	\begin{frame}{Swarms}
+		Swarms a set of identical robots that
+		\begin{itemize}
+			\item locally perceive via sensors
+			\item locally act through actuators
+			\item locally communicate
+		\end{itemize}
+		but are expected to 
+		\begin{itemize}
+			\item behave collectively
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{An approach in collective awareness}
+	Imagine a collection of agents navigating from a starting point to a destination (attraction) point and on their way they face repulsive forces against which they should overcome
+		\begin{itemize}
+			\item As the dynamism of each IA can be described in the form of a DBN, the course of their relationship over time until reaching the destination can also be described by a DBN
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{An approach in collective awareness}
+		\textbf{Formation}: Is a consensus between a set agents to maintain the distance vector between themselves over a certain amount of time i.e. if $A$ is the set of the agents in the system
+		\begin{equation}
+		A = \{a_1,...,a_{|A|}\}
+		\end{equation}
+		then the distance vector to form the formation $i$ that agent $a_j$ should be aware about $k$ neighboring agents cab be defined as 
+		\begin{equation}
+		D_{ijk} = \{\vec{d}_{jp}(a_j,a_p)|p\in \{1,...,n_k\}\} 
+		\end{equation}
+		The formation $i$ for the whole system can be defined
+		\begin{equation}
+		F_i = \{D_{ij}|i\in\{1,...,|A|\}\}
+		\end{equation}
+		If a formation is maintained for time $t$ then $F_t$ will present a temporal formation. 
+	\end{frame}
+
+	\begin{frame}{Temporal formation}
+		\begin{figure}
+			\includegraphics[scale=0.7]{/home/donkarlo/Dropbox/projs/research/assets/collective-frame-passing-of-three-drones.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Maneuver, Collective behavior}  
+		\begin{itemize}
+			\item \textbf{Maneuver} is changing from one formation to another over the course of time.
+			\item \textbf{Collective behavior or a temporal behavior} is a temporal formation or a maneuver between the agents. 
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Maneuver}
+		\begin{figure}
+			\includegraphics[scale=0.7]{/home/donkarlo/Dropbox/projs/research/assets/collective-behavior-of-three-drones-to-pass-a-narrow-passage.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Predictive models for collective behavior}
+		\begin{itemize}
+			\item Both maintaining a temporal formation or maneuver are dynamic systems which shows the \textbf{evolution of distance vector over the course of time} and hence could be formalized by a transition matrix. 
+			\item Can this transition matrix trained by repeating the temporal formation or the maneuver and be stored for future state predictions as a \textbf{model} or \textbf{experience} as a DBN simlar to an individual agent state prediction model?
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Training the collective behavior DBN}
+		\begin{itemize}
+			\item One approach is to \textbf{discretize} the \textbf{state space} of each individual agent in a collective behavior to \textbf{quasi-motion constant regions} and the temporal sequence of co-occurrence of each agent's region with another neighboring agent can form the alphabet for the words of a sentence describing the evolution of the relation between two agents. (Taking an approach similar to \footnote{Baydoun 2019 Prediction of multi target dynamics using discrete descriptors an interactive approach})
+			\item An \textbf{anomaly} can be defined as the \textbf{distance} above the \textbf{tolerance rate} between \textbf{expected/predicted state} in this relationship and \textbf{observed state} in comparison to practicing model.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Why should we observe anomaly in a collective behavior?}
+		\begin{itemize}
+			\item Each agent tries to \textbf{save itself} as such the intersecting quasi-motion regions will not occur as they were predicted and collective anomaly occurs. 
+			\item But if other agents do not react accordingly the whole system collapse (Systems homeostasis will collapse for the sake of maintaining an individual's homeostasis).  
+			\item \textbf{Solution}: Choosing the right collective DBN to practice according to which each individual should adjust it's motion to avoid whole system's collapse
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Probable implementation}
+		\begin{enumerate}
+			\item  \textbf{Discretizing} the motion state space of agents to \textbf{different derivative orders of time} \footnote{Kanapram 2020 Collective awareness for abnormality detection in connected autonomous vehicles}
+			\item Use the \textbf{composition} of these \textbf{different derivative orders} as \textbf{words} to communicate any \textbf{motion state change} of each agent to neighboring agents
+			\item 	Train a model to \textbf{map} the \textbf{words} \textbf{received} by an agent from its neighboring agents to a \textbf{collective behavior} defined by the words of the DBN representing a collective behavior. 
+		\end{enumerate}
+	\end{frame}
+
+	\begin{frame}{Scenarios}
+		\begin{figure}
+			\includegraphics[scale=0.5]{/home/donkarlo/Dropbox/projs/research/assets/scenarios-of-collective-drones.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+\end{document}

@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -21,45 +21,45 @@
   \datalist[entry]{nty/global//global/global}
     \entry{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}{inproceedings}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=47fc8e7055f0b7ef1569dfe836d3e963}{%
+        {{uniquename=0,uniquepart=base,hash=3eaa8a8b4e169383f6d678229aef2a65}{%
            family={{Baydoun}},
            familyi={B\bibinitperiod},
            given={M.},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=b5dd054231a99e0d5284bafa3275ad14}{%
+        {{uniquename=0,uniquepart=base,hash=e2421e0d11a15b8c2221cc115c796383}{%
            family={{Campo}},
            familyi={C\bibinitperiod},
            given={D.},
            giveni={D\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=d901230abad5d317ff8ff737fd5bf535}{%
+        {{uniquename=0,uniquepart=base,hash=d1c9b5fdf38bc8242666bf1b186d6aec}{%
            family={{Kanapram}},
            familyi={K\bibinitperiod},
            given={D.},
            giveni={D\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c24256edf474f9a114f619d5e0674e0b}{%
+        {{uniquename=0,uniquepart=base,hash=024fd81cb45ff53ccdc2a1e59503f481}{%
            family={{Marcenaro}},
            familyi={M\bibinitperiod},
            given={L.},
            giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c7824ad9171d624deed837718c646104}{%
+        {{uniquename=0,uniquepart=base,hash=356c92b305b559f34539cdae2a2b67c1}{%
            family={{Regazzoni}},
            familyi={R\bibinitperiod},
            given={C.\bibnamedelimi S.},
            giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{507ff9d713bbaf6e4fb80b5645438206}
-      \strng{fullhash}{3869a6677bf538dae0880c1218dccdc2}
-      \strng{bibnamehash}{3869a6677bf538dae0880c1218dccdc2}
-      \strng{authorbibnamehash}{3869a6677bf538dae0880c1218dccdc2}
-      \strng{authornamehash}{507ff9d713bbaf6e4fb80b5645438206}
-      \strng{authorfullhash}{3869a6677bf538dae0880c1218dccdc2}
+      \strng{namehash}{0e040f713c45d63a466456fd8d06747d}
+      \strng{fullhash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \strng{bibnamehash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \strng{authorbibnamehash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \strng{authornamehash}{0e040f713c45d63a466456fd8d06747d}
+      \strng{authorfullhash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
       \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -70,19 +70,19 @@
     \endentry
     \entry{fiser-2013-growing-neural-gas-efficiently}{article}{}
       \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=3a2494e2069ad7251b61ebc5403501c0}{%
+        {{uniquename=0,uniquepart=base,hash=3a2494e2069ad7251b61ebc5403501c0}{%
            family={Fiser},
            familyi={F\bibinitperiod},
            given={Daniel},
            giveni={D\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=0ff3f8a6d04f6311d23fbdeb8bb9de0e}{%
+        {{uniquename=0,uniquepart=base,hash=0ff3f8a6d04f6311d23fbdeb8bb9de0e}{%
            family={Faigl},
            familyi={F\bibinitperiod},
            given={Jan},
            giveni={J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=38e1ec98622fe250802768bb6e03eeff}{%
+        {{uniquename=0,uniquepart=base,hash=38e1ec98622fe250802768bb6e03eeff}{%
            family={Kulich},
            familyi={K\bibinitperiod},
            given={Miroslav},
@@ -96,7 +96,7 @@
       \strng{authornamehash}{a7d5f01260c329914770423ab6eb4b67}
       \strng{authorfullhash}{72908012e2219cad604b2510b288e3bb}
       \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -107,31 +107,31 @@
     \endentry
     \entry{kanapram-2019-self-awareness-in-intelligent-vehicles-experience-based-abnormality-detection}{inproceedings}{}
       \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=f1f9818c0afd87e53eb72dabf212e028}{%
+        {{uniquename=0,uniquepart=base,hash=f1f9818c0afd87e53eb72dabf212e028}{%
            family={Kanapram},
            familyi={K\bibinitperiod},
            given={Divya},
            giveni={D\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=6e7314a5b6665206ad90c0e00cf1268d}{%
+        {{uniquename=0,uniquepart=base,hash=6e7314a5b6665206ad90c0e00cf1268d}{%
            family={Marin-Plaza},
            familyi={M\bibinithyphendelim P\bibinitperiod},
            given={Pablo},
            giveni={P\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=11626ce5af63559f7c8e4099deebdcd4}{%
+        {{uniquename=0,uniquepart=base,hash=11626ce5af63559f7c8e4099deebdcd4}{%
            family={Marcenaro},
            familyi={M\bibinitperiod},
            given={Lucio},
            giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=b81fe113b5141d9d5704473a1ba541d3}{%
+        {{uniquename=0,uniquepart=base,hash=b81fe113b5141d9d5704473a1ba541d3}{%
            family={Martin},
            familyi={M\bibinitperiod},
            given={David},
            giveni={D\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3dd8212180c357398de3ed2cc09b52f}{%
+        {{uniquename=0,uniquepart=base,hash=5753ce76187d82044865cdf2fbcbbca6}{%
            family={Arturo\bibnamedelimb de\bibnamedelimb la\bibnamedelima Escalera},
            familyi={A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim l\bibinitperiod\bibinitdelim E\bibinitperiod},
            given={Carlo\bibnamedelima Regazzoni},
@@ -139,13 +139,13 @@
            givenun=0}}%
       }
       \strng{namehash}{c04f7d62b1f698f0cee38dc0c2cd90c3}
-      \strng{fullhash}{a0d359244ca87d74281ac6bb46e832d6}
-      \strng{bibnamehash}{a0d359244ca87d74281ac6bb46e832d6}
-      \strng{authorbibnamehash}{a0d359244ca87d74281ac6bb46e832d6}
+      \strng{fullhash}{efe6622a358da301a8ad7c2c0b760f50}
+      \strng{bibnamehash}{efe6622a358da301a8ad7c2c0b760f50}
+      \strng{authorbibnamehash}{efe6622a358da301a8ad7c2c0b760f50}
       \strng{authornamehash}{c04f7d62b1f698f0cee38dc0c2cd90c3}
-      \strng{authorfullhash}{a0d359244ca87d74281ac6bb46e832d6}
+      \strng{authorfullhash}{efe6622a358da301a8ad7c2c0b760f50}
       \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
@@ -156,39 +156,39 @@
     \endentry
     \entry{regazzoni-2020-multi-sensorial-generative-and-descriptive-self-awareness-models-for-autonomous-systems}{inproceedings}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=c7824ad9171d624deed837718c646104}{%
+        {{uniquename=0,uniquepart=base,hash=356c92b305b559f34539cdae2a2b67c1}{%
            family={{Regazzoni}},
            familyi={R\bibinitperiod},
            given={C.\bibnamedelimi S.},
            giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c24256edf474f9a114f619d5e0674e0b}{%
+        {{uniquename=0,uniquepart=base,hash=024fd81cb45ff53ccdc2a1e59503f481}{%
            family={{Marcenaro}},
            familyi={M\bibinitperiod},
            given={L.},
            giveni={L\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=b5dd054231a99e0d5284bafa3275ad14}{%
+        {{uniquename=0,uniquepart=base,hash=e2421e0d11a15b8c2221cc115c796383}{%
            family={{Campo}},
            familyi={C\bibinitperiod},
            given={D.},
            giveni={D\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=0798a43d2e9646b3455f17f96d1dbe5d}{%
+        {{uniquename=0,uniquepart=base,hash=af63c84cc5f0b14bb15d072fab62828a}{%
            family={{Rinner}},
            familyi={R\bibinitperiod},
            given={B.},
            giveni={B\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{0b013bc910b0696d0ee500f5c5317787}
-      \strng{fullhash}{432c94cd3fd4443f0905ef2e957087b1}
-      \strng{bibnamehash}{432c94cd3fd4443f0905ef2e957087b1}
-      \strng{authorbibnamehash}{432c94cd3fd4443f0905ef2e957087b1}
-      \strng{authornamehash}{0b013bc910b0696d0ee500f5c5317787}
-      \strng{authorfullhash}{432c94cd3fd4443f0905ef2e957087b1}
+      \strng{namehash}{23a3296cf0fec360544fe14c0cb360c2}
+      \strng{fullhash}{13d1197f821f7dd009d0c2b3248c8110}
+      \strng{bibnamehash}{13d1197f821f7dd009d0c2b3248c8110}
+      \strng{authorbibnamehash}{13d1197f821f7dd009d0c2b3248c8110}
+      \strng{authornamehash}{23a3296cf0fec360544fe14c0cb360c2}
+      \strng{authorfullhash}{13d1197f821f7dd009d0c2b3248c8110}
       \field{sortinit}{R}
-      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}

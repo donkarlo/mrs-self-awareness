@@ -1,0 +1,127 @@
+% !TeX document-id = {412070ce-2b89-4575-900e-e9d3183d0ba4}
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{/home/donkarlo/Dropbox/projs/research/refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{Progress and Plans}
+\author{Mohammad Rahmani}
+\institute{Decide Doctoral School}
+
+\begin{document}
+	\begin{frame}
+		\date{}
+		\maketitle
+		\textcolor{white}{\textbf{19 October 2020}}
+	\end{frame}
+	
+	\begin{frame}{Table of contents}
+		\begin{itemize}
+			\item Literature review on existing approaches in individual SA and CA
+			\item Literature review on discretized generalized state space models
+			\item Literature review on collective aerial transportation
+			\item Literature review on formation control and consensus seeking
+			\item Determining experimental scenarios
+			\item Outlining probable questions to which this research must answer
+			\item Attending Prague summer school
+			\item Determining simulation environment
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Literature review on existing approaches in SA and CA}
+		Resulted in narrowing the research domain to
+		\begin{itemize}
+			\item adopting a definition of SA and CA which is based on modeling detected anomaly in dynamic systems as a predictive model
+			\item training predictive DBN models from detected anomalies 
+			\item methods for storing the models
+			\item methods for retrieving the models
+			\item combining the two previous steps using continual learning techniques
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Literature review on discretized generalized state space models}
+	 Resulted in determining two abstract communication methods to
+		\begin{enumerate}
+			\item describe generalized IA motions
+			\item describe the expected relationship over the course of time which should be maintained between a collection of IAs 
+		\end{enumerate}
+	\end{frame}
+
+	\begin{frame}{Literature review on collective aerial transportation}
+		Resulted in determining two set of scenarios which
+		\begin{itemize}
+			\item define CA as modeling the detected anomaly in a previously agreed consensus between the agents
+			\item avoid IAs dispersion around obstacles
+			\item taking a dynamic leader-follower approach (similar to biological agents when transporting payloads)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Scenarios - 1}
+		\textbf{Overview}: A collection of IAs that carry an imaginary payload with some degree of freedom from a starting point to a destination (attractive force) while some repulsive forces obstruct them in two forms
+		\begin{itemize}
+			\item Carry a payload between them
+			\item Carry a payload which is suspended from a cable
+		\end{itemize}
+		Repulsive forces to overcome
+		\begin{itemize}
+			\item Vertical column
+			\item Horizontal obstacles
+			\item Changes in the corridor width and height (suspended form only)
+			\item Turning points
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Scenarios - 2}
+		Determining the logic of the scenarios
+		\begin{itemize}
+			\item Each agent tries to individually avoid repulsive forces 
+			\item Each agent describes the changes in its discreet motion space when trying to avoid repulsive forces to neighboring agents using the first communication's semantic segments
+			\item such locally transmitted messages will be either mapped to a collective behavior described by a sequence of semantic segments of the second communication method or is detected as an anomaly in the collective behavior from which a new DBN model should be generated
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Probable questions the scenarios should answer?}
+		\begin{itemize}
+			\item Does locally conversed motion changes detect anomalies better than state-of-the-art? Better means:
+			\begin{itemize}
+				\item earlier anomaly detection from existing collective behavior models
+				\item generating larger anomaly signals to better differentiate them against disturbances such as sensor noises
+			\end{itemize}
+			\item Does modeling CA in the form of second abstraction language improves state-of-the-art in   homeostasis in swarms?
+			\item Can a coupled encoder-decoder architecture improve state-of-the-art in improving catastrophic forgetting in ANNs? 
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Prague summer school}
+		Resulted in
+		\begin{itemize}
+			\item Presenting the aforementioned scenarios
+			\item Using their Multi-UAV framework for simulating the scenarios
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Simulation Environment}
+		\begin{itemize}
+			\item Simulink
+			\item Matlab
+			\item ROS + Airsim
+		\end{itemize}
+		MRS enabled frameworks
+		\begin{itemize}
+			\item RotorS
+			\item Hector Quadrotors 
+			\item ...
+		\end{itemize}
+		\textbf{ROS + GAZEBO} applied in a framework developed by CTU-MRS
+	\end{frame}
+
+	\begin{frame}{Questions}
+		\begin{itemize}
+			\item Questions?
+		\end{itemize}
+	\end{frame}
+\end{document}
