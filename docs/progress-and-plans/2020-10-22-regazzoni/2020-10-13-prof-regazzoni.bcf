@@ -2073,6 +2073,13 @@
     <bcf:datasource type="file" datatype="bibtex">/home/donkarlo/Dropbox/projs/research/refs.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach</bcf:citekey>
+    <bcf:citekey order="2">kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles</bcf:citekey>
+    <bcf:citekey order="3">kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles</bcf:citekey>
+    <bcf:citekey order="4">baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach</bcf:citekey>
+    <bcf:citekey order="5">baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach</bcf:citekey>
+    <bcf:citekey order="6">kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles</bcf:citekey>
+    <bcf:citekey order="7">baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

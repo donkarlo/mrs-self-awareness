@@ -16,99 +16,139 @@
 	\begin{frame}
 		\date{}
 		\maketitle
-		\textcolor{white}{\textbf{6 October 2020}}
+		\textcolor{white}{\textbf{23 October 2020}}
 	\end{frame}
 	
+	
 	\begin{frame}{Swarms}
-		Swarms a set of identical robots that
-		\begin{itemize}
+		Swarms are teams of homogeneous robots that
+		\begin{itemize} 
 			\item locally perceive via sensors
-			\item locally act through actuators
+			\item locally (re)act through actuators
 			\item locally communicate
 		\end{itemize}
 		but are expected to 
 		\begin{itemize}
 			\item behave collectively
 		\end{itemize}
+	to accomplish a task. (E.g collective payload delivery)
 	\end{frame}
 
-	\begin{frame}{An approach in collective awareness}
-	Imagine a collection of agents navigating from a starting point to a destination (attraction) point and on their way they face repulsive forces against which they should overcome
+	\begin{frame}{Why swarms?}
 		\begin{itemize}
-			\item As the dynamism of each IA can be described in the form of a DBN, the course of their relationship over time until reaching the destination can also be described by a DBN
+			\item \textbf{Improved performance}: if tasks can be decomposable then by using parallelism, groups can make tasks to be performed more efficiently.
+			\item \textbf{Task enablement}: groups of robots can do certain tasks that are impossible for a single robot.
+			\item \textbf{Distributed sensing}: the range of sensing of a group of robots is wider than the range of a single robot.
+			\item \textbf{Distributed action}: a group a robots can actuate in different places at the same time.
+			\item \textbf{Fault tolerance}: under certain conditions, the failure of a single robot within a group does not imply that the given task cannot be accomplished, thanks to the redundancy of the system.
 		\end{itemize}
 	\end{frame}
 
-	\begin{frame}{An approach in collective awareness}
-		\textbf{Formation}: Is a consensus between a set agents to maintain the distance vector between themselves over a certain amount of time i.e. if $A$ is the set of the agents in the system
-		\begin{equation}
-		A = \{a_1,...,a_{|A|}\}
-		\end{equation}
-		then the distance vector to form the formation $i$ that agent $a_j$ should be aware about $k$ neighboring agents cab be defined as 
-		\begin{equation}
-		D_{ijk} = \{\vec{d}_{jp}(a_j,a_p)|p\in \{1,...,n_k\}\} 
-		\end{equation}
-		The formation $i$ for the whole system can be defined
-		\begin{equation}
-		F_i = \{D_{ij}|i\in\{1,...,|A|\}\}
-		\end{equation}
-		If a formation is maintained for time $t$ then $F_t$ will present a temporal formation. 
+	\begin{frame}{Leadership in swarms}
+		\begin{itemize}
+			\item Static leadership
+			\item Dynamic leadership (E.g. In collective movement: The agent closer to the destination takes temporarily the leadership)
+			\item No leader (Most frequent in swarms. E.g. Each agent knows the final destination)
+		\end{itemize}
 	\end{frame}
 
-	\begin{frame}{Temporal formation}
+	\begin{frame}{Issues in maintaining collective homeostasis conditions}
+		The ultimate goal of self-awareness is to help an IA to maintain its homeostasis condition. One approach to achieve this is to equip an IA with
+		\begin{itemize}
+			\item an initial experience with which it can achieve its task
+			\item the ability to detect new experiences
+				\begin{itemize}
+					\item model, store and retrieve them back for prediction 
+				\end{itemize}
+			\item make appropriate decisions according to future states predictions
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Issues in maintaining collective homeostasis conditions}
+		The same can be applied to collective awareness which translates to anomaly detection in existing course of relation between agents. This course of relation can be formalized as the dynamism of vector distance between agents. (But there are other ways too\footfullcite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}) 
+		
 		\begin{figure}
-			\includegraphics[scale=0.7]{/home/donkarlo/Dropbox/projs/research/assets/collective-frame-passing-of-three-drones.jpg}
+			\includegraphics[scale=0.4]{/home/donkarlo/Dropbox/projs/research/assets/collective-3-payload.png}
+			\caption{}
+		\end{figure}
+	\end{frame}
+	\begin{frame}{Issues in maintaining collective homeostasis conditions}
+		Example: Flocking (Reynolds laws of boids: how to stay in a flock)
+		\begin{itemize}
+			\item Move in the same direction as their neighbors
+			\item Alignment - steer towards average heading of neighbors
+			\item Cohesion - steer towards average position of neighbors (long range attraction)
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Issues in maintaining collective homeostasis conditions}
+		Example: Collective load transportation
+		\begin{itemize}
+			\item If the two drones are too close, then the whole system's homeostasis level is threatened by external disturbances
+			\item If the two drones are too far away from each other then the two drones higher energy consumption threatens the homeostasis level of the system
+		\end{itemize}
+		\begin{figure}
+			\includegraphics[scale=0.5]{/home/donkarlo/Dropbox/projs/research/assets/two-drones-homeo-staisis-collective-behavior.png}
+			\caption{}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{Dynamic Individual behavior modeling, reference task}
+		\begin{figure}
+			\includegraphics[scale=0.5]{/home/donkarlo/Dropbox/projs/research/assets/initial-single-dron-load.png}
 			\caption{}
 		\end{figure}
 	\end{frame}
 
-	\begin{frame}{Maneuver, Collective behavior}  
-		\begin{itemize}
-			\item \textbf{Maneuver} is changing from one formation to another over the course of time.
-			\item \textbf{Collective behavior or a temporal behavior} is a temporal formation or a maneuver between the agents. 
-		\end{itemize}
-	\end{frame}
-
-	\begin{frame}{Maneuver}
+	\begin{frame}{Modeling new individual experiences}
 		\begin{figure}
-			\includegraphics[scale=0.7]{/home/donkarlo/Dropbox/projs/research/assets/collective-behavior-of-three-drones-to-pass-a-narrow-passage.jpg}
+			\includegraphics[scale=0.5]{/home/donkarlo/Dropbox/projs/research/assets/ind-tasks.jpg}
 			\caption{}
 		\end{figure}
 	\end{frame}
 
-	\begin{frame}{Predictive models for collective behavior}
-		\begin{itemize}
-			\item Both maintaining a temporal formation or maneuver are dynamic systems which shows the \textbf{evolution of distance vector over the course of time} and hence could be formalized by a transition matrix. 
-			\item Can this transition matrix trained by repeating the temporal formation or the maneuver and be stored for future state predictions as a \textbf{model} or \textbf{experience} as a DBN simlar to an individual agent state prediction model?
-		\end{itemize}
+	\begin{frame}{Modeling new individual experiences}
+		 \cite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}\footfullcite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles} uses words formed of different time derivative of states to train the individual DBNs.
+		 \begin{equation}
+		 	W_j = \{\alpha^{(0)},...,\alpha^{(L)}\}
+		 \end{equation}
 	\end{frame}
 
-	\begin{frame}{Training the collective behavior DBN}
-		\begin{itemize}
-			\item One approach is to \textbf{discretize} the \textbf{state space} of each individual agent in a collective behavior to \textbf{quasi-motion constant regions} and the temporal sequence of co-occurrence of each agent's region with another neighboring agent can form the alphabet for the words of a sentence describing the evolution of the relation between two agents. (Taking an approach similar to \footnote{Baydoun 2019 Prediction of multi target dynamics using discrete descriptors an interactive approach})
-			\item An \textbf{anomaly} can be defined as the \textbf{distance} above the \textbf{tolerance rate} between \textbf{expected/predicted state} in this relationship and \textbf{observed state} in comparison to practicing model.
-		\end{itemize}
-	\end{frame}
-
-	\begin{frame}{Why should we observe anomaly in a collective behavior?}
-		\begin{itemize}
-			\item Each agent tries to \textbf{save itself} as such the intersecting quasi-motion regions will not occur as they were predicted and collective anomaly occurs. 
-			\item But if other agents do not react accordingly the whole system collapse (Systems homeostasis will collapse for the sake of maintaining an individual's homeostasis).  
-			\item \textbf{Solution}: Choosing the right collective DBN to practice according to which each individual should adjust it's motion to avoid whole system's collapse
-		\end{itemize}
-	\end{frame}
-
-	\begin{frame}{Probable implementation}
-		\begin{enumerate}
-			\item  \textbf{Discretizing} the motion state space of agents to \textbf{different derivative orders of time} \footnote{Kanapram 2020 Collective awareness for abnormality detection in connected autonomous vehicles}
-			\item Use the \textbf{composition} of these \textbf{different derivative orders} as \textbf{words} to communicate any \textbf{motion state change} of each agent to neighboring agents
-			\item 	Train a model to \textbf{map} the \textbf{words} \textbf{received} by an agent from its neighboring agents to a \textbf{collective behavior} defined by the words of the DBN representing a collective behavior. 
-		\end{enumerate}
-	\end{frame}
-
-	\begin{frame}{Scenarios}
+	\begin{frame}{Dynamic collective behavior modeling - reference task}  
 		\begin{figure}
-			\includegraphics[scale=0.5]{/home/donkarlo/Dropbox/projs/research/assets/scenarios-of-collective-drones.jpg}
+			\includegraphics[scale=0.45]{/home/donkarlo/Dropbox/projs/research/assets/initial-multi-drones-load.png}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Dynamic new collective behavior modeling}  
+		\begin{figure}
+			\includegraphics[scale=0.45]{/home/donkarlo/Dropbox/projs/research/assets/collective-dbns.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Modeling new collective experiences - Training}
+		Each experience can be modeled as mutual quasi-constant state regions proposed in \cite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}\footfullcite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach} 
+		\begin{equation}
+		W_{ij} = \{S_i,S_j\}
+		\end{equation}
+		\begin{equation}
+		DBN_{f_{ij}} = \{D_{f_{1_{ij}}},...,D_{f_{n_{ij}}}\}
+		\end{equation}
+		For each experience we have one collective experience
+		\begin{equation}
+		DBNs = \{DBN_1,...,DBN_p\}
+		\end{equation}
+	\end{frame}
+
+	\begin{frame}{Question}
+		If each IA communicate its current state to its neighbors with \cite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles} words, how precisely can we map a set of communicated words to a collective DBN in \cite{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach} or recognize it as a new collective experience. 
+		\begin{itemize}
+			\item In other words can informing on individual efforts to maintain individual homeostasis help with a quicker decision of practicing an appropriate collective behavior?
+		\end{itemize}
+		\begin{figure}
+			\includegraphics[scale=0.45]{/home/donkarlo/Dropbox/projs/research/assets/saving.png}
 			\caption{}
 		\end{figure}
 	\end{frame}

@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.13)  13 OCT 2020 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.26)  3 NOV 2020 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **2020-10-13-prof-regazzoni.tex
 (./2020-10-13-prof-regazzoni.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 5 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 9 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -1131,11 +1131,11 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout6 = `2020-10-13-prof-regazzoni.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file '2020-10-13-prof-regazzoni.bbl' not found.
-
-No file 2020-10-13-prof-regazzoni.bbl.
+Package biblatex Info: ... file '2020-10-13-prof-regazzoni.bbl' found.
+ (./2020-10-13-prof-regazzoni.bbl)
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
+
 (./2020-10-13-prof-regazzoni.nav)
 <aauthmfigs/bg0.png, id=13, 1446.40375pt x 1083.04625pt>
 File: aauthmfigs/bg0.png Graphic file (type png)
@@ -1149,7 +1149,7 @@ Missing character: There is no ; in font nullfont!
 <aauthmfigs/bg1.png, id=23, 1445.4pt x 1083.04625pt>
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 33.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 35.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [2
@@ -1157,139 +1157,243 @@ Missing character: There is no ; in font nullfont!
  <./aauthmfigs/bg1.png>]
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 40.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 45.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 56.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 56.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 56.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 53.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [4
 
 ]
-</home/donkarlo/Dropbox/projs/research/assets/collective-frame-passing-of-three
--drones.jpg, id=44, 339.51843pt x 225.09094pt>
-File: /home/donkarlo/Dropbox/projs/research/assets/collective-frame-passing-of-
-three-drones.jpg Graphic file (type jpg)
-<use /home/donkarlo/Dropbox/projs/research/assets/collective-frame-passing-of-t
-hree-drones.jpg>
-Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/collectiv
-e-frame-passing-of-three-drones.jpg  used on input line 63.
-(pdftex.def)             Requested size: 237.66127pt x 157.56258pt.
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 63.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 65.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [5
 
- </home/donkarlo/Dropbox/projs/research/assets/collective-frame-passing-of-thre
-e-drones.jpg (PNG copy)>]
-File: aauthmfigs/bg1.png Graphic file (type png)
-<use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 70.
-(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
-Missing character: There is no ; in font nullfont!
- [6
-
 ]
-</home/donkarlo/Dropbox/projs/research/assets/collective-behavior-of-three-dron
-es-to-pass-a-narrow-passage.jpg, id=55, 462.97969pt x 189.70876pt>
-File: /home/donkarlo/Dropbox/projs/research/assets/collective-behavior-of-three
--drones-to-pass-a-narrow-passage.jpg Graphic file (type jpg)
-<use /home/donkarlo/Dropbox/projs/research/assets/collective-behavior-of-three-
-drones-to-pass-a-narrow-passage.jpg>
+LaTeX Font Info:    Try loading font information for U+msa on input line 74.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 74.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+</home/donkarlo/Dropbox/projs/research/assets/collective-3-payload.png, id=44, 
+701.7398pt x 282.82039pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/collective-3-payload.png Gra
+phic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/collective-3-payload.png>
 Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/collectiv
-e-behavior-of-three-drones-to-pass-a-narrow-passage.jpg  used on input line 77.
+e-3-payload.png  used on input line 74.
+(pdftex.def)             Requested size: 280.69095pt x 113.12614pt.
 
-(pdftex.def)             Requested size: 324.08356pt x 132.79521pt.
-
-Overfull \hbox (16.79369pt too wide) in paragraph at lines 77--77
- [] 
+Overfull \vbox (29.83348pt too high) detected at line 74
  []
 
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 77.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 74.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
-[7
+[6
 
- </home/donkarlo/Dropbox/projs/research/assets/collective-behavior-of-three-dro
-nes-to-pass-a-narrow-passage.jpg (PNG copy)>]
+ </home/donkarlo/Dropbox/projs/research/assets/collective-3-payload.png
+
+pdfTeX warning: /usr/bin/pdflatex (file /home/donkarlo/Dropbox/projs/research/a
+ssets/collective-3-payload.png): large interlaced PNG might cause out of memory
+ (use non-interlaced PNG to fix this)
+>]
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 84.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 82.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
- [8
-
-]
-File: aauthmfigs/bg1.png Graphic file (type png)
-<use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 91.
-(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
-Missing character: There is no ; in font nullfont!
- [9
+ [7
 
 ]
+</home/donkarlo/Dropbox/projs/research/assets/two-drones-homeo-staisis-collecti
+ve-behavior.png, id=57, 670.75594pt x 173.14688pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/two-drones-homeo-staisis-col
+lective-behavior.png Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/two-drones-homeo-staisis-coll
+ective-behavior.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/two-drone
+s-homeo-staisis-collective-behavior.png  used on input line 94.
+(pdftex.def)             Requested size: 335.37714pt x 86.57323pt.
+
+Overfull \hbox (28.08727pt too wide) in paragraph at lines 94--94
+ [] 
+ []
+
+
+Overfull \vbox (12.5823pt too high) detected at line 94
+ []
+
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 99.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 94.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
- [10
+[8
 
-]
+ </home/donkarlo/Dropbox/projs/research/assets/two-drones-homeo-staisis-collect
+ive-behavior.png (PNG copy)>]
+</home/donkarlo/Dropbox/projs/research/assets/initial-single-dron-load.png, id=
+63, 672.30437pt x 364.49217pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/initial-single-dron-load.png
+ Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/initial-single-dron-load.png>
+
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/initial-s
+ingle-dron-load.png  used on input line 101.
+(pdftex.def)             Requested size: 336.15135pt x 182.24564pt.
+
+Overfull \hbox (28.86148pt too wide) in paragraph at lines 101--101
+ [] 
+ []
+
+
+Overfull \vbox (25.65468pt too high) detected at line 101
+ []
+
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 107.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 101.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+[9
+
+ </home/donkarlo/Dropbox/projs/research/assets/initial-single-dron-load.png
+
+pdfTeX warning: /usr/bin/pdflatex (file /home/donkarlo/Dropbox/projs/research/a
+ssets/initial-single-dron-load.png): large interlaced PNG might cause out of me
+mory (use non-interlaced PNG to fix this)
+>]
+</home/donkarlo/Dropbox/projs/research/assets/ind-tasks.jpg, id=71, 650.43pt x 
+350.25342pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/ind-tasks.jpg Graphic file (
+type jpg)
+<use /home/donkarlo/Dropbox/projs/research/assets/ind-tasks.jpg>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/ind-tasks
+.jpg  used on input line 108.
+(pdftex.def)             Requested size: 325.2142pt x 175.12627pt.
+
+Overfull \hbox (17.92433pt too wide) in paragraph at lines 108--108
+ [] 
+ []
+
+
+Overfull \vbox (18.53531pt too high) detected at line 108
+ []
+
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 108.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+[10
+
+ </home/donkarlo/Dropbox/projs/research/assets/ind-tasks.jpg>]
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 115.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
  [11
 
 ]
-</home/donkarlo/Dropbox/projs/research/assets/scenarios-of-collective-drones.jp
-g, id=83, 641.04059pt x 372.08128pt>
-File: /home/donkarlo/Dropbox/projs/research/assets/scenarios-of-collective-dron
-es.jpg Graphic file (type jpg)
-<use /home/donkarlo/Dropbox/projs/research/assets/scenarios-of-collective-drone
-s.jpg>
-Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/scenarios
--of-collective-drones.jpg  used on input line 114.
-(pdftex.def)             Requested size: 320.51952pt x 186.04018pt.
+</home/donkarlo/Dropbox/projs/research/assets/initial-multi-drones-load.png, id
+=88, 672.30437pt x 364.49217pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/initial-multi-drones-load.pn
+g Graphic file (type png)
+<use /home/donkarlo/Dropbox/projs/research/assets/initial-multi-drones-load.png
+>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/initial-m
+ulti-drones-load.png  used on input line 122.
+(pdftex.def)             Requested size: 302.53416pt x 164.01996pt.
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 122.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+ [12
 
-Overfull \hbox (13.22964pt too wide) in paragraph at lines 114--114
+ </home/donkarlo/Dropbox/projs/research/assets/initial-multi-drones-load.png
+
+pdfTeX warning: /usr/bin/pdflatex (file /home/donkarlo/Dropbox/projs/research/a
+ssets/initial-multi-drones-load.png): large interlaced PNG might cause out of m
+emory (use non-interlaced PNG to fix this)
+>]
+</home/donkarlo/Dropbox/projs/research/assets/collective-dbns.jpg, id=95, 700.9
+8106pt x 377.47322pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/collective-dbns.jpg Graphic 
+file (type jpg)
+<use /home/donkarlo/Dropbox/projs/research/assets/collective-dbns.jpg>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/collectiv
+e-dbns.jpg  used on input line 129.
+(pdftex.def)             Requested size: 315.43857pt x 169.86137pt.
+
+Overfull \hbox (8.1487pt too wide) in paragraph at lines 129--129
  [] 
  []
 
 
-Overfull \vbox (29.44922pt too high) detected at line 114
+Overfull \vbox (13.27042pt too high) detected at line 129
  []
 
 File: aauthmfigs/bg1.png Graphic file (type png)
 <use aauthmfigs/bg1.png>
-Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 114.
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 129.
 (pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
 Missing character: There is no ; in font nullfont!
-[12
+[13
 
- </home/donkarlo/Dropbox/projs/research/assets/scenarios-of-collective-drones.j
-pg>]
+ </home/donkarlo/Dropbox/projs/research/assets/collective-dbns.jpg>]
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 143.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+
+[14
+
+]
+</home/donkarlo/Dropbox/projs/research/assets/saving.png, id=111, 216.81pt x 16
+4.07756pt>
+File: /home/donkarlo/Dropbox/projs/research/assets/saving.png Graphic file (typ
+e png)
+<use /home/donkarlo/Dropbox/projs/research/assets/saving.png>
+Package pdftex.def Info: /home/donkarlo/Dropbox/projs/research/assets/saving.pn
+g  used on input line 154.
+(pdftex.def)             Requested size: 97.56358pt x 73.8342pt.
+
+Overfull \vbox (1.97244pt too high) detected at line 154
+ []
+
+File: aauthmfigs/bg1.png Graphic file (type png)
+<use aauthmfigs/bg1.png>
+Package pdftex.def Info: aauthmfigs/bg1.png  used on input line 154.
+(pdftex.def)             Requested size: 364.19536pt x 272.89275pt.
+Missing character: There is no ; in font nullfont!
+[15
+
+ </home/donkarlo/Dropbox/projs/research/assets/saving.png
+
+pdfTeX warning: /usr/bin/pdflatex (file /home/donkarlo/Dropbox/projs/research/a
+ssets/saving.png): large interlaced PNG might cause out of memory (use non-inte
+rlaced PNG to fix this)
+>]
 \tf@nav=\write8
 \openout8 = `2020-10-13-prof-regazzoni.nav'.
 
@@ -1299,11 +1403,11 @@ pg>]
 \tf@snm=\write10
 \openout10 = `2020-10-13-prof-regazzoni.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
  (./2020-10-13-prof-regazzoni.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
 Package rerunfilecheck Info: File `2020-10-13-prof-regazzoni.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1312,26 +1416,33 @@ Package logreq Info: Writing requests to '2020-10-13-prof-regazzoni.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26072 strings out of 494880
- 508065 string characters out of 6179600
- 958477 words of memory out of 5000000
- 28871 multiletter control sequences out of 15000+600000
+ 26340 strings out of 494805
+ 514690 string characters out of 6177999
+ 959667 words of memory out of 5000000
+ 29134 multiletter control sequences out of 15000+600000
  14957 words of font info for 55 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 52i,19n,64p,809b,864s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb>
-Output written on 2020-10-13-prof-regazzoni.pdf (12 pages, 1275091 bytes).
+ 81 hyphenation exceptions out of 8191
+ 52i,19n,64p,809b,1902s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.0@baydoun-2019-prediction-of-multi-target-dy
+namics-using-discrete-descriptors-an-interactive-approach} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@kanapram-2020-collective-awareness-for-abnor
+mality-detection-in-connected-autonomous-vehicles} has been referenced but does
+ not exist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb>
+Output written on 2020-10-13-prof-regazzoni.pdf (15 pages, 17379319 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

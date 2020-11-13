@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\pagenumbering{arabic}
+\usepackage{multicol}
+\usepackage{siunitx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{MRS CA}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{A Survey of Collective self-awareness (CA) in Multi-robot Systems (MRS)}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	\paragraph{Problem}
+	Imagine $n$ mobile agents of a swarm are supposed to pick up a payload from a starting point and deliver to a destination which is defined relative to the starting point. 
+	\begin{equation}
+		A = \{a_1,...,a_n\}
+	\end{equation}
+	
+	\section{Individual Dynamism of Semantic segments} Lets say $n$ words can be formed out of the alphabets from different time derivative  orders as proposed in \cite{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}
+	\begin{equation}
+		W = \{w_1,...,w_p\}
+		\label{eq:words}
+	\end{equation}
+	in which each $w_i$ is formed of centroids  
+	
+	\section{Collective DBNs}
+	If so far $q$ formations (collective movement) is learned then for each of those $f$ formations, each pair of agents should maintain a predefined relation at any time instance during the course of that formation.  
+	\begin{equation}
+		CDBN_{ij} = \{CDBN_{1_{ij}},...,CDBN_{q_{ij}}\}
+		\label{collective_dbns}
+	\end{equation}
+	In which $i,j$ are the two Intelligent agents. Each CDBN can be trained using sequences of quasi-constant Generalized States regions which have happened simultaneously between each pair of agents.
+	
+	\section{From local perception to collective behavior}
+	\begin{equation}
+		b: \Omega \in P(W) \longrightarrow CDBN
+	\end{equation}
+	
+	\section{Semantic Control} 
+	If $c$ is a controller that maps a word from $W$ to an action (e.g. in a quad-rotor, sends four power requests to four rotors, $p \in P  = (p_1,...,p_4)$)
+	\begin{equation}
+	c: W \longrightarrow P
+	\end{equation}
+	
+	\section{Online Learning} For each agent in $A$, choosing a random $w_i \in W$ and sending it to $c$ to estimate the new state in order to measure the minimum abnormality change against all the CDBNs. This abnormality value could be used as the reward. if the abnormality value has increased then the reward would be negative value of the change rate, otherwise it will be a positive value.
+	
+	
+	\section{Communication}
+	
+	
+	\paragraph{Challenges}
+		\begin{itemize}
+			\item How to convert words of Equation  \ref{eq:words} to control inputs?
+		\end{itemize}
+	
+	
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs}
+\end{document}

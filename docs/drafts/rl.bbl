@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kanapram et~al.(2020)Kanapram, Patrone, Mar{\'{\i}}n{-}Plaza,
+  Marchese, Bodanese, Marcenaro, G{\'{o}}mez, and
+  Regazzoni]{kanapram-2020-collective-awareness-for-abnormality-detection-in-connected-autonomous-vehicles}
+Divya Kanapram, Fabio Patrone, Pablo Mar{\'{\i}}n{-}Plaza, Mario Marchese,
+  Eliane~L. Bodanese, Lucio Marcenaro, David~Mart{\'{\i}}n G{\'{o}}mez, and
+  Carlo~S. Regazzoni.
+\newblock Collective awareness for abnormality detection in connected
+  autonomous vehicles.
+\newblock 2020.
+
+\end{thebibliography}
