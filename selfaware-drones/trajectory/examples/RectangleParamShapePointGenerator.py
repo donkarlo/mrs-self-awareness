@@ -37,3 +37,5 @@ class TwoStepsParamShapePointGenerator(ParamShapePointGeneratorComposit):
 
 tspsg = TwoStepsParamShapePointGenerator(0.5)
 tspsg.plot3DPoints()
+tspsg.getPoints().addDim(0)
+tspsg.getPoints().echoFile("/home/donkarlo/Desktop/my-rect-05.txt", " ")

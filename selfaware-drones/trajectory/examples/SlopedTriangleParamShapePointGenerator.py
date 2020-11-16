@@ -30,3 +30,6 @@ class SlopedTriangleParamShapePointGenerator(ParamShapePointGeneratorComposit):
 
 tspsg = SlopedTriangleParamShapePointGenerator(0.5)
 tspsg.plot3DPoints()
+
+tspsg.getPoints().addDim(0)
+tspsg.getPoints().echoFile("/home/donkarlo/Desktop/my-sloped-triangle-05.txt", " ")
