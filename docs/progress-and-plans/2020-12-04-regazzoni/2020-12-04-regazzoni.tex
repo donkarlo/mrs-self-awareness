@@ -1,0 +1,114 @@
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[unknownkeysallowed]{beamer}
+\usetheme{UniKlu}
+\usepackage[backend=biber,style=apa,sorting=nty, bibencoding=utf8]{biblatex}
+\addbibresource{refs.bib}
+
+
+\usepackage{xcolor}
+
+\title{Collective Self-awareness in Multi-Robot Systems}
+\author{Mohammad Rahmani}
+\institute{Pervaisiive Computing Group}
+
+\begin{document}
+	\begin{frame}
+	\maketitle
+\end{frame}
+
+	\begin{frame}{Problem Definition, Initial knowledge}
+		Two drones (A, B) from which a payload is suspended, are being controlled by two human pilots. 
+		\begin{itemize}
+			\item As an initial knowledge they build a causal-temporal model to predict and estimate their future states while the connecting distance vector for an experience in which the distance vector between them stays stable from 
+		\end{itemize} 
+	\end{frame}
+
+	\begin{frame}{Problem Definition, Illustration of initial knowledge}
+		\begin{figure}
+			\includegraphics[scale=0.8]{/home/donkarlo/Dropbox/projs/research/assets/two-drone-ref.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Problem Definition, New experience}
+		\begin{itemize}
+			\item As a new experience when the two pilots see a narrower corridor, they decide to temporarily reduce the distance between the two drones to avoid collision with the boundaries of the new corridor.  
+		\end{itemize} 
+	\end{frame}
+
+	\begin{frame}{Problem Definition, Illustration of new experience}
+		\begin{figure}
+			\includegraphics[scale=0.8]{/home/donkarlo/Dropbox/projs/research/assets/two-drone-new-exp.jpg}
+			\caption{}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Relevant sensor available data}
+		For each drone (for example for drone 1 in this case) and each identical time instance $k$ these data could be measured by the sensors. 
+		\begin{itemize}
+			\item Position: $x^{1} = (x_{k}^{1},y_{k}^{1},z_{k}^{1})$ (Orientation is also available, but seems to be irrelevant for these scenarios)
+			\item Velocity: $\dot{x^1}$ (Angular velocity is also available but seems irrelevant for these scenarios)
+			\item Acceleration: $\ddot{x^1}$ (Angular acceleration is also available but seems irrelevant for these scenarios)
+			\item The motion will be shown as $m^1=[\dot{x}^1,\ddot{x}^1]$
+			\item The GS is $GS^1=[x^1,\dot{x}^1,\ddot{x}^1]$
+		\end{itemize} 
+		
+	\end{frame}
+
+	\begin{frame}{Solution 1: Interactive DBNs}
+		\begin{itemize}
+			\item Considering $m$ as prorproceptive data for each drone and the $x$ as the exteroceptive. 
+			\item For each drone, using a clustering method such as SOM/GNG,... to create the super states from $x$ (Alphabets). 
+			\item Taking each two mutually happened super states (alphabets) as a word. 
+			\item Building the transition matrix according to evolution of the aforementioned words.
+			\item Detecting abnormality by statically comparing the predicted distribution of the next word by the transition matrix and the predicted PDF parameters of the formed word from current estimated PDF of alphabetical observations. 
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Solution 1: Interactive DBNs}
+		\begin{figure}
+			\includegraphics[scale=0.45]{/home/donkarlo/Dropbox/projs/research/assets/idbn.jpg}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Solution 1: Interactive DBNs}
+		\textbf{Literal}: If our mutual next position region does not follow the rules(the PDF params) we expected, then we are experiencing a new relation that we never had.
+	\end{frame}
+
+	\begin{frame}{Solution 2: Active-self approach}
+		\textbf{Literal}: Its changes in my GS that causes changes in opposite drone's change
+		\begin{itemize}
+			\item Taking \textbf{$GS^1$} as proproceptive data/Observation/Cause
+			\item Taking $GS^2$ as exteroceptive data/effect/states
+			\item Clustering $GS^2$
+			\item Building DBN's transition matrix
+			\item If for the current time instance the estimated PDF params for $GS^2$ clusters is too far from the predicted PDF params, then a new experience is occurring between the drones.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Solution 2: Illustarion of Active-self approach}
+		\begin{figure}
+			\includegraphics[scale=0.45]{/home/donkarlo/Dropbox/projs/research/assets/dbn.jpg}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Solution2 : Passive-self approach}
+		Exactly like the previous one but this time each drone considers the other one responsible for the changes in its $GS$
+	\end{frame}
+
+	\begin{frame}{Solution 3: Different modalities?}
+		I have not yet read the paper. 
+	\end{frame}
+
+	\begin{frame}{}
+		Question to address in the first paper. 
+		\begin{itemize}
+			\item Which of the following solutions help better with detecting new experiences?
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Why distance vector is not used explicitly?}
+		Because I have not dependent sensor to measure the distance between the two drones.
+		The only way to measure independently is through the eyes of the human pilot.   
+	\end{frame}
+\end{document}

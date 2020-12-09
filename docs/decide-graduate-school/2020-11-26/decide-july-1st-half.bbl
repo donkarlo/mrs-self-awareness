@@ -1,0 +1,167 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{baydoun-2019-prediction-of-multi-target-dynamics-using-discrete-descriptors-an-interactive-approach}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=3eaa8a8b4e169383f6d678229aef2a65}{%
+           family={{Baydoun}},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2421e0d11a15b8c2221cc115c796383}{%
+           family={{Campo}},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d1c9b5fdf38bc8242666bf1b186d6aec}{%
+           family={{Kanapram}},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=024fd81cb45ff53ccdc2a1e59503f481}{%
+           family={{Marcenaro}},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=356c92b305b559f34539cdae2a2b67c1}{%
+           family={{Regazzoni}},
+           familyi={R\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e040f713c45d63a466456fd8d06747d}
+      \strng{fullhash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \strng{bibnamehash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \strng{authorbibnamehash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \strng{authornamehash}{0e040f713c45d63a466456fd8d06747d}
+      \strng{authorfullhash}{6689ea2f4bb5c2ba0b536a0e3e7e0a0a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Prediction of Multi-target Dynamics Using Discrete Descriptors: an Interactive Approach}
+      \field{year}{2019}
+    \endentry
+    \entry{friston-2010-the-free-energy-principle-a-unified-brain-theory}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a18cd289b1848c573c9841738bf65a9c}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{fullhash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{bibnamehash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{authorbibnamehash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{authornamehash}{a18cd289b1848c573c9841738bf65a9c}
+      \strng{authorfullhash}{a18cd289b1848c573c9841738bf65a9c}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Reviews Neuroscience}
+      \field{title}{The free-energy principle: a unified brain theory?}
+      \field{volume}{11}
+      \field{year}{2010}
+      \field{pages}{127\bibrangedash 138}
+      \range{pages}{12}
+    \endentry
+    \entry{kanapram-2019-dynamic-bayesian-approach-for-decision-making-in-ego-things}{article}{}
+      \name{author}{7}{}{%
+        {{uniquename=0,uniquepart=base,hash=d1c9b5fdf38bc8242666bf1b186d6aec}{%
+           family={Kanapram},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c47ae4c53decc32d0b38521bb4275db6}{%
+           family={Campo},
+           familyi={C\bibinitperiod},
+           given={Damian\bibnamedelima Andres},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1e12dffb9d210ef60149b846ce8f7dda}{%
+           family={Baydoun},
+           familyi={B\bibinitperiod},
+           given={Mohamad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=11626ce5af63559f7c8e4099deebdcd4}{%
+           family={Marcenaro},
+           familyi={M\bibinitperiod},
+           given={Lucio},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2c21c82c325f555d0c8ecaf9f1f0323c}{%
+           family={Bodanese},
+           familyi={B\bibinitperiod},
+           given={Eliane\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=82a0eb77cc3bc58d86b4b2f9e2d13550}{%
+           family={Regazzoni},
+           familyi={R\bibinitperiod},
+           given={Carlo\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=98239962a736d76db76080ef98efb705}{%
+           family={Marchese},
+           familyi={M\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0b6cb072d067051218babb6cca3ad5fd}
+      \strng{fullhash}{21508fbcb4bcfd3bb78a76769657a3fe}
+      \strng{bibnamehash}{21508fbcb4bcfd3bb78a76769657a3fe}
+      \strng{authorbibnamehash}{21508fbcb4bcfd3bb78a76769657a3fe}
+      \strng{authornamehash}{0b6cb072d067051218babb6cca3ad5fd}
+      \strng{authorfullhash}{21508fbcb4bcfd3bb78a76769657a3fe}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2019 IEEE 5th World Forum on Internet of Things (WF-IoT)}
+      \field{title}{Dynamic Bayesian Approach for decision-making in Ego-Things}
+      \field{year}{2019}
+      \field{pages}{909\bibrangedash 914}
+      \range{pages}{6}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
