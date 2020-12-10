@@ -57,7 +57,7 @@ path = os.path.dirname(os.path.abspath(__file__))
 outputFile = path + "/OUTPUT_odometry/"    
 
 oldDistanceMethod = True
-# Indicator for saving reconstruction, OF, prediction images
+# Indicator for saving reconstruction, OF, interactive images
 saveImages = True
 # Indicator for plotting results
 plotBool = True
@@ -763,8 +763,8 @@ for i in range(dataLength) :
             # Covariance of the innovation:
             innovationCov = np.dot(H, np.dot(predCovariance,H_transpose)) + obsCovariance
             
-            # KALMAN GAIN: it considers uncertainty in prediction and uncertainty in
-            # the sensors and can thus be used to weight the final prediction through
+            # KALMAN GAIN: it considers uncertainty in interactive and uncertainty in
+            # the sensors and can thus be used to weight the final interactive through
             # the innovation.
             inverse_innovationCov = np.linalg.inv(innovationCov)
             kalmanGain = np.dot(predCovariance, np.dot(H_transpose, inverse_innovationCov))
@@ -772,7 +772,7 @@ for i in range(dataLength) :
             #print('KG ' + str(kalmanGain))
             
             # FINAL PREDICTION UPDATE AT THE CURRENT INSTANT:
-            # State prediction: we update the prediction done in the PREDICTION stage
+            # State interactive: we update the interactive done in the PREDICTION stage
             # throught the new observation.
             # As weight we use the Kalman gain: if the Kalman gain is high and I am
             # very confident in the sensorial data I got, I will correct a lot,
@@ -790,7 +790,7 @@ for i in range(dataLength) :
     
             # FINAL PREDICTION UPDATE AT THE CURRENT INSTANT:
             
-            # State prediction: we update the prediction done in the PREDICTION stage
+            # State interactive: we update the interactive done in the PREDICTION stage
             # throught the new observation.
             # As weight we use the Kalman gain: if the Kalman gain is high and I am
             # very confident in the encoded data I got, I will correct a lot,
@@ -1070,7 +1070,7 @@ for i in range(dataLength) :
                     
                     ###########################################################
                     
-                    ## FIFTH BLOCK (prediction of next discrete and continous levels)
+                    ## FIFTH BLOCK (interactive of next discrete and continous levels)
                     
                     superstate = int(activeNodes[ij,i])
                     superstate_Mean = meanNodes[superstate, :]
@@ -1087,13 +1087,13 @@ for i in range(dataLength) :
                     predMean = np.dot(A, currState) + np.dot(B,U)
                     predCovariance = np.dot(A, np.dot(currP1, np.transpose(A))) + Q
                     
-                #Insert in prediction mean and covariance vectors
+                #Insert in interactive mean and covariance vectors
                 statepred3[:, i, ij] = predMean;
                 Ppred[:, :, i, ij] = predCovariance;
                     
     
         #######################################################################
-        ## SIXTH BLOCK (prediction of next discrete and continous levels)
+        ## SIXTH BLOCK (interactive of next discrete and continous levels)
         if i == firstIt:
             
             superstate = int(activeNodes[n,i])
@@ -1114,7 +1114,7 @@ for i in range(dataLength) :
             predMean = np.dot(A, currState) + np.dot(B,U)
             predCovariance = np.dot(A, np.dot(currP1, np.transpose(A))) + Q
             
-        #Insert in prediction mean and covariance vectors
+        #Insert in interactive mean and covariance vectors
         statepred3[:, i, n] = predMean;
         Ppred[:, :, i, n] = predCovariance
     
