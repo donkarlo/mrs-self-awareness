@@ -1,4 +1,4 @@
-from pgm import State
+from state import State
 
 '''
 Generalised states
