@@ -1,9 +1,8 @@
 from state import State
 
-'''
-Generalised states
-'''
 class Gs(State):
+    '''Generalised states
+    '''
     def __init__(self,derivativesVec=[]):
         self.__derivativesVec = derivativesVec
         pass

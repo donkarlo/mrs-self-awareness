@@ -1,25 +1,27 @@
-from mmath.linearalgebra import Matrix
-from mmath.linearalgebra.BiOpr import BiOpr
-from pgm.dag.dbn.tstbn.mjpf.abnormality import Strgy as AbnormalityStrgy
-from state.ObservationComposit import ObservationComposit
+from mmath.linearalgebra import Matrix, Vector
+from pgm.dag.dbn.tstbn.mjpf.abnormality import StrategyInterface as AbnormalityStrgy
+from state.Observation import Observation
 from state.State import State
 
-'''
-y^{~}_{k} = z_k-Hx^{^-}_{k}
-'''
+
 class Innovation(AbnormalityStrgy):
-    '''
+    '''y^{~}_{k} = z_k-Hx^{^-}_{k}
+
+    Parameters
+    ----------
+
+    Returns
+    _______
 
     '''
-    def __init__(self,z:ObservationComposit,h:Matrix,priorEstimatedState:State):
-        self._z = z
-        self._h = h
-        self._pES = priorEstimatedState
+    def __init__(self
+                 , processMatrix:Matrix
+                 , currentObservation:Observation
+                 , priorCurrentEstimatedState:State):
+        self._processMatrix = processMatrix
+        self.__currentObservation = currentObservation
+        self.__priorCurrentEstimatedState = priorCurrentEstimatedState
 
-    '''
-    '''
-    def getInnovation(self)->Matrix:
-        mbOpr = BiOpr()
-        mbOpr.setMatrixes(self._h,self._pES)
-        yK = self.getLastObservation() * mbOpr.getProduct(self._h,self._pES)
+    def getInnovation(self)->Vector:
+        yK = self.__currentObservation - self.__processMatrix * self._priorCurrentEstimatedState
         return yK

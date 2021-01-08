@@ -1,6 +1,6 @@
-from state import ObservationComposit, State
+from state import Observation, State
 
 
 class Slice():
-    def __init__(self, timeInstance, obs: ObservationComposit, state: State):
+    def __init__(self, timeInstance, obs: Observation, state: State):
         pass

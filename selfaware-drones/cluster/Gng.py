@@ -1,9 +1,10 @@
+import array
 from cluster import ClusteringStrgy
 
 
 class Gng(ClusteringStrgy):
-    def __init__(self):
-        pass
+    def __init__(self, data: array):
+        super().__init__(data)
 
-    def doGetClusters(self):
+    def doSetClusters(self):
         pass
