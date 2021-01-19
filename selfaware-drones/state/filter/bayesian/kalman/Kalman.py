@@ -62,11 +62,11 @@ class Kalman(Filter):
         self.__initialStateErrorCov = initialStateErrorCov
         self.__initialEstimatedState = initialEstimatedState
 
-    def __predict(self)->None:
+    def _predict(self)->None:
         """"""
         pass
 
-    def __update(self)->None:
+    def _update(self)->None:
         """"""
         pass
 

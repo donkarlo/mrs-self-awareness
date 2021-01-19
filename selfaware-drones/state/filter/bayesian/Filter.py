@@ -8,7 +8,8 @@ from state.Observation import Observation
 
 
 class Filter(Hmm):
-    '''What is the PDF of state with a given set of observation
+    ''' In each filter, first we predict then we observe
+    What is the PDF of state with a given set of observation
     if the variables are normally distributed and the transitions are linear, the Bayes filter becomes equal to the Kalman filter.
     It is an HMM
     '''
@@ -21,4 +22,8 @@ class Filter(Hmm):
 
     @abc.abstractmethod
     def predict(self)->State:
+        pass
+
+    @abc.abstractmethod
+    def update(self, obs:Observation)->State:
         pass
