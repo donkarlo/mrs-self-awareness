@@ -12,7 +12,7 @@ class Mjpf(Dbn):
     Particle filter works like we have behaviorial map (the map we need for any PF) presented in the form of clusters of SOM or GNG with a weigthing startegy which prefers
     velocity from input data which is formd of x=[\vec{position},\vec{velocity}]
     '''
-    def __init__(self, ObservationSerie:ObservationSerie, clusteringStrategy: ClusteringStrgy, deltaT:int, abnormalityMeasurementStrgy:AbnStrgy):
+    def __init__(self, ObservationSerie:ObservationSerie, clusteringStrategy: ClusteringStrgy, timeInterval:int, abnormalityMeasurementStrgy:AbnStrgy):
         '''
 
         Parameters

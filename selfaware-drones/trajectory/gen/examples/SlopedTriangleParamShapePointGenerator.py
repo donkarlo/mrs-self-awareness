@@ -1,6 +1,5 @@
-from trajectory.ParamShapeLine import *
-from trajectory.ParamShapePointGeneratorComposit import *
-from trajectory.ParamLinePointGenerator  import *
+from trajectory.gen.ParamShapePointGeneratorComposit import *
+from trajectory.gen.ParamLinePointGenerator import *
 
 class SlopedTriangleParamShapePointGenerator(ParamShapePointGeneratorComposit):
     def __init__(self,distanceInterval):

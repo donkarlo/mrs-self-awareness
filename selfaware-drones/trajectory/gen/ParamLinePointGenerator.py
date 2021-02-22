@@ -1,5 +1,4 @@
-from trajectory.ParamShapePointGeneratorComposit import ParamShapePointGeneratorLeaf
-from trajectory.ParamShape import *
+from trajectory.gen.ParamShapePointGeneratorComposit import ParamShapePointGeneratorLeaf
 from trajectory.ParamShapeLine import *
 from trajectory.Point import *
 
