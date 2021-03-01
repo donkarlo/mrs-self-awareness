@@ -1,6 +1,6 @@
 from mmath.linearalgebra import Matrix, Vector
 from pgm.dag.dbn.tstbn.mjpf.abnormality import StrategyInterface as AbnormalityStrgy
-from state.Observation import Observation
+from state.obs.Obs import Obs
 from state.State import State
 
 
@@ -16,7 +16,7 @@ class Innovation(AbnormalityStrgy):
     '''
     def __init__(self
                  , processMatrix:Matrix
-                 , currentObservation:Observation
+                 , currentObservation:Obs
                  , priorCurrentEstimatedState:State):
         self._processMatrix = processMatrix
         self.__currentObservation = currentObservation

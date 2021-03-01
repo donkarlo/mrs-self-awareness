@@ -1,6 +1,7 @@
-from state import Observation, State
+from state import State
+from state.obs import Obs
 
 
 class Slice():
-    def __init__(self, timeInstance, obs: Observation, state: State):
+    def __init__(self, timeInstance, obs: Obs, state: State):
         pass

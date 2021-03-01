@@ -1,4 +1,4 @@
-from state.Observation import Observation as ObservationBase
+from state.obs.Obs import Obs as ObservationBase
 
 
 class Observation(ObservationBase):

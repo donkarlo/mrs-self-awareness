@@ -1,4 +1,5 @@
-from state import ObservationSerie, ProcessModel, ObservationModel
+from state import ProcessModel
+from state.obs import ObsModel, ObsSerie
 from state.State import State
 from state.filter.bayesian import Filter
 from mmath.linearalgebra import Matrix, Vector
@@ -10,8 +11,8 @@ class Kalman(Filter):
 
     Paired with
     -----
-    observation model: z_k=Hx_{k-1}=v_{k}
-    observation noise vector: v_k ~ N(0,R), R: measurement noise cov matrix
+    obs model: z_k=Hx_{k-1}=v_{k}
+    obs noise vector: v_k ~ N(0,R), R: measurement noise cov matrix
 
     Notation
     ---------
@@ -51,9 +52,9 @@ class Kalman(Filter):
     -------
     """
     def __init__(self
-                 , observationSeri:ObservationSerie
+                 , observationSeri: ObsSerie
                  , processModel:ProcessModel
-                 , observationModel:ObservationModel
+                 , observationModel: ObsModel
                  , initialEstimatedState:State
                  , initialStateErrorCov:Matrix)->None:
         super().init(observationSeri)

@@ -1,9 +1,10 @@
 from mmath.linearalgebra import Vector
 from mmath.linearalgebra.Matrix import Matrix
-from state import Observation, State
+from state import State
+from state.obs import Obs
 from state.filter.bayesian.kalman import Innovation
 
-class ObservationModel():
+class ObsModel():
     '''z_k=Hx_{k}+v_{k}, v_{k}~N(0,R)
 
     '''
@@ -14,24 +15,24 @@ class ObservationModel():
         self.__observationNoiseCov = observationNoiseCov
 
     def getStateByObservation(self
-                              , observation:Observation
+                              , observation: Obs
                               , onservationNoise:Vector=None)->State:
         pass
 
     def getObservationByState(self
                               ,state:State
-                              , onservationNoise:Vector=None)->Observation:
+                              , onservationNoise:Vector=None)-> Obs:
         pass
 
     def getInnovationObject(self
-                            , observation:Observation
+                            , observation: Obs
                             , state:State)->Innovation:
         """To calculate inoovation
 
         Parameters
         ----------
-        observation:Observation
-            a vector of observation
+        observation:Obs
+            a vector of obs
         state: State
             Prior Estimated State
 
@@ -42,7 +43,7 @@ class ObservationModel():
         inv = Innovation(self.__observationMatrix, observation , state)
         return inv
 
-    def getInnovation(self, zK:Observation, xKPrEst:State)->Vector:
+    def getInnovation(self, zK: Obs, xKPrEst:State)->Vector:
         return self.getInnovationObject().getInnovation()
 
     def getObservationMatrix(self)->Matrix:

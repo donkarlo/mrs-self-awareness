@@ -1,13 +1,13 @@
 from array import array
 
-from state import ObservationSerie
+from state.obs import ObsSerie
 from state.State import State
 from state.filter.bayesian import Filter
 
 
 class Particle(Filter):
     ''''''
-    def __init__(self, observationSerie:ObservationSerie, landMarks:array(State)):
+    def __init__(self, observationSerie: ObsSerie, landMarks:array(State)):
         '''
 
         Parameters
@@ -52,7 +52,7 @@ class Particle(Filter):
         return
 
     def getCurrentEstimatedState(self):
-        '''Return posterior state according to current observation'''
+        '''Return posterior state according to current obs'''
         return
 
 

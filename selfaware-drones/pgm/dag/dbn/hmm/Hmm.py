@@ -1,7 +1,7 @@
 from mmath.linearalgebra.Matrix import Matrix
-from state import ObservationStateSerie
+from state.obs import ObsStateSerie
 
 
 class Hmm():
-    def __init__(self,observationStateSerie:ObservationStateSerie,transitionMatrix:Matrix):
+    def __init__(self, observationStateSerie: ObsStateSerie, transitionMatrix:Matrix):
         pass
