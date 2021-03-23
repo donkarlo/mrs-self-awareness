@@ -22,7 +22,7 @@ class ClusteringStrgy():
             return self._clusters
 
     @abc.abstractmethod
-    def doSetClusters(self):
+    def _doSetClusters(self):
         """Abstract method that children should implement.
 
         All child should set self._clusters in this implemented method
