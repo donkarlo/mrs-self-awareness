@@ -1,25 +1,33 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import sklearn.metrics as metrics
+from cluster.ClusteringStrgy import ClusteringStrgy
+from cluster.gng.AdaptationPhase import AdaptationPhase
+from cluster.gng.Edge import Edge
+from cluster.gng.Graph import Graph
+from cluster.gng.GrowingPhase import GrowingPhase
+from cluster.gng.Node import Node
+from mmath.linearalgebra.Vector import Vector
+from mmath.linearalgebra.Matrix import Matrix
 
-class Gng:
-    ''''''
+
+class Gng(ClusteringStrgy):
+    '''Find how GNG works in AdaptationPhase and GrowingPhase'''
     def __init__(self,
-                 inputData,
-                 maxNodeNum:int=100,
+                 rawInputData,
+                 maxNodesNum:int=100,
                  maxAge:int=100,
-                 maxNumOfIterations:int=300,
-                 alpha:float=0.5,
-                 beta:float=0.0005,
-                 eW:float=0.05,
-                 eN:float=0.0006):
+                 maxIterationsNum:int=300,  #landa
+                 localErrorDecayRate:float=0.5,  #alpha
+                 globalErrorDecayRate:float=0.0005,  #beta
+                 closestNodeMovementRateTowardCurInpVec:float=0.05, #eW
+                 connectedNodesToClosestNodeMovementRateTowardCurInpVec:float=0.0006#eN
+                 ):
         '''
         Parameters
         ----------
-        inputData:np.array
-        maxNumOfIterations:int
+        rawInputData:np.array
+        maxIterationsNum:int
         maxAge:int
-        maxNodeNum:int
+        maxNodesNum:int
         alpha:
             local error decay rate.
         beta:
@@ -31,89 +39,85 @@ class Gng:
             neigbours of winner node movement rate, it must be much smaller than eW. should be one to tow orders of
             magnitude smaller than 0.0006
         '''
-        self.__inputNpMatrix = self.__convertInputDataToNpMatrix(inputData)
-        self.__normalizedInputNpMatrix = None
-        self.__nodes = np.array
-        self.__edges = np.array
+        self.__inpVecs = rawInputData
+        self.__closestNodeMovementRateTowardCurInpVec:float = closestNodeMovementRateTowardCurInpVec
+        self.__neighborNodesOfClosestNodeMovementRateTowardCurInpVec:float = connectedNodesToClosestNodeMovementRateTowardCurInpVec
+        self.__maxAge:int = maxAge
+        self.__maxIterationsNum:int = maxIterationsNum
+        self.__maxNodesNum:int = maxNodesNum
+        self.__iterationCounter:int = 0
+        self.__localErrorDecayRate:float = localErrorDecayRate
+        self.__globalErrorDecayRate:float = globalErrorDecayRate
 
-    def getClustersNum(self):
-        return len(self.__nodes)
 
-    def getNormalizedNpMatrix(self) -> np.array:
-        '''Normalization of the input data'''
-        if(type(self.__normalizedInputNpMatrix) is not None):
-            # Extract minimum of each row
-            minOfRowsArr = np.min(self.__inputNpMatrix, axis=0)
-            # Construct an array by repeating A the number of times given by reps.
-            # shape[0] gives the number of rows
-            # tile: repeat array of minimums of each row one time along columns (axe1) and number of rows times of minOfRowsArr along rows(axe0)
-            dataNorm = self.__inputNpMatrix - np.tile(minOfRowsArr, (self.__inputNpMatrix.shape[0], 1))
-            maxDataNorm = np.max(dataNorm, axis=0)
-            self.__normalizedInputNpMatrix = dataNorm / np.tile(maxDataNorm, (self.__inputNpMatrix.shape[0], 1))
-        return self.__normalizedInputNpMatrix
+    def __prepareData(self,rawInputData):
+        self.__inpVecs: Matrix = self.__convertInputDataToNpMatrix(rawInputData)
+        self.__inpVecs = np.random.shuffle(self.__inpVecs)
+        self.__inpVecs = self.__getNormalizedNpMatrix()
 
-    def initialization(self):
-        '''Two random nodes'''
-        pass
 
-    def selfOranizationPhase(self):
-        '''Right after initialization'''
-        pass
 
-    def growingPhase(self):
-        '''Right after selfOrganizationPhase'''
-        pass
-
-    def _doSetClusters(self):
+    def _doSetClusters(self)->None:
         ''''''
-        pass
+        self.__graph: Graph = Graph()
+        self.__prepareData(self.__inpVecs)
+        adaptationPhase = AdaptationPhase(self.__inpVecs
+                                          ,self.__graph
+                                          ,self.__closestNodeMovementRateTowardCurInpVec
+                                          , self.__neighborNodesOfClosestNodeMovementRateTowardCurInpVec
+                                          ,self.__maxAge
+                                          )
+        growingPhase = GrowingPhase(self.__graph
+                                    ,self.__localErrorDecayRate
+                                    ,self.__globalErrorDecayRate)
+        self.__initialize()
+
+        # stop condition
+        # todo make it a function can be based on performance
+        while self.getClustersNum() < self.__maxNodesNum:
+            adaptationPhase.run()
+            if self.__maxIterationsNum == self.__iterationCounter:
+                growingPhase.run()
+                self.__iterationCounter = 0
+            self.__iterationCounter += 1
+
+        self._clusters = self.__graph.getNodes()
+
+    def __initialize(self)->None:
+        '''Create two randomly positioned nodes, name them s(the winner node which is closer to bar(x)) and r '''
+        node1RefVec:Vector = np.random.rand(self.getDataRowsNum(),1)
+        node1 = Node(node1RefVec,0)
+        self.__graph.addNode(node1)
+
+        node2RefVec:Vector = np.random.rand(self.getDataRowsNum(),1)
+        node2 = Node(node2RefVec, 0)
+        self.__graph.addNode(node2)
+
+        edgeNode1Node2:Edge = Edge(node1,node2,0)
+        self.__graph.addEdge(edgeNode1Node2)
+
     def __convertInputDataToNpMatrix(self,inputData)->np.array:
-        self.__inputNpMatrix = inputData
-        return self.__inputNpMatrix
+        ''''''
+        self.__inpVecs = np.asarray(inputData)
+        return self.__inpVecs
+
+    def __getNormalizedNpMatrix(self) -> np.array:
+        '''Normalization of the input data'''
+        # Extract minimum of each row
+        minOfRowsArr = np.min(self.__inpVecs, axis=0)
+        # Construct an array by repeating A the number of times given by reps.
+        # shape[0] gives the number of rows
+        # tile: repeat array of minimums of each row one time along columns (axe1) and number of rows times of minOfRowsArr along rows(axe0)
+        dataNorm = self.__inpVecs - np.tile(minOfRowsArr, (self.__inpVecs.shape[0], 1))
+        maxDataNorm = np.max(dataNorm, axis=0)
+        self.__normalizedInputNpMatrix = dataNorm / np.tile(maxDataNorm, (self.__inpVecs.shape[0], 1))
+        return self.__normalizedInputNpMatrix
 
     def getDataRowsNum(self):
         ''''''
-        return self.__inputNpMatrix.shape[0]
+        return self.__inpVecs.shape[0]
 
     def getDataColsNum(self):
         '''Dimentions of data'''
-        return self.__inputNpMatrix.shape[1]
+        return self.__inpVecs.shape[1]
 
-    def plot(self, nodeRefVecs):
-        # Clusters of input, assigning node colors to input data
-        dataColorNode = np.zeros(self.getDataRowsNum())
-        for counter in range(self.getDataRowsNum()):
-            firstInputVectorFromPermutedInputs = self.getNormalizedNpMatrix()[counter, :]
-            X = np.expand_dims(firstInputVectorFromPermutedInputs, axis=0)
-            d = metrics.pairwise_distances(X=X, Y=nodeRefVecs, metric='euclidean')[0][:]
-            minNode = np.argmin(d)
-            dataColorNode[counter] = minNode
-
-        # Positional case
-        colors = {0: 'black',
-                  1: 'grey',
-                  2: 'blue',
-                  3: 'cyan',
-                  4: 'lime',
-                  5: 'green',
-                  6: 'yellow',
-                  7: 'gold',
-                  8: 'red',
-                  9: 'maroon'}
-
-        plt.ion()
-        plt.show()
-
-        figure, axesSubplot = plt.subplots(1, 1, figsize=(10, 10))
-        fiveDVar = self.getNormalizedNpMatrix()[:, 0:5]
-
-        for colorIndex, color in colors.items():
-            axesSubplot.scatter(x=fiveDVar[dataColorNode == colorIndex, 0],
-                                y=fiveDVar[dataColorNode == colorIndex, 1],
-                                color=color,
-                                label=str(colorIndex))
-            axesSubplot.legend()
-
-        axesSubplot.grid()
-        plt.draw()
-        figure.suptitle("Plotting clustering", fontsize=20)
