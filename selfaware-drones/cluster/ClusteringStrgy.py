@@ -1,14 +1,17 @@
 import abc
+from typing import List
+
+
 class ClusteringStrgy(metaclass=abc.ABCMeta):
     """
     An abstaract class that inforces all childs to have an strtegy to cluster the given data
     """
+
     def __init__(self, inpData):
         self._inpData = inpData
         self._clusters = None
 
-    @abc.abstractmethod
-    def getClusters(self):
+    def getClusters(self) -> List:
         """Returns the clusters
 
         Parameters
@@ -24,15 +27,17 @@ class ClusteringStrgy(metaclass=abc.ABCMeta):
 
     @abc.abstractmethod
     def _doSetClusters(self):
-        """Abstract method that children should implement.
-
-        All child should set self._clusters in this implemented method
+        """
 
         Parameters
         ----------
         Returns
         -------
         """
+        pass
 
-    def getClustersNum(self):
-        return len(self.getClusters())
+    def getClustersNum(self) -> int:
+        if self._clusters is not None:
+            return len(self._clusters)
+        else:
+            return 0
