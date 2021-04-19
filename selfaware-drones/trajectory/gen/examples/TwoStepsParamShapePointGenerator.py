@@ -1,8 +1,9 @@
-from trajectory.gen.ParamShapePointGeneratorComposit import *
 from trajectory.gen.ParamLinePointGenerator import *
+from trajectory.gen.ParamShapePointGeneratorComposit import *
+
 
 class TwoStepsParamShapePointGenerator(ParamShapePointGeneratorComposit):
-    def __init__(self,distanceInterval):
+    def __init__(self, distanceInterval):
         super(TwoStepsParamShapePointGenerator, self).__init__()
         print("new points")
 
@@ -51,15 +52,16 @@ class TwoStepsParamShapePointGenerator(ParamShapePointGeneratorComposit):
         l8pg = ParamLinePointGenerator(l8, distanceInterval, 0, 10)
         l8pg.echoPoints()
 
-        self\
-            .add(l1pg)\
-            .add(l2pg)\
-            .add(l3pg)\
-            .add(l4pg)\
-            .add(l5pg)\
-            .add(l6pg)\
-            .add(l7pg)\
+        self \
+            .add(l1pg) \
+            .add(l2pg) \
+            .add(l3pg) \
+            .add(l4pg) \
+            .add(l5pg) \
+            .add(l6pg) \
+            .add(l7pg) \
             .add(l8pg)
+
 
 tspsg = TwoStepsParamShapePointGenerator(0.5)
 tspsg.plot3DPoints()

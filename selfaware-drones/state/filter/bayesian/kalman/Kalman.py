@@ -1,9 +1,11 @@
+import Innovation
+from mmath.linearalgebra import Matrix, Vector
 from state import ProcessModel
-from state.obs import ObsModel, ObsSerie
 from state.State import State
 from state.filter.bayesian import Filter
-from mmath.linearalgebra import Matrix, Vector
-import Innovation
+from state.obs import ObsModel, ObsSerie
+
+
 class Kalman(Filter):
     """
     process model: x_k=Fx_{k-1}+Bu_{k-1}+w_k, F:State transition matrix, B: Control-Input matrix
@@ -51,81 +53,77 @@ class Kalman(Filter):
     Returns
     -------
     """
+
     def __init__(self
                  , observationSeri: ObsSerie
-                 , processModel:ProcessModel
+                 , processModel: ProcessModel
                  , observationModel: ObsModel
-                 , initialEstimatedState:State
-                 , initialStateErrorCov:Matrix)->None:
+                 , initialEstimatedState: State
+                 , initialStateErrorCov: Matrix) -> None:
         super().init(observationSeri)
         self.__processModel = processModel
         self.__observationModel = observationModel
         self.__initialStateErrorCov = initialStateErrorCov
         self.__initialEstimatedState = initialEstimatedState
 
-    def _predict(self)->None:
+    def _predict(self) -> None:
         """"""
         pass
 
-    def _update(self)->None:
+    def _update(self) -> None:
         """"""
         pass
 
-    def __getLastObservation(self)->Vector:
+    def __getLastObservation(self) -> Vector:
         return self._observationSeri[len(self._observationSeri)]
 
-    def __getInnovation(self)->Matrix:
+    def __getInnovation(self) -> Matrix:
         """
         """
         ino = Innovation(self.__processModel.getProcessMatrix()
-                         ,self.getLastObservation()
-                         ,self.getPriorPrediction())
+                         , self.getLastObservation()
+                         , self.getPriorPrediction())
         return ino.getInnovation()
 
+    def __getCurrentPriorEstimatedState(self, prevPostEstimatedState: State, prevControl) -> State:
+        '''x^{^-}_{k}=Fx^{^+}_{k-1}+Bu_{k-1}'''
+        predictedPreX = self.__processModel.getCurrentState(prevPostEstimatedState, prevControl)
+        return predictedPreX
 
-    def __getCurrentPriorEstimatedState(self, prevPostEstimatedState:State, prevControl)->State:
-       '''x^{^-}_{k}=Fx^{^+}_{k-1}+Bu_{k-1}'''
-       predictedPreX = self.__processModel.getCurrentState(prevPostEstimatedState, prevControl)
-       return predictedPreX
-
-    def __getCurrentPriorStateErrorCov(self,previousPosteriorStateErrorCov)->Matrix:
+    def __getCurrentPriorStateErrorCov(self, previousPosteriorStateErrorCov) -> Matrix:
         '''P^{-}_{k}=FP^{+}_{k-1}F^{T}+Q, P:state error covariance
         '''
-        f= self.__processModel.getProcessMatrix()
-        q=self.__processModel.getProcessNoiseCov()
-        currentPriorStateErrorCov = f*previousPosteriorStateErrorCov*f**('T') + q
+        f = self.__processModel.getProcessMatrix()
+        q = self.__processModel.getProcessNoiseCov()
+        currentPriorStateErrorCov = f * previousPosteriorStateErrorCov * f ** ('T') + q
         return currentPriorStateErrorCov
 
-
-
-
     def __getKolmanGain(self
-                        ,currentPriorStateErrorCov:Matrix):
+                        , currentPriorStateErrorCov: Matrix):
         '''Kalman gain: K_{k} = P^{-}_{k}H^{T}(R+HP^{-}_{k}H^{T})^{-1}'''
         h = self.__observationModel.getObservationMatrix()
         r = self.__observationModel.getObservationNoiseCov()
-        return currentPriorStateErrorCov*h**('T')*(r+h*currentPriorStateErrorCov*h**('T'))**(-1)
-
+        return currentPriorStateErrorCov * h ** ('T') * (r + h * currentPriorStateErrorCov * h ** ('T')) ** (-1)
 
     def __getCurrentPosteriorEstimatedState(self
-                                            ,priorCurrentEstimatedState:State
-                                            ,currentPriorStateErrorCov:Matrix,
-                                            innovation:Innovation)->State:
+                                            , priorCurrentEstimatedState: State
+                                            , currentPriorStateErrorCov: Matrix,
+                                            innovation: Innovation) -> State:
         '''Updated state estimate: x^{^+}_{k}=x^{^-}_{k}+K_ky^{~}'''
         kGain = self.__getKolmanGain(currentPriorStateErrorCov)
-        CurrentPosteriorEstimatedState = priorCurrentEstimatedState+kGain*innovation.getInnovation()
+        CurrentPosteriorEstimatedState = priorCurrentEstimatedState + kGain * innovation.getInnovation()
         return CurrentPosteriorEstimatedState
 
     def __getCurrentPriorEstimatedState(self
-                                        ,currentPriorStateErrorCov:Matrix
-                                        ,innovation:Innovation)->Matrix:
+                                        , currentPriorStateErrorCov: Matrix
+                                        , innovation: Innovation) -> Matrix:
         '''Updated error estimate: P^{+}_{k} = (I-K_{k}H)P^{-}_{k}
 
         todo
         ----
         determine the dimention of the identity matrix
         '''
-        p = (Matrix.getIdentity(1)-self.__getKolmanGain(currentPriorStateErrorCov)
-             *self.__processModel.getProcessMatrix()+innovation.getInnovation())\
-            *self.__getCurrentPriorStateErrorCov()
+        p = (Matrix.getIdentity(1) - self.__getKolmanGain(currentPriorStateErrorCov)
+             * self.__processModel.getProcessMatrix() + innovation.getInnovation()) \
+            * self.__getCurrentPriorStateErrorCov()
         return p

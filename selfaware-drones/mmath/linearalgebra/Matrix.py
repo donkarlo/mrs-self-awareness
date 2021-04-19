@@ -1,82 +1,86 @@
-from typing import List
 from collections.abc import Iterable
+from typing import List
 
 import numpy as np
+
 from mmath.linearalgebra import Matrix
-import array
 
 
 class Matrix():
     '''todo: Each matrix is composed of columns of vectors. As such replace the inheritence between matrix and vector with composition'''
-    def __init__(self, vecs:Iterable, vecsDir:str="HORIZONTAL"):
+
+    def __init__(self, rows: Iterable):
+        ''''''
+        self._setNpRows(rows)
+
+    def _setNpRows(self,rows: Iterable):
         '''A matrix is formed of many rows'''
-        self.__vecs:np.ndarray = None
-        if type(vecs) is List:
-            self.__vecs = np.asarray(vecs)
-        elif type(vecs) is np.ndarray:
-            self.__vecs = vecs
+        self.__npRows: np.ndarray = None
+        if type(rows) is List:
+            self.__npRows = np.asarray(rows)
+        elif type(rows) is np.ndarray:
+            self.__npRows = rows
 
     # def __eq__(self, other:Matrix)->bool:
     #     ''''''
     #     if np.allclose(self.getNpRows(),other.getNpRows(),rtol=1e-07, atol=1e-08):
     #         return True
     #     return False
-    def __mul__(self, other:Matrix)->Matrix:
+    def __mul__(self, other) -> Matrix:
         ''''''
         npResult = None
-        if type(other) in (float,np.float64,int):
-            npResult = other*self.__vecs
+        if type(other) in (float, np.float64, int):
+            npResult = other * self.__npRows
         elif type(other) in (Matrix):
-            npResult = np.dot(self.__vecs, other)
+            npResult = np.dot(self.__npRows, other)
         else:
-            raise Exception("Matrix multi dosent understand how to treat 'Other' datat type")
+            raise Exception("Matrix multiply dosent understand how to treat 'Other' data type")
         npResult = Matrix(npResult)
         return npResult
 
-    def __add__(self, other:Matrix)->Matrix:
+    def __add__(self, other: Matrix) -> Matrix:
+        ''''''
         npAdd = np.add(self.getNpRows(), other.getNpRows())
         addMat = Matrix(npAdd)
         return addMat
 
-    def __getInverse(self)->Matrix:
+    def __getInverse(self) -> Matrix:
         pass
 
-    def __pow__(self, power, modulo=None)->Matrix:
+    def __pow__(self, power, modulo=None) -> Matrix:
         if power == -1:
             return self.getInverse()
         elif power == 'T':
             Matrix.transpose(self)
 
-    def __sub__(self, other:Matrix)->Matrix:
+    def __sub__(self, other: Matrix) -> Matrix:
         '''over writes subtract'''
         npSub = np.subtract(self.getNpRows(), other.getNpRows())
         subMat = Matrix(npSub)
         return subMat
 
-    def __getitem__(self, index:int):
+    def __getitem__(self, index: int):
         '''for brackets []'''
-        return self.__vecs[index]
+        return self.__npRows[index]
 
-    def getNpRowByIndex(self,index:int):
-        return self.__vecs[index]
+    def getNpRowByIndex(self, index: int):
+        return self.__npRows[index]
 
-    def getNpColByIndex(self,colIndex:int)->np.ndarray:
-        return self.__vecs[:, colIndex]
+    def getNpColByIndex(self, colIndex: int) -> np.ndarray:
+        return self.__npRows[:, colIndex]
 
-    def transpose(m:Matrix)->Matrix:
+    def transpose(m: Matrix) -> Matrix:
         '''Transpose'''
         pass
 
-    def getIdentity(dimention:int)->Matrix:
+    def getIdentity(dimention: int) -> Matrix:
         pass
 
-    def getNpRows(self)->np.ndarray:
-        return self.__vecs
+    def getNpRows(self) -> np.ndarray:
+        return self.__npRows
 
-    def getRowsNum(self)->int:
-        return self.__vecs.shape[0]
+    def getRowsNum(self) -> int:
+        return self.__npRows.shape[0]
 
-    def getColsNum(self)->int:
-        return self.__vecs.shape[1]
-
-
+    def getColsNum(self) -> int:
+        return self.__npRows.shape[1]

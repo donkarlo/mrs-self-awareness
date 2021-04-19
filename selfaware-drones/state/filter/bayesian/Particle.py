@@ -1,13 +1,14 @@
 from array import array
 
-from state.obs import ObsSerie
 from state.State import State
 from state.filter.bayesian import Filter
+from state.obs import ObsSerie
 
 
 class Particle(Filter):
     ''''''
-    def __init__(self, observationSerie: ObsSerie, landMarks:array(State)):
+
+    def __init__(self, observationSerie: ObsSerie, landMarks: array(State)):
         '''
 
         Parameters
@@ -17,7 +18,6 @@ class Particle(Filter):
         '''
         super(Particle, self).__init__(observationSerie)
         self.__particles = array(State)
-
 
     def getCurrentPosteriorState(self):
         pass
@@ -29,7 +29,7 @@ class Particle(Filter):
     def __sense(self, particle: State):
         pass
 
-    def __sense(self,particle:State,landMark:State):
+    def __sense(self, particle: State, landMark: State):
         '''z(x_t)~\sum f(x|\mu,\delta^2)
         x is the  measured distance between the particle and the given landmarke
         x_t is the particle
@@ -44,7 +44,7 @@ class Particle(Filter):
         '''
         pass
 
-    def generateParticles(self,number):
+    def generateParticles(self, number):
         pass
 
     def __moveParticles(self, deltaState):
@@ -54,6 +54,3 @@ class Particle(Filter):
     def getCurrentEstimatedState(self):
         '''Return posterior state according to current obs'''
         return
-
-
-

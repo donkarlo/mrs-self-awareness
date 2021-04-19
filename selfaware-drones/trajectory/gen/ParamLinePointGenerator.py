@@ -1,6 +1,7 @@
-from trajectory.gen.ParamShapePointGeneratorComposit import ParamShapePointGeneratorLeaf
 from trajectory.ParamShapeLine import *
 from trajectory.Point import *
+from trajectory.gen.ParamShapePointGeneratorComposit import ParamShapePointGeneratorLeaf
+
 
 class ParamLinePointGenerator(ParamShapePointGeneratorLeaf):
     """
@@ -13,6 +14,7 @@ class ParamLinePointGenerator(ParamShapePointGeneratorLeaf):
 	@:param paramLine
 	@:param distanceInterval denote the amount by which
 	"""
+
     def __init__(self, paramLine: ParamShapeLine, distanceInterval: float, lowerBand: float, upperband: float):
         self._paramLine = paramLine
         paramShape = ParamShape(self._paramLine.getName())

@@ -8,7 +8,7 @@ class StrategyInterface():
         pass
 
     @abc.abstractmethod
-    def getAbnormality(self, distanceStrategy:StrategyInterface)->float:
+    def getAbnormality(self, distanceStrategy: StrategyInterface) -> float:
         '''The distance between two distributions
         '''
         pass

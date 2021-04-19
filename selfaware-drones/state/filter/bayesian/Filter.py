@@ -13,17 +13,18 @@ class Filter(Hmm):
     if the variables are normally distributed and the transitions are linear, the Bayes filter becomes equal to the Kalman filter.
     It is an HMM
     '''
+
     def __init__(self, observationSerie: ObsSerie):
         self._observationSerie = observationSerie
-        self._states =  array(State)
+        self._states = array(State)
 
-    def addObservation(self, observation:Obs)->None:
+    def addObservation(self, observation: Obs) -> None:
         self.__observationSerie.push(observation)
 
     @abc.abstractmethod
-    def predict(self)->State:
+    def predict(self) -> State:
         pass
 
     @abc.abstractmethod
-    def update(self, obs:Obs)->State:
+    def update(self, obs: Obs) -> State:
         pass

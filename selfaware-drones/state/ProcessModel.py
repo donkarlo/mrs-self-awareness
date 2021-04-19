@@ -7,10 +7,10 @@ class ProcessModel():
     def __init__(self
                  , processMatrix: Matrix = None
                  , controlMatrix: Matrix = None
-                 , processNoiseCov:Matrix = None
-                 , prevState:State = None
-                 , prevControl:Vector=None
-                 , prevProcessNoise:Vector=None
+                 , processNoiseCov: Matrix = None
+                 , prevState: State = None
+                 , prevControl: Vector = None
+                 , prevProcessNoise: Vector = None
                  ):
         ''' x_k=Fx_{k-1}+Bu_{k-1}+w_{k-1}
 
@@ -25,10 +25,11 @@ class ProcessModel():
         self.__controlMatrix = controlMatrix
         self.__processNoiseCov = processNoiseCov
         self.setPreviousState(prevState, prevControl, prevProcessNoise)
+
     def setPreviousState(self
-                         , prevState:State = None
-                         , prevControl:Vector=None
-                         , prevProcessNoise:Vector=None)->None:
+                         , prevState: State = None
+                         , prevControl: Vector = None
+                         , prevProcessNoise: Vector = None) -> None:
         """Setting the previous situation
         Prev stands for previous
 
@@ -43,21 +44,21 @@ class ProcessModel():
         self.__prevProcessNoise = prevProcessNoise
 
     def getCurrentState(self
-                        ,prevState:State =None
-                        ,prevInput:Vector=None
-                        ,prevProcessNoise:Vector=None)->State:
+                        , prevState: State = None
+                        , prevInput: Vector = None
+                        , prevProcessNoise: Vector = None) -> State:
         """Get current state based on previous one
         """
-        self.setPreviousState(prevState,prevInput,prevProcessNoise)
+        self.setPreviousState(prevState, prevInput, prevProcessNoise)
         fPrevState = self.__processMatrix * self.__prevState
         bPrevInput = self.__controlMatrix * self.__prevNoise
         curState = fPrevState + bPrevInput + self.__prevW
         return curState
 
-    def getProcessMatrix(self)->Matrix:
+    def getProcessMatrix(self) -> Matrix:
         return self.__processMatrix
 
-    def getProcessNoiseCov(self)->Matrix:
+    def getProcessNoiseCov(self) -> Matrix:
         return self.__processNoiseCov
 
     def getProcessMatrix(self):

@@ -1,19 +1,19 @@
-from trajectory.Point import *
-from trajectory.ParamShape import *
 from trajectory.ParamShapeLine import *
+from trajectory.Point import *
 
 
 class ParamShapePointGeneratorComponent:
     '''
     Shared between the composit and leaf PointGenerators
     '''
+
     def _generatePoints(self) -> None:
         pass
 
     def __init__(self):
         self._points = None
 
-    def getPoints(self)->Points:
+    def getPoints(self) -> Points:
         if (self._points is None):
             self._points = Points()
             self._generatePoints()
@@ -32,10 +32,12 @@ class ParamShapePointGeneratorComponent:
     def plot3DPoints(self):
         self.getPoints().plot3DPoints()
 
+
 class ParamShapePointGeneratorLeaf(ParamShapePointGeneratorComponent):
     """
     A leaf generatotr
     """
+
     def __init__(self, paramShape: ParamShape, distanceInterval: float, lowerBand: float, upperBand: float):
         super(ParamShapePointGeneratorLeaf, self).__init__()
         self._paramShape = paramShape
@@ -47,11 +49,11 @@ class ParamShapePointGeneratorLeaf(ParamShapePointGeneratorComponent):
         return self._paramShape
 
 
-
 class ParamShapePointGeneratorComposit(ParamShapePointGeneratorComponent):
     """
     The composit of ParamShapePointGenerator
     """
+
     def __init__(self, paramShapePointGeneratorsList=[]):
         super(ParamShapePointGeneratorComposit, self).__init__()
         self._paramShapePointGeneratorsList = paramShapePointGeneratorsList

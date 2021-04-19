@@ -1,10 +1,12 @@
+from typing import List
+
 import numpy as np
 
 from cluster.ClusteringStrgy import ClusteringStrgy
 from cluster.gng.AdaptationPhase import AdaptationPhase
+from cluster.gng.GrowingPhase import GrowingPhase
 from cluster.gng.graph.Edge import Edge
 from cluster.gng.graph.Graph import Graph
-from cluster.gng.GrowingPhase import GrowingPhase
 from cluster.gng.graph.Node import Node
 from mmath.linearalgebra.Matrix import Matrix
 from mmath.linearalgebra.Vector import Vector
@@ -42,7 +44,7 @@ class Gng(ClusteringStrgy):
             magnitude smaller than 0.0006
         '''
         # super().__init__(rawInputData)
-        self.__inpVecs: Matrix = rawInputData
+        self.__inpRows: Matrix = rawInputData
         self.__closestNodeMovementRateTowardCurInpVec: float = closestNodeMovementRateTowardCurInpVec
         self.__neighborNodesOfClosestNodeMovementRateTowardCurInpVec: float = connectedNodesToClosestNodeMovementRateTowardCurInpVec
         self.__maxAge: int = maxAge
@@ -62,82 +64,75 @@ class Gng(ClusteringStrgy):
         self.__initializePhases()
         self.__initializeTheFirstTwoNodes()
         self.__runPhases()
-        self.__report()
 
-    def __prepareData(self)->None:
+    def __prepareData(self) -> None:
         ''''''
         self.__convertInputDataToNpMatrix()
-        np.random.shuffle(self.__inpVecs)
+        np.random.shuffle(self.__inpRows)
         self.__normalizeInpVecs()
         self.__convertInpVecsToMatrix()
 
-    def __initializePhases(self)->None:
+    def __initializePhases(self) -> None:
         ''''''
-        self.__adaptationPhase: AdaptationPhase = AdaptationPhase(self.__inpVecs
+        self.__adaptationPhase: AdaptationPhase = AdaptationPhase(self.__inpRows
                                                                   , self.__graph
                                                                   , self.__closestNodeMovementRateTowardCurInpVec
-                                                                  ,self.__neighborNodesOfClosestNodeMovementRateTowardCurInpVec
+                                                                  ,
+                                                                  self.__neighborNodesOfClosestNodeMovementRateTowardCurInpVec
                                                                   , self.__maxAge)
         self.__growingPhase: GrowingPhase = GrowingPhase(self.__graph
                                                          , self.__localErrorDecayRate
                                                          , self.__globalErrorDecayRate)
+
     def __initializeTheFirstTwoNodes(self) -> None:
         '''Create two randomly positioned nodes, name them s(the winner node which is closer to bar(x)) and r '''
-        node1RefVec: Vector = Vector(np.random.rand(self.__inpVecs.getColsNum(), 1))
+        node1RefVec: Vector = Vector(np.random.rand(self.__inpRows.getColsNum(), 1))
         node1 = Node(node1RefVec, 0)
         self.__graph.addNode(node1)
 
-        node2RefVec: Vector = Vector(np.random.rand(self.__inpVecs.getColsNum(), 1))
+        node2RefVec: Vector = Vector(np.random.rand(self.__inpRows.getColsNum(), 1))
         node2 = Node(node2RefVec, 0)
         self.__graph.addNode(node2)
 
         edgeNode1Node2: Edge = Edge(node1, node2, 0)
         self.__graph.addEdge(edgeNode1Node2)
 
-    def __runPhases(self)->None:
+    def __runPhases(self) -> None:
         # stop condition
         # todo make it a function can be based on performance
         while self.__graph.getNodesNum() < self.__maxNodesStepNum:
-            print("Nodes num so far: " + str(self.__graph.getNodesNum()))
             self.__adaptationPhase.run()
             if (self.__iterationCounter / self.__maxIterationsNum) == 1:
                 self.__growingPhase.run()
-                print("Growing counter so far: " + str(self.__growingPhase.getRunCounter()))
                 self.__iterationCounter = 0
             self.__iterationCounter += 1
         self._clusters = self.__graph.getNodes()
 
-
-
-    def __report(self)->None:
-        ''''''
-        print("Ran with success")
-        print("Nodes num " + str(self.__graph.getNodesNum()))
-        print("Edge num " + str(self.__graph.getEdgesNum()))
-        print ("Adaptation run num "+str(self.__graph.getEdgesNum()))
+    def getClusters(self) -> List:
+        return super().getClusters()
 
     def __convertInpVecsToMatrix(self) -> None:
         ''''''
-        self.__inpVecs = Matrix(self.__inpVecs)
+        self.__inpRows = Matrix(self.__inpRows)
 
     def __convertInputDataToNpMatrix(self) -> np.array:
         ''''''
-        self.__inpVecs = np.asarray(self.__inpVecs)
+        self.__inpRows = np.asarray(self.__inpRows)
 
     def __normalizeInpVecs(self) -> None:
         '''Normalization of the input data'''
         # Extract minimum of each row
-        minOfRowsArr = np.min(self.__inpVecs, axis=0)
+        minOfRowsArr = np.min(self.__inpRows, axis=0)
         # Construct an array by repeating A the number of times given by reps.
         # shape[0] gives the number of rows
         # tile: repeat array of minimums of each row one time along columns (axe1) and number of rows times of minOfRowsArr along rows(axe0)
-        dataNorm = self.__inpVecs - np.tile(minOfRowsArr, (self.__inpVecs.shape[0], 1))
+        dataNorm = self.__inpRows - np.tile(minOfRowsArr, (self.__inpRows.shape[0], 1))
         maxDataNorm = np.max(dataNorm, axis=0)
-        self.__inpVecs = dataNorm / np.tile(maxDataNorm, (self.__inpVecs.shape[0], 1))
+        self.__inpRows = dataNorm / np.tile(maxDataNorm, (self.__inpRows.shape[0], 1))
 
     def getMatrixInpVecs(self) -> Matrix:
         ''''''
-        return self.__inpVecs
+        return self.__inpRows
 
     def getGraph(self) -> Graph:
         ''''''

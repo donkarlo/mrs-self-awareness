@@ -1,8 +1,9 @@
-from trajectory.gen.ParamShapePointGeneratorComposit import *
 from trajectory.gen.ParamLinePointGenerator import *
+from trajectory.gen.ParamShapePointGeneratorComposit import *
+
 
 class SlopedTriangleParamShapePointGenerator(ParamShapePointGeneratorComposit):
-    def __init__(self,distanceInterval):
+    def __init__(self, distanceInterval):
         super(SlopedTriangleParamShapePointGenerator, self).__init__()
         print("new points")
 
@@ -22,11 +23,12 @@ class SlopedTriangleParamShapePointGenerator(ParamShapePointGeneratorComposit):
         l3pg = ParamLinePointGenerator(l3, distanceInterval, 0, 10)
         l3pg.echoPoints()
 
-        self\
-            .add(l1pg)\
-            .add(l2pg)\
-            .add(l3pg)\
-
+        self \
+            .add(l1pg) \
+            .add(l2pg) \
+            .add(l3pg) \
+ \
+ \
 tspsg = SlopedTriangleParamShapePointGenerator(0.5)
 tspsg.plot3DPoints()
 

@@ -22,6 +22,7 @@ class ClusteringStrgy(metaclass=abc.ABCMeta):
             array of clusters
         """
         if self._clusters is None:
+            print("Please wait ...")
             self._doSetClusters()
         return self._clusters
 

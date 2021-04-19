@@ -1,4 +1,5 @@
 import numpy as np
+from collections.abc import Iterable
 
 from mmath.linearalgebra import Vector
 from mmath.linearalgebra.Matrix import Matrix
@@ -8,7 +9,10 @@ class Vector(Matrix):
     '''Vector is a matrix of one column and multiple rows, but for simlicity, we remove array
     '''
 
-    def __init__(self, components):
+    def __init__(self, components:Iterable):
+        self._setNpRows(components)
+
+    def _setNpRows(self,components:Iterable):
         newComponents = []
         # make each row an array
         for component in components:
@@ -22,7 +26,10 @@ class Vector(Matrix):
             else:
                 raise Exception("Components are not understandable for Vector")
         npComps = np.asarray(newComponents)
-        super().__init__(npComps)
+        super()._setNpRows(npComps)
+
+    def updateComponents(self,components:Iterable):
+        self._setNpRows(components)
 
     def getNpRow(self) -> np.ndarray:
         rows = []
@@ -51,3 +58,7 @@ class Vector(Matrix):
     def getComponentByIndex(self, index: int):
         ''''''
         return self.getNpRows()[index][0]
+
+    def moveTowardVecByRate(self, destinationVec: Vector, movementRate: float):
+        vec:Vector = self + (self - destinationVec) * movementRate
+        self._setNpRows(vec.getNpRows())
