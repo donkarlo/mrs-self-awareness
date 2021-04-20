@@ -21,6 +21,10 @@ class Matrix():
         elif type(rows) is np.ndarray:
             self.__npRows = rows
 
+    def updateRows(self,rows: Iterable):
+        self._setNpRows(rows)
+
+
     # def __eq__(self, other:Matrix)->bool:
     #     ''''''
     #     if np.allclose(self.getNpRows(),other.getNpRows(),rtol=1e-07, atol=1e-08):

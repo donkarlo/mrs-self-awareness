@@ -2,12 +2,12 @@ from typing import List
 
 import numpy as np
 
-from cluster.ClusteringStrgy import ClusteringStrgy
-from cluster.gng.AdaptationPhase import AdaptationPhase
-from cluster.gng.GrowingPhase import GrowingPhase
-from cluster.gng.graph.Edge import Edge
-from cluster.gng.graph.Graph import Graph
-from cluster.gng.graph.Node import Node
+from mmath.data.cluster.ClusteringStrgy import ClusteringStrgy
+from mmath.data.cluster.gng.AdaptationPhase import AdaptationPhase
+from mmath.data.cluster.gng.GrowingPhase import GrowingPhase
+from mmath.data.cluster.gng.graph.Edge import Edge
+from mmath.data.cluster.gng.graph.Graph import Graph
+from mmath.data.cluster.gng.graph.Node import Node
 from mmath.linearalgebra.Matrix import Matrix
 from mmath.linearalgebra.Vector import Vector
 
@@ -16,7 +16,7 @@ class Gng(ClusteringStrgy):
     '''Find how GNG works in AdaptationPhase and GrowingPhase'''
 
     def __init__(self,
-                 rawInputData,
+                 inpRowsMatrix:Matrix,
                  maxNodesNum: int = 100,
                  maxAge: int = 100,
                  maxIterationsNum: int = 300,  # landa
@@ -28,7 +28,7 @@ class Gng(ClusteringStrgy):
         '''
         Parameters
         ----------
-        rawInputData:np.array
+        inpRowsMatrix:np.array
         maxIterationsNum:int
         maxAge:int
         maxNodesNum:int
@@ -44,7 +44,9 @@ class Gng(ClusteringStrgy):
             magnitude smaller than 0.0006
         '''
         # super().__init__(rawInputData)
-        self.__inpRows: Matrix = rawInputData
+
+        #it will be later converted to Matrix
+        self.__inpRowsMatrix: Matrix = inpRowsMatrix
         self.__closestNodeMovementRateTowardCurInpVec: float = closestNodeMovementRateTowardCurInpVec
         self.__neighborNodesOfClosestNodeMovementRateTowardCurInpVec: float = connectedNodesToClosestNodeMovementRateTowardCurInpVec
         self.__maxAge: int = maxAge
@@ -67,14 +69,12 @@ class Gng(ClusteringStrgy):
 
     def __prepareData(self) -> None:
         ''''''
-        self.__convertInputDataToNpMatrix()
-        np.random.shuffle(self.__inpRows)
-        self.__normalizeInpVecs()
-        self.__convertInpVecsToMatrix()
+        np.random.shuffle(self.__inpRowsMatrix.getNpRows())
+        self.__normalizeInpRows()
 
     def __initializePhases(self) -> None:
         ''''''
-        self.__adaptationPhase: AdaptationPhase = AdaptationPhase(self.__inpRows
+        self.__adaptationPhase: AdaptationPhase = AdaptationPhase(self.__inpRowsMatrix
                                                                   , self.__graph
                                                                   , self.__closestNodeMovementRateTowardCurInpVec
                                                                   ,
@@ -86,11 +86,11 @@ class Gng(ClusteringStrgy):
 
     def __initializeTheFirstTwoNodes(self) -> None:
         '''Create two randomly positioned nodes, name them s(the winner node which is closer to bar(x)) and r '''
-        node1RefVec: Vector = Vector(np.random.rand(self.__inpRows.getColsNum(), 1))
+        node1RefVec: Vector = Vector(np.random.rand(self.__inpRowsMatrix.getColsNum(), 1))
         node1 = Node(node1RefVec, 0)
         self.__graph.addNode(node1)
 
-        node2RefVec: Vector = Vector(np.random.rand(self.__inpRows.getColsNum(), 1))
+        node2RefVec: Vector = Vector(np.random.rand(self.__inpRowsMatrix.getColsNum(), 1))
         node2 = Node(node2RefVec, 0)
         self.__graph.addNode(node2)
 
@@ -111,28 +111,20 @@ class Gng(ClusteringStrgy):
     def getClusters(self) -> List:
         return super().getClusters()
 
-    def __convertInpVecsToMatrix(self) -> None:
-        ''''''
-        self.__inpRows = Matrix(self.__inpRows)
-
-    def __convertInputDataToNpMatrix(self) -> np.array:
-        ''''''
-        self.__inpRows = np.asarray(self.__inpRows)
-
-    def __normalizeInpVecs(self) -> None:
+    def __normalizeInpRows(self) -> None:
         '''Normalization of the input data'''
         # Extract minimum of each row
-        minOfRowsArr = np.min(self.__inpRows, axis=0)
+        minOfRowsArr = np.min(self.__inpRowsMatrix.getNpRows(), axis=0)
         # Construct an array by repeating A the number of times given by reps.
         # shape[0] gives the number of rows
         # tile: repeat array of minimums of each row one time along columns (axe1) and number of rows times of minOfRowsArr along rows(axe0)
-        dataNorm = self.__inpRows - np.tile(minOfRowsArr, (self.__inpRows.shape[0], 1))
+        dataNorm = self.__inpRowsMatrix.getNpRows() - np.tile(minOfRowsArr, (self.__inpRowsMatrix.getNpRows().shape[0], 1))
         maxDataNorm = np.max(dataNorm, axis=0)
-        self.__inpRows = dataNorm / np.tile(maxDataNorm, (self.__inpRows.shape[0], 1))
+        self.__inpRowsMatrix.updateRows(dataNorm / np.tile(maxDataNorm, (self.__inpRowsMatrix.getNpRows().shape[0], 1)))
 
-    def getMatrixInpVecs(self) -> Matrix:
+    def getInpRowsMatrix(self) -> Matrix:
         ''''''
-        return self.__inpRows
+        return self.__inpRowsMatrix
 
     def getGraph(self) -> Graph:
         ''''''
