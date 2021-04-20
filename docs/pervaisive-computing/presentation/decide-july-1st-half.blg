@@ -1,0 +1,9 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'decide-july-1st-half.blg'
+[490] biber:322> INFO - === Do Jän 14, 2021, 07:13:21
+[658] Biber.pm:415> INFO - Reading 'decide-july-1st-half.bcf'
+[719] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[724] Utils.pm:293> WARN - The file 'decide-july-1st-half.bcf' does not contain any citations!
+[732] bbl.pm:652> INFO - Writing 'decide-july-1st-half.bbl' with encoding 'UTF-8'
+[732] bbl.pm:755> INFO - Output to decide-july-1st-half.bbl
+[732] Biber.pm:128> INFO - WARNINGS: 1

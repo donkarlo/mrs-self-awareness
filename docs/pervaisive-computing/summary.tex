@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\pagenumbering{arabic}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{soul}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mohammad Rahmani}
+\lhead{Help from the Sky}
+
+\newcommand{\ignore}[1]{}
+\begin{document}
+	\bibliographystyle{plainnat}
+	\title{Summary for: Help from the Sky: Leveraging UAVs for Disaster Management}
+	\author{Mohammad Rahmani}
+	\date{}
+	\maketitle
+	
+	\paragraph{} This document contains the summary of the Help from the Sky: Leveraging UAVs for Disaster Management \cite{erdelj-2017-summary-for-help-from-the-sky-leveraging-uavs-for-disaster-management}. This paper studies existing solutions and recommends amendments to apply unmanned aerial vehicles (UAVs) together with static Wireless Sensor Networks (WSN) for different stages of various types of disasters. It worth mentioning from the very beginning that the main argument of the authors hindered in the whole paper is that addressing disaster management using static networks is not logical and UAVs should be included to make the topology of these networks dynamic. 
+	
+	\paragraph{} The paper first argues that in disaster management,  UAVs can be used in many cases including disaster information fusion and sharing,  standalone communication system, damage assessment, medical applications to name a few\cite{camara-2014-cavalry-to-the-rescue-drones-fleet-to-help-rescuers-operations-over-disasters-scenarios}. 
+	
+	\paragraph{} However, it also counts power supply limitation, 
+	unexpected node failure, maneuverability in harsh conditions as examples of drawbacks of using UAVs for such missions \cite{chen-2013-natural-disaster-monitoring-with-wireless-sensor-networks-a-case-study-of-data-intensive-applications-upon-low-cost-scalable-systems}. 
+	
+	\paragraph{} The paper also studies UAVs from networking point of view and counts their energy-effectiveness trade-off, difficulties in dynamic typology of networks they can offer and their multi-objective downtime as features which should be considered before their application. 
+	
+	\paragraph{} Although the paper studies the importance of UAVs role in different stages of a disaster which will be covered later in this summary, but it suggests using a combination of different UAVs, including UAV stations in many cases. To elaborate more on this, it classifies UAVs into three groups of fixed wings, helicopters and multi-copters. Then It suggests that to cover each region, it is better to first a few fixed wing UAVs scan the affected area and then rotatory winged UAVs are dispatched for SAR, delivery, relay etc missions based on the data gathered by the fixed wing UAV. UAV stations can be used for battery charging and human user accommodation.
+	
+	\paragraph{} As mentioned above, the authors classify different stages of a disaster into three main stages: preparedness, assessment and response and recovery. They argue that as the stages advance over time, the role of UAVs increase. As such, the authors claim, since in the first stage static threshold sensing and surveying are the most important tasks which should be fulfilled, then WSNs should play the most important role. As the stage forwards to assessment which includes situational awareness and damage study, then the functional parts of the WSN together with the UAVs can be applied to give a better picture of real-time situation of the disaster. Arriving to the last stage to perform SAR missions and restoring Radio Access Networks (RAN), the role of UAVs turns to be the most important.
+	
+	\paragraph{} The authors also have presented a more detailed list of roles the UAVs can play in different stages of a disaster by classifying the disasters into three types. Type A includes geophysical or hydrological disasters. Type B discusses climatological disasters while Type C covers meteorological disasters. 
+	
+	\paragraph{Preparedness} As mentioned earlier, for the preparedness stages of all aforementioned types, UAVs can only play a limited role. However the authors of the paper suggest optimization of WSN data acquisition and data analysis to assess the probability of future disaster occurrences, using UAVs as data mules.
+	
+	
+	\paragraph{Assessment} In assessment stage  for type A, UAVs are a lot more important in comparison to WSNs. Additionally the authors suggest usage of heterogeneous UAV networks
+	comprising fixed-wing UAVs to scan
+	the area and identify important
+	points to be covered and surveyed by
+	rotary-wing UAVs. In type B operational part of WSN can be used with UAVs for damage assessment. Moreover, the authors recommend exploition of the existing WSN infrastructure
+	and dedicate a part of the UAV network
+	for WSN infrastructure reconnection.
+	The WSN can acquire environmental
+	data and help reconnect disjointed
+	parts of the UAV network. In type c, WSN can be used for information fusion while UAVs cant be functional. The authors recommend focusing on the data provided by the
+	WSN and other available information
+	sources (such as social networks).
+	
+	\paragraph{Rescue and Recovery} In this stage, for type A, WSNs can't play any role while UAVs can be used for sensing, monitoring and communication restoration. The authors suggest the usage of different camera types and
+	specialized sensors and actuators
+	mounted on UAVs, dedicated for
+	rescue missions and supply delivery. For type B, UAVs and the remnants of WSN can be used for fixing broken connectivity to conduct SAR operations. The authors suggest maximization of the data provided by
+	the WSN to improve the efficiency
+	of the search and rescue missions
+	executed by UAVs.
+	In type C, WSNs can be used for efficient decision support systems. Additionally the authors suggest usage of the fully functional WSN to
+	reconnect the impaired UAV
+	networks.
+	
+	\paragraph{Open Issues}
+	For type A and B, the authors identified Creating and maintaining the information relay network, Supporting in-network data fusion and Addressing handover issues as opened issues. In a Type C  disaster strengthening hardware is the most important issue. The authors have also introduced several general issues, independent of disaster types including: Automating network maintenance and UAV charging, Increasing UAV network security and robustness, Handling UAV failures and Ensuring privacy and trust.  
+	
+	\bibliography{/home/donkarlo/Dropbox/projs/research/refs.bib}
+\end{document}

@@ -1,0 +1,9 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'presentation-for-non-experts.blg'
+[103] biber:322> INFO - === So Jän 24, 2021, 15:50:44
+[1148] Biber.pm:415> INFO - Reading 'presentation-for-non-experts.bcf'
+[1216] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[1222] Utils.pm:293> WARN - The file 'presentation-for-non-experts.bcf' does not contain any citations!
+[1230] bbl.pm:652> INFO - Writing 'presentation-for-non-experts.bbl' with encoding 'UTF-8'
+[1230] bbl.pm:755> INFO - Output to presentation-for-non-experts.bbl
+[1230] Biber.pm:128> INFO - WARNINGS: 1
