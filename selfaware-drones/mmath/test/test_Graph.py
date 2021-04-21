@@ -3,7 +3,7 @@ from typing import List
 
 from mmath.data.cluster.gng.graph.Node import Node
 from mmath.linearalgebra.Vector import Vector
-from test.GraphBuilder import GraphBuilder
+from mmath.test.GraphBuilder import GraphBuilder
 
 
 class TestGraph(unittest.TestCase):

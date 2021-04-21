@@ -1,13 +1,13 @@
 from typing import List
 
-from mmath.data.cluster.gng.Runable import Runable
+from mmath.data.cluster.gng.RunableInterface import RunableInterface
 from mmath.data.cluster.gng.graph.Edge import Edge
 from mmath.data.cluster.gng.graph.Graph import Graph
 from mmath.data.cluster.gng.graph.Node import Node
 from mmath.linearalgebra.Vector import Vector
 
 
-class GrowingPhase(Runable):
+class GrowingPhase(RunableInterface):
     def __init__(self
                  , graph: Graph
                  , localErrorDecayRate

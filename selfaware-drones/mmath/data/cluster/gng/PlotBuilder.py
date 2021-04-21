@@ -8,19 +8,25 @@ from mmath.linearalgebra.Matrix import Matrix
 
 class PlotBuilder(GraphPlotBuilder):
     def __init__(self, inpRowsMatrix: Matrix, graph: Graph):
+        ''''''
         super().__init__(graph)
         self.__inpRowsMatrix: Matrix = inpRowsMatrix
 
-    def showAll2D(self):
+    def add2DInpRowsMatrixScatter(self):
+        ''''''
         xInpVecs = self.__inpRowsMatrix.getNpColByIndex(0)
         yInpVecs = self.__inpRowsMatrix.getNpColByIndex(1)
-        self.getPlot().scatter(xInpVecs, yInpVecs, marker='.' , c='lightblue')
+        self.getPlot().scatter(xInpVecs, yInpVecs, marker='.', c='lightblue')
 
+    def showAll2D(self):
+        ''''''
+        self.add2DInpRowsMatrixScatter()
         self.add2DNodes()
         self.add2DEdges()
         self.getPlot().show()
 
     def showAll3D(self):
+        ''''''
         fig = pyplot.figure()
         ax = Axes3D(fig)
 

@@ -5,6 +5,7 @@ import numpy as np
 from mmath.data.cluster.ClusteringStrgy import ClusteringStrgy
 from mmath.data.cluster.gng.AdaptationPhase import AdaptationPhase
 from mmath.data.cluster.gng.GrowingPhase import GrowingPhase
+from mmath.data.cluster.gng.PhasableInterface import PhasableInterface
 from mmath.data.cluster.gng.graph.Edge import Edge
 from mmath.data.cluster.gng.graph.Graph import Graph
 from mmath.data.cluster.gng.graph.Node import Node
@@ -12,7 +13,7 @@ from mmath.linearalgebra.Matrix import Matrix
 from mmath.linearalgebra.Vector import Vector
 
 
-class Gng(ClusteringStrgy):
+class Gng(ClusteringStrgy,PhasableInterface):
     '''Find how GNG works in AdaptationPhase and GrowingPhase'''
 
     def __init__(self,
@@ -64,8 +65,8 @@ class Gng(ClusteringStrgy):
         ''''''
         self.__prepareData()
         self.__initializePhases()
-        self.__initializeTheFirstTwoNodes()
-        self.__runPhases()
+        self._initializeTheFirstTwoNodes()
+        self._runPhases()
 
     def __prepareData(self) -> None:
         ''''''
@@ -84,7 +85,7 @@ class Gng(ClusteringStrgy):
                                                          , self.__localErrorDecayRate
                                                          , self.__globalErrorDecayRate)
 
-    def __initializeTheFirstTwoNodes(self) -> None:
+    def _initializeTheFirstTwoNodes(self) -> None:
         '''Create two randomly positioned nodes, name them s(the winner node which is closer to bar(x)) and r '''
         node1RefVec: Vector = Vector(np.random.rand(self.__inpRowsMatrix.getColsNum(), 1))
         node1 = Node(node1RefVec, 0)
@@ -97,9 +98,8 @@ class Gng(ClusteringStrgy):
         edgeNode1Node2: Edge = Edge(node1, node2, 0)
         self.__graph.addEdge(edgeNode1Node2)
 
-    def __runPhases(self) -> None:
-        # stop condition
-        # todo make it a function can be based on performance
+    def _runPhases(self) -> None:
+        ''''''
         while self.__graph.getNodesNum() < self.__maxNodesStepNum:
             self.__adaptationPhase.run()
             if (self.__iterationCounter / self.__maxIterationsNum) == 1:

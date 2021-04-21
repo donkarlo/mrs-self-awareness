@@ -7,7 +7,7 @@ from mmath.linearalgebra.Matrix import Matrix
 shapeBuilder = Builder()
 allPoints = shapeBuilder.getAllPoints()
 inpRowsMatrix = Matrix(allPoints)
-gng = Gng(inpRowsMatrix,maxNodesNum=150)
+gng = Gng(inpRowsMatrix,maxNodesNum=50)
 gng.getClusters()
 gng.getGraph().report()
 plotter = PlotBuilder(gng.getInpRowsMatrix(),gng.getGraph())

@@ -1,7 +1,7 @@
 from random import sample
 from typing import List
 
-from mmath.data.cluster.gng.Runable import Runable
+from mmath.data.cluster.gng.RunableInterface import RunableInterface
 from mmath.data.cluster.gng.graph.Edge import Edge
 from mmath.data.cluster.gng.graph.Graph import Graph
 from mmath.data.cluster.gng.graph.Node import Node
@@ -9,7 +9,7 @@ from mmath.linearalgebra.Matrix import Matrix
 from mmath.linearalgebra.Vector import Vector
 
 
-class AdaptationPhase(Runable):
+class AdaptationPhase(RunableInterface):
     def __init__(self
                  , inpVecs: Matrix
                  , graph: Graph
@@ -47,31 +47,18 @@ class AdaptationPhase(Runable):
         return self.__runCounter
 
     def __setCurInpVec(self) -> None:
-        # todo return it back to the following commented code
         ''' bar(x)
-        Since the __inpVecs is shuffled in Gng.__prepareData, it doesn't matter that we take input vectors in order
         '''
-        # if self.__curInpVec is None:
-        #     self.__curInpVecIndex = 0
-        # else:
-        #     self.__curInpVecIndex += 1
-
         if self.__selectedCurInptVecIndexes is None:
             self.__selectedCurInptVecIndexes = []
 
-        # change index as long as it has already been chosen
-
-        # select an index of inpVecs which had never been chosen
-        # selectedIndexesSet = set (self.__selectedCurInptVecIndexes)
         allIndexesSet = set(list(range(1, self.__inpVecs.getRowsNum())))
-        # unselectedIndexesSet = allIndexesSet - selectedIndexesSet
         self.__curInpVecIndex = sample(allIndexesSet, 1)[0]
         self.__curInpVec: Vector = Vector(self.__inpVecs.getNpRowByIndex(self.__curInpVecIndex))
         self.__selectedCurInptVecIndexes.append(self.__curInpVecIndex)
 
     def __setTwoNearestNodesToCurInpVec(self) -> None:
         ''''''
-        # if self.__closestNodeToCurInpVec.getRefVec() is None or self.__secondClosestNodeToCurInpVec.getRefVec() is None:
         self.__graph.getNodes().sort(key=lambda node: self.__curInpVec.getDistanceFrom(node.getRefVec()))
         self.__closestNodeToCurInpVec = self.__graph.getNodeByIndex(0)
         self.__secondClosestNodeToCurInpVec = self.__graph.getNodeByIndex(1)

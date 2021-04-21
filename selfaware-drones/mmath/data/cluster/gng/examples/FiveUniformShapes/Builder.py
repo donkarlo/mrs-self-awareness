@@ -2,7 +2,9 @@ from typing import List, Tuple
 import numpy as np
 
 class Builder:
+    ''''''
     def __init__(self):
+        ''''''
         pass
 
     def uniform(self, min, max, samplesNum)->List[float]:
@@ -11,6 +13,7 @@ class Builder:
 
 
     def zipTolist(self,zipData)->List:
+        ''''''
         return [list(a) for a in zipData]
 
     def circumferenceDistribution(self,center:List[float], radius:float, samplesNum:int):
@@ -37,12 +40,10 @@ class Builder:
         return self.zipTolist(zip(x, y))
 
     def getAllPoints(self):
-
+        ''''''
         samplesNum = 2000
-
         cf1 = self.circumferenceDistribution([6, -0.5], 2, samplesNum)
         cf2 = self.circumferenceDistribution([3, -2], 0.3, samplesNum)
-
         cl1 = self.circleDistribution([-5, 3], 0.5, int(samplesNum / 2))
         cl2 = self.circleDistribution([3.5, 2.5], 0.7, samplesNum)
         #
@@ -51,8 +52,5 @@ class Builder:
         r2 = self.rectangleDistribution([+1.5, 0], 1, 4, samplesNum)
         r3 = self.rectangleDistribution([0, +1.5], 2, 1, int(samplesNum / 2))
         r4 = self.rectangleDistribution([0, -1.5], 2, 1, int(samplesNum / 2))
-
-
         allPoints = np.asarray(cf1+cf2+cl1+cl2+r1+r2+r3+r4)
-
         return allPoints

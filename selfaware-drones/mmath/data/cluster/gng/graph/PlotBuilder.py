@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 from mmath.data.cluster.gng.graph.Graph import Graph
-from test.GraphBuilder import GraphBuilder
+from mmath.test.GraphBuilder import GraphBuilder
 
 
 class PlotBuilder:
@@ -18,6 +18,7 @@ class PlotBuilder:
         plt.scatter(xNodes, yNodes, marker='*')
 
     def add2DEdges(self)->None:
+        ''''''
         for edge in self.__graph.getEdges():
             edgeNode1 = edge.getNode1()
             edgeNode2 = edge.getNode2()
@@ -26,7 +27,9 @@ class PlotBuilder:
             plt.plot(xVals, yVals)
 
     def show(self)->None:
+        ''''''
         plt.show()
 
     def getPlot(self)->plt:
+        ''''''
         return plt

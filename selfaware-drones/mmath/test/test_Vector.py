@@ -27,7 +27,6 @@ class TestVector(unittest.TestCase):
         endVec:Vector = Vector([1,1])
         mvRate = 0.1
         startVec.moveTowardVecByRate(endVec, mvRate)
-        print(startVec.getNpRows()[0][0])
         self.assertTrue(startVec.getNpRows()[0][0] == 2.1)
 
 
