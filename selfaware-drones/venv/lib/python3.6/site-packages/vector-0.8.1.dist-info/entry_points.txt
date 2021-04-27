@@ -1,0 +1,3 @@
+[numba_extensions]
+init = vector:register_numba
+

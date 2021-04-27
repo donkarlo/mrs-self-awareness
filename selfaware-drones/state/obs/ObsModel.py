@@ -1,7 +1,7 @@
 from mmath.linearalgebra import Vector
 from mmath.linearalgebra.Matrix import Matrix
 from state import State
-from state.filter.bayesian.kalman import Innovation
+from state.filter.kalman import Innovation
 from state.obs import Obs
 
 

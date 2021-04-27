@@ -1,7 +1,7 @@
 from array import array
 
-from mmath.linearalgebra import Vector
-from state import State as ParentState
+from linearalgebra import Vector
+from state.State import State as ParentState
 
 
 class State(ParentState):

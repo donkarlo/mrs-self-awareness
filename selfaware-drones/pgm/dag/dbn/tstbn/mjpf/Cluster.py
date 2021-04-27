@@ -1,4 +1,4 @@
-from state.filter.bayesian.kalman import Kalman
+from state.filter.kalman import Kalman
 
 
 class Cluster():

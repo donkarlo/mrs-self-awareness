@@ -2,7 +2,7 @@ from mmath.data.cluster import ClusteringStrgy
 from pgm.dag.dbn import Dbn
 from pgm.dag.dbn.tstbn.mjpf.abnormality import StrategyInterface as AbnStrgy
 from state.State import State
-from state.filter.bayesian.kalman import Kalman
+from state.filter.kalman import Kalman
 from state.obs import ObsSerie
 
 
