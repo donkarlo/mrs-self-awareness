@@ -436,7 +436,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{2019 IEEE 5th World Forum on Internet of Things (WF-IoT)}
+      \field{journaltitle}{2019 IEEE 5th IntrestedRegion Forum on Internet of Things (WF-IoT)}
       \field{title}{Dynamic Bayesian Approach for decision-making in Ego-Things}
       \field{year}{2019}
       \field{pages}{909\bibrangedash 914}
@@ -848,7 +848,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2017 {IEEE} World Haptics Conference, {WHC} 2017, Munich, Germany, June 6-9, 2017}
+      \field{booktitle}{2017 {IEEE} IntrestedRegion Haptics Conference, {WHC} 2017, Munich, Germany, June 6-9, 2017}
       \field{title}{Towards a self-collision aware teleoperation framework for compound robots}
       \field{year}{2017}
       \field{pages}{460\bibrangedash 465}

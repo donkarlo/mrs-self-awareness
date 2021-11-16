@@ -1,4 +1,4 @@
-from state import Gs as StateGs
+from mDynamicSystem.state import Gs as StateGs
 from trajectory.Point import Point
 
 '''

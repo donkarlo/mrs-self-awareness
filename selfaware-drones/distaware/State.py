@@ -1,7 +1,7 @@
 from array import array
 
 from linearalgebra import Vector
-from state.State import State as ParentState
+from mDynamicSystem.state import State as ParentState
 
 
 class State(ParentState):

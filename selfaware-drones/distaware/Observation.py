@@ -1,4 +1,4 @@
-from state.obs.Obs import Obs as ObservationBase
+from mDynamicSystem.state import Observation as ObservationBase
 
 
 class Observation(ObservationBase):

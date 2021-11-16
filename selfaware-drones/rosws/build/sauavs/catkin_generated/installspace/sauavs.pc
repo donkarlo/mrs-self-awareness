@@ -1,0 +1,8 @@
+prefix=/home/donkarlo/Dropbox/projs/research/artificial-intelligence/self-awareness/selfaware-drones/rosws/install
+
+Name: sauavs
+Description: Description of sauavs
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
