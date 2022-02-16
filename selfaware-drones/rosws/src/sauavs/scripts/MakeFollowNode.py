@@ -30,13 +30,13 @@ if __name__ == "__main__":
     # filePathToTrajectory = "/home/donkarlo/Dropbox/projs/research/data/self-aware-drones/trajectory-points/rectangle30TurnLeft4Pcs-0-5.txt"
     # trajectorySepartor = " "
 
-    followType = "innerSquaresTurnInside2P7"
-    filePathToTrajectory = "/home/donkarlo/Dropbox/projs/research/data/self-aware-drones/trajectory-points/square30TurnLeft2-7Pcs-0-5.txt"
-    trajectorySepartor = " "
-
-    # followType = "innerSquaresTurnInside5"
-    # filePathToTrajectory = "/home/donkarlo/Dropbox/projs/research/data/self-aware-drones/trajectory-points/square-30-turn-left-5-pcs-0-5.txt"
+    # followType = "innerSquaresTurnInside2P7"
+    # filePathToTrajectory = "/home/donkarlo/Dropbox/projs/research/data/self-aware-drones/trajectory-points/square30TurnLeft2-7Pcs-0-5.txt"
     # trajectorySepartor = " "
+
+    followType = "innerSquaresTurnInside5"
+    filePathToTrajectory = "/home/donkarlo/Dropbox/projs/research/data/self-aware-drones/trajectory-points/square-30-turn-left-5-pcs-0-5.txt"
+    trajectorySepartor = " "
 
     #Ask the leader to publish its GPS odometry
     leader = Leader(followType, filePathToTrajectory, trajectorySepartor)
